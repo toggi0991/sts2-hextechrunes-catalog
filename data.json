@@ -1,0 +1,4007 @@
+[
+  {
+    "id": "OK_BOOMERANG_CARD",
+    "category": "card",
+    "subcategory": "card",
+    "title": "OK 부메랑",
+    "description": "모든 적에게 {Damage:diff()}의 피해를 [blue]{Hits}[/blue]번 줍니다.\n이 카드를 손으로 되돌립니다.",
+    "flavor": "농담처럼 날아가서, 빚쟁이처럼 돌아온다.",
+    "icon": "assets/icons/cards/okBoomerangCard.png"
+  },
+  {
+    "id": "BLADE_WALTZ_CARD",
+    "category": "card",
+    "subcategory": "card",
+    "title": "검무",
+    "description": "무작위 적에게 피해를 {Damage:diff()}만큼 [blue]{Hits}[/blue]번 줍니다. [gold]영체화[/gold]를 [blue]{IntangiblePower}[/blue] 얻습니다.",
+    "flavor": "돌고, 베고, 인사합니다.",
+    "icon": "assets/icons/cards/bladeWaltzCard.png"
+  },
+  {
+    "id": "OSTY_WISH_CARD",
+    "category": "card",
+    "subcategory": "card",
+    "title": "골골이의 소원",
+    "description": "방어도를 {WishBlock} 얻습니다.\n모든 적에게 {WishDamage}의 피해를 줍니다.",
+    "flavor": "이번에는 골골이가 결말을 당신의 손에 맡깁니다.",
+    "icon": "assets/icons/cards/ostyWishCard.png"
+  },
+  {
+    "id": "MOUNTAIN_DRAGON_SOUL_CARD",
+    "category": "card",
+    "subcategory": "card",
+    "title": "대지 드래곤의 영혼",
+    "description": "턴 시작 시 [gold]판금[/gold]을 [blue]{PlatingPower}[/blue] 얻습니다.",
+    "flavor": "산은 물러서지 않습니다.",
+    "icon": "assets/icons/cards/mountainDragonSoulCard.png"
+  },
+  {
+    "id": "HEXTECH_DRAGON_SOUL_CARD",
+    "category": "card",
+    "subcategory": "card",
+    "title": "마법공학 드래곤의 영혼",
+    "description": "매 턴 [blue]{Energy}[/blue]의 추가 에너지를 얻습니다.",
+    "flavor": "코일 속의 번개는 결코 잠들지 않습니다.",
+    "icon": "assets/icons/cards/hextechDragonSoulCard.png"
+  },
+  {
+    "id": "TRICK_MAGIC_CARD",
+    "category": "card",
+    "subcategory": "card",
+    "title": "마술 트릭",
+    "description": "카드를 [blue]{Cards}[/blue]장 뽑습니다. [gold]버퍼[/gold]을 [blue]{BufferPower}[/blue] 얻습니다. 다음에 플레이하는 공격 카드가 [blue]{Replays}[/blue]번 반복됩니다.",
+    "flavor": "관객은 리본을 봅니다. 적은 계산서를 봅니다.",
+    "icon": "assets/icons/cards/trickMagicCard.png"
+  },
+  {
+    "id": "MIKAELS_BLESSING_CARD",
+    "category": "card",
+    "subcategory": "card",
+    "title": "미카엘의 축복",
+    "description": "최대 체력의 [blue]{HealPercent}%[/blue]만큼 회복합니다. 모든 플레이어의 모든 디버프를 제거합니다.",
+    "flavor": "폭풍 뒤에도 종소리는 여전히 맑습니다.",
+    "icon": "assets/icons/cards/mikaelsBlessingCard.png"
+  },
+  {
+    "id": "OCEAN_DRAGON_SOUL_CARD",
+    "category": "card",
+    "subcategory": "card",
+    "title": "바다 드래곤의 영혼",
+    "description": "턴 종료 시 체력을 [blue]{Heal}[/blue] 회복합니다.",
+    "flavor": "조류는 항상 돌아가는 길을 기억합니다.",
+    "icon": "assets/icons/cards/oceanDragonSoulCard.png"
+  },
+  {
+    "id": "CLOUD_DRAGON_SOUL_CARD",
+    "category": "card",
+    "subcategory": "card",
+    "title": "바람 드래곤의 영혼",
+    "description": "매 턴 카드를 [blue]{Cards}[/blue]장 추가로 뽑습니다.",
+    "flavor": "바람이 당신의 손에 선택지를 쥐여줍니다.",
+    "icon": "assets/icons/cards/cloudDragonSoulCard.png"
+  },
+  {
+    "id": "SEARING_ATTACK_CARD",
+    "category": "card",
+    "subcategory": "card",
+    "title": "불태우는 일격",
+    "description": "피해를 {Damage:diff()} 줍니다.\n강화 횟수에 제한이 없습니다.",
+    "flavor": "날을 세울수록 뜨거워집니다.",
+    "icon": "assets/icons/cards/searingAttackCard.png"
+  },
+  {
+    "id": "ALL_IN_CARD",
+    "category": "card",
+    "subcategory": "card",
+    "title": "올인",
+    "description": "{Damage:diff()}의 피해를 줍니다.\n공격이 아닌 모든 카드를 버립니다.",
+    "flavor": "테이블 위에는 판돈과 날카로움만이 남습니다.",
+    "icon": "assets/icons/cards/allInCard.png"
+  },
+  {
+    "id": "ELICIT_CARD",
+    "category": "card",
+    "subcategory": "card",
+    "title": "이끌어내기",
+    "description": "모든 구체를 발현합니다.",
+    "flavor": "모든 코일이 한 번에 방전되게 하십시오.",
+    "icon": "assets/icons/cards/elicitCard.png"
+  },
+  {
+    "id": "REPROGRAM_CARD",
+    "category": "card",
+    "subcategory": "card",
+    "title": "재구성",
+    "description": "[gold]집중[/gold]을 [blue]{FocusPower}[/blue] 잃습니다.\n[gold]힘[/gold]을 [blue]{StrengthPower}[/blue], [gold]민첩[/gold]을 [blue]{DexterityPower}[/blue] 얻습니다.",
+    "flavor": "안정성을 조금 지우고, 힘과 기교를 조금 얻습니다.",
+    "icon": "assets/icons/cards/reprogramCard.png"
+  },
+  {
+    "id": "CATALYST_CARD",
+    "category": "card",
+    "subcategory": "card",
+    "title": "촉매",
+    "description": "적의 중독을 현재 수치의 [blue]{PoisonMultiplier}[/blue]배로 만듭니다.",
+    "flavor": "독소가 아직 숨을 쉬고 있다면, 여전히 자랄 수 있습니다.",
+    "icon": "assets/icons/cards/catalystCard.png"
+  },
+  {
+    "id": "FEEL_THE_BURN_CARD",
+    "category": "card",
+    "subcategory": "card",
+    "title": "타오름을 느껴라",
+    "description": "모든 적의 모든 강화 효과를 제거합니다.\n[gold]화상[/gold] [blue]{HextechBurnPower}[/blue]을 부여합니다.",
+    "flavor": "그들의 불을 꺼뜨린 뒤, 당신의 불을 지펴라.",
+    "icon": "assets/icons/cards/feelTheBurnCard.png"
+  },
+  {
+    "id": "INFERNAL_DRAGON_SOUL_CARD",
+    "category": "card",
+    "subcategory": "card",
+    "title": "화염 드래곤의 영혼",
+    "description": "매 턴 처음으로 플레이하는 공격 카드가 적에게 [gold]점화[/gold]를 [blue]{BurnPower}[/blue] 부여합니다.",
+    "flavor": "첫 번째 일격이 전체 전투에 불을 붙입니다.",
+    "icon": "assets/icons/cards/infernalDragonSoulCard.png"
+  },
+  {
+    "id": "WHITE_HOLE_CARD",
+    "category": "card",
+    "subcategory": "card",
+    "title": "화이트홀",
+    "description": "이 카드를 뽑을 때마다 {Energy:energyIcons()} 을(를) 얻습니다.\n카드를 {Cards}장 뽑습니다.",
+    "flavor": "이것은 선택을 삼키지 않습니다. 다시 당신의 손에 뱉어냅니다.",
+    "icon": "assets/icons/cards/whiteHoleCard.png"
+  },
+  {
+    "id": "CHEMTECH_DRAGON_SOUL_CARD",
+    "category": "card",
+    "subcategory": "card",
+    "title": "화학공학 드래곤의 영혼",
+    "description": "턴 시작 시 무작위 포션을 [blue]{PotionCount}[/blue]개 얻습니다.",
+    "flavor": "코르크 마개가 따지기 전에는 아무도 답을 모릅니다.",
+    "icon": "assets/icons/cards/chemtechDragonSoulCard.png"
+  },
+  {
+    "id": "HEXTECH_MOUNTAIN_DRAGON_SOUL_POWER",
+    "category": "power",
+    "subcategory": "power",
+    "title": "대지 드래곤의 영혼",
+    "description": "턴 시작 시 이 수치만큼의 [gold]판금[/gold]을 얻습니다.",
+    "flavor": "",
+    "icon": "assets/icons/powers/hextechMountainDragonSoulPower.png"
+  },
+  {
+    "id": "HEXTECH_PLAYER_SLOW_POWER",
+    "category": "power",
+    "subcategory": "power",
+    "title": "둔화",
+    "description": "받는 피해가 수치와 동일한 퍼센트만큼 증가합니다. 수치가 음수이면 받는 피해가 그만큼 감소합니다.",
+    "flavor": "",
+    "icon": null
+  },
+  {
+    "id": "HEXTECH_DRAGON_SOUL_POWER",
+    "category": "power",
+    "subcategory": "power",
+    "title": "마법공학 드래곤의 영혼",
+    "description": "매 턴 이 수치만큼의 추가 에너지를 얻습니다.",
+    "flavor": "",
+    "icon": "assets/icons/powers/hextechDragonSoulPower.png"
+  },
+  {
+    "id": "HEXTECH_ATTACK_REPLAY_POWER",
+    "category": "power",
+    "subcategory": "power",
+    "title": "마술 트릭",
+    "description": "다음에 플레이하는 공격 카드가 이 수치만큼 반복됩니다.",
+    "flavor": "",
+    "icon": "assets/icons/powers/hextechAttackReplayPower.png"
+  },
+  {
+    "id": "HEXTECH_OCEAN_DRAGON_SOUL_POWER",
+    "category": "power",
+    "subcategory": "power",
+    "title": "바다 드래곤의 영혼",
+    "description": "턴 종료 시 이 수치만큼 체력을 회복합니다.",
+    "flavor": "",
+    "icon": "assets/icons/powers/hextechOceanDragonSoulPower.png"
+  },
+  {
+    "id": "HEXTECH_CLOUD_DRAGON_SOUL_POWER",
+    "category": "power",
+    "subcategory": "power",
+    "title": "바람 드래곤의 영혼",
+    "description": "매 턴 이 수치만큼 카드를 추가로 뽑습니다.",
+    "flavor": "",
+    "icon": "assets/icons/powers/hextechCloudDragonSoulPower.png"
+  },
+  {
+    "id": "HEXTECH_GALVANIC_POWER",
+    "category": "power",
+    "subcategory": "power",
+    "title": "전류",
+    "description": "파워 카드에 [gold]전기 자극[/gold]의 고난이 부여됩니다.",
+    "flavor": "",
+    "icon": null
+  },
+  {
+    "id": "HEXTECH_BURN_POWER",
+    "category": "power",
+    "subcategory": "power",
+    "title": "점화",
+    "description": "현재 체력의 이 수치 퍼센트만큼 피해를 줍니다(최소 이 수치). 그 후 점화가 [blue]10%[/blue] 감소합니다.",
+    "flavor": "",
+    "icon": "assets/icons/powers/hextechBurnPower.png"
+  },
+  {
+    "id": "HEXTECH_INFERNAL_DRAGON_SOUL_POWER",
+    "category": "power",
+    "subcategory": "power",
+    "title": "화염 드래곤의 영혼",
+    "description": "매 턴 처음으로 플레이하는 공격 카드가 적에게 이 수치만큼의 [gold]점화[/gold]를 부여합니다.",
+    "flavor": "",
+    "icon": "assets/icons/powers/hextechInfernalDragonSoulPower.png"
+  },
+  {
+    "id": "HEXTECH_CHEMTECH_DRAGON_SOUL_POWER",
+    "category": "power",
+    "subcategory": "power",
+    "title": "화학공학 드래곤의 영혼",
+    "description": "턴 시작 시 이 수치만큼의 무작위 포션을 얻습니다.",
+    "flavor": "",
+    "icon": "assets/icons/powers/hextechChemtechDragonSoulPower.png"
+  },
+  {
+    "id": "SNAKEBITE_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "!? 뱀 물기?!",
+    "description": "매 전투 시작 시, 손에 [gold]뱀 물기[/gold]를 [blue]1[/blue]장 추가합니다. 해당 카드는 이번 전투 동안 비용이 0이 됩니다.",
+    "flavor": "풀이 한 번 흔들리고, 당신의 손도 그에 맞춰 움직입니다.",
+    "icon": "assets/icons/relics/snakebiteRune.png"
+  },
+  {
+    "id": "EIGHT_PENNY_GATE_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "8페니 문",
+    "description": "공격이나 스킬 카드를 사용할 때마다 [blue]1[/blue]번 더 반복하고 소멸시킵니다.",
+    "flavor": "아, 맞다.",
+    "icon": "assets/icons/relics/eightPennyGateRune.png"
+  },
+  {
+    "id": "MYSTERY_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "???",
+    "description": "매 전투 시작 시, [gold]대혼란[/gold]을 [blue]2[/blue], [gold]엔트로피[/gold]를 [blue]2[/blue] 얻습니다.",
+    "flavor": "물음표에는 답이 없고, 오직 혼돈의 다음 폭발만이 있을 뿐입니다.",
+    "icon": "assets/icons/relics/mysteryRune.png"
+  },
+  {
+    "id": "THORNMAIL_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "가시 갑옷",
+    "description": "매 전투 시작 시, [gold]가시[/gold]를 [blue]2[/blue] 얻습니다. 최대 체력 [blue]40[/blue]당 추가로 [gold]가시[/gold]를 [blue]1[/blue] 얻으며, 최대 [blue]3[/blue]까지 추가로 얻습니다.",
+    "flavor": "접촉하기 전까지는 평범한 갑옷처럼 보입니다.",
+    "icon": "assets/icons/relics/thornmailRune.png"
+  },
+  {
+    "id": "THORNS_FORGE",
+    "category": "relic",
+    "subcategory": "forge",
+    "title": "가시 모루",
+    "description": "매 전투 시작 시, [gold]가시[/gold]를 [blue]4[/blue] 얻습니다.",
+    "flavor": "모든 미늘은 자신을 향해 뻗어왔던 손을 기억합니다.",
+    "icon": "assets/icons/relics/silverForge.png"
+  },
+  {
+    "id": "MOST_UNIVERSAL_SCOPE_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "가장 만능인 조준경",
+    "description": "공격 카드를 사용한 후, [blue]50%[/blue] 확률로 그 카드를 손으로 되돌리고 비용을 돌려받습니다.",
+    "flavor": "조준점이 거의 대신 방아쇠를 당깁니다.",
+    "icon": "assets/icons/relics/mostUniversalScopeRune.png"
+  },
+  {
+    "id": "UPGRADE_FORGE",
+    "category": "relic",
+    "subcategory": "forge",
+    "title": "강화 모루",
+    "description": "획득 시, 무작위 카드 [blue]2[/blue]장을 강화합니다.",
+    "flavor": "낡은 동작에 새로운 용도를 가르쳐 주려면 망치질 한 번이면 충분합니다.",
+    "icon": "assets/icons/relics/silverForge.png"
+  },
+  {
+    "id": "GOLD_UPGRADE_FORGE",
+    "category": "relic",
+    "subcategory": "forge",
+    "title": "강화 모루",
+    "description": "획득 시, 무작위 카드 [blue]4[/blue]장을 강화합니다.",
+    "flavor": "세 번의 망치질 후, 덱은 여러 개의 새로운 날을 키워냅니다.",
+    "icon": "assets/icons/relics/goldForge.png"
+  },
+  {
+    "id": "EXOSKELETON_HEX",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "강화: 갑각충",
+    "description": "매 전투 시작 시, 적에게 [gold]질긴 생존력[/gold]이 없다면 적이 최대 체력의 [blue]10%[/blue]만큼(최소 [blue]6[/blue]) [gold]질긴 생존력[/gold]을 얻습니다.",
+    "flavor": "껍질 아래 또 껍질. 벌레는 너보다 참을성이 많다.",
+    "icon": "assets/icons/relics/exoskeletonHex.png"
+  },
+  {
+    "id": "BASH_UPGRADE_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "강화: 강타",
+    "description": "[gold]강타[/gold]를 사용하면 [gold]힘[/gold] [blue]2[/blue]를 얻습니다. [gold]박살[/gold]을 사용하면 [gold]힘[/gold] [blue]3[/blue]을 얻습니다.",
+    "flavor": "강타가 길을 열고, 박살이 결론을 냅니다.",
+    "icon": "assets/icons/relics/bashUpgradeRune.png"
+  },
+  {
+    "id": "PHROG_PARASITE_HEX",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "강화: 게구리 기생체",
+    "description": "적이 막히지 않은 공격 피해를 줄 때마다 플레이어의 버린 카드 더미에 [gold]감염[/gold]을 [blue]1[/blue]장 추가합니다.",
+    "flavor": "개구리는 숙주일 뿐, 가려운 건 너다.",
+    "icon": "assets/icons/relics/phrogParasiteHex.png"
+  },
+  {
+    "id": "VOID_FORM_UPGRADE_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "강화: 공허의 형상",
+    "description": "매 전투 시작 시, 당신의 모든 [gold]공허의 형상[/gold]를 자동으로 사용합니다. 이렇게 사용한 공허의 형상은 당신의 턴을 종료시키지 않습니다.",
+    "flavor": "공허에 떨어져도 한 손은 카드를 낸다.",
+    "icon": "assets/icons/relics/voidFormUpgradeRune.png"
+  },
+  {
+    "id": "WELL_LAID_PLANS_UPGRADE_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "강화: 괜찮은 전략",
+    "description": "[gold]괜찮은 전략[/gold]으로 원하는 만큼 카드를 보존할 수 있습니다.",
+    "flavor": "게임은 아직 끝나지 않았습니다. 좋은 패는 절대 놓지 않는 법입니다.",
+    "icon": "assets/icons/relics/wellLaidPlansUpgradeRune.png"
+  },
+  {
+    "id": "SERPENT_FORM_UPGRADE_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "강화: 구렁이의 형상",
+    "description": "매 전투 시작 시, 당신의 모든 [gold]구렁이의 형상[/gold]를 자동으로 사용합니다.",
+    "flavor": "뱀 떼는 명령을 기다리지 않는다. 해질녘이면 스스로 나온다.",
+    "icon": "assets/icons/relics/serpentFormUpgradeRune.png"
+  },
+  {
+    "id": "GLOBE_HEAD_HEX",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "강화: 구체 머리",
+    "description": "전투 시작 시, 모든 플레이어가 [gold]전류[/gold]를 [blue]3[/blue]/[blue]6[/blue]/[blue]9[/blue] 얻습니다.",
+    "flavor": "머릿속엔 아무것도 없다. 생각하는 건 전류뿐.",
+    "icon": "assets/icons/relics/globeHeadHex.png"
+  },
+  {
+    "id": "SHRIEK_UPGRADE_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "강화: 귀를 찢는 비명",
+    "description": "[gold]귀를 찢는 비명[/gold]이 추가로 적의 [gold]힘[/gold]을 영구적으로 [blue]{StrengthPower}[/blue] 잃습니다.",
+    "flavor": "소리가 뼈를 긁고 힘을 제자리에 남깁니다.",
+    "icon": "assets/icons/relics/shriekUpgradeRune.png"
+  },
+  {
+    "id": "LEAF_SLIME_HEX",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "강화: 나뭇잎 슬라임",
+    "description": "매 [blue]3[/blue]/[blue]2[/blue]/[blue]1[/blue] 턴마다 각 플레이어의 버린 카드 더미에 [gold]점액투성이[/gold]를 [blue]1[/blue]장 추가합니다.",
+    "flavor": "잎사귀 아래는 보기보다 훨씬 끈적하다.",
+    "icon": "assets/icons/relics/leafSlimeHex.png"
+  },
+  {
+    "id": "KNOW_THY_PLACE_UPGRADE_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "강화: 네 주제를 알라",
+    "description": "[gold]네 주제를 알라[/gold]가 적의 [gold]힘[/gold]과 [gold]민첩[/gold]을 [blue]1[/blue]씩 감소시킵니다.",
+    "flavor": "선을 넘은 자들은 먼저 고개를 숙이고, 그다음 무릎을 꿇습니다.",
+    "icon": "assets/icons/relics/knowThyPlaceUpgradeRune.png"
+  },
+  {
+    "id": "MOLTEN_FIST_UPGRADE_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "강화: 녹아내리는 주먹",
+    "description": "[gold]녹아내리는 주먹[/gold]을 사용하면 [gold]제압[/gold] [blue]1[/blue]장을 손에 추가합니다.",
+    "flavor": "주먹은 아직도 불타고 있습니다. 그 잔불은 명령이 됩니다.",
+    "icon": "assets/icons/relics/moltenFistUpgradeRune.png"
+  },
+  {
+    "id": "GRAND_FINALE_UPGRADE_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "강화: 대단원의 막",
+    "description": "[gold]대단원의 막[/gold]을 조건 없이 사용할 수 있습니다.",
+    "flavor": "피날레는 더 이상 빈 무대를 기다리지 않습니다.",
+    "icon": "assets/icons/relics/grandFinaleUpgradeRune.png"
+  },
+  {
+    "id": "VOLTAIC_UPGRADE_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "강화: 동전기",
+    "description": "[gold]동전기[/gold]가 모든 종류의 구체를 기록하고 영창합니다.",
+    "flavor": "전류는 자신이 지나간 모든 길을 기억합니다.",
+    "icon": "assets/icons/relics/voltaicUpgradeRune.png"
+  },
+  {
+    "id": "EXPOSE_UPGRADE_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "강화: 들춰내기",
+    "description": "[gold]들춰내기[/gold]가 대상의 모든 버프도 제거합니다.",
+    "flavor": "베일이 열리면 부적들도 함께 깨집니다.",
+    "icon": "assets/icons/relics/exposeUpgradeRune.png"
+  },
+  {
+    "id": "LAGAVULIN_MATRIARCH_HEX",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "강화: 라가불린 대모",
+    "description": "[blue]3[/blue]/[blue]2[/blue]/[blue]1[/blue] 턴마다, 모든 플레이어는 [gold]힘[/gold]과 [gold]민첩[/gold]을 [blue]1[/blue]씩 잃습니다.",
+    "flavor": "족장 어미가 명령하면, 그 힘은 더 이상 네 것이 아니다.",
+    "icon": "assets/icons/relics/lagavulinMatriarchHex.png"
+  },
+  {
+    "id": "ECHO_FORM_UPGRADE_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "강화: 메아리의 형상",
+    "description": "매 전투 시작 시, 당신의 모든 [gold]메아리의 형상[/gold]를 자동으로 사용합니다.",
+    "flavor": "메아리는 네가 먼저 말하길 기다리지 않는다.",
+    "icon": "assets/icons/relics/echoFormUpgradeRune.png"
+  },
+  {
+    "id": "BODY_SLAM_UPGRADE_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "강화: 몸통 박치기",
+    "description": "[gold]몸통 박치기[/gold]가 2배의 피해를 주지만, 사용 후 모든 방어도를 제거합니다.",
+    "flavor": "방어 태세까지 모두 실어 던집니다.",
+    "icon": "assets/icons/relics/bodySlamUpgradeRune.png"
+  },
+  {
+    "id": "NEUTRALIZE_UPGRADE_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "강화: 무력화",
+    "description": "[gold]무력화[/gold] 또는 [gold]진압[/gold]을 버릴 때, 모든 적에게 그 카드를 [blue]2[/blue]번 사용합니다.",
+    "flavor": "손을 떠난 칼날도 모든 빈틈을 찾아냅니다.",
+    "icon": "assets/icons/relics/neutralizeUpgradeRune.png"
+  },
+  {
+    "id": "VANTOM_HEX",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "강화: 밴텀",
+    "description": "매 전투 시작 시, 적이 최대 체력 [blue]25[/blue]마다 [gold]미끈거림[/gold]을 [blue]1[/blue] 얻습니다.",
+    "flavor": "그림자는 클수록 잡기 어렵다.",
+    "icon": "assets/icons/relics/vantomHex.png"
+  },
+  {
+    "id": "SNAKEBITE_UPGRADE_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "강화: 뱀 물기",
+    "description": "턴 종료 시, 이번 턴에 보존된 [gold]뱀 물기[/gold]마다 이번 전투 동안 [gold]재사용[/gold] [blue]{Replays}[/blue]회를 얻습니다.",
+    "flavor": "소매 속에서 오래 도사릴수록 더 빠르게 물어뜯습니다.",
+    "icon": "assets/icons/relics/snakebiteUpgradeRune.png"
+  },
+  {
+    "id": "FALLING_STAR_UPGRADE_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "강화: 별똥별",
+    "description": "[gold]별똥별[/gold]과 [gold]유성우[/gold]가 적을 추가로 [blue]1[/blue]턴 기절시킵니다.",
+    "flavor": "별이 떨어지기 전, 하늘이 먼저 멈춥니다.",
+    "icon": "assets/icons/relics/fallingStarUpgradeRune.png"
+  },
+  {
+    "id": "UNDYING_UPGRADE_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "강화: 불사",
+    "description": "[gold]불사[/gold]가 영구적으로 [gold]휘발성[/gold]을 얻습니다.",
+    "flavor": "불사는 머무는 것이 아니라 계속 사라지는 것입니다.",
+    "icon": "assets/icons/relics/undyingUpgradeRune.png"
+  },
+  {
+    "id": "CRASH_LANDING_UPGRADE_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "강화: 불시착",
+    "description": "[gold]불시착[/gold]이 손을 [gold]불가피한 충돌[/gold]로 가득 채웁니다.",
+    "flavor": "후원자 물품: 군주가 하늘에서 내려옵니다!!!",
+    "icon": "assets/icons/relics/crashLandingUpgradeRune.png"
+  },
+  {
+    "id": "MISERY_UPGRADE_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "강화: 비참함",
+    "description": "[gold]비참함[/gold]의 대상이 혼자일 경우, 해당 적의 모든 약화 효과를 추가로 두 배로 만듭니다.",
+    "flavor": "비참함이 퍼질 곳이 없으면 더 깊어집니다.",
+    "icon": "assets/icons/relics/miseryUpgradeRune.png"
+  },
+  {
+    "id": "BONE_BREAK_UPGRADE_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "강화: 뼛조각",
+    "description": "[gold]뼛조각[/gold]이 추가로 골골이의 현재 HP만큼 모든 적에게 피해를 주고, 동일한 수치의 [gold]방어도[/gold]를 얻습니다.",
+    "flavor": "뼈가 부러지기 전, 마지막 힘을 당신에게 건넵니다.",
+    "icon": "assets/icons/relics/boneBreakUpgradeRune.png"
+  },
+  {
+    "id": "THE_LOST_HEX",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "강화: 사라진 자",
+    "description": "전투 시작 시, 모든 플레이어가 [gold]힘[/gold]을 [blue]0[/blue]/[blue]1[/blue]/[blue]2[/blue] 잃습니다.",
+    "flavor": "그것이 주워 간 것은 다시는 이름을 얻지 못한다.",
+    "icon": "assets/icons/relics/theLostHex.png"
+  },
+  {
+    "id": "REAPER_FORM_UPGRADE_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "강화: 사신의 형상",
+    "description": "매 전투 시작 시, 당신의 모든 [gold]사신의 형상[/gold]를 자동으로 사용합니다.",
+    "flavor": "사신은 늦는 법이 없다. 턴의 끝이 곧 약속된 시각이다.",
+    "icon": "assets/icons/relics/reaperFormUpgradeRune.png"
+  },
+  {
+    "id": "BLOODLETTING_UPGRADE_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "강화: 사혈",
+    "description": "[gold]사혈[/gold]을 사용한 후, 손으로 다시 가져옵니다.",
+    "flavor": "상처가 닫히기도 전에 칼날은 다시 손에 쥐어집니다.",
+    "icon": "assets/icons/relics/bloodlettingUpgradeRune.png"
+  },
+  {
+    "id": "SURVIVOR_UPGRADE_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "강화: 생존자",
+    "description": "[gold]생존자[/gold]를 사용한 후, 원하는 만큼 카드를 버릴 수 있습니다. 버린 카드 한 장당 방어도를 얻습니다.",
+    "flavor": "짐을 내려놓고 퇴로를 확보하십시오.",
+    "icon": "assets/icons/relics/survivorUpgradeRune.png"
+  },
+  {
+    "id": "BYRDONIS_HEX",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "강화: 섀도니스",
+    "description": "전투 시작 시, 모든 적이 [gold]영역 동물[/gold]을 [blue]0[/blue]/[blue]1[/blue]/[blue]2[/blue] 얻습니다.",
+    "flavor": "날개로 그은 경계는 발톱보다 단단하다.",
+    "icon": "assets/icons/relics/byrdonisHex.png"
+  },
+  {
+    "id": "SUBROUTINE_UPGRADE_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "강화: 서브루틴",
+    "description": "전투 시작 시, 모든 [gold]서브루틴[/gold]을 손으로 가져옵니다.",
+    "flavor": "모든 프로세스는 나의 호출에 응답합니다.",
+    "icon": "assets/icons/relics/subroutineUpgradeRune.png"
+  },
+  {
+    "id": "REANIMATE_UPGRADE_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "강화: 소생",
+    "description": "[gold]소생[/gold] 비용이 [blue]1[/blue] 감소합니다. 누군가 죽을 때마다 이번 전투 동안 비용이 추가로 [blue]1[/blue] 감소합니다.",
+    "flavor": "죽음이 크게 울릴수록 부름도 깊어집니다.",
+    "icon": "assets/icons/relics/reanimateUpgradeRune.png"
+  },
+  {
+    "id": "WHIRLWIND_UPGRADE_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "강화: 소용돌이",
+    "description": "[gold]회오리바람[/gold]을 사용할 때, [blue]X[/blue]가 [blue]3[/blue] 이상이라면, [blue]X[/blue]가 2배가 됩니다.",
+    "flavor": "바람이 형태를 갖추면 한 번 더 몰아칩니다.",
+    "icon": "assets/icons/relics/whirlwindUpgradeRune.png"
+  },
+  {
+    "id": "DEFEND_UPGRADE_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "강화: 수비",
+    "description": "당신의 [gold]수비[/gold]는 무제한으로 강화할 수 있습니다. 전투 종료 시, 이번 전투에서 사용한 [gold]수비[/gold]를 강화합니다.",
+    "flavor": "방어 자세 안에는 가장 교묘한 술수가 숨어 있습니다.",
+    "icon": "assets/icons/relics/defendUpgradeRune.png"
+  },
+  {
+    "id": "REAP_UPGRADE_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "강화: 수확",
+    "description": "[gold]수확[/gold]을 낼 때마다, 그 카드의 피해량이 이번 게임 동안 영구적으로 [blue]3[/blue] 증가합니다.",
+    "flavor": "거둘수록 낫은 더 굶주린다.",
+    "icon": "assets/icons/relics/reapUpgradeRune.png"
+  },
+  {
+    "id": "HIDDEN_GEM_UPGRADE_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "강화: 숨겨진 보석",
+    "description": "[gold]숨겨진 보석[/gold]이 이미 [gold]재사용[/gold]을 가진 카드에 [gold]재사용[/gold]을 추가할 수 있습니다.",
+    "flavor": "보석은 계속해서 새로운 면을 발견할 수 있습니다.",
+    "icon": "assets/icons/relics/hiddenGemUpgradeRune.png"
+  },
+  {
+    "id": "SLIMED_BERSERKER_HEX",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "강화: 슬라임 광전사",
+    "description": "전투 시작 시, [gold]점액투성이[/gold] [blue]5[/blue]/[blue]10[/blue]/[blue]15[/blue]장을 플레이어의 버린 카드 더미에 추가합니다.",
+    "flavor": "돌격하는 길 위엔 발자국보다 점액이 더 많다.",
+    "icon": "assets/icons/relics/slimedBerserkerHex.png"
+  },
+  {
+    "id": "TEST_SUBJECT_HEX",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "강화: 실험체",
+    "description": "전투 시작 시, 모든 적이 [gold]격노[/gold]를 [blue]0[/blue]/[blue]0[/blue]/[blue]1[/blue], [gold]고통스러운 찌르기[/gold]를 [blue]1[/blue]/[blue]2[/blue]/[blue]2[/blue] 얻습니다.",
+    "flavor": "실험 기록 첫 줄: 통각 양호.",
+    "icon": "assets/icons/relics/testSubjectHex.png"
+  },
+  {
+    "id": "DEMON_FORM_UPGRADE_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "강화: 악마의 형상",
+    "description": "매 전투 시작 시, 당신의 모든 [gold]악마의 형상[/gold]를 자동으로 사용합니다.",
+    "flavor": "계약의 시간이 되면 악마가 알아서 찾아온다.",
+    "icon": "assets/icons/relics/demonFormUpgradeRune.png"
+  },
+  {
+    "id": "COMPACT_UPGRADE_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "강화: 압축",
+    "description": "[gold]압축[/gold]이 모든 상태이상 카드를 [gold]연료[/gold]로 변화시킵니다.",
+    "flavor": "폐기물도 유용하게 쓰일 수 있다면 패에 남을 필요가 없습니다.",
+    "icon": "assets/icons/relics/compactUpgradeRune.png"
+  },
+  {
+    "id": "SHRINKER_BEETLE_HEX",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "강화: 압축벌레",
+    "description": "매 전투 시작 시, 모든 플레이어가 [gold]압축[/gold]을 [blue]1[/blue]/[blue]2[/blue]/[blue]3[/blue] 얻습니다.",
+    "flavor": "네가 얼마나 강한지는 관심 없다. 얼마나 큰지만 본다.",
+    "icon": "assets/icons/relics/shrinkerBeetleHex.png"
+  },
+  {
+    "id": "QUEEN_HEX",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "강화: 여왕",
+    "description": "매 전투 시작 시, 모든 플레이어가 [gold]속박의 사슬[/gold]을 [blue]1[/blue] 얻습니다. 매 [blue]2[/blue] 턴마다, 플레이어의 [gold]속박의 사슬[/gold]이 [blue]3[/blue] 미만이라면 [gold]속박의 사슬[/gold]을 [blue]1[/blue] 얻습니다.",
+    "flavor": "사슬의 반대쪽 끝은 언제나 왕좌의 손안에 있다.",
+    "icon": "assets/icons/relics/queenHex.png"
+  },
+  {
+    "id": "BORROWED_TIME_UPGRADE_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "강화: 연명",
+    "description": "[gold]연명[/gold]을 사용해도 더 이상 이번 턴 카드의 비용이 증가하지 않습니다.",
+    "flavor": "이번에는 이자가 면제됩니다.",
+    "icon": "assets/icons/relics/borrowedTimeUpgradeRune.png"
+  },
+  {
+    "id": "AEONGLASS_HEX",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "강화: 영겁의 모래시계",
+    "description": "플레이어 턴 시작 시, 그 플레이어의 손패에 [gold]침체[/gold]를 [blue]0[/blue]/[blue]1[/blue]/[blue]1[/blue]장 추가합니다. 플레이어의 뽑을 카드 더미를 섞을 때마다 그 플레이어의 모든 [gold]침체[/gold]를 강화합니다.",
+    "flavor": "모래는 멈추지 않고, 시듦은 깊어질 뿐이다.",
+    "icon": "assets/icons/relics/aeonglassHex.png"
+  },
+  {
+    "id": "ETERNAL_ARMOR_UPGRADE_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "강화: 영원의 갑옷",
+    "description": "영원의 갑옷을 사용한 후, 턴 시작 시 [gold]판금[/gold]이 더 이상 감소하지 않습니다.",
+    "flavor": "어떤 맹세는 말이 아니라 망치로 새긴다.",
+    "icon": "assets/icons/relics/eternalArmorUpgradeRune.png"
+  },
+  {
+    "id": "SOUL_UPGRADE_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "강화: 영혼",
+    "description": "[gold]영혼[/gold]을 사용한 후, 에너지를 [blue]1[/blue] 얻습니다.",
+    "flavor": "영혼이 떠날 때마다 작은 불꽃이 남습니다.",
+    "icon": "assets/icons/relics/soulUpgradeRune.png"
+  },
+  {
+    "id": "STARDUST_UPGRADE_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "강화: 우주 먼지",
+    "description": "[gold]우주 먼지[/gold]를 사용해도 더 이상 별빛이 소모되지 않습니다.",
+    "flavor": "별빛은 쏟아지지만 잃는 것은 없습니다.",
+    "icon": "assets/icons/relics/stardustUpgradeRune.png"
+  },
+  {
+    "id": "INKLET_HEX",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "강화: 잉클릿",
+    "description": "매 전투 시작 시, 모든 적이 [gold]미끈거림[/gold]을 [blue]1[/blue]/[blue]2[/blue]/[blue]3[/blue] 얻습니다.",
+    "flavor": "잉크 한 방울이면 페이지 전체가 미끄러진다.",
+    "icon": "assets/icons/relics/inkletHex.png"
+  },
+  {
+    "id": "THE_FORGOTTEN_HEX",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "강화: 잊힌 자",
+    "description": "전투 시작 시, 모든 플레이어가 [gold]민첩[/gold]을 [blue]0[/blue]/[blue]1[/blue]/[blue]2[/blue] 잃습니다.",
+    "flavor": "망각은 공백이 아니다. 무언가가 대신 기억하고 있다.",
+    "icon": "assets/icons/relics/theForgottenHex.png"
+  },
+  {
+    "id": "AUTOMATION_UPGRADE_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "강화: 자동화",
+    "description": "[gold]자동화[/gold]가 발동할 때, 카드를 [blue]2[/blue]장 추가로 뽑습니다.",
+    "flavor": "낡은 기계가 스파크를 멈추고 공급을 시작합니다.",
+    "icon": "assets/icons/relics/automationUpgradeRune.png"
+  },
+  {
+    "id": "SKULKING_COLONY_HEX",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "강화: 잠행 군체",
+    "description": "매 전투 시작 시, 적에게 [gold]단단한 껍질[/gold]이 없다면 적이 최대 체력의 [blue]60%[/blue]만큼(최소 [blue]12[/blue]) [gold]단단한 껍질[/gold]을 얻습니다.",
+    "flavor": "산호도 부드러운 속살을 껍질 속에 숨길 줄 안다.",
+    "icon": "assets/icons/relics/skulkingColonyHex.png"
+  },
+  {
+    "id": "DIRGE_UPGRADE_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "강화: 장송가",
+    "description": "[gold]장송가[/gold]가 더 이상 소멸되지 않습니다.",
+    "flavor": "노래는 끝났지만 메아리는 남습니다.",
+    "icon": "assets/icons/relics/dirgeUpgradeRune.png"
+  },
+  {
+    "id": "JACKPOT_UPGRADE_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "강화: 잭팟",
+    "description": "잭팟이 대신 무작위 카드 [blue]3[/blue]장을 손패에 추가합니다. 추가된 카드는 이번 전투에서 무료로 사용할 수 있습니다.",
+    "flavor": "하우스는 언제나 이긴다. 오늘의 하우스는 당신이다.",
+    "icon": "assets/icons/relics/jackpotUpgradeRune.png"
+  },
+  {
+    "id": "BATTLE_TRANCE_UPGRADE_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "강화: 전투 최면",
+    "description": "[gold]전투 최면[/gold]을 사용한 후에도 카드를 뽑을 수 있습니다.",
+    "flavor": "집중력은 더 이상 문을 닫지 않고 더 활짝 엽니다.",
+    "icon": "assets/icons/relics/battleTranceUpgradeRune.png"
+  },
+  {
+    "id": "JUGGERNAUT_UPGRADE_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "강화: 절대적인 힘",
+    "description": "[gold]절대적인 힘[/gold]이 모든 적을 대상으로 합니다.",
+    "flavor": "장벽이 무너질 때 모든 적이 그 소리를 듣습니다.",
+    "icon": "assets/icons/relics/juggernautUpgradeRune.png"
+  },
+  {
+    "id": "NEUROSURGE_UPGRADE_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "강화: 정신 폭주",
+    "description": "[gold]정신 폭주[/gold]가 [gold]종말[/gold]을 모든 적에게 부여합니다.",
+    "flavor": "과부하된 정신은 어딘가로 흘러넘치기 마련입니다.",
+    "icon": "assets/icons/relics/neurosurgeUpgradeRune.png"
+  },
+  {
+    "id": "MYTE_HEX",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "강화: 진듸기",
+    "description": "매 턴 시작 시, [gold]유독성[/gold] [blue]0[/blue]/[blue]1[/blue]/[blue]2[/blue]장을 플레이어의 손패에 추가합니다.",
+    "flavor": "가려움은 언제나 고통보다 먼저 도착한다.",
+    "icon": "assets/icons/relics/myteHex.png"
+  },
+  {
+    "id": "SKY_DRILL_UPGRADE_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "강화: 천원돌파",
+    "description": "[gold]천원돌파[/gold]의 최종 [gold]X[/gold]가 [blue]{XThreshold}[/blue] 이상이면, [gold]X[/gold]를 그 값의 [blue]{XMultiplier}[/blue]배로 계산합니다.",
+    "flavor": "드릴이 높이 돌수록 하늘은 더 크게 열립니다.",
+    "icon": "assets/icons/relics/skyDrillUpgradeRune.png"
+  },
+  {
+    "id": "IRON_WAVE_UPGRADE_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "강화: 철의 파동",
+    "description": "[gold]철의 파동[/gold]을 낼 때마다, 그 카드의 피해량과 [gold]방어도[/gold]가 이번 게임 동안 영구적으로 [blue]1[/blue] 증가합니다.",
+    "flavor": "파도가 칠 때마다 강철은 더 단단해진다.",
+    "icon": "assets/icons/relics/ironWaveUpgradeRune.png"
+  },
+  {
+    "id": "VENERATE_UPGRADE_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "강화: 추앙",
+    "description": "[gold]추앙[/gold]을 사용한 후, 별이 2배가 됩니다.",
+    "flavor": "빛이 바쳐진 뒤, 다시 당신의 손바닥으로 돌아옵니다.",
+    "icon": "assets/icons/relics/venerateUpgradeRune.png"
+  },
+  {
+    "id": "STRIKE_UPGRADE_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "강화: 타격",
+    "description": "당신의 [gold]타격[/gold]은 무제한으로 강화할 수 있습니다. 전투 종료 시, 이번 전투에서 사용한 [gold]타격[/gold]을 강화합니다.",
+    "flavor": "가장 투박한 일격조차도 벼려내면 빛을 발하는 법입니다.",
+    "icon": "assets/icons/relics/strikeUpgradeRune.png"
+  },
+  {
+    "id": "SOW_UPGRADE_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "강화: 파종",
+    "description": "[gold]파종[/gold]을 낼 때마다, 그 카드의 피해량이 이번 게임 동안 영구적으로 [blue]1[/blue] 증가합니다.",
+    "flavor": "뿌린 씨앗은 언젠가 칼날이 된다.",
+    "icon": "assets/icons/relics/sowUpgradeRune.png"
+  },
+  {
+    "id": "ZAP_UPGRADE_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "강화: 파지직",
+    "description": "[gold]파지직[/gold]을 사용한 후, 모든 [gold]전기 구체[/gold]의 지속 효과를 발동시킵니다.",
+    "flavor": "전류가 낡은 배선을 따라 한 바퀴 더 돕니다.",
+    "icon": "assets/icons/relics/zapUpgradeRune.png"
+  },
+  {
+    "id": "FEED_UPGRADE_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "강화: 포식",
+    "description": "[gold]포식[/gold]으로 적을 처치하면, 최대 체력의 [blue]15%[/blue]만큼 최대 체력을 추가로 얻습니다.",
+    "flavor": "한 입 한 입이 죽지 않는 살점이 됩니다.",
+    "icon": "assets/icons/relics/feedUpgradeRune.png"
+  },
+  {
+    "id": "UNLEASH_UPGRADE_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "강화: 풀어놓기",
+    "description": "[gold]풀어놓기[/gold] 또는 [gold]파수꾼[/gold]이 방어되지 않은 피해를 주면, 골골이가 같은 수치만큼 소환합니다.",
+    "flavor": "골골이는 명령도, 상처도 듣습니다.",
+    "icon": "assets/icons/relics/unleashUpgradeRune.png"
+  },
+  {
+    "id": "HOTFIX_UPGRADE_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "강화: 핫픽스",
+    "description": "[gold]핫픽스[/gold]가 영구적인 [gold]밀집[/gold]을 [blue]1[/blue] 제공합니다.",
+    "flavor": "임시 패치가 영구적인 열기를 남깁니다.",
+    "icon": "assets/icons/relics/hotfixUpgradeRune.png"
+  },
+  {
+    "id": "PHANTASMAL_GARDENER_HEX",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "강화: 허깨비 정원사",
+    "description": "매 전투 시작 시, 적이 최대 체력의 [blue]8%[/blue]/[blue]10%[/blue]/[blue]12%[/blue]만큼 [gold]겁쟁이[/gold]를 얻습니다.",
+    "flavor": "정원사는 사라졌는데 정원은 갈수록 사나워진다.",
+    "icon": "assets/icons/relics/phantasmalGardenerHex.png"
+  },
+  {
+    "id": "BODYGUARD_UPGRADE_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "강화: 호위",
+    "description": "[gold]호위[/gold]를 사용한 후, 골골이의 체력을 최대로 회복시킵니다.",
+    "flavor": "충성심에도 붕대가 필요합니다.",
+    "icon": "assets/icons/relics/bodyguardUpgradeRune.png"
+  },
+  {
+    "id": "GIANT_SERPENTS_FANG_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "거대한 독사의 송곳니",
+    "description": "적에게 피해를 줄 때, 적의 방어도도 추가로 [blue]50%[/blue] 감소시킵니다.",
+    "flavor": "방패에도 독이 퍼질 수 있습니다; 그 증상은 균열입니다.",
+    "icon": "assets/icons/relics/giantSerpentsFangRune.png"
+  },
+  {
+    "id": "COURAGE_OF_COLOSSUS_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "거상의 용기",
+    "description": "적에게 해로운 효과를 부여할 때마다 [gold]판금[/gold]을 [blue]3[/blue] 얻습니다. 매 턴 최대 [blue]2[/blue]번 발동합니다.",
+    "flavor": "용기가 충분히 무거우면 대놓고 입고 다닐 수 있습니다.",
+    "icon": "assets/icons/relics/courageOfColossusRune.png"
+  },
+  {
+    "id": "MIRROR_REFLECTION_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "거울 반사",
+    "description": "당신의 전체 덱을 복제합니다. 타격, 수비, 저주 카드는 복제되지 않습니다.",
+    "flavor": "거울은 공평하지만 가장 칙칙한 그림자들은 거부합니다.",
+    "icon": "assets/icons/relics/mirrorReflectionRune.png"
+  },
+  {
+    "id": "GIANT_SLAYER_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "거인 학살자",
+    "description": "당신의 몸집이 작아집니다. 매 턴 카드를 [blue]2[/blue]장 추가로 뽑습니다. 적에게 피해를 줄 때, 적의 최대 체력이 당신보다 [blue]6[/blue] 높을 때마다 피해량이 [blue]1%[/blue] 증가하여 최대 [blue]50%[/blue]까지 증가합니다.",
+    "flavor": "거인은 너무 큽니다, 그래서 약점은 항상 무릎 아래에 있습니다.",
+    "icon": "assets/icons/relics/giantSlayerRune.png"
+  },
+  {
+    "id": "CONSTITUTION_FORGE",
+    "category": "relic",
+    "subcategory": "forge",
+    "title": "건강 모루",
+    "description": "매 전투 시작 시, [gold]힘[/gold]과 [gold]민첩[/gold]을 [blue]1[/blue] 얻습니다.",
+    "flavor": "근육과 움직임은 같은 불꽃 속에서 벼려집니다.",
+    "icon": "assets/icons/relics/silverForge.png"
+  },
+  {
+    "id": "CANT_TOUCH_THIS_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "건드릴 수 없음",
+    "description": "비용이 [blue]2[/blue] 이상인 카드를 사용한 후 [gold]버퍼[/gold]을 [blue]1[/blue] 얻습니다.",
+    "flavor": "손을 뻗어볼 순 있습니다. 결과는 별개의 문제지만요.",
+    "icon": "assets/icons/relics/cantTouchThisRune.png"
+  },
+  {
+    "id": "BLADE_WALTZ_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "검무",
+    "description": "획득 시, 덱에 [gold]검무[/gold]를 [blue]1[/blue]장 추가합니다.",
+    "flavor": "춤이 끝에 다다르면 칼날들이 인사를 건넵니다.",
+    "icon": "assets/icons/relics/bladeWaltzRune.png"
+  },
+  {
+    "id": "SWORDSMANSHIP_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "검술",
+    "description": "[gold]군주의 칼날[/gold]을 사용할 때마다 방어도를 [blue]12[/blue] 얻습니다.",
+    "flavor": "검의 길은 서두를 필요가 없습니다; 방어는 알아서 따라올 것입니다.",
+    "icon": "assets/icons/relics/swordsmanshipRune.png"
+  },
+  {
+    "id": "BLACK_CANDLE_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "검은 양초",
+    "description": "획득 시, 덱에서 모든 저주를 제거합니다. 저주가 덱에 추가될 수 없습니다.",
+    "flavor": "불꽃이 안으로 타들어 갑니다.",
+    "icon": "assets/icons/relics/blackCandleRune.png"
+  },
+  {
+    "id": "DRAW_YOUR_SWORD_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "검을 뽑아라",
+    "description": "더 이상 구체를 영창할 수 없습니다. 구체를 영창할 때마다 대신 [gold]밀집[/gold]을 [blue]1[/blue] 얻습니다. 당신의 [gold]밀집[/gold] 변화는 같은 양의 [gold]힘[/gold]과 [gold]민첩[/gold]으로 전환됩니다.",
+    "flavor": "칼날이 칼집을 떠나는 순간, 돌아갈 길도 베어내야 합니다.",
+    "icon": "assets/icons/relics/drawYourSwordRune.png"
+  },
+  {
+    "id": "SWORD_FLIGHT_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "검의 비행",
+    "description": "매 턴 처음으로 [gold]군주의 칼날[/gold]을 사용할 때, 손이 가득 찰 때까지 카드를 뽑습니다.",
+    "flavor": "검이 먼저 움직이고 카드가 그 뒤를 따릅니다.",
+    "icon": "assets/icons/relics/swordFlightRune.png"
+  },
+  {
+    "id": "SWORD_INTENT_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "검의 의지",
+    "description": "[gold]군주의 칼날[/gold]을 비용 없이 사용할 수 있습니다.",
+    "flavor": "검이 손보다 먼저 도달하고, 의지가 그 뒤를 따릅니다.",
+    "icon": "assets/icons/relics/swordIntentRune.png"
+  },
+  {
+    "id": "SCARED_STIFF_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "겁먹음",
+    "description": "턴 종료 시, 손에 있는 모든 공격 카드를 무작위 적들에게 사용한 후 [gold]소멸[/gold]시킵니다.",
+    "flavor": "두려움이 손을 먼저 움직입니다. 이성은 나중에 따라옵니다.",
+    "icon": "assets/icons/relics/scaredStiffRune.png"
+  },
+  {
+    "id": "ANCIENT_WINE_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "고대의 와인",
+    "description": "스킬 카드를 사용할 때마다 체력을 [blue]1[/blue] 회복합니다.",
+    "flavor": "오래된 와인은 상처를 치료하지 않습니다. 그저 피를 따뜻하게 유지할 뿐입니다.",
+    "icon": "assets/icons/relics/ancientWineRune.png"
+  },
+  {
+    "id": "DEADWOOD_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "고목",
+    "description": "[gold]휘발성[/gold] 카드가 소멸될 때마다 무작위 카드 [blue]{Cards}[/blue]장을 손에 넣습니다.",
+    "flavor": "마른 가지가 타고 나면 재 속에서 다른 것이 자랍니다.",
+    "icon": "assets/icons/relics/deadwoodRune.png"
+  },
+  {
+    "id": "TORMENTOR_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "고문관",
+    "description": "적에게 해로운 효과를 부여할 때마다 [gold]점화[/gold]를 [blue]4[/blue] 부여합니다. 매 턴 최대 [blue]1[/blue]번 발동합니다.",
+    "flavor": "고통은 떠나지만 고문은 남습니다.",
+    "icon": "assets/icons/relics/tormentorRune.png"
+  },
+  {
+    "id": "PORCUPINE_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "고슴도치",
+    "description": "턴 종료 시, 보유한 방어도 [blue]5[/blue]당 임시 [gold]가시[/gold] [blue]1[/blue]을 얻습니다.",
+    "flavor": "만지지 마십시오. 예의를 가시로 써 두었습니다.",
+    "icon": "assets/icons/relics/porcupineRune.png"
+  },
+  {
+    "id": "MISERY_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "고통",
+    "description": "턴 시작 시 [gold]힘[/gold]과 [gold]민첩[/gold]을 [blue]1[/blue]씩 얻고, 체력이 가장 높은 적이 [gold]힘[/gold]과 [gold]민첩[/gold]을 [blue]1[/blue]씩 잃습니다.",
+    "flavor": "고통은 비명을 지르지 않을 때 가장 잘 약화시킵니다.",
+    "icon": "assets/icons/relics/miseryRune.png"
+  },
+  {
+    "id": "GOLD_CARD_CUSTOMER_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "골드 카드 고객",
+    "description": "[gold]배달원[/gold]과 [gold]멤버십 카드[/gold]를 얻습니다.",
+    "flavor": "진정한 할인은 항상 당신의 문 앞을 찾아옵니다.",
+    "icon": "assets/icons/relics/goldCardCustomerRune.png"
+  },
+  {
+    "id": "GOLDREND_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "골드렌드",
+    "description": "적에게 피해를 줄 때마다 카운트를 [blue]10[/blue] 얻습니다. 전투 승리 후 카운트만큼 추가 골드를 얻습니다.",
+    "flavor": "모든 일격은 소리를 내야 합니다. 기왕이면 동전 소리가 좋겠지요.",
+    "icon": "assets/icons/relics/goldrendRune.png"
+  },
+  {
+    "id": "GOLIATH_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "골리앗",
+    "description": "크기가 커지고 최대 체력을 [blue]35%[/blue] 얻으며, 주는 피해, 방어도, 회복량이 [blue]20%[/blue] 증가합니다.",
+    "flavor": "특정 높이에 도달하면 그림자조차 먼저 적을 짓밟을 수 있습니다.",
+    "icon": "assets/icons/relics/goliathRune.png"
+  },
+  {
+    "id": "ATTACK_FORGE",
+    "category": "relic",
+    "subcategory": "forge",
+    "title": "공격 모루",
+    "description": "주는 피해가 [blue]20%[/blue] 증가합니다.",
+    "flavor": "칼날이 길어진 것이 아니라, 단지 어디를 베어야 할지 알게 된 것입니다.",
+    "icon": "assets/icons/relics/silverForge.png"
+  },
+  {
+    "id": "SILVER_ATTACK_FORGE",
+    "category": "relic",
+    "subcategory": "forge",
+    "title": "공격 모루",
+    "description": "주는 피해가 [blue]5%[/blue] 증가합니다.",
+    "flavor": "칼날이 길어진 것이 아니라, 단지 어디를 베어야 할지 알게 된 것입니다.",
+    "icon": "assets/icons/relics/silverForge.png"
+  },
+  {
+    "id": "GOLD_ATTACK_FORGE",
+    "category": "relic",
+    "subcategory": "forge",
+    "title": "공격 모루",
+    "description": "주는 피해가 [blue]10%[/blue] 증가합니다.",
+    "flavor": "칼날이 길어진 것이 아니라, 단지 어디를 베어야 할지 알게 된 것입니다.",
+    "icon": "assets/icons/relics/goldForge.png"
+  },
+  {
+    "id": "ATTACK_DEFENSE_UNITY_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "공방일체",
+    "description": "획득 시, 덱에 있는 기본 [gold]타격[/gold]과 기본 [gold]수비[/gold]를 짝지어 줍니다. 각 쌍마다 [blue]1[/blue]장의 [gold]타격[/gold]과 [blue]1[/blue]장의 [gold]수비[/gold]를 제거하고, [gold]철의 파동[/gold]을 [blue]1[/blue]장 추가합니다.",
+    "flavor": "전진과 방어가 같은 베기가 됩니다.",
+    "icon": "assets/icons/relics/attackDefenseUnityRune.png"
+  },
+  {
+    "id": "VOID_FORGE",
+    "category": "relic",
+    "subcategory": "forge",
+    "title": "공허 모루",
+    "description": "매 전투 시작 시, [gold]공허의 형상[/gold]을 [blue]1[/blue] 얻습니다.",
+    "flavor": "용광로의 심장을 비워 내면 비용을 삼키는 메아리가 남습니다.",
+    "icon": "assets/icons/relics/silverForge.png"
+  },
+  {
+    "id": "CLOWN_COLLEGE_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "광대 대학",
+    "description": "획득 시, 덱에 [gold]마술 트릭[/gold]을 [blue]3[/blue]장 추가합니다.",
+    "flavor": "시간표는 웃음으로 가득하고, 모든 과제는 함정입니다.",
+    "icon": "assets/icons/relics/clownCollegeRune.png"
+  },
+  {
+    "id": "ZEALOT_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "광신자",
+    "description": "보유한 유물 [blue]5[/blue]개당 매 전투 시작 시, 카드를 [blue]1[/blue]장 추가로 뽑습니다.",
+    "flavor": "유물을 더 많이 들고 있을수록 오프닝의 고동은 더 커집니다.",
+    "icon": "assets/icons/relics/zealotRune.png"
+  },
+  {
+    "id": "BERSERK_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "광폭화",
+    "description": "매 전투 시작 시, [gold]취약[/gold]을 [blue]3[/blue] 얻습니다. 매 턴 [blue]1[/blue]의 추가 에너지를 얻습니다.",
+    "flavor": "시작부터 불을 지르십시오.",
+    "icon": "assets/icons/relics/berserkRune.png"
+  },
+  {
+    "id": "RADIANCE_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "광휘",
+    "description": "매 턴 처음으로 적에게 피해를 줄 때, 적의 최대 체력의 [blue]5%[/blue]만큼 추가 피해를 주고 체력을 [blue]2[/blue] 회복합니다.",
+    "flavor": "빛이 내려앉으면, 상처와 칼날이 함께 빛납니다.",
+    "icon": "assets/icons/relics/radianceRune.png"
+  },
+  {
+    "id": "FIRST_AID_KIT_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "구급상자",
+    "description": "받는 회복량과 얻는 방어도가 [blue]25%[/blue] 증가합니다.",
+    "flavor": "붕대는 기적을 이해하지 못합니다. 오직 속도만 이해할 뿐입니다.",
+    "icon": "assets/icons/relics/firstAidKitRune.png"
+  },
+  {
+    "id": "NINE_DRAGON_POWER_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "구룡의 힘",
+    "description": "포션을 사용한 후 [blue]1[/blue] 중첩을 얻습니다. 각 중첩은 매 전투 시작 시, [blue]1[/blue] [gold]재생[/gold]을 제공하며 최대 체력, 크기, 회복량을 [blue]3%[/blue] 증가시킵니다.",
+    "flavor": "병을 열 때마다 또 다른 용이 깨어납니다.",
+    "icon": "assets/icons/relics/nineDragonPowerRune.png"
+  },
+  {
+    "id": "ORB_SYMBIOSIS_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "구체 공생",
+    "description": "구체를 [blue]1[/blue]개 영창할 때마다, 해당 구체의 복사본을 [blue]1[/blue]개 더 영창합니다.",
+    "flavor": "하나의 회로에 불이 켜지면 다른 회로도 숨 쉬는 법을 배웁니다.",
+    "icon": "assets/icons/relics/orbSymbiosisRune.png"
+  },
+  {
+    "id": "SILVER_ORB_FORGE",
+    "category": "relic",
+    "subcategory": "forge",
+    "title": "구체 모루",
+    "description": "매 전투 시작 시, 무작위 구체를 [blue]2[/blue]개 영창합니다.",
+    "flavor": "용광로의 코어가 한 번 돌면, 스스로의 의지를 가진 해답을 뱉어냅니다.",
+    "icon": "assets/icons/relics/silverForge.png"
+  },
+  {
+    "id": "ORB_SLOT_FORGE",
+    "category": "relic",
+    "subcategory": "forge",
+    "title": "구체 슬롯 모루",
+    "description": "매 전투 시작 시, 추가 구체 슬롯을 [blue]2[/blue] 얻습니다.",
+    "flavor": "열린 슬롯은 언젠가 번개를 찾아낼 것입니다.",
+    "icon": "assets/icons/relics/silverForge.png"
+  },
+  {
+    "id": "MONARCHS_GAZE_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "군주의 시선",
+    "description": "적을 공격할 때마다 해당 적은 일시적 [gold]힘[/gold]을 [blue]1[/blue] 잃습니다.",
+    "flavor": "군주는 소리 칠 필요가 없습니다; 그저 시선만으로도 충분히 무겁습니다.",
+    "icon": "assets/icons/relics/monarchsGazeRune.png"
+  },
+  {
+    "id": "SOLID_TIME_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "굳어진 시간",
+    "description": "덱에서 파워 카드를 사용할 때, 그 카드를 덱에서 제거합니다. 매 전투 시작 시, 제거된 모든 카드를 발동시킵니다.",
+    "flavor": "스폰서 아이템: 시간이 굳어지고, 옛 주문들이 매 전투마다 메아리칩니다.",
+    "icon": "assets/icons/relics/solidTimeRune.png"
+  },
+  {
+    "id": "ULTIMATE_UNSTOPPABLE_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "궁극의 멈출 수 없음",
+    "description": "비용이 [blue]2[/blue] 이상인 카드를 사용한 후 [gold]인공물[/gold]을 [blue]2[/blue] 얻습니다.",
+    "flavor": "큰 동작이 무대에 오르기 전에 대항 수단은 옆으로 비켜서야 합니다.",
+    "icon": "assets/icons/relics/ultimateUnstoppableRune.png"
+  },
+  {
+    "id": "ULTIMATE_REFRESH_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "궁극의 새로고침",
+    "description": "비용이 [blue]2[/blue] 이상인 카드를 사용할 때마다 그 카드가 한 번 더 사용됩니다.",
+    "flavor": "처음부터 다시 시작하는 건 너무 느립니다. 하나 더 있는 게 딱 좋습니다.",
+    "icon": "assets/icons/relics/ultimateRefreshRune.png"
+  },
+  {
+    "id": "EXTREME_SPEED_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "극한의 속도",
+    "description": "획득 시, 덱의 변형 가능한 카드를 원하는 만큼 골라 [gold]아드레날린[/gold]으로 변형합니다. 변형한 카드마다 최대 HP를 [blue]{MaxHpLoss}[/blue] 잃습니다.",
+    "flavor": "의지를 몸이 따라잡지 못할 만큼 빠르게.",
+    "icon": "assets/icons/relics/extremeSpeedRune.png"
+  },
+  {
+    "id": "ADAMANT_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "금강불괴",
+    "description": "적에게 해로운 효과를 부여할 때마다 방어도를 [blue]3[/blue] 얻습니다. 매 턴 최대 [blue]5[/blue]번 발동합니다.",
+    "flavor": "악의가 돌에 부딪히면 오직 스스로 울릴 뿐입니다.",
+    "icon": "assets/icons/relics/adamantRune.png"
+  },
+  {
+    "id": "FORBIDDEN_GRIMOIRE_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "금단의 마도서",
+    "description": "전투 종료 시, 덱에서 카드를 [blue]1[/blue]장 선택해 제거합니다.",
+    "flavor": "페이지가 스스로 닫힐 때, 덱에는 항상 무언가가 빠져있습니다.",
+    "icon": "assets/icons/relics/forbiddenGrimoireRune.png"
+  },
+  {
+    "id": "BACK_TO_BASICS_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "기본으로 돌아가기",
+    "description": "비용이 [blue]3[/blue] 이상인 카드를 사용할 수 없습니다. 받는 회복량, 얻는 방어도, 주는 피해가 [blue]40%[/blue] 증가합니다.",
+    "flavor": "기술은 당신을 잊을지 몰라도 기본기는 그렇지 않습니다.",
+    "icon": "assets/icons/relics/backToBasicsRune.png"
+  },
+  {
+    "id": "DONATION_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "기부",
+    "description": "[blue]1000[/blue] 골드를 얻습니다.",
+    "flavor": "어디에 쓰는 건지 묻지 마십시오. 영수증은 알아서 나타날 것입니다.",
+    "icon": "assets/icons/relics/donationRune.png"
+  },
+  {
+    "id": "MOMENTUM_FORGE",
+    "category": "relic",
+    "subcategory": "forge",
+    "title": "기세 모루",
+    "description": "획득 시, 덱에서 카드 [blue]1[/blue]장을 선택하여 [gold]기세[/gold] [blue]3[/blue]을 인챈트합니다.",
+    "flavor": "한번 가속한 카드는 쉽게 멈추지 않습니다.",
+    "icon": "assets/icons/relics/silverForge.png"
+  },
+  {
+    "id": "ENLIGHTENMENT_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "깨달음",
+    "description": "에너지 비용이 [blue]1[/blue]보다 큰 모든 카드의 에너지 비용이 [blue]1[/blue]로 감소합니다.",
+    "flavor": "복잡한 대가가 갑자기 단순해집니다.",
+    "icon": "assets/icons/relics/enlightenmentRune.png"
+  },
+  {
+    "id": "ENDLESS_RECOVERY_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "끝없는 회복",
+    "description": "첨탑을 한 층 오를 때마다 최대 체력의 [blue]10%[/blue]를 회복합니다.",
+    "flavor": "여정은 친절하지 않습니다. 그저 당신이 쓰러지지 않게 해줄 뿐입니다.",
+    "icon": "assets/icons/relics/endlessRecoveryRune.png"
+  },
+  {
+    "id": "BAD_TASTE_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "나쁜 취향",
+    "description": "적에게 해로운 효과를 부여할 때마다 체력을 [blue]1[/blue] 회복합니다. 매 턴 최대 [blue]3[/blue]번 발동합니다.",
+    "flavor": "재활용할 수 있는 고통은 쓰레기가 아닙니다.",
+    "icon": "assets/icons/relics/badTasteRune.png"
+  },
+  {
+    "id": "FAN_THE_HAMMER_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "난사",
+    "description": "매 턴 처음으로 사용하는 공격 카드가 [blue]3[/blue]번 반복되지만, 피해량이 [blue]35%[/blue]로 줄어듭니다.",
+    "flavor": "방아쇠는 한 번 당겨졌지만, 메아리가 순응할 필요는 없습니다.",
+    "icon": "assets/icons/relics/fanTheHammerRune.png"
+  },
+  {
+    "id": "NIMBLE_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "날렵함",
+    "description": "매 턴 카드를 [blue]1[/blue]장 추가로 뽑습니다.",
+    "flavor": "카드 한 장이 곧 하나의 활로가 되는 법입니다.",
+    "icon": "assets/icons/relics/nimbleRune.png"
+  },
+  {
+    "id": "MAKE_IT_MINE_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "내 것으로 만들기",
+    "description": "전투 승리 후 [blue]1[/blue] 중첩을 얻습니다. 매 전투 시작 시, 각 중첩마다 소환 [blue]4[/blue].",
+    "flavor": "적이 남긴 것은 결국 당신의 이름을 배우게 됩니다.",
+    "icon": "assets/icons/relics/makeItMineRune.png"
+  },
+  {
+    "id": "DIE_FOR_YOU_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "널 위해 죽다",
+    "description": "턴 시작 시 소환 [blue]5[/blue]. 매 턴 골골이가 처음 죽을 때, 골골이의 최대 체력을 기록합니다. 다음 턴 시작 시 손에 [gold]골골이의 소원[/gold]을 [blue]1[/blue]장 추가합니다.",
+    "flavor": "마지막 방어는 역습이 될 수도 있습니다.",
+    "icon": "assets/icons/relics/dieForYouRune.png"
+  },
+  {
+    "id": "NECROBINDER_FORGE",
+    "category": "relic",
+    "subcategory": "forge",
+    "title": "네크로바인더 모루",
+    "description": "매 전투 시작 시, 소환 [blue]6[/blue].",
+    "flavor": "용광로에서 메아리치는 것은 망치 소리가 아니라 발소리입니다.",
+    "icon": "assets/icons/relics/silverForge.png"
+  },
+  {
+    "id": "NONUPEIPE_GENEROSITY_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "노누파이페의 관대함",
+    "description": "획득 시, 무작위 노누파이페 고대 유물을 [blue]1[/blue]개 얻습니다.",
+    "flavor": "고대의 관대함은 아무것도 설명하지 않습니다.",
+    "icon": "assets/icons/relics/nonupeipeGenerosityRune.png"
+  },
+  {
+    "id": "STATS_ON_STATS_ON_STATS_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "능력치 더하기 능력치 더하기 능력치!",
+    "description": "무작위 능력치 모루 [blue]6[/blue]개를 얻습니다.",
+    "flavor": "마지막 망치질이 끝나면, 그 숫자들은 더 이상 숫자처럼 보이지 않습니다.",
+    "icon": "assets/icons/relics/statsOnStatsOnStatsRune.png"
+  },
+  {
+    "id": "STATS_ON_STATS_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "능력치 더하기 능력치!",
+    "description": "무작위 능력치 모루 [blue]4[/blue]개를 얻습니다.",
+    "flavor": "망치 자국 위에 또 다른 망치 자국이 겹쳐집니다.",
+    "icon": "assets/icons/relics/statsOnStatsRune.png"
+  },
+  {
+    "id": "STATS_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "능력치!",
+    "description": "무작위 능력치 모루 [blue]2[/blue]개를 얻습니다.",
+    "flavor": "먼저 숫자를 뼈에 때려 박으십시오.",
+    "icon": "assets/icons/relics/statsRune.png"
+  },
+  {
+    "id": "NEOWS_GRUDGE_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "니오우의 원한",
+    "description": "턴 시작 시 [gold]휘발성[/gold]을 가진 [gold]니오우의 격분[/gold]을 [blue]1[/blue]장 손으로 가져옵니다.",
+    "flavor": "선물은 희미해지지만 원한은 그렇지 않습니다.",
+    "icon": "assets/icons/relics/neowsGrudgeRune.png"
+  },
+  {
+    "id": "LIGHT_EM_UP_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "다 불태워주지",
+    "description": "공격 카드를 4장 사용할 때마다 4번째 공격 카드가 한 번 더 사용됩니다.",
+    "flavor": "네 번째 스윙에서, 불꽃이 당신을 대신해 한 번 더 말합니다.",
+    "icon": "assets/icons/relics/lightEmUpRune.png"
+  },
+  {
+    "id": "MORE_THE_MERRIER_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "다다익선",
+    "description": "보유한 유물 하나당 주는 피해, 방어도, 회복량이 [blue]1.5%[/blue] 증가합니다.",
+    "flavor": "가방이 무거울수록 발걸음 소리도 커집니다.",
+    "icon": "assets/icons/relics/moreTheMerrierRune.png"
+  },
+  {
+    "id": "REFORGED_HELMET_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "다시 벼려낸 투구",
+    "description": "전투 중 얻는 [gold]힘[/gold]이 2배가 됩니다.",
+    "flavor": "낡은 투구가 다시 벼려지고, 모든 포효가 메아리를 얻습니다.",
+    "icon": "assets/icons/relics/reforgedHelmetRune.png"
+  },
+  {
+    "id": "HARD_BONES_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "단단한 뼈",
+    "description": "골골이의 공격이 [blue]8[/blue]의 추가 피해를 줍니다.",
+    "flavor": "뼈는 고통을 기억하고, 어떻게 반격해야 할지도 기억합니다.",
+    "icon": "assets/icons/relics/hardBonesRune.png"
+  },
+  {
+    "id": "STURDY_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "단단함",
+    "description": "매 턴 시작 시, 최대 체력의 [blue]2%[/blue]를 회복합니다. 체력이 [blue]50%[/blue] 미만이라면, 대신 최대 체력의 [blue]4%[/blue]를 회복합니다.",
+    "flavor": "균열은 끝이 아닙니다. 여전히 버티고 있다는 증거일 뿐입니다.",
+    "icon": "assets/icons/relics/sturdyRune.png"
+  },
+  {
+    "id": "PROTEIN_SHAKE_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "단백질 쉐이크",
+    "description": "최대 체력 [blue]2[/blue]당 회복량과 방어도가 [blue]1%[/blue] 증가합니다.",
+    "flavor": "가루가 넘어가고, 벽이 세워집니다.",
+    "icon": "assets/icons/relics/proteinShakeRune.png"
+  },
+  {
+    "id": "FORGING_FORGE",
+    "category": "relic",
+    "subcategory": "forge",
+    "title": "단조 모루",
+    "description": "매 전투 시작 시, 단조 [blue]5[/blue].",
+    "flavor": "왕의 검이 들리기 전에 불꽃이 먼저 날을 세웁니다.",
+    "icon": "assets/icons/relics/silverForge.png"
+  },
+  {
+    "id": "CRACK_THE_EGG_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "달걀 깨기",
+    "description": "턴 시작 시, 방어도를 잃을 때 모든 적에게 [blue]9[/blue]의 피해를 줍니다.",
+    "flavor": "누군가는 껍질이 완전히 깨지는 소리를 들어야 합니다.",
+    "icon": "assets/icons/relics/crackTheEggRune.png"
+  },
+  {
+    "id": "COMPENSATION_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "대가",
+    "description": "막히지 않은 피해를 받을 때, 그 피해를 같은 양의 [gold]종말[/gold]로 전환합니다.",
+    "flavor": "고통은 사라지지 않고, 이름만 바꿨습니다.",
+    "icon": "assets/icons/relics/compensationRune.png"
+  },
+  {
+    "id": "ARCHMAGE_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "대마법사",
+    "description": "스킬 카드를 낼 때마다 [blue]33%[/blue] 확률로 손의 무작위 카드 [blue]1[/blue]장을 이번 턴 동안 비용 없이 사용할 수 있습니다.",
+    "flavor": "진정한 대마법사는 비용을 직접 내지 않는다.",
+    "icon": "assets/icons/relics/archmageRune.png"
+  },
+  {
+    "id": "EARTH_AWAKENS_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "대지의 각성",
+    "description": "턴 시작 시, [gold]굴러가는 바위[/gold]를 [blue]5[/blue] 얻습니다.",
+    "flavor": "침묵하던 기반암이 잠결에 몸을 뒤척입니다.",
+    "icon": "assets/icons/relics/earthAwakensRune.png"
+  },
+  {
+    "id": "MOUNTAIN_SOUL_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "대지의 영혼",
+    "description": "지난 턴에 막히지 않은 공격 피해를 받지 않았다면, 이번 턴 시작 시, 최대 체력의 [blue]10%[/blue]만큼 방어도를 얻습니다.",
+    "flavor": "산은 결코 피하지 않습니다. 당신이 먼저 부서지기를 기다릴 뿐입니다.",
+    "icon": "assets/icons/relics/mountainSoulRune.png"
+  },
+  {
+    "id": "MORE_UNIVERSAL_SCOPE_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "더 만능인 조준경",
+    "description": "공격 카드를 사용한 후, [blue]30%[/blue] 확률로 그 카드를 손으로 되돌리고 비용을 돌려받습니다.",
+    "flavor": "두 번째 보정 뒤에는 빗나감의 절반이 사라집니다.",
+    "icon": "assets/icons/relics/moreUniversalScopeRune.png"
+  },
+  {
+    "id": "DUFFS_VINTAGE_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "더프의 빈티지",
+    "description": "더 이상 자신의 턴이 끝날 때 카드를 버리지 않습니다. 턴 종료 시, 손에 남아있는 카드는 사용될 때까지 비용이 [blue]1[/blue] 감소합니다.",
+    "flavor": "오래 묵힐수록 더 싸게 따라집니다.",
+    "icon": "assets/icons/relics/duffsVintageRune.png"
+  },
+  {
+    "id": "TAUNT_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "도발",
+    "description": "[gold]종말[/gold]을 부여할 때마다 카드를 [blue]1[/blue]장 뽑습니다.",
+    "flavor": "징조가 어두울수록 더 큰 소리로 외쳐야 합니다.",
+    "icon": "assets/icons/relics/tauntRune.png"
+  },
+  {
+    "id": "SERPENTS_FANG_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "독사의 송곳니",
+    "description": "적에게 방어되지 않은 피해를 줄 때, 추가로 [gold]중독[/gold] [blue]4[/blue]를 부여합니다.",
+    "flavor": "맹독이 길을 열고, 짧은 칼날이 다음을 뭅니다.",
+    "icon": "assets/icons/relics/serpentsFangRune.png"
+  },
+  {
+    "id": "VENOM_FORGE",
+    "category": "relic",
+    "subcategory": "forge",
+    "title": "독액 모루",
+    "description": "매 전투 시작 시, [gold]독 바르기[/gold]를 [blue]1[/blue] 얻습니다.",
+    "flavor": "용광로가 식은 뒤에도 칼날에서는 아직 독이 떨어집니다.",
+    "icon": "assets/icons/relics/silverForge.png"
+  },
+  {
+    "id": "PIGGY_BANK_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "돼지저금통",
+    "description": "[blue]200[/blue] 골드를 얻습니다. 막히지 않은 공격 피해를 입을 때 중첩이 [blue]20[/blue]씩 증가합니다. 전투 승리 후 중첩만큼 추가 골드를 얻습니다.",
+    "flavor": "더 세게 울릴수록 더 많이 지불합니다.",
+    "icon": "assets/icons/relics/piggyBankRune.png"
+  },
+  {
+    "id": "TWICE_THRICE_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "두 번 세 번",
+    "description": "세 번째로 사용하는 공격 카드가 한 번 더 사용됩니다.",
+    "flavor": "첫 번째 타격은 탐색하고, 두 번째는 확인하며, 세 번째가 결정짓습니다.",
+    "icon": "assets/icons/relics/twiceThriceRune.png"
+  },
+  {
+    "id": "DRAW_FORGE",
+    "category": "relic",
+    "subcategory": "forge",
+    "title": "드로우 모루",
+    "description": "매 턴 시작 시, 카드를 [blue]1[/blue]장 추가로 뽑습니다.",
+    "flavor": "운명의 서랍을 하나 더 엽니다.",
+    "icon": "assets/icons/relics/silverForge.png"
+  },
+  {
+    "id": "SEND_THEM_IN_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "들여보내!",
+    "description": "턴 시작 시 손에 [gold]하수인 타격[/gold], [gold]하수인 투하[/gold], [gold]하수인 희생[/gold] 중 무작위로 [blue]1[/blue]장을 추가합니다.",
+    "flavor": "명령이 떨어지면 누군가는 항상 가장 먼저 빛을 향해 돌진합니다.",
+    "icon": "assets/icons/relics/sendThemInRune.png"
+  },
+  {
+    "id": "LOOP_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "루프",
+    "description": "매 턴 [blue]1[/blue]의 추가 에너지를 얻습니다.",
+    "flavor": "오늘을 어제에 맞추어 조율하면 많은 기도를 생략할 수 있습니다.",
+    "icon": "assets/icons/relics/loopRune.png"
+  },
+  {
+    "id": "REPULSOR_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "리펄서",
+    "description": "전투 중 막히지 않은 공격 피해를 처음 받을 때, 다음 턴 시작 시, [gold]미끈거림[/gold]을 [blue]2[/blue] 얻습니다.",
+    "flavor": "구석엔 퇴로가 없습니다. 아직 발사되지 않은 역장만이 있을 뿐입니다.",
+    "icon": "assets/icons/relics/repulsorRune.png"
+  },
+  {
+    "id": "MARKOV_BABBLE_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "마르코프 헛소리",
+    "description": "턴 시작 시, 빈 구체 슬롯을 무작위 구체로 채웁니다.",
+    "flavor": "확률에는 문장 부호가 없습니다. 계속 말할 뿐입니다.",
+    "icon": "assets/icons/relics/markovBabbleRune.png"
+  },
+  {
+    "id": "HEXTECH_DRAGON_SOUL_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "마법공학 드래곤의 영혼",
+    "description": "획득 시, 덱에 [gold]마법공학 드래곤의 영혼[/gold]을 [blue]1[/blue]장 추가합니다.",
+    "flavor": "아크 방전은 이미 다음 턴을 계획했습니다.",
+    "icon": "assets/icons/relics/hextechDragonSoulRune.png"
+  },
+  {
+    "id": "WIZARDLY_THINKING_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "마법사적 사고",
+    "description": "매 전투 시작 시, 현재 막(Act) 번호와 같은 수치의 [gold]밀집[/gold]을 얻습니다.",
+    "flavor": "너무 빨리 스윙하지 마십시오. 먼저 마음이 빛나게 하십시오.",
+    "icon": "assets/icons/relics/wizardlyThinkingRune.png"
+  },
+  {
+    "id": "MYRIAD_SWORDS_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "만검귀종",
+    "description": "당신의 [gold]군주의 칼날[/gold]은 사용 후 [gold]소멸[/gold]됩니다. 턴 종료 시, 소멸 더미에 있는 모든 [gold]군주의 칼날[/gold]을 사용합니다.",
+    "flavor": "검총의 검은 잠들지 않는다. 부름을 기다릴 뿐.",
+    "icon": "assets/icons/relics/myriadSwordsRune.png"
+  },
+  {
+    "id": "UNIVERSAL_SCOPE_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "만능 조준경",
+    "description": "공격 카드를 사용한 후, [blue]15%[/blue] 확률로 그 카드를 손으로 되돌리고 비용을 돌려받습니다.",
+    "flavor": "충분히 정확하면 공격도 덜 힘듭니다.",
+    "icon": "assets/icons/relics/universalScopeRune.png"
+  },
+  {
+    "id": "WRAITH_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "망령",
+    "description": "턴 시작 시 손에 [gold]영혼[/gold]을 [blue]1[/blue]장 추가합니다. 소멸된 카드 더미에 있는 [gold]영혼[/gold] 한 장당 주는 피해가 [blue]3%[/blue] 증가합니다.",
+    "flavor": "원한이 모일수록 칼날은 더욱 차가워집니다.",
+    "icon": "assets/icons/relics/wraithRune.png"
+  },
+  {
+    "id": "SELL_OFF_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "매각",
+    "description": "[gold]교활함[/gold]이 없는 카드를 버릴 때, 그 카드를 사용하고 [gold]소멸[/gold]시킵니다.",
+    "flavor": "손을 놓기 전에 마지막 가치를 쥐어짜냅니다.",
+    "icon": "assets/icons/relics/sellOffRune.png"
+  },
+  {
+    "id": "MAD_SCIENTIST_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "매드 사이언티스트",
+    "description": "구체 슬롯의 상한선이 사라집니다. 구체를 [blue]1[/blue]개 영창할 때마다 구체 슬롯을 [blue]1[/blue]개 더 얻습니다.",
+    "flavor": "먼저 선부터 연결하십시오. 윤리 위원회는 나중에 도착해도 됩니다.",
+    "icon": "assets/icons/relics/madScientistRune.png"
+  },
+  {
+    "id": "GLOOMY_CLOUDS_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "먹구름",
+    "description": "턴 시작 시, 모든 [gold]암흑[/gold] 구체의 지속 효과를 발동시킵니다.",
+    "flavor": "구름은 오직 더 무거워질 뿐입니다.",
+    "icon": "assets/icons/relics/gloomyCloudsRune.png"
+  },
+  {
+    "id": "INKSHADOW_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "먹그림자",
+    "description": "[gold]단검[/gold]을 얻을 때마다 [gold]잉크투성이[/gold]를 인챈트합니다. [gold]커다란 단검[/gold]으로 생성된 [gold]군주의 칼날[/gold]에도 적용될 수 있습니다.",
+    "flavor": "칼이 칼집을 떠나기 전에 그림자가 먼저 내려앉습니다.",
+    "icon": "assets/icons/relics/inkshadowRune.png"
+  },
+  {
+    "id": "ECHO_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "메아리",
+    "description": "카드를 생성할 때마다 [gold]휘발성[/gold]이 있는 복사본을 1장 더 생성합니다. 그 카드는 이번 턴에 비용 없이 사용할 수 있습니다.",
+    "flavor": "왕명이 닿기 전에 메아리가 먼저 도착합니다.",
+    "icon": "assets/icons/relics/echoRune.png"
+  },
+  {
+    "id": "OMNI_DRAGON_SOUL_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "모든 드래곤의 영혼",
+    "description": "매 전투 시작 시, 강화된 서로 다른 [gold]드래곤의 영혼 카드[/gold]를 [blue]3[/blue]장 손으로 가져옵니다.",
+    "flavor": "여섯 개의 메아리가 동시에 포효합니다; 남은 것은 당신의 선택뿐입니다.",
+    "icon": "assets/icons/relics/omniDragonSoulRune.png"
+  },
+  {
+    "id": "HOURGLASS_FORGE",
+    "category": "relic",
+    "subcategory": "forge",
+    "title": "모래시계 모루",
+    "description": "턴 시작 시, 모든 적에게 [blue]4[/blue] 피해를 줍니다.",
+    "flavor": "떨어지는 모래알마다 망치처럼 울립니다.",
+    "icon": "assets/icons/relics/silverForge.png"
+  },
+  {
+    "id": "FLAWLESS_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "무결점",
+    "description": "무색 카드를 [blue]1[/blue]장 사용할 때마다 방어도를 [blue]3[/blue] 얻습니다.",
+    "flavor": "무색의 섬광에는 이름 붙일 결점조차 남지 않습니다.",
+    "icon": "assets/icons/relics/flawlessRune.png"
+  },
+  {
+    "id": "DULL_BLADE_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "무딘 칼날",
+    "description": "턴 시작 시, HP 상실 효과를 [blue]1[/blue]번 발동한 뒤, 이 방식으로 잃은 HP를 회복합니다.",
+    "flavor": "날은 무뎌도 고통은 무뎌지지 않습니다.",
+    "icon": "assets/icons/relics/dullBladeRune.png"
+  },
+  {
+    "id": "BIG_STRENGTH_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "무식한 힘",
+    "description": "주는 피해가 [blue]20%[/blue] 증가합니다.",
+    "flavor": "어떤 문제들은 정말로 힘으로 해결할 수 있습니다.",
+    "icon": "assets/icons/relics/bigStrengthRune.png"
+  },
+  {
+    "id": "SOMETHING_FROM_NOTHING_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "무에서 유를",
+    "description": "[gold]휘발성[/gold] 카드를 사용할 때마다 카드를 [blue]1[/blue]장 뽑습니다.",
+    "flavor": "빈 공간은 비어있는 것이 아닙니다. 아직 부름을 받지 못했을 뿐입니다.",
+    "icon": "assets/icons/relics/somethingFromNothingRune.png"
+  },
+  {
+    "id": "RANDOM_FORGE_SHOP_RELIC",
+    "category": "relic",
+    "subcategory": "forge",
+    "title": "무작위 능력치 모루",
+    "description": "무작위 능력치 모루의 비용은 [blue]{Price}[/blue] 골드입니다. 구매 후 즉시 재입고됩니다.",
+    "flavor": "용광로의 입구는 열려 있으며, 다음 동전이 떨어지기만을 기다리고 있습니다.",
+    "icon": "assets/icons/relics/silverForge.png"
+  },
+  {
+    "id": "INFINITE_LOOP_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "무한 반복",
+    "description": "매 턴 [blue]1[/blue]의 추가 에너지를 얻습니다. 전투에서 승리하면 [blue]1[/blue] 중첩을 얻습니다. [blue]4[/blue] 중첩마다 매 턴 [blue]1[/blue]의 에너지를 추가로 얻습니다.",
+    "flavor": "충분히 오래 반복하면 기적조차도 절차적인 것처럼 보이기 시작합니다.",
+    "icon": "assets/icons/relics/infiniteLoopRune.png"
+  },
+  {
+    "id": "SLIPPERY_FORGE",
+    "category": "relic",
+    "subcategory": "forge",
+    "title": "미끈거림 모루",
+    "description": "매 전투 시작 시, [gold]미끈거림[/gold]을 [blue]2[/blue] 얻습니다.",
+    "flavor": "위험에 움켜쥘 여지를 주지 마십시오.",
+    "icon": "assets/icons/relics/silverForge.png"
+  },
+  {
+    "id": "MIKAELS_BLESSING_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "미카엘의 축복",
+    "description": "획득 시, 덱에 [gold]미카엘의 축복[/gold]을 [blue]{Cards}[/blue]장 추가합니다.",
+    "flavor": "진정한 축복은 쓴맛을 뿌리째 씻어냅니다.",
+    "icon": "assets/icons/relics/mikaelsBlessingRune.png"
+  },
+  {
+    "id": "HOMEGUARD_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "민병대",
+    "description": "지난 턴에 막히지 않은 공격 피해를 받지 않았다면, 이번 턴 시작 시, 카드를 [blue]2[/blue]장 추가로 뽑습니다.",
+    "flavor": "발밑의 땅을 지키면, 눈앞의 길이 스스로 열립니다.",
+    "icon": "assets/icons/relics/homeguardRune.png"
+  },
+  {
+    "id": "DEXTERITY_FORGE",
+    "category": "relic",
+    "subcategory": "forge",
+    "title": "민첩 모루",
+    "description": "매 전투 시작 시, [gold]민첩[/gold]을 [blue]1[/blue] 얻습니다.",
+    "flavor": "망설임을 얇게 두드려 펴면 움직임이 자연스레 나옵니다.",
+    "icon": "assets/icons/relics/silverForge.png"
+  },
+  {
+    "id": "DEXTERITY_STRENGTH_TO_FOCUS_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "민첩과 힘을 밀집으로",
+    "description": "매 전투 시작 시, [gold]밀집[/gold]을 [blue]1[/blue] 얻습니다. 당신의 [gold]힘[/gold]과 [gold]민첩[/gold] 변화량이 동일한 수치의 [gold]밀집[/gold]으로 변환됩니다.",
+    "flavor": "근육과 움직임이 고요해질 때 비로소 코어가 말하기 시작합니다.",
+    "icon": "assets/icons/relics/dexterityStrengthToFocusRune.png"
+  },
+  {
+    "id": "DEXTERITY_TO_STRENGTH_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "민첩을 힘으로",
+    "description": "매 전투 시작 시, [gold]힘[/gold]을 [blue]1[/blue] 얻습니다. 당신의 [gold]민첩[/gold] 변화량이 동일한 수치의 [gold]힘[/gold]으로 변환됩니다.",
+    "flavor": "발놀림이 가벼울수록 주먹은 더 무겁게 꽂힙니다.",
+    "icon": "assets/icons/relics/dexterityToStrengthRune.png"
+  },
+  {
+    "id": "FOCUS_FORGE",
+    "category": "relic",
+    "subcategory": "forge",
+    "title": "밀집 모루",
+    "description": "매 전투 시작 시, [gold]밀집[/gold]을 [blue]2[/blue] 얻습니다.",
+    "flavor": "소음이 녹아내린 후, 코어의 방향은 오직 하나뿐입니다.",
+    "icon": "assets/icons/relics/silverForge.png"
+  },
+  {
+    "id": "GOLD_FOCUS_FORGE",
+    "category": "relic",
+    "subcategory": "forge",
+    "title": "밀집 모루",
+    "description": "매 전투 시작 시, [gold]밀집[/gold]을 [blue]1[/blue] 얻습니다.",
+    "flavor": "두 줄기의 소음이 망치 소리 한 번에 평평해집니다.",
+    "icon": "assets/icons/relics/goldForge.png"
+  },
+  {
+    "id": "OCEAN_DRAGON_SOUL_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "바다 드래곤의 영혼",
+    "description": "획득 시, 덱에 [gold]바다 드래곤의 영혼[/gold]을 [blue]1[/blue]장 추가합니다.",
+    "flavor": "조류가 물러간 뒤에도 갑판 위에는 심장박동이 남아있습니다.",
+    "icon": "assets/icons/relics/oceanDragonSoulRune.png"
+  },
+  {
+    "id": "HAND_OF_BARON_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "바론의 손길",
+    "description": "주는 피해가 [blue]20%[/blue] 증가합니다. 매 턴 시작 시, 모든 적에게 [gold]압축[/gold]을 [blue]2[/blue] 부여합니다.",
+    "flavor": "선물이 강림할 때, 무릎은 입보다 정직합니다.",
+    "icon": "assets/icons/relics/handOfBaronRune.png"
+  },
+  {
+    "id": "EMERGENCE_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "발현",
+    "description": "턴 시작 시, 무작위 구체를 [blue]2[/blue]개 영창합니다.",
+    "flavor": "회로에 답이 없을 때, 전류가 답을 제공합니다.",
+    "icon": "assets/icons/relics/emergenceRune.png"
+  },
+  {
+    "id": "NIGHTSTALKING_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "밤의 추적자",
+    "description": "카드를 [blue]15[/blue]장 뽑을 때마다 [gold]영체화[/gold]를 [blue]1[/blue] 얻습니다.",
+    "flavor": "밤은 선한 자를 돕지 않습니다. 아직 공격하지 않은 자를 도울 뿐입니다.",
+    "icon": "assets/icons/relics/nightstalkingRune.png"
+  },
+  {
+    "id": "BLOCK_FORGE",
+    "category": "relic",
+    "subcategory": "forge",
+    "title": "방어도 모루",
+    "description": "턴 시작 시, 방어도를 [blue]2[/blue] 얻습니다.",
+    "flavor": "매 턴, 먼저 방패를 단단히 두드립니다.",
+    "icon": "assets/icons/relics/silverForge.png"
+  },
+  {
+    "id": "BADGE_BROTHERS_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "배지 브라더스",
+    "description": "매 전투 시작 시, 비용이 0인 공격 카드 [blue]1[/blue]장과 비용이 0인 스킬 카드 [blue]1[/blue]장을 얻습니다.",
+    "flavor": "하나는 장갑을 건네고, 다른 하나는 공구함을 건네줍니다.",
+    "icon": "assets/icons/relics/badgeBrothersRune.png"
+  },
+  {
+    "id": "NIGHT_PARADE_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "백귀야행",
+    "description": "획득 시, 덱에 [gold]영혼[/gold]을 [blue]3[/blue]장 추가합니다.",
+    "flavor": "밤길이 길어질수록 쫓아오는 그림자도 많아집니다.",
+    "icon": "assets/icons/relics/nightParadeRune.png"
+  },
+  {
+    "id": "HUNDRED_REFINEMENTS_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "백련성강",
+    "description": "카드 보상을 단련에 사용할 수 있습니다. [blue]{BodyForges}[/blue]번 단련할 때마다 무작위 능력치 모루를 [blue]{ForgeCount}[/blue]개 얻습니다.",
+    "flavor": "카드는 넘길 수 있어도 수련은 넘길 수 없습니다.",
+    "icon": "assets/icons/relics/hundredRefinementsRune.png"
+  },
+  {
+    "id": "BLANK_CHECK_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "백지 수표",
+    "description": "턴 시작 시 무작위 무색 카드 [blue]1[/blue]장을 얻습니다. 무색 카드의 비용이 [blue]0[/blue]이 되지만, 사용 후 [gold]소멸[/gold]합니다.",
+    "flavor": "금액은 비어 있고, 대가는 뒷면에 적혀 있습니다.",
+    "icon": "assets/icons/relics/blankCheckRune.png"
+  },
+  {
+    "id": "VAMPIRE_CRAWLER_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "뱀파이어 크롤러",
+    "description": "사용한 파워 카드가 버린 카드 더미로 들어갑니다.",
+    "flavor": "주문이 떨어지고 다시 고철 더미로 기어들어 갑니다.",
+    "icon": "assets/icons/relics/vampireCrawlerRune.png"
+  },
+  {
+    "id": "BUFFER_FORGE",
+    "category": "relic",
+    "subcategory": "forge",
+    "title": "버퍼 모루",
+    "description": "매 전투 시작 시, [gold]버퍼[/gold]을 [blue]1[/blue] 얻습니다.",
+    "flavor": "운명은 그것이 당신에게 도달하기도 전에 먼저 부딪힙니다.",
+    "icon": "assets/icons/relics/silverForge.png"
+  },
+  {
+    "id": "OVERFLOW_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "범람",
+    "description": "매 턴 [blue]1[/blue]의 추가 에너지를 얻습니다. 손에 있는 카드의 비용이 [blue]+1[/blue] 증가합니다. 당신이 받는 회복량, 얻는 방어도, 주는 피해가 2배가 됩니다.",
+    "flavor": "문이 반쯤 열려 있어서는 안 됩니다. 가뭄 아니면 홍수뿐입니다.",
+    "icon": "assets/icons/relics/overflowRune.png"
+  },
+  {
+    "id": "TRANSMUTE_GOLD_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "변환: 골드",
+    "description": "획득 시, 이 룬을 제거하고 무작위 골드 마법공학 룬을 [blue]1[/blue]개 얻습니다.",
+    "flavor": "은빛 껍질이 갈라졌을 때, 그 안의 것은 더 이상 옛날의 모습이 아닐지 모릅니다.",
+    "icon": "assets/icons/relics/transmuteGoldRune.png"
+  },
+  {
+    "id": "TRANSMUTE_PRISMATIC_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "변환: 프리즘",
+    "description": "획득 시, 이 룬을 제거하고 무작위 프리즘 마법공학 룬을 [blue]1[/blue]개 얻습니다.",
+    "flavor": "골드는 문턱일 뿐입니다. 프리즘이 진짜 판돈입니다.",
+    "icon": "assets/icons/relics/transmutePrismaticRune.png"
+  },
+  {
+    "id": "TRANSMUTE_CHAOS_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "변환: 혼돈",
+    "description": "획득 시, 이 룬을 제거하고 무작위 마법공학 룬을 [blue]2[/blue]개 얻습니다.",
+    "flavor": "혼돈이 장부에 기록될 때 비로소 진정한 질서가 시작됩니다.",
+    "icon": "assets/icons/relics/transmuteChaosRune.png"
+  },
+  {
+    "id": "SILVER_STARS_FORGE",
+    "category": "relic",
+    "subcategory": "forge",
+    "title": "별 모루",
+    "description": "매 전투 시작 시, [gold]별[/gold]을 [blue]2[/blue] 얻습니다.",
+    "flavor": "첫 번째 빛을 흔들리지 않게 쥐고 있으면, 주권은 늦지 않게 당도할 것입니다.",
+    "icon": "assets/icons/relics/silverForge.png"
+  },
+  {
+    "id": "STARS_FORGE",
+    "category": "relic",
+    "subcategory": "forge",
+    "title": "별 모루",
+    "description": "매 턴 시작 시, [gold]별[/gold]을 [blue]1[/blue] 얻습니다.",
+    "flavor": "주권을 손에 쥘 수 있는 빛으로 벼려냅니다.",
+    "icon": "assets/icons/relics/silverForge.png"
+  },
+  {
+    "id": "STARLIGHT_SPLENDOR_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "별빛의 광채",
+    "description": "턴 시작 시 현재 턴 수의 [blue]2[/blue]배만큼 별을 얻습니다.",
+    "flavor": "턴 카운트가 오를수록 별들은 더 밝게 답합니다.",
+    "icon": "assets/icons/relics/starlightSplendorRune.png"
+  },
+  {
+    "id": "JEWELED_GAUNTLET_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "보석 건틀릿",
+    "description": "당신이 사용하는 카드가 [blue]33%[/blue] 확률로 한 번 더 사용됩니다.",
+    "flavor": "빛이 켜지면 운도 기술이라고 불리게 됩니다.",
+    "icon": "assets/icons/relics/jeweledGauntletRune.png"
+  },
+  {
+    "id": "PROTECTION_FORGE",
+    "category": "relic",
+    "subcategory": "forge",
+    "title": "보호 모루",
+    "description": "얻는 방어도와 회복량이 [blue]20%[/blue] 증가합니다.",
+    "flavor": "용광로는 상처와 방패 모두를 위한 공간을 남겨둡니다.",
+    "icon": "assets/icons/relics/silverForge.png"
+  },
+  {
+    "id": "SILVER_PROTECTION_FORGE",
+    "category": "relic",
+    "subcategory": "forge",
+    "title": "보호 모루",
+    "description": "얻는 방어도와 회복량이 [blue]5%[/blue] 증가합니다.",
+    "flavor": "용광로는 상처와 방패 모두를 위한 공간을 남겨둡니다.",
+    "icon": "assets/icons/relics/silverForge.png"
+  },
+  {
+    "id": "GOLD_PROTECTION_FORGE",
+    "category": "relic",
+    "subcategory": "forge",
+    "title": "보호 모루",
+    "description": "얻는 방어도와 회복량이 [blue]10%[/blue] 증가합니다.",
+    "flavor": "용광로는 상처와 방패 모두를 위한 공간을 남겨둡니다.",
+    "icon": "assets/icons/relics/goldForge.png"
+  },
+  {
+    "id": "PROTECTIVE_VEIL_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "보호의 장막",
+    "description": "매 전투 시작 시, [gold]인공물[/gold]을 [blue]1[/blue] 얻습니다. 매 [blue]2[/blue] 턴마다 [gold]인공물[/gold]을 [blue]1[/blue] 얻습니다.",
+    "flavor": "진짜 장막은 저주로 하여금 자신이 이미 꽂혔다고 믿게 만듭니다.",
+    "icon": "assets/icons/relics/protectiveVeilRune.png"
+  },
+  {
+    "id": "DOUBLE_VISION_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "복시",
+    "description": "카드, 골드, 포션 또는 유물 보상을 얻을 때 같은 보상을 1개 더 얻습니다.",
+    "flavor": "후원자 물품: 화목한 가정과 잘 웃는 작은 대머리에게서 온 사랑.",
+    "icon": "assets/icons/relics/doubleVisionRune.png"
+  },
+  {
+    "id": "UNSEALED_THRONE_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "봉인 풀린 왕좌",
+    "description": "별을 소모하거나 얻을 때마다 에너지를 [blue]1[/blue] 얻습니다.",
+    "flavor": "왕좌는 더 이상 침묵하지 않고 별빛이 흐르기 시작합니다.",
+    "icon": "assets/icons/relics/unsealedThroneRune.png"
+  },
+  {
+    "id": "BYPRODUCT_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "부산물",
+    "description": "상태이상 카드를 [blue]1[/blue]장 생성할 때마다 카드를 [blue]1[/blue]장 뽑습니다.",
+    "flavor": "오작동은 낭비가 아니라 단지 또 다른 회로의 시작일 뿐입니다.",
+    "icon": "assets/icons/relics/byproductRune.png"
+  },
+  {
+    "id": "BROKEN_GOLDEN_CROWN_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "부서진 왕관",
+    "description": "카드 보상의 선택지가 [blue]2[/blue]장 줄어듭니다. 턴 시작 시, 에너지를 [blue]1[/blue] 추가로 얻습니다.",
+    "flavor": "금이 가도 왕관은 여전히 밝게 빛납니다.",
+    "icon": "assets/icons/relics/brokenGoldenCrownRune.png"
+  },
+  {
+    "id": "CORROSION_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "부식",
+    "description": "매 턴 처음으로 적에게 피해를 줄 때, 대상은 [gold]힘[/gold]과 [gold]민첩[/gold]을 [blue]1[/blue]씩 잃습니다.",
+    "flavor": "갑옷은 그대로 남지만, 그 밑의 신경이 먼저 녹슬어버립니다.",
+    "icon": "assets/icons/relics/corrosionRune.png"
+  },
+  {
+    "id": "UNYIELDING_ARMOR_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "불굴의 갑옷",
+    "description": "턴 시작 시, [gold]판금[/gold]이 더 이상 감소하지 않습니다.",
+    "flavor": "이 갑옷엔 퇴로가 없습니다. 단련해야 할 이음새만 더 늘어날 뿐입니다.",
+    "icon": null
+  },
+  {
+    "id": "OMINOUS_PACT_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "불길한 계약",
+    "description": "적에게 [gold]종말[/gold]을 부여할 때마다 같은 수치만큼 소환합니다.",
+    "flavor": "종말이 한 줄 늘 때마다 계약도 한 줄 더 깊어집니다.",
+    "icon": "assets/icons/relics/ominousPactRune.png"
+  },
+  {
+    "id": "IMMORTAL_BONE_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "불멸의 뼈",
+    "description": "턴 시작 시, 골골이가 살아있다면, 골골이가 최대 체력의 [blue]50%[/blue]를 회복합니다.",
+    "flavor": "뼈는 돌아오는 길을 기억합니다.",
+    "icon": "assets/icons/relics/immortalBoneRune.png"
+  },
+  {
+    "id": "FIREBRAND_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "불쏘시개",
+    "description": "공격 카드가 적에게 무한 중첩 가능한 [gold]점화[/gold]를 [blue]2[/blue] 부여합니다.",
+    "flavor": "불씨가 너무 작을 때는 도덕성 따위 방해만 될 뿐입니다.",
+    "icon": "assets/icons/relics/firebrandRune.png"
+  },
+  {
+    "id": "REKINDLE_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "불씨 살리기",
+    "description": "카드가 [blue]2[/blue]장 소멸될 때마다 에너지를 [blue]1[/blue] 얻습니다.",
+    "flavor": "재 속에는 아직 숨겨진 불씨가 하나 남아있습니다.",
+    "icon": "assets/icons/relics/rekindleRune.png"
+  },
+  {
+    "id": "FEEL_THE_BURN_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "불타는 느낌",
+    "description": "획득 시, 덱에 [gold]타오름을 느껴라[/gold]를 [blue]1[/blue]장 추가합니다.",
+    "flavor": "병이 바닥에 부딪히고 나면, 남은 열기가 빚을 수금하기 시작합니다.",
+    "icon": "assets/icons/relics/feelTheBurnRune.png"
+  },
+  {
+    "id": "SEARING_ATTACK_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "불태우는 일격",
+    "description": "획득 시, 덱에 [gold]불태우는 일격[/gold]을 [blue]1[/blue]장 추가합니다.",
+    "flavor": "첫 번째 화상 자국은 단지 시작일 뿐입니다.",
+    "icon": "assets/icons/relics/searingAttackRune.png"
+  },
+  {
+    "id": "RED_ENVELOPE_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "붉은 봉투",
+    "description": "전투에서 승리하면 추가 보상을 얻습니다: [blue]75%[/blue] 확률로 [blue]20~50[/blue] 골드, [blue]25%[/blue] 확률로 무작위 능력치 모루.",
+    "flavor": "붉은 종이는 행운과 장부의 소리를 모두 감쌉니다.",
+    "icon": "assets/icons/relics/redEnvelopeRune.png"
+  },
+  {
+    "id": "MISERABLE_FATE_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "비참한 운명",
+    "description": "턴 시작 시 모든 적의 종말 수치의 총합만큼 방어도를 얻습니다.",
+    "flavor": "그들의 운명이 무거울수록 당신의 그림자는 더욱 짙어집니다.",
+    "icon": "assets/icons/relics/miserableFateRune.png"
+  },
+  {
+    "id": "DAWNBRINGERS_RESOLVE_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "빛의 인도자의 결의",
+    "description": "피해를 입어 체력이 최대 체력의 [blue]50%[/blue] 미만이 되면, 최대 체력의 [blue]15%[/blue]만큼 [gold]재생[/gold]을 얻습니다. 전투당 1회 발동합니다.",
+    "flavor": "새벽은 일찍 오지 않겠지만, 누군가가 그때까지 당신이 무너지지 않게 붙잡아 줄 순 있습니다.",
+    "icon": "assets/icons/relics/dawnbringersResolveRune.png"
+  },
+  {
+    "id": "SWIFT_AND_SAFE_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "빠르고 안전하게",
+    "description": "카드를 [blue]10[/blue]장 뽑을 때마다 [gold]인공물[/gold]을 [blue]1[/blue] 얻습니다.",
+    "flavor": "빠르게 움직일수록 실수에 대비할 껍질이 더 필요해집니다.",
+    "icon": "assets/icons/relics/swiftAndSafeRune.png"
+  },
+  {
+    "id": "BREAD_SANDWICH_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "빵 샌드위치",
+    "description": "사용하는 모든 카드가 [blue]1[/blue]번 반복됩니다.",
+    "flavor": "사람들은 큰 소리로 더 많은 속재료를 요구했지만, 당신은 조용히 거절했습니다.",
+    "icon": "assets/icons/relics/breadSandwichRune.png"
+  },
+  {
+    "id": "BREAD_AND_BUTTER_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "빵과 버터",
+    "description": "매 턴 처음으로 사용하는 공격 카드가 [blue]1[/blue]번 반복됩니다.",
+    "flavor": "가장 단순한 레시피라도 첫 타격을 바삭하게 만들 수 있습니다.",
+    "icon": "assets/icons/relics/breadAndButterRune.png"
+  },
+  {
+    "id": "BREAD_AND_JAM_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "빵과 잼",
+    "description": "매 턴 처음으로 사용하는 스킬 카드가 [blue]1[/blue]번 반복됩니다.",
+    "flavor": "단맛이 퍼질 때, 기술이 한 번 더 반복됩니다.",
+    "icon": "assets/icons/relics/breadAndJamRune.png"
+  },
+  {
+    "id": "BREAD_AND_CHEESE_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "빵과 치즈",
+    "description": "매 턴 처음으로 사용하는 파워 카드가 [blue]1[/blue]번 반복됩니다.",
+    "flavor": "늘어나는 것은 식감만이 아닙니다; 그것은 주문의 메아리가 될 수도 있습니다.",
+    "icon": "assets/icons/relics/breadAndCheeseRune.png"
+  },
+  {
+    "id": "BONE_GUARD_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "뼈 방어구",
+    "description": "소환할 때마다 소환 수치의 [blue]50%[/blue]만큼 방어도를 얻습니다.",
+    "flavor": "오래된 뼈들은 당신 앞을 막아서기 위해 깨어있습니다.",
+    "icon": "assets/icons/relics/boneGuardRune.png"
+  },
+  {
+    "id": "THOUGHT_OVERWRITE_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "사고 덮어쓰기",
+    "description": "획득 시, 원하는 수의 카드를 선택해 [gold]휘발성[/gold]을 부여합니다. [gold]휘발성[/gold] 카드를 사용할 때마다 [blue]1[/blue]번 더 반복합니다.",
+    "flavor": "생각이 다시 쓰여지면 메아리가 행동하는 법을 배웁니다.",
+    "icon": "assets/icons/relics/thoughtOverwriteRune.png"
+  },
+  {
+    "id": "FLESH_AND_BONE_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "살과 뼈",
+    "description": "매 전투 시작 시, 체력을 [blue]3[/blue] 잃고 소환 [blue]15[/blue]. 전투 종료 시, 골골이의 최대 체력 [blue]10[/blue]당 체력을 [blue]1[/blue] 회복합니다.",
+    "flavor": "살이 한 치를 내어주면, 뼈는 대열을 지어 전진합니다.",
+    "icon": "assets/icons/relics/fleshAndBoneRune.png"
+  },
+  {
+    "id": "FLESH_FORGE",
+    "category": "relic",
+    "subcategory": "forge",
+    "title": "살점 모루",
+    "description": "매 전투 시작 시, [gold]살점 재주[/gold]를 [blue]4[/blue] 얻습니다.",
+    "flavor": "살점은 재료가 아니라 아직 대답하는 주문입니다.",
+    "icon": "assets/icons/relics/silverForge.png"
+  },
+  {
+    "id": "TRINITY_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "삼위일체",
+    "description": "에너지를 소비할 때마다 그만큼 별을 얻습니다. 별을 소모할 때마다 그만큼 단조합니다.",
+    "flavor": "에너지, 별빛, 왕의 검이 한순간에 합류합니다.",
+    "icon": "assets/icons/relics/trinityRune.png"
+  },
+  {
+    "id": "TRI_PRISM_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "삼중 프리즘",
+    "description": "매 턴 처음으로 사용하는 무색 카드는 비용이 0이 되며 [blue]1[/blue]번 반복됩니다.",
+    "flavor": "하나의 광선, 세 번의 회전.",
+    "icon": "assets/icons/relics/triPrismRune.png"
+  },
+  {
+    "id": "COLOR_DISCOVERY_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "색채 발견",
+    "description": "매 전투 시작 시, 다른 캐릭터의 무작위 카드 [blue]3[/blue]장 중 [blue]1[/blue]장을 선택해 손에 넣습니다. 이번 전투 동안 비용이 0이 됩니다. 전투 보상에서 해당 카드가 추가 카드 보상 선택지로 등장합니다.",
+    "flavor": "스폰서 아이템: 색을 바꾸면 답도 빛날 수 있습니다.",
+    "icon": "assets/icons/relics/colorDiscoveryRune.png"
+  },
+  {
+    "id": "VITALITY_SURGE_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "생기 분출",
+    "description": "최대 체력 [blue]50[/blue]당 매 턴 카드를 [blue]1[/blue]장 추가로 뽑습니다. 최대 체력 [blue]100[/blue]당 매 턴 에너지를 [blue]1[/blue] 추가로 얻습니다.",
+    "flavor": "생명력이 넘치는 곳엔 발걸음에도 바람이 실린다.",
+    "icon": "assets/icons/relics/vitalitySurgeRune.png"
+  },
+  {
+    "id": "LIFE_FORGE",
+    "category": "relic",
+    "subcategory": "forge",
+    "title": "생명 모루",
+    "description": "최대 체력을 [blue]8[/blue] 얻습니다.",
+    "flavor": "흉터를 용량으로 바꾸십시오.",
+    "icon": "assets/icons/relics/silverForge.png"
+  },
+  {
+    "id": "GOLD_LIFE_FORGE",
+    "category": "relic",
+    "subcategory": "forge",
+    "title": "생명 모루",
+    "description": "최대 체력을 [blue]20[/blue] 얻습니다.",
+    "flavor": "흉터가 벌어져 더 깊은 강바닥이 됩니다.",
+    "icon": "assets/icons/relics/goldForge.png"
+  },
+  {
+    "id": "PRISMATIC_LIFE_FORGE",
+    "category": "relic",
+    "subcategory": "forge",
+    "title": "생명 모루",
+    "description": "최대 체력이 [blue]30%[/blue] 증가합니다.",
+    "flavor": "불길은 더 이상 그릇을 키우지 않고, 완전히 다시 씁니다.",
+    "icon": "assets/icons/relics/prismaticForge.png"
+  },
+  {
+    "id": "LIFE_FLOW_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "생명의 흐름",
+    "description": "카드가 [blue]1[/blue]장 [gold]소멸[/gold]될 때마다 최대 체력의 [blue]5%[/blue]를 회복합니다. 매 턴 최대 [blue]3[/blue]번 발동합니다.",
+    "flavor": "불탄 종이가 혈관을 통해 돌아옵니다.",
+    "icon": "assets/icons/relics/lifeFlowRune.png"
+  },
+  {
+    "id": "FROST_WRAITH_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "서리 망령",
+    "description": "매 전투 시작 시, 그리고 이후 [blue]3[/blue] 턴마다 모든 적이 [blue]1[/blue] 턴 동안 [gold]둔화[/gold]를 얻습니다.",
+    "flavor": "추위는 죽이지 않습니다. 모든 발걸음을 마지막 유언으로 끌고 갈 뿐입니다.",
+    "icon": "assets/icons/relics/frostWraithRune.png"
+  },
+  {
+    "id": "PLASTER_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "석고",
+    "description": "소환할 때마다 소환 수치만큼 골골이를 회복시킵니다.",
+    "flavor": "하얀 충전재가 틈을 메우면 골골이는 다시 굳건히 섭니다.",
+    "icon": "assets/icons/relics/plasterRune.png"
+  },
+  {
+    "id": "FURIOUS_GLARE_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "성난 눈빛",
+    "description": "적에게 [gold]취약[/gold]을 [blue]1[/blue] 부여할 때마다 [gold]힘[/gold]을 [blue]1[/blue] 얻습니다.",
+    "flavor": "먼저 물러서게 만들고, 그다음 앞으로 나아갑니다.",
+    "icon": "assets/icons/relics/furiousGlareRune.png"
+  },
+  {
+    "id": "SONATA_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "소나타",
+    "description": "홀수 턴 시작 시, 모든 플레이어가 카드를 [blue]2[/blue]장 추가로 뽑습니다. 짝수 턴 시작 시, 모든 플레이어가 체력을 [blue]1[/blue] 회복하고 방어도를 [blue]2[/blue] 얻습니다.",
+    "flavor": "한 박자는 앞으로 나아가고, 한 박자는 출혈을 막습니다. 곡의 길이는 딱 적당합니다.",
+    "icon": "assets/icons/relics/sonataRune.png"
+  },
+  {
+    "id": "CHAIN_IN_SLEEVE_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "소매 속의 사슬",
+    "description": "[gold]단검[/gold]을 [blue]3[/blue]장 사용할 때마다 손에 [gold]단검[/gold]을 [blue]1[/blue]장 추가합니다.",
+    "flavor": "소매는 좁지만, 칼날의 빛은 다시 고리를 형성합니다.",
+    "icon": "assets/icons/relics/chainInSleeveRune.png"
+  },
+  {
+    "id": "SPIRAL_FORGE",
+    "category": "relic",
+    "subcategory": "forge",
+    "title": "소용돌이 모루",
+    "description": "획득 시, 덱에서 카드 [blue]1[/blue]장을 선택하여 [gold]소용돌이[/gold]를 인챈트합니다.",
+    "flavor": "카드 한 장을 순환 속에 던지면, 두 번째 메아리를 안고 돌아옵니다.",
+    "icon": "assets/icons/relics/silverForge.png"
+  },
+  {
+    "id": "SUMMON_FORGE",
+    "category": "relic",
+    "subcategory": "forge",
+    "title": "소환 모루",
+    "description": "턴 시작 시, 소환 [blue]2[/blue].",
+    "flavor": "재 속에서 새로운 뼈 그림자가 계속 일어섭니다.",
+    "icon": "assets/icons/relics/silverForge.png"
+  },
+  {
+    "id": "SUMMON_FORTH_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "소환령",
+    "description": "매 전투 시작 시, 단조 [blue]5[/blue]. 플레이어 턴 시작 시, 어디서든 [gold]군주의 칼날[/gold]을 손으로 가져옵니다.",
+    "flavor": "왕명(王命)이 닿는 곳이라면, 칼날은 길을 묻지 않습니다.",
+    "icon": "assets/icons/relics/summonForthRune.png"
+  },
+  {
+    "id": "TRICK_LICENSE_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "속임수 면허",
+    "description": "[gold]교활함[/gold] 카드를 비용 없이 사용할 수 있습니다.",
+    "flavor": "규칙은 숙련된 손을 위해 공간을 만들어 줍니다.",
+    "icon": "assets/icons/relics/trickLicenseRune.png"
+  },
+  {
+    "id": "DECAY_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "쇠퇴",
+    "description": "턴 시작 시, 적은 보유한 [gold]약화[/gold] [blue]1[/blue]마다 이번 턴동안 [gold]힘[/gold]을 [blue]1[/blue] 잃습니다.",
+    "flavor": "약화가 첫 틈을 열고, 힘은 그 틈으로 새어 나갑니다.",
+    "icon": "assets/icons/relics/decayRune.png"
+  },
+  {
+    "id": "SUPER_BRAIN_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "슈퍼 브레인",
+    "description": "매 전투 시작 시, 메인 덱 크기의 [blue]1/3[/blue]만큼(내림) [gold]판금[/gold]을 얻습니다.",
+    "flavor": "열심히 생각하면 두개골조차 방패로 변합니다.",
+    "icon": "assets/icons/relics/superBrainRune.png"
+  },
+  {
+    "id": "SPEED_DEMON_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "스피드 데몬",
+    "description": "매 턴 처음으로 적에게 피해를 줄 때, 카드를 [blue]2[/blue]장 뽑습니다.",
+    "flavor": "가장 먼저 움직이는 자는 기회마저 자신을 쫓아오게 만듭니다.",
+    "icon": "assets/icons/relics/speedDemonRune.png"
+  },
+  {
+    "id": "SPEEDSTER_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "스피드스터",
+    "description": "최대 에너지 [blue]2[/blue]당 매 턴 카드를 [blue]1[/blue]장 추가로 뽑습니다(내림).",
+    "flavor": "에너지가 손목으로 흘러넘치면 망설임이 따라잡지 못합니다.",
+    "icon": "assets/icons/relics/speedsterRune.png"
+  },
+  {
+    "id": "STARTUP_ROUTINE_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "시작 루틴",
+    "description": "매 전투 시작 시, 방어도를 [blue]15[/blue] 얻습니다.",
+    "flavor": "프로세스가 완료될 때까지 상처는 문 밖에서 기다려야 합니다.",
+    "icon": "assets/icons/relics/startupRoutineRune.png"
+  },
+  {
+    "id": "BEGINNING_AND_END_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "시작과 끝",
+    "description": "매 전투 시작 시, [gold]치사성[/gold] [blue]100[/blue]과 [gold]카운트다운[/gold] [blue]6[/blue]을 얻습니다.",
+    "flavor": "오프너가 결말을 쓰고, 결말이 수금합니다.",
+    "icon": "assets/icons/relics/beginningAndEndRune.png"
+  },
+  {
+    "id": "CORPSE_EXPLOSION_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "시체 폭발",
+    "description": "적이 죽을 때마다 모든 적이 죽은 적의 최대 체력만큼 [gold]중독[/gold]을 얻습니다.",
+    "flavor": "독은 단지 첫 번째 소리를 시작할 뿐입니다.",
+    "icon": "assets/icons/relics/corpseExplosionRune.png"
+  },
+  {
+    "id": "MIRAGE_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "신기루",
+    "description": "턴 시작 시 모든 적의 중독 수치 총합만큼 방어도를 얻습니다.",
+    "flavor": "독안개가 짙어질수록 환영은 더 단단해집니다.",
+    "icon": "assets/icons/relics/mirageRune.png"
+  },
+  {
+    "id": "GET_EXCITED_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "신난다!",
+    "description": "매 전투 시작 시, 추가 에너지를 [blue]2[/blue] 얻고 카드를 [blue]2[/blue]장 추가로 뽑습니다. 적이 죽을 때마다, 다음 턴에 추가 에너지를 [blue]2[/blue] 얻고 카드를 [blue]2[/blue]장 추가로 뽑습니다.",
+    "flavor": "기쁨은 한 박자 늦게 터질 때 더 큰 무게를 지닙니다.",
+    "icon": "assets/icons/relics/getExcitedRune.png"
+  },
+  {
+    "id": "ARCANE_PUNCH_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "신비한 주먹",
+    "description": "공격 카드를 [blue]2[/blue]장 사용할 때마다 에너지를 [blue]1[/blue] 얻습니다.",
+    "flavor": "한계까지 축약된 주문은 주먹이 가르는 바람만을 남깁니다.",
+    "icon": "assets/icons/relics/arcanePunchRune.png"
+  },
+  {
+    "id": "HOLY_FIRE_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "신성한 불꽃",
+    "description": "전투 중 체력을 회복할 때마다 무작위 적에게 회복량만큼 [gold]점화[/gold]를 부여합니다.",
+    "flavor": "신성한 불꽃은 방관자들에게 불을 붙이기를 좋아합니다.",
+    "icon": "assets/icons/relics/holyFireRune.png"
+  },
+  {
+    "id": "DIVINE_INTERVENTION_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "신성한 중재",
+    "description": "[blue]3[/blue] 턴마다 모든 플레이어가 [gold]영체화[/gold]를 [blue]1[/blue] 얻습니다.",
+    "flavor": "기적은 스스로를 설명하는 법이 드뭅니다. 단지 치명적인 일격을 옆으로 치워줄 뿐이죠.",
+    "icon": "assets/icons/relics/divineInterventionRune.png"
+  },
+  {
+    "id": "UPGRADE_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "신성화",
+    "description": "획득 시, 덱의 모든 카드를 강화합니다. 카드를 획득할 때마다, 해당 카드를 강화합니다.",
+    "flavor": "용광로의 불꽃은 누가 먼저 도착했는지 신경 쓰지 않습니다.",
+    "icon": "assets/icons/relics/upgradeRune.png"
+  },
+  {
+    "id": "SWIFT_FORGE",
+    "category": "relic",
+    "subcategory": "forge",
+    "title": "신속 모루",
+    "description": "획득 시, 덱에서 카드 [blue]1[/blue]장을 선택하여 [gold]신속[/gold] [blue]2[/blue]을 인챈트합니다.",
+    "flavor": "다음 수를 더 빨리 닿을 만큼 가볍게 벼립니다.",
+    "icon": "assets/icons/relics/silverForge.png"
+  },
+  {
+    "id": "CAREFUL_SELECTION_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "신중한 선택",
+    "description": "전투 후 카드 보상의 선택지가 [blue]4[/blue]장이 됩니다.",
+    "flavor": "한 번 더 살펴보는 곳에서 승률이 움직이기 시작합니다.",
+    "icon": "assets/icons/relics/carefulSelectionRune.png"
+  },
+  {
+    "id": "DOOMSDAY_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "심판의 날",
+    "description": "턴 시작 시 모든 적에게 적의 최대 체력의 [blue]5%[/blue]만큼 [gold]종말[/gold]을 부여합니다(최소 [blue]5[/blue] [gold]종말[/gold]).",
+    "flavor": "결말은 갑작스럽지 않습니다. 단지 예정대로 도착할 뿐입니다.",
+    "icon": "assets/icons/relics/doomsdayRune.png"
+  },
+  {
+    "id": "JUDICATOR_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "심판자",
+    "description": "체력이 50% 미만인 적에게 [blue]25%[/blue]의 추가 피해를 줍니다. 적이 죽을 때마다 에너지를 최대로 회복합니다.",
+    "flavor": "심판은 길 필요가 없습니다. 적이 충분히 낮아졌을 때 내리면 됩니다.",
+    "icon": "assets/icons/relics/judicatorRune.png"
+  },
+  {
+    "id": "CROSS_ORB_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "십자가 구체",
+    "description": "일반 등급의 카드, 포션, 유물의 등장 확률이 절반이 됩니다.",
+    "flavor": "성스러운 빛이 평범한 것들을 걸러냅니다.",
+    "icon": "assets/icons/relics/crossOrbRune.png"
+  },
+  {
+    "id": "DUAL_WIELD_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "쌍수 무기",
+    "description": "당신이 사용하는 공격 카드가 한 번 더 사용되지만, 주는 피해가 [blue]40%[/blue] 감소합니다.",
+    "flavor": "어느 한쪽 칼날이라도 놀고 있다면 낭비입니다.",
+    "icon": "assets/icons/relics/dualWieldRune.png"
+  },
+  {
+    "id": "DEVILS_DANCE_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "악마의 춤",
+    "description": "공격 카드를 사용할 때마다 체력을 [blue]1[/blue] 회복합니다.",
+    "flavor": "스텝이 칼날을 스치고 피는 더 따뜻하게 흐릅니다.",
+    "icon": "assets/icons/relics/devilsDanceRune.png"
+  },
+  {
+    "id": "NIGHTMARE_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "악몽",
+    "description": "[gold]암흑[/gold] 구체의 지속 효과가 발동할 때, 체력이 가장 낮은 적에게 그 구체의 수치만큼 피해를 줍니다.",
+    "flavor": "어둠은 당신이 진 모든 빚을 기억합니다.",
+    "icon": "assets/icons/relics/nightmareRune.png"
+  },
+  {
+    "id": "SHRINK_FORGE",
+    "category": "relic",
+    "subcategory": "forge",
+    "title": "압축 모루",
+    "description": "매 전투 시작 시, 모든 적에게 [gold]압축[/gold]을 [blue]2[/blue] 부여합니다.",
+    "flavor": "망치가 허공을 때리면 적의 그림자가 먼저 낮아집니다.",
+    "icon": "assets/icons/relics/silverForge.png"
+  },
+  {
+    "id": "ANTHONY_BIAS_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "앤서니의 편견",
+    "description": "덱에 있는 카드 [blue]1[/blue]장마다 피해, 방어도, 치유량이 [blue]{PercentPerCard}%[/blue] 증가합니다.",
+    "flavor": "세상에서 소형 덱을 가장 증오하는 자. 의심할 여지가 없습니다.",
+    "icon": "assets/icons/relics/anthonyBiasRune.png"
+  },
+  {
+    "id": "BARBARIAN_WAY_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "야만인의 길",
+    "description": "획득 시, 덱의 공격 카드를 원하는 만큼 선택하여 [gold]후벼 파기[/gold]로 변화시킵니다.",
+    "flavor": "우아함은 퇴장하고, 발톱이 등장합니다.",
+    "icon": "assets/icons/relics/barbarianWayRune.png"
+  },
+  {
+    "id": "QUANTUM_COMPUTING_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "양자 컴퓨팅",
+    "description": "매 [blue]2[/blue] 턴마다 모든 적에게 적의 최대 체력의 [blue]10%[/blue]에 [blue]10[/blue]을 더한 수치만큼 피해를 주고, 준 피해량의 [blue]10%[/blue]만큼 체력을 회복합니다. ",
+    "flavor": "답이 나타나기도 전에 적의 체력은 이미 붕괴되었습니다.",
+    "icon": "assets/icons/relics/quantumComputingRune.png"
+  },
+  {
+    "id": "SHOULDER_VAKU_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "어깨 위의 바쿠",
+    "description": "최대 에너지를 [blue]2[/blue] 늘리고 매 턴 카드를 [blue]2[/blue]장 추가로 뽑습니다. 홀수 턴 시작 시, 최대 체력의 [blue]5%[/blue]를 회복합니다. [red]바쿠가 당신의 홀수 턴을 대신 플레이합니다.[/red]",
+    "flavor": "당신 어깨 위의 목소리는 조용합니다. 하지만 그 명령은 결코 조용하지 않습니다.",
+    "icon": "assets/icons/relics/shoulderVakuRune.png"
+  },
+  {
+    "id": "DIZZY_SPINNING_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "어질어질 회전",
+    "description": "매 턴 카드를 [blue]2[/blue]장 추가로 뽑습니다. 뽑을 카드 더미가 섞일 때마다 뽑을 카드 더미에 [gold]어지러움[/gold]을 [blue]1[/blue]장 추가합니다.",
+    "flavor": "더 빨리 회전할수록 카드들은 더 흐릿해집니다.",
+    "icon": "assets/icons/relics/dizzySpinningRune.png"
+  },
+  {
+    "id": "ENERGY_FORGE",
+    "category": "relic",
+    "subcategory": "forge",
+    "title": "에너지 모루",
+    "description": "매 턴 시작 시, 추가 에너지를 [blue]1[/blue] 얻습니다.",
+    "flavor": "용광로가 불타오르고 있다면 다음 걸음이 멈출 일은 없습니다.",
+    "icon": "assets/icons/relics/silverForge.png"
+  },
+  {
+    "id": "QUEEN_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "여왕",
+    "description": "매 턴 시작 시, 체력이 가장 높은 적에게 [gold]손상[/gold], [gold]약화[/gold], [gold]취약[/gold]을 [blue]2[/blue] 부여합니다.",
+    "flavor": "일단 명령이 내려지면 망설임은 반역이 됩니다.",
+    "icon": "assets/icons/relics/queenRune.png"
+  },
+  {
+    "id": "SOUL_CALLING_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "영혼 부르기",
+    "description": "매 전투 시작 시, 뽑을 카드 더미, 손, 버린 카드 더미에 각각 [gold]영혼[/gold]을 [blue]1[/blue]장씩 추가합니다.",
+    "flavor": "한 번의 조용한 부름에 먼 곳의 메아리들이 줄지어 돌아옵니다.",
+    "icon": "assets/icons/relics/soulCallingRune.png"
+  },
+  {
+    "id": "SOUL_EATER_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "영혼 포식자",
+    "description": "적이 죽을 때마다 해당 적 최대 체력의 [blue]5%[/blue]만큼 최대 체력을 얻습니다.",
+    "flavor": "어둠을 한 입 베어 물 때마다 그림자가 당신의 모습을 더 닮아갑니다.",
+    "icon": "assets/icons/relics/soulEaterRune.png"
+  },
+  {
+    "id": "SOULS_POWER_FORGE",
+    "category": "relic",
+    "subcategory": "forge",
+    "title": "영혼의 힘 단조기",
+    "description": "획득 시, 덱에서 카드 [blue]1[/blue]장을 선택하여 [gold]영혼의 힘[/gold]을 인챈트합니다.",
+    "flavor": "이 화로는 아무것도 태우지 않는다. 영혼에게 기대라고 청할 뿐.",
+    "icon": "assets/icons/relics/silverForge.png"
+  },
+  {
+    "id": "OLD_IDOL_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "오래된 우상",
+    "description": "매 전투 시작 시, 카드를 뽑지 않습니다. 두 번째 턴 시작 시, [gold]힘[/gold]을 [blue]10[/blue] 얻습니다.",
+    "flavor": "첫 번째 턴을 침묵에 바치면 옛 시절이 당신을 되돌아볼지도 모릅니다.",
+    "icon": "assets/icons/relics/oldIdolRune.png"
+  },
+  {
+    "id": "OROBAS_BLESSING_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "오로바스의 축복",
+    "description": "[gold]고대의 이빨[/gold]과 [gold]오로바스의 손[/gold]을 얻습니다.",
+    "flavor": "오래된 이빨과 신선한 상처에서 축복이 자라납니다.",
+    "icon": "assets/icons/relics/orobasBlessingRune.png"
+  },
+  {
+    "id": "HUBRIS_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "오만",
+    "description": "전투 승리 후 [blue]1[/blue] 중첩을 얻습니다. [blue]3[/blue] 중첩마다 매 전투 시작 시, [gold]힘[/gold]을 [blue]1[/blue] 얻고 카드를 [blue]1[/blue]장 추가로 뽑습니다.",
+    "flavor": "승리가 무거워질수록 겸손은 수하물처럼 느껴집니다.",
+    "icon": "assets/icons/relics/hubrisRune.png"
+  },
+  {
+    "id": "OMEGA_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "오메가",
+    "description": "[blue]4[/blue]턴부터 턴 종료 시, 모든 적에게 [blue]50[/blue]의 피해를 줍니다.",
+    "flavor": "카운트다운이 끝나면 남는 것은 종장뿐입니다.",
+    "icon": "assets/icons/relics/omegaRune.png"
+  },
+  {
+    "id": "OK_BOOMERANG_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "오케이 부메랑",
+    "description": "획득 시, 덱에 [gold]OK 부메랑[/gold]을 [blue]1[/blue]장 추가합니다.",
+    "flavor": "농담처럼 떠나서 빚쟁이처럼 돌아옵니다.",
+    "icon": "assets/icons/relics/okBoomerangRune.png"
+  },
+  {
+    "id": "ALL_IN_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "올인",
+    "description": "획득 시, 덱에 [gold]올인[/gold]을 [blue]1[/blue]장 추가합니다.",
+    "flavor": "승리는 구경꾼을 싫어합니다.",
+    "icon": "assets/icons/relics/allInRune.png"
+  },
+  {
+    "id": "HAIL_TO_THE_KING_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "왕께 만세",
+    "description": "무작위 능력치 모루를 [blue]2[/blue]개 얻습니다. 엘리트를 처치한 후에는 무작위 골드 능력치 모루를 [blue]1[/blue]개 얻습니다. 보스를 처치한 후에는 무작위 프리즘 능력치 모루를 [blue]1[/blue]개 얻습니다.",
+    "flavor": "왕관은 스스로 떨어지지 않습니다. 계단 위에서 누군가 먼저 쓰러져야만 합니다.",
+    "icon": "assets/icons/relics/hailToTheKingRune.png"
+  },
+  {
+    "id": "ROYAL_COMMAND_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "왕의 명령",
+    "description": "별을 소모하거나 얻을 때마다 단조 [blue]3[/blue].",
+    "flavor": "별이 떨어질 때, 명령이 형태를 갖춥니다.",
+    "icon": "assets/icons/relics/royalCommandRune.png"
+  },
+  {
+    "id": "ROYAL_TRIAL_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "왕의 시련",
+    "description": "[gold]군주의 칼날[/gold]을 사용할 때마다 손에 무작위 하수인 카드를 [blue]2[/blue]장 추가합니다.",
+    "flavor": "칼날이 칼집을 떠나면, 가신들은 앞으로 나설 때를 압니다.",
+    "icon": "assets/icons/relics/royalTrialRune.png"
+  },
+  {
+    "id": "FEY_MAGIC_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "요정의 마법",
+    "description": "매 턴 비용이 [blue]2[/blue] 이상인 카드를 처음 사용하여 적에게 피해를 줄 때, 그 적을 기절시킵니다.",
+    "flavor": "정말로 어려운 주문은 다음 걸음을 먼저 훔칩니다.",
+    "icon": "assets/icons/relics/feyMagicRune.png"
+  },
+  {
+    "id": "OUR_HEALING_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "우리의 치유",
+    "description": "동료가 회복을 얻을 때마다 당신도 같은 양의 회복을 얻습니다.",
+    "flavor": "한 사람을 치유하는 것이 모두를 치유한다.",
+    "icon": "assets/icons/relics/ourHealingRune.png"
+  },
+  {
+    "id": "UNMOVABLE_MOUNTAIN_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "움직일 수 없는 산",
+    "description": "매 전투 시작 시, [gold]바리케이드[/gold]를 [blue]1[/blue], [gold]잔상[/gold]을 [blue]1[/blue] 얻습니다.",
+    "flavor": "산은 승리를 쫓지 않습니다. 승리가 산으로 달려들 뿐입니다.",
+    "icon": "assets/icons/relics/unmovableMountainRune.png"
+  },
+  {
+    "id": "WARMOGS_SPIRIT_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "워모그의 영혼",
+    "description": "카드를 [blue]8[/blue]장 뽑을 때마다 [gold]판금[/gold]을 [blue]1[/blue] 얻습니다.",
+    "flavor": "상처가 아물기도 전에 새로운 장갑판이 이미 자라나 있습니다.",
+    "icon": "assets/icons/relics/warmogsSpiritRune.png"
+  },
+  {
+    "id": "PRIMITIVE_MADNESS_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "원시적 광기",
+    "description": "획득 시, 덱에서 원하는 수의 카드를 선택해 [gold]거대한 바위[/gold]로 변화시킵니다.",
+    "flavor": "문명이 비켜서면, 돌멩이들이 자신만의 길을 찾아냅니다.",
+    "icon": "assets/icons/relics/primitiveMadnessRune.png"
+  },
+  {
+    "id": "EUREKA_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "유레카",
+    "description": "보유한 유물 [blue]6[/blue]개당 매 턴 [blue]1[/blue]의 추가 에너지를 얻습니다.",
+    "flavor": "영감은 하늘에서 떨어지지 않습니다. 부품 더미에서 기어 나옵니다.",
+    "icon": "assets/icons/relics/eurekaRune.png"
+  },
+  {
+    "id": "GHOST_FORM_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "유령의 형상",
+    "description": "매 전투 시작 시, [gold]불가침[/gold]을 [blue]3[/blue], [gold]방어 불가[/gold]를 [blue]3[/blue] 얻습니다.",
+    "flavor": "육체가 희미해지면 상처가 내려앉을 곳이 없어집니다.",
+    "icon": "assets/icons/relics/ghostFormRune.png"
+  },
+  {
+    "id": "GLASS_CANNON_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "유리 대포",
+    "description": "주는 피해가 [blue]50%[/blue] 증가합니다. 체력을 [blue]70%[/blue] 이상 회복할 수 없습니다.",
+    "flavor": "큰 소리를 내며 깨지지만, 그럴 만한 가치가 있을 만큼 요란합니다.",
+    "icon": "assets/icons/relics/glassCannonRune.png"
+  },
+  {
+    "id": "LUBRICANT_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "윤활유",
+    "description": "매 턴 처음으로 사용하는 파워 카드의 비용이 0이 됩니다.",
+    "flavor": "가장 무거운 톱니바퀴조차 첫 회전에서는 부드럽게 도는 법을 배웁니다.",
+    "icon": "assets/icons/relics/lubricantRune.png"
+  },
+  {
+    "id": "GALACTIC_GIFT_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "은하의 선물",
+    "description": "[gold]별[/gold]을 [blue]3[/blue]개 소모할 때마다 [gold]별[/gold]을 [blue]1[/blue]개 얻습니다.",
+    "flavor": "별빛은 화폐가 아닙니다. 그저 가끔 거스름돈을 내줄 뿐이죠.",
+    "icon": "assets/icons/relics/galacticGiftRune.png"
+  },
+  {
+    "id": "CONDENSED_RADIANCE_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "응축된 광휘",
+    "description": "카드를 [blue]1[/blue]장 생성할 때마다 [gold]별[/gold]을 [blue]1[/blue] 얻습니다.",
+    "flavor": "새로운 카드마다 가장자리에 별빛이 조금씩 묻어납니다.",
+    "icon": "assets/icons/relics/condensedRadianceRune.png"
+  },
+  {
+    "id": "RITUAL_FORGE",
+    "category": "relic",
+    "subcategory": "forge",
+    "title": "의식 모루",
+    "description": "매 전투 시작 시, [gold]의식[/gold]을 [blue]1[/blue] 얻습니다.",
+    "flavor": "불빛이 원을 그리면 힘은 어디로 가야 할지 알게 됩니다.",
+    "icon": "assets/icons/relics/silverForge.png"
+  },
+  {
+    "id": "MOBILE_HOME_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "이동식 주택",
+    "description": "[gold]고기 써는 칼[/gold], [gold]삽[/gold], [gold]케틀벨[/gold], [gold]미니어쳐 텐트[/gold]를 얻습니다.",
+    "flavor": "가진 건 많지 않지만 완전한 여행을 하기엔 충분합니다.",
+    "icon": "assets/icons/relics/mobileHomeRune.png"
+  },
+  {
+    "id": "NOW_YOU_SEE_ME_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "이제 안녕",
+    "description": "턴 동안 상태이상 또는 저주 카드를 버릴 때마다 그 카드를 소멸시킵니다.",
+    "flavor": "버려진 골칫거리는 다시 돌아올 필요가 없습니다.",
+    "icon": "assets/icons/relics/nowYouSeeMeRune.png"
+  },
+  {
+    "id": "DOUBLE_EXISTENCE_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "이중 존재",
+    "description": "턴 종료 시, [gold]메아리의 형상[/gold]을 [blue]1[/blue] 얻습니다.",
+    "flavor": "또 다른 당신도 함께 턴을 진행하고 있습니다.",
+    "icon": "assets/icons/relics/doubleExistenceRune.png"
+  },
+  {
+    "id": "MASTER_OF_DUALITY_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "이중성의 대가",
+    "description": "스킬 카드를 사용하면 일시적 [gold]힘[/gold]을 [blue]1[/blue] 얻습니다. 공격 카드를 사용하면 일시적 [gold]민첩[/gold]을 [blue]1[/blue] 얻습니다.",
+    "flavor": "칼날과 주문이 화해할 필요는 없습니다. 그저 번갈아 가며 일하기만 하면 됩니다.",
+    "icon": "assets/icons/relics/masterOfDualityRune.png"
+  },
+  {
+    "id": "DEVIANT_COGNITION_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "이형의 인지",
+    "description": "모든 공격 카드는 이름에 [gold]타격[/gold]이 포함된 것으로 취급됩니다.",
+    "flavor": "충분히 굳게 믿으면 모든 카드가 타격처럼 보입니다.",
+    "icon": "assets/icons/relics/deviantCognitionRune.png"
+  },
+  {
+    "id": "ARTIFACT_FORGE",
+    "category": "relic",
+    "subcategory": "forge",
+    "title": "인공물 모루",
+    "description": "매 전투 시작 시, [gold]인공물[/gold]을 [blue]1[/blue] 얻습니다.",
+    "flavor": "보이지 않는 보호막이 영혼의 껍질에 박혀들어갑니다.",
+    "icon": "assets/icons/relics/silverForge.png"
+  },
+  {
+    "id": "PRISMATIC_ARTIFACT_FORGE",
+    "category": "relic",
+    "subcategory": "forge",
+    "title": "인공물 모루",
+    "description": "매 전투 시작 시, [gold]인공물[/gold]을 [blue]2[/blue] 얻습니다.",
+    "flavor": "두 개의 보호막이 최악의 사고를 바깥에 묶어둡니다.",
+    "icon": "assets/icons/relics/prismaticForge.png"
+  },
+  {
+    "id": "NEAR_DEATH_FEAST_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "임사 체험의 향연",
+    "description": "체력이 [blue]0[/blue] 이하로 떨어지면 빈사 상태에 빠집니다. 빈사 상태에서는 회복이나 방어도를 얻을 수 없으며, 음수 체력이 최대 체력의 [blue]절반[/blue]에 도달하면 죽습니다. 음수 체력 [blue]1[/blue]당 [gold]힘[/gold]을 [blue]1[/blue] 얻습니다. 전투 승리 시, 체력이 [blue]1[/blue] 미만이라면 [blue]1[/blue]로 회복합니다.",
+    "flavor": "죽음에 가까운 자리일수록 연회는 더욱 뜨겁게 타오릅니다.",
+    "icon": "assets/icons/relics/nearDeathFeastRune.png"
+  },
+  {
+    "id": "EMBERS_FORGE",
+    "category": "relic",
+    "subcategory": "forge",
+    "title": "잉걸불 모루",
+    "description": "획득 시, 덱에서 카드 [blue]1[/blue]장을 선택하여 [gold]테즈카타라의 잉걸불[/gold]을 인챈트합니다.",
+    "flavor": "잉걸불은 꺼지지 않았고 다음 카드를 기다릴 뿐입니다.",
+    "icon": "assets/icons/relics/silverForge.png"
+  },
+  {
+    "id": "FORGOTTEN_SOUL_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "잊힌 영혼",
+    "description": "상태이상이 아닌 [gold]소멸[/gold]을 가진 카드를 사용해도 소멸되지 않습니다.",
+    "flavor": "떠나야 했던 기억이 제자리에 고정됩니다.",
+    "icon": "assets/icons/relics/forgottenSoulRune.png"
+  },
+  {
+    "id": "AUTO_PATROL_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "자동 순찰",
+    "description": "턴 시작 시, 골골이의 현재 HP [blue]{OstyHpPerCard}[/blue]마다 [gold]훑어보기[/gold] [blue]{Cards}[/blue]장을 사용합니다.",
+    "flavor": "순찰 경로는 뼈에 새겨져 있습니다.",
+    "icon": "assets/icons/relics/autoPatrolRune.png"
+  },
+  {
+    "id": "NATURE_IS_HEALING_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "자연이 회복되고 있다",
+    "description": "전투 중 [blue]10[/blue]초마다 체력을 [blue]1[/blue] 회복합니다.",
+    "flavor": "상처가 숨 쉬게 두면, 초록이 그것을 닫아 줍니다.",
+    "icon": "assets/icons/relics/natureIsHealingRune.png"
+  },
+  {
+    "id": "LINGERING_MIGHT_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "잔존하는 위세",
+    "description": "전투 종료 시, 보유한 버프 중 무작위 한 종류를 다음 전투 시작까지 유지합니다.",
+    "flavor": "전투는 끝나도 기세는 끝나지 않는다.",
+    "icon": "assets/icons/relics/lingeringMightRune.png"
+  },
+  {
+    "id": "BRUTALITY_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "잔혹성",
+    "description": "턴 시작 시 체력을 [blue]2[/blue] 잃고 카드를 [blue]2[/blue]장 뽑습니다.",
+    "flavor": "고통이 손을 재촉합니다.",
+    "icon": "assets/icons/relics/brutalityRune.png"
+  },
+  {
+    "id": "BRUTAL_FORCE_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "잔혹한 힘",
+    "description": "매 전투 시작 시, 카드를 [blue]2[/blue]장 추가로 뽑고 [gold]힘[/gold]을 [blue]1[/blue] 얻습니다.",
+    "flavor": "충분히 빠르고, 충분히 무겁고, 충분히 불합리합니다.",
+    "icon": "assets/icons/relics/brutalForceRune.png"
+  },
+  {
+    "id": "REPROGRAM_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "재구성",
+    "description": "획득 시, [gold]재구성[/gold] [blue]2[/blue]장을 덱에 추가합니다.",
+    "flavor": "낡은 명령은 지워지고, 새로운 오류가 빛나기 시작합니다.",
+    "icon": "assets/icons/relics/reprogramRune.png"
+  },
+  {
+    "id": "REGEN_FORGE",
+    "category": "relic",
+    "subcategory": "forge",
+    "title": "재생 모루",
+    "description": "매 전투 시작 시, [gold]재생[/gold]을 [blue]4[/blue] 얻습니다.",
+    "flavor": "몸이 고통의 모양을 잊어버립니다.",
+    "icon": "assets/icons/relics/silverForge.png"
+  },
+  {
+    "id": "REGENERATION_SUPPRESSION_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "재생 억제",
+    "description": "부활을 제외하고 몬스터가 체력을 회복하려고 할 때마다, 대신 다음 플레이어 턴 시작 시, 그만큼의 방어도를 얻습니다.",
+    "flavor": "상처는 침묵을 배우고, 껍질만이 대답합니다.",
+    "icon": "assets/icons/relics/regenerationSuppressionRune.png"
+  },
+  {
+    "id": "RENEWAL_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "재생성",
+    "description": "카드를 [blue]1[/blue]장 버릴 때마다 카드를 [blue]1[/blue]장 뽑습니다.",
+    "flavor": "낡은 카드가 떨어지면 소매 안에서는 새로운 카드가 이미 따뜻하게 데워져 있습니다.",
+    "icon": "assets/icons/relics/renewalRune.png"
+  },
+  {
+    "id": "DISASTER_FORGE",
+    "category": "relic",
+    "subcategory": "forge",
+    "title": "재앙 모루",
+    "description": "매 전투 시작 시, 모든 적이 [gold]약화[/gold]와 [gold]취약[/gold]을 [blue]1[/blue] 얻습니다.",
+    "flavor": "첫 번째 망치질이 모든 적의 발밑에 단층선을 엽니다.",
+    "icon": "assets/icons/relics/silverForge.png"
+  },
+  {
+    "id": "ADAPTIVE_CAPACITOR_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "적응형 축전기",
+    "description": "턴 시작 시, 구체 슬롯을 [blue]1[/blue] 얻습니다.",
+    "flavor": "용량은 다음 과부하를 버텨낼 수 있을 만큼만 딱 맞게 자라납니다.",
+    "icon": "assets/icons/relics/adaptiveCapacitorRune.png"
+  },
+  {
+    "id": "ELECTRODYNAMICS_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "전기역학",
+    "description": "[gold]전기[/gold] 구체가 모든 적에게 피해를 줍니다. 턴 시작 시 [gold]전기[/gold] 구체를 [blue]1[/blue]개 영창합니다.",
+    "flavor": "번개는 결코 하나의 출구만 선택하지 않습니다.",
+    "icon": "assets/icons/relics/electrodynamicsRune.png"
+  },
+  {
+    "id": "ELECTRIC_SURGE_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "전류 쇄도",
+    "description": "턴 시작 시 번개 구체를 [blue]1[/blue]개 영창합니다.",
+    "flavor": "전류가 깨어날 때는 노크하지 않습니다.",
+    "icon": "assets/icons/relics/electricSurgeRune.png"
+  },
+  {
+    "id": "SYMPHONY_OF_WAR_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "전쟁의 교향곡",
+    "description": "매 전투 시작 시, [gold]구렁이의 형상[/gold]을 [blue]4[/blue], [gold]악마의 형상[/gold]을 [blue]1[/blue] 얻습니다.",
+    "flavor": "북소리가 시작되면 뱀과 악마가 함께 응답합니다.",
+    "icon": "assets/icons/relics/symphonyOfWarRune.png"
+  },
+  {
+    "id": "GROWING_STRONGER_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "점점 더 강하게",
+    "description": "[gold]힘[/gold]을 [blue]1[/blue] 얻을 때마다, 손에 있는 무작위 카드 [blue]1[/blue]장이 이번 턴 동안 무료가 됩니다.",
+    "flavor": "힘이 차오르면 기회도 그에 맞춰 느슨해집니다.",
+    "icon": "assets/icons/relics/growingStrongerRune.png"
+  },
+  {
+    "id": "GROUNDED_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "접지",
+    "description": "턴 종료 시 방어도가 2배로 증가합니다.",
+    "flavor": "발밑이 안정되면 방패는 어떻게 떠오르는지 기억해 냅니다.",
+    "icon": "assets/icons/relics/groundedRune.png"
+  },
+  {
+    "id": "PRECISION_COGNITION_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "정밀한 인지",
+    "description": "턴 시작 시, [gold]밀집[/gold]을 [blue]2[/blue] 얻습니다.",
+    "flavor": "오류를 제거하고 나면 계산 가능한 세계만이 남습니다.",
+    "icon": "assets/icons/relics/precisionCognitionRune.png"
+  },
+  {
+    "id": "MENTAL_SHIELD_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "정신 방패",
+    "description": "턴 종료 시, 손에 있는 카드 한 장당 방어도를 [blue]2[/blue] 얻습니다.",
+    "flavor": "생각이 많을수록 방패는 더 두꺼워집니다.",
+    "icon": "assets/icons/relics/mentalShieldRune.png"
+  },
+  {
+    "id": "MIND_PURIFICATION_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "정신 정화",
+    "description": "적을 처치한 후, 각 적들에게 적 현재 체력의 [blue]30%[/blue]만큼 피해를 줍니다.",
+    "flavor": "소위 정화라는 것은 단지 문제를 근처의 누군가에게 떠넘길 뿐입니다.",
+    "icon": "assets/icons/relics/mindPurificationRune.png"
+  },
+  {
+    "id": "MIND_TO_MATTER_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "정신을 물질로",
+    "description": "획득 시, 메인 덱의 카드 한 장당 최대 체력을 [blue]1[/blue] 얻습니다.",
+    "flavor": "생각이 충분히 쌓이면 몸이 자리를 마련해야 합니다.",
+    "icon": "assets/icons/relics/mindToMatterRune.png"
+  },
+  {
+    "id": "MIND_OVER_MATTER_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "정신일도 하사불성",
+    "description": "턴 시작 시, 손에 무작위 카드를 [blue]1[/blue]장 추가합니다. 해당 카드는 [gold]휘발성[/gold]을 얻으며 이번 전투 동안 비용 없이 사용할 수 있습니다.",
+    "flavor": "생각이 충분히 날카로우면 현실이 자리를 내어줍니다.",
+    "icon": "assets/icons/relics/mindOverMatterRune.png"
+  },
+  {
+    "id": "WATCH_OUT_GRAPEFRUIT_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "조심해, 컵케이키",
+    "description": "전투 보상에 음식 유물 보상을 추가로 제공합니다. 음식 유물은 중복해서 등장할 수 있습니다.; 이미 [gold]아이스크림[/gold]을 가지고 있다면, [gold]아이스크림[/gold]은 다시 등장하지 않습니다.",
+    "flavor": "단맛은 미끼일 뿐입니다. 중요한 건 접시 밑에 숨겨진 것이죠.",
+    "icon": "assets/icons/relics/watchOutGrapefruitRune.png"
+  },
+  {
+    "id": "POCKET_FORGE",
+    "category": "relic",
+    "subcategory": "forge",
+    "title": "주머니 모루",
+    "description": "획득 시, 포션 슬롯을 [blue]1[/blue]개 얻습니다.",
+    "flavor": "주머니 하나가 늘어나면 숨겨 둘 해답도 하나 늘어납니다.",
+    "icon": "assets/icons/relics/silverForge.png"
+  },
+  {
+    "id": "DICE_MANIAC_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "주사위 광신도",
+    "description": "전투 보상에 [blue]50%[/blue] 확률로 무작위 능력치 모루가 추가로 등장합니다. 모든 무작위 능력치 모루에서 골드 및 프리즘 등급의 등장 확률이 2배가 됩니다.",
+    "flavor": "스폰서 아이템: 주사위가 구르기를 멈추기도 전에 상품은 이미 용광로 옆에서 기다리고 있습니다.",
+    "icon": "assets/icons/relics/diceManiacRune.png"
+  },
+  {
+    "id": "DEATH_HARVEST_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "죽음의 수확",
+    "description": "각 전투의 첫 턴 동안, 당신이 적에게 준 막히지 않은 피해의 절반만큼 HP를 회복합니다.",
+    "flavor": "첫 피가 떨어질 때 수확은 이미 시작되었습니다.",
+    "icon": "assets/icons/relics/deathHarvestRune.png"
+  },
+  {
+    "id": "CIRCLE_OF_DEATH_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "죽음의 원",
+    "description": "전투 중 방어도를 얻거나 체력을 회복할 때마다 무작위 적에게 그만큼의 피해를 줍니다.",
+    "flavor": "상처를 원으로 바꾸면, 다음 베기는 돌아가는 길을 알게 됩니다.",
+    "icon": "assets/icons/relics/circleOfDeathRune.png"
+  },
+  {
+    "id": "PREPARED_FORGE",
+    "category": "relic",
+    "subcategory": "forge",
+    "title": "준비 모루",
+    "description": "매 전투 시작 시, 카드를 [blue]1[/blue]장 추가로 뽑습니다.",
+    "flavor": "진정한 준비는 전투가 시작되기 전에 해답을 하나 더 쥐고 있는 것입니다.",
+    "icon": "assets/icons/relics/silverForge.png"
+  },
+  {
+    "id": "WARMUP_EXERCISE_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "준비 운동",
+    "description": "턴 종료 시, 이번 턴에 아무런 피해도 주지 않았다면, [gold]힘[/gold]과 [gold]민첩[/gold]을 [blue]2[/blue]씩 얻습니다. 전투당 1회 발동합니다.",
+    "flavor": "내지르지 않은 주먹은 여전히 당신의 근육 속에서 기다리고 있습니다.",
+    "icon": "assets/icons/relics/warmupExerciseRune.png"
+  },
+  {
+    "id": "INSTANT_DEATH_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "즉사",
+    "description": "적의 [gold]종말[/gold] 수치가 현재 체력보다 많아지면 즉시 죽습니다.",
+    "flavor": "징조가 생명을 넘어서면, 결말은 더 이상 기다리지 않습니다.",
+    "icon": "assets/icons/relics/instantDeathRune.png"
+  },
+  {
+    "id": "INFERNAL_CONDUIT_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "지옥불 도관",
+    "description": "공격 카드가 적에게 무한 중첩 가능한 [gold]점화[/gold]를 [blue]2[/blue] 부여합니다. 적에게 부여된 점화 [blue]5[/blue]당 다음 턴 시작 시, [blue]1[/blue]의 추가 에너지를 얻습니다.",
+    "flavor": "최고의 도체는 지옥의 열기조차 운반할 수 있습니다.",
+    "icon": "assets/icons/relics/infernalConduitRune.png"
+  },
+  {
+    "id": "JINLIAN_BOX_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "진련의 상자",
+    "description": "획득 시, 덱에 있는 모든 타격과 수비 카드를 무작위 희귀 카드로 변화시킵니다.",
+    "flavor": "뚜껑이 딸깍 닫히면 싸구려 옛 이름들은 모두 사라집니다.",
+    "icon": "assets/icons/relics/jinlianBoxRune.png"
+  },
+  {
+    "id": "COLLECTOR_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "징수의 총",
+    "description": "주는 피해가 [blue]10%[/blue] 증가합니다. 적이 죽을 때마다 카운트를 [blue]10[/blue] 얻습니다. 전투 승리 후 카운트만큼 추가 골드를 얻습니다.",
+    "flavor": "누군가는 승리를 세고, 누군가는 영수증을 셉니다.",
+    "icon": "assets/icons/relics/collectorRune.png"
+  },
+  {
+    "id": "SLOW_COOK_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "찜솥",
+    "description": "턴 시작 시, 당신의 최대 체력의 [blue]5%[/blue](내림)만큼 모든 적에게 [gold]점화[/gold]를 부여합니다.",
+    "flavor": "불길은 서두를 필요가 없습니다. 냄비 속의 것들에겐 선택의 여지가 없으니까요.",
+    "icon": "assets/icons/relics/slowCookRune.png"
+  },
+  {
+    "id": "SLAP_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "찰싹",
+    "description": "적에게 해로운 효과를 부여할 때마다 [gold]힘[/gold]을 [blue]1[/blue] 얻습니다. 매 턴 최대 [blue]3[/blue]번 발동합니다.",
+    "flavor": "먼저 뺨을 때리면 굴욕감이 뿌리내립니다.",
+    "icon": "assets/icons/relics/slapRune.png"
+  },
+  {
+    "id": "ASTRAL_BODY_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "천상의 신체",
+    "description": "최대 체력이 [blue]50%[/blue] 증가합니다. 주는 피해가 [blue]10%[/blue] 감소합니다.",
+    "flavor": "별이 몸을 빌려줄 순 있지만, 그 무게는 남겨둡니다.",
+    "icon": "assets/icons/relics/astralBodyRune.png"
+  },
+  {
+    "id": "EASY_DOES_IT_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "천천히 해",
+    "description": "턴 시작 시 뽑을 카드 더미의 맨 위 카드를 사용합니다.",
+    "flavor": "마음이 따라잡기도 전에 손이 먼저 선택합니다.",
+    "icon": "assets/icons/relics/easyDoesItRune.png"
+  },
+  {
+    "id": "SILVER_HP_FORGE",
+    "category": "relic",
+    "subcategory": "forge",
+    "title": "체력 단조기",
+    "description": "최대 체력이 [blue]7.5%[/blue] 증가합니다.",
+    "flavor": "불길은 더 이상 그릇을 키우지 않고, 완전히 다시 씁니다.",
+    "icon": "assets/icons/relics/silverForge.png"
+  },
+  {
+    "id": "GOLD_HP_FORGE",
+    "category": "relic",
+    "subcategory": "forge",
+    "title": "체력 단조기",
+    "description": "최대 체력이 [blue]15%[/blue] 증가합니다.",
+    "flavor": "불길은 더 이상 그릇을 키우지 않고, 완전히 다시 씁니다.",
+    "icon": "assets/icons/relics/goldForge.png"
+  },
+  {
+    "id": "TRANSCENDENT_EVIL_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "초월적 악",
+    "description": "전투 승리 후 [blue]1[/blue] 중첩을 얻습니다. [blue]4[/blue] 중첩마다 매 전투 시작 시, [blue]1[/blue] [gold]밀집[/gold]과 [blue]1[/blue] 구체 슬롯을 얻습니다.",
+    "flavor": "악의는 한번 배양되고 나면 스스로 피어나는 법을 배웁니다.",
+    "icon": "assets/icons/relics/transcendentEvilRune.png"
+  },
+  {
+    "id": "CATALYST_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "촉매",
+    "description": "획득 시, 덱에 [gold]촉매[/gold]를 [blue]1[/blue]장 추가합니다.",
+    "flavor": "독은 단 한 번의 밀침만 있으면 됩니다. 나머지는 알아서 완성될 테니까요.",
+    "icon": "assets/icons/relics/catalystRune.png"
+  },
+  {
+    "id": "FINAL_FORM_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "최종 형태",
+    "description": "비용이 [blue]2[/blue] 이상인 카드를 사용한 후, 최대 체력의 [blue]10%[/blue]만큼 [gold]판금[/gold]을 얻고 카드를 [blue]2[/blue]장 뽑습니다. 매 턴 최대 [blue]1[/blue]번 발동합니다.",
+    "flavor": "최종 형태는 결코 시작부터 보여주기 위한 것이 아닙니다.",
+    "icon": "assets/icons/relics/finalFormRune.png"
+  },
+  {
+    "id": "CUTTING_EDGE_ALCHEMIST_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "최첨단 연금술사",
+    "description": "전투 후 보상에 무작위 희귀 포션 [blue]1[/blue]개와 무작위 고급 포션 [blue]1[/blue]개가 추가됩니다.",
+    "flavor": "더 위험한 색상일수록 라벨은 더 화려해집니다.",
+    "icon": "assets/icons/relics/cuttingEdgeAlchemistRune.png"
+  },
+  {
+    "id": "SHRINK_RAY_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "축소 광선",
+    "description": "막히지 않은 공격 피해를 줄 때마다 적에게 [gold]압축[/gold]을 [blue]1[/blue] 부여합니다.",
+    "flavor": "크기가 타협되면 존엄성도 함께 줄어듭니다.",
+    "icon": "assets/icons/relics/shrinkRayRune.png"
+  },
+  {
+    "id": "SHRINK_ENGINE_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "축소 엔진",
+    "description": "전투 승리 후 [blue]1[/blue] 중첩을 얻습니다. 각 중첩은 당신의 크기를 [blue]2%[/blue] 줄입니다. [blue]4[/blue] 중첩마다 매 턴 카드를 [blue]1[/blue]장 추가로 뽑습니다. [blue]8[/blue] 중첩마다 매 턴 [blue]1[/blue]의 추가 에너지를 얻습니다.",
+    "flavor": "작아질수록 움직임은 더 빨라지고, 빨라질수록 예측하기가 더 어려워집니다.",
+    "icon": "assets/icons/relics/shrinkEngineRune.png"
+  },
+  {
+    "id": "FIREWORKS_FORGE",
+    "category": "relic",
+    "subcategory": "forge",
+    "title": "축포 모루",
+    "description": "매 전투 시작 시, 모든 적에게 [blue]6[/blue] 피해를 줍니다.",
+    "flavor": "전투의 첫 소리는 조금 더 커도 좋습니다.",
+    "icon": "assets/icons/relics/silverForge.png"
+  },
+  {
+    "id": "CHARGE_UP_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "충전",
+    "description": "별을 소모할 때마다, 소모한 별당 [gold]활력[/gold]을 얻습니다.",
+    "flavor": "모든 움직임이 다음 움직임을 더 멀리 밀어냅니다.",
+    "icon": "assets/icons/relics/chargeUpRune.png"
+  },
+  {
+    "id": "LETHAL_TEMPO_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "치명적 속도",
+    "description": "[gold]단검[/gold]을 사용할 때마다 일시적 [gold]힘[/gold]을 [blue]1[/blue] 얻습니다.",
+    "flavor": "박자가 칼날보다 먼저 꽂힙니다.",
+    "icon": "assets/icons/relics/lethalTempoRune.png"
+  },
+  {
+    "id": "KAKA_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "카-카!",
+    "description": "첫 번째 턴에는 공격 카드를 사용할 수 없습니다. 두 번째 턴 시작 시 현재 막과 같은 수치의 [gold]의식[/gold]을 얻습니다.",
+    "flavor": "첫 번째 찰칵 소리는 인내심입니다. 두 번째는 칼날입니다.",
+    "icon": "assets/icons/relics/kakaRune.png"
+  },
+  {
+    "id": "CARD_INSPECTION_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "카드 검사",
+    "description": "턴 시작 시 카드를 자동으로 뽑지 않습니다. 대신 동일한 수만큼 뽑을 카드 더미에서 카드를 선택해 손으로 가져옵니다.",
+    "flavor": "맨 위의 카드는 제안일 뿐입니다. 덱은 직접 읽으십시오.",
+    "icon": "assets/icons/relics/cardInspectionRune.png"
+  },
+  {
+    "id": "BIG_KNIFE_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "커다란 단검",
+    "description": "[gold]단검[/gold]을 얻을 때마다, 대신 비용이 0이고 [gold]소멸[/gold]이 붙은 [gold]군주의 칼날[/gold]을 얻습니다. 단검 관련 효과도 [gold]군주의 칼날[/gold]에 적용됩니다.",
+    "flavor": "칼이 커지면 규칙도 자리를 비켜 줍니다.",
+    "icon": "assets/icons/relics/bigKnifeRune.png"
+  },
+  {
+    "id": "CURTAIN_CALL_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "커튼 콜",
+    "description": "획득 시, 덱에 [gold]보존[/gold]을 가진 [gold]대단원의 막[/gold]을 [blue]1[/blue]장 추가합니다.",
+    "flavor": "마지막 일격은 박수갈채를 기다립니다.",
+    "icon": "assets/icons/relics/curtainCallRune.png"
+  },
+  {
+    "id": "CERBERUS_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "케르베로스",
+    "description": "매 턴 처음으로 사용하는 세 장의 공격 카드를 비용 없이 사용할 수 있습니다.",
+    "flavor": "세 개의 입이 동시에 포효하면, 비용이 가장 먼저 숨어버립니다.",
+    "icon": "assets/icons/relics/cerberusRune.png"
+  },
+  {
+    "id": "CORE_OVERLOAD_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "코어 과부하",
+    "description": "구체를 발현할 때마다 [gold]밀집[/gold]을 [blue]1[/blue] 얻습니다.",
+    "flavor": "코어가 뜨거워질수록 계산은 더욱 날카로워집니다.",
+    "icon": "assets/icons/relics/coreOverloadRune.png"
+  },
+  {
+    "id": "BIG_HANDS_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "큰 손",
+    "description": "당신의 소환 수치가 2배가 됩니다.",
+    "flavor": "더 큰 손에 쥐어지면 뼈는 항상 실제보다 적어 보입니다.",
+    "icon": "assets/icons/relics/bigHandsRune.png"
+  },
+  {
+    "id": "KILLER_HUNTER_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "킬러 헌터",
+    "description": "카드를 [blue]1[/blue]장 사용할 때마다 모든 적의 힘과 민첩을 이번 턴동안 [blue]1[/blue]씩 감소시킵니다. ",
+    "flavor": "진정한 사냥꾼은 가장 먼저 사냥감에게 반격하는 법을 잊게 만듭니다.",
+    "icon": "assets/icons/relics/killerHunterRune.png"
+  },
+  {
+    "id": "CORRUPTED_BRANCH_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "타락한 가지",
+    "description": "획득 시, [gold]선천성[/gold]인 [gold]타락[/gold] [blue]1[/blue]장을 덱에 추가합니다. 카드를 [blue]1[/blue]장 소멸시킬 때마다 무작위 카드 [blue]1[/blue]장을 손에 추가합니다.",
+    "flavor": "스폰서 아이템: 마른 가지도 꽃을 피웁니다. 다만 꽃잎이 조금 검을 뿐입니다.",
+    "icon": "assets/icons/relics/corruptedBranchRune.png"
+  },
+  {
+    "id": "BURNING_INTEREST_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "타오르는 이자",
+    "description": "공격 카드가 적에게 무한히 중첩되는 [gold]화상[/gold]을 [blue]1[/blue] 부여합니다. [gold]화상[/gold]으로 피해를 [blue]1[/blue] 줄 때마다 카운트가 [blue]2[/blue] 증가합니다. 전투 승리 후 카운트만큼 추가 골드를 얻습니다.",
+    "flavor": "장부 속 불꽃마다 이자가 붙는다.",
+    "icon": "assets/icons/relics/burningInterestRune.png"
+  },
+  {
+    "id": "ESCAPE_PLAN_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "탈출 계획",
+    "description": "피해를 입어 체력이 최대 체력의 [blue]50%[/blue] 미만이 되면, 다음 턴 시작 시, 최대 체력의 [blue]60%[/blue]만큼 방어도를 얻고 [blue]1[/blue] 턴 동안 [gold]압축[/gold] 상태가 됩니다. 전투당 1회 발동합니다.",
+    "flavor": "가장 믿을 만한 후퇴는 대개 전투가 시작되기 전에 작성됩니다.",
+    "icon": "assets/icons/relics/escapePlanRune.png"
+  },
+  {
+    "id": "TAP_DANCE_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "탭댄스",
+    "description": "공격 카드를 사용할 때마다 카드를 [blue]1[/blue]장 뽑습니다.",
+    "flavor": "발이 박자를 맞추면 손도 따라 박수를 칩니다.",
+    "icon": "assets/icons/relics/tapDanceRune.png"
+  },
+  {
+    "id": "TANK_ENGINE_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "탱크 엔진",
+    "description": "전투에서 승리하면 [blue]1[/blue] 중첩을 얻습니다. 각 중첩은 최대 체력을 [blue]6%[/blue] 제공하고 크기를 [blue]6%[/blue] 증가시킵니다.",
+    "flavor": "울림이 깊어질수록 멈추는 것과는 거리가 멀어집니다.",
+    "icon": "assets/icons/relics/tankEngineRune.png"
+  },
+  {
+    "id": "TANKS_SHIELD_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "탱크의 방패",
+    "description": "공격 카드를 사용할 때마다 방어도를 [blue]3[/blue] 얻습니다.",
+    "flavor": "방패는 멈추기 위한 것이 아닙니다. 더 오래 돌진하기 위한 것입니다.",
+    "icon": "assets/icons/relics/tanksShieldRune.png"
+  },
+  {
+    "id": "TEZCATARAS_MERCY_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "테즈카타라의 자비",
+    "description": "전투 보상에 밀랍 유물이 [blue]1[/blue]개 추가로 등장합니다. [blue]3[/blue]번의 전투마다 가장 왼쪽에 있는 밀랍 유물이 녹아내립니다.",
+    "flavor": "자비는 뚝뚝 떨어질 만큼 부드럽습니다.",
+    "icon": "assets/icons/relics/tezcatarasMercyRune.png"
+  },
+  {
+    "id": "SINGULARITY_AI_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "특이점 AI",
+    "description": "턴 시작 시 캐릭터의 무작위 파워 카드 [blue]1[/blue]장을 손으로 가져옵니다. 이 카드는 이번 턴에 비용이 0이 됩니다.",
+    "flavor": "이것은 미래를 예측하지 않습니다. 당신의 손에 미래를 쥐여줄 뿐입니다.",
+    "icon": "assets/icons/relics/singularityAiRune.png"
+  },
+  {
+    "id": "POWER_SHIELD_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "파워 실드",
+    "description": "매 턴 처음으로 방어도를 얻을 때, 현재 막과 같은 수치의 일시적 [gold]힘[/gold]을 얻습니다.",
+    "flavor": "방어가 두꺼울수록 다음 스윙은 더 무거워집니다.",
+    "icon": "assets/icons/relics/powerShieldRune.png"
+  },
+  {
+    "id": "SILVER_PLATING_FORGE",
+    "category": "relic",
+    "subcategory": "forge",
+    "title": "판금 모루",
+    "description": "매 전투 시작 시, [gold]판금[/gold]을 [blue]3[/blue] 얻습니다.",
+    "flavor": "두려움이 말문을 열기 전에 얇은 갑옷이 한발 앞서 나섭니다.",
+    "icon": "assets/icons/relics/silverForge.png"
+  },
+  {
+    "id": "PLATING_FORGE",
+    "category": "relic",
+    "subcategory": "forge",
+    "title": "판금 모루",
+    "description": "매 전투 시작 시, [gold]판금[/gold]을 [blue]5[/blue] 얻습니다.",
+    "flavor": "신중함을 물러서지 않는 갑옷에 박아 넣습니다.",
+    "icon": "assets/icons/relics/silverForge.png"
+  },
+  {
+    "id": "PANDORAS_BOX_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "판도라의 상자",
+    "description": "획득 시, 보유한 모든 마법공학 룬을 무작위 프리즘 마법공학 룬으로 변화시킵니다.",
+    "flavor": "일단 상자가 열리면 모든 낡은 꼬리표는 만료됩니다.",
+    "icon": "assets/icons/relics/pandorasBoxRune.png"
+  },
+  {
+    "id": "OVERLORD_BLOOD_ARMOR_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "패왕의 피갑옷",
+    "description": "매 전투 시작 시, 최대 체력 [blue]40[/blue]당 [gold]힘[/gold]을 [blue]1[/blue] 얻습니다.",
+    "flavor": "피가 짙을수록 칼날도 무거워집니다.",
+    "icon": "assets/icons/relics/overlordBloodArmorRune.png"
+  },
+  {
+    "id": "SNAIL_FORM_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "펠의 나태",
+    "description": "매 전투 시작 시, [gold]둔화[/gold]를 얻습니다. 턴 시작 시, [gold]둔화[/gold]를 [blue]{TurnStartSlow}[/blue]으로 설정합니다. 카드를 낼 때마다 [gold]둔화[/gold]가 [blue]{CardSlowGain}[/blue] 증가합니다.",
+    "flavor": "충분히 느리면 피해도 당신을 따라잡지 못합니다.",
+    "icon": "assets/icons/relics/snailFormRune.png"
+  },
+  {
+    "id": "PACIFIST_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "평화주의자",
+    "description": "얻는 회복량과 방어도가 [blue]50%[/blue] 증가합니다. 적에게 피해를 주는 대신 그 수치만큼 [gold]종말[/gold]을 부여합니다.",
+    "flavor": "칼날이 칼집에 들어가면 징조가 말하기 시작합니다.",
+    "icon": "assets/icons/relics/pacifistRune.png"
+  },
+  {
+    "id": "VIOLENCE_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "폭력",
+    "description": "턴 시작 시 뽑을 카드 더미의 무작위 공격 카드 [blue]1[/blue]장을 손에 넣습니다. 이번 턴 동안 비용이 0이 됩니다.",
+    "flavor": "답은 복잡해도, 휘두르는 일은 단순합니다.",
+    "icon": "assets/icons/relics/violenceRune.png"
+  },
+  {
+    "id": "EXPLOSION_ART_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "폭발 예술",
+    "description": "턴 시작 시, 손에 [gold]빅뱅[/gold]을 [blue]1[/blue]장 추가합니다.",
+    "flavor": "미학의 끝은 충분히 시끄러운 피날레입니다.",
+    "icon": "assets/icons/relics/explosionArtRune.png"
+  },
+  {
+    "id": "BLUE_CANDLE_MEDKIT_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "푸른 양초 구급상자",
+    "description": "사용불가인 상태이상과 저주 카드를 사용할 수 있습니다. 상태이상 및 저주 카드의 비용이 [blue]0[/blue]이 되며, 사용하면 소멸됩니다.",
+    "flavor": "불꽃이 상처를 드러내고, 저주의 봉인을 보여줍니다.",
+    "icon": "assets/icons/relics/blueCandleMedkitRune.png"
+  },
+  {
+    "id": "PRISMATIC_EGG_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "프리즘 알",
+    "description": "보물 방의 유물 보상이 무작위 마법공학 룬으로 대체됩니다.",
+    "flavor": "안에 무엇이 들었는지는 아무도 모릅니다. 낳은 쪽조차도.",
+    "icon": "assets/icons/relics/prismaticEggRune.png"
+  },
+  {
+    "id": "FLYING_KICK_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "플라잉 킥",
+    "description": "피해를 준 후, 적의 체력이 최대 체력의 [blue]{ExecutePercent}[/blue]%(플레이어 최대 체력의 [blue]8%[/blue]+[blue]10[/blue]) 미만이라면 적을 처치하고, 최대 체력의 [blue]10%[/blue]를 회복합니다.",
+    "flavor": "높이 뛰어올라 깔끔하게 끝냅니다.",
+    "icon": "assets/icons/relics/flyingKickRune.png"
+  },
+  {
+    "id": "BLOOD_ARMOR_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "피의 갑옷",
+    "description": "플레이어 턴 동안 체력을 [blue]1[/blue] 잃을 때마다 [gold]판금[/gold]을 [blue]1[/blue] 얻습니다.",
+    "flavor": "상처가 생길 때마다 장갑판이 하나씩 더해집니다.",
+    "icon": "assets/icons/relics/bloodArmorRune.png"
+  },
+  {
+    "id": "BLOOD_PACT_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "피의 계약",
+    "description": "체력을 잃을 때마다 다음 턴에 일시적 [gold]힘[/gold]을 [blue]1[/blue] 얻습니다.",
+    "flavor": "맹세는 피가 흐른 뒤에야 비로소 카운트를 시작합니다.",
+    "icon": "assets/icons/relics/bloodPactRune.png"
+  },
+  {
+    "id": "BLOOD_IDOL_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "피의 우상",
+    "description": "골드를 얻을 때마다 체력을 [blue]5[/blue] 회복합니다.",
+    "flavor": "동전이 떨어질 때마다 우상이 고동칩니다.",
+    "icon": "assets/icons/relics/bloodIdolRune.png"
+  },
+  {
+    "id": "SERVANT_MASTER_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "하수인 마스터",
+    "description": "매 전투 시작 시, [gold]강령의 극의[/gold]를 [blue]1[/blue] 얻습니다. 매 턴 시작 시, 소환 [blue]3[/blue].",
+    "flavor": "직접 나서는 것은 관리에 실패했다는 증거입니다.",
+    "icon": "assets/icons/relics/servantMasterRune.png"
+  },
+  {
+    "id": "HATTRICK_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "해트트릭",
+    "description": "카드 보상을 고를 때, 제시된 카드 중에서 원하는 만큼 가져갈 수 있습니다.",
+    "flavor": "손이 빠르면 선택지는 전리품이 됩니다.",
+    "icon": "assets/icons/relics/hattrickRune.png"
+  },
+  {
+    "id": "KEYSTONE_HUNTER_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "핵심 룬 사냥꾼",
+    "description": "매 전투 시작 시, [gold]작업 도구[/gold]를 [blue]1[/blue], [gold]설계의 대가[/gold]를 [blue]1[/blue] 얻습니다.",
+    "flavor": "모든 깔끔한 승리는 손에 올바른 도구를 쥐는 것에서 시작됩니다.",
+    "icon": "assets/icons/relics/keystoneHunterRune.png"
+  },
+  {
+    "id": "HAPPY_ACCIDENT_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "행복한 우연",
+    "description": "상태이상 카드를 [blue]1[/blue]장 생성할 때마다 무작위 구체를 [blue]1[/blue]개 영창하고 [gold]밀집[/gold]을 [blue]1[/blue] 얻습니다.",
+    "flavor": "오작동조차도 올바른 흐름으로 비틀릴 수 있습니다.",
+    "icon": "assets/icons/relics/happyAccidentRune.png"
+  },
+  {
+    "id": "FORTUNE_FORGE",
+    "category": "relic",
+    "subcategory": "forge",
+    "title": "행운 모루",
+    "description": "획득 시, [blue]1000[/blue] 골드를 얻습니다.",
+    "flavor": "용광로에서 떨어지는 모든 불꽃이 동전으로 내려앉습니다.",
+    "icon": "assets/icons/relics/silverForge.png"
+  },
+  {
+    "id": "GOOD_LUCK_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "행운을 빌어요",
+    "description": "전투 후 카드 보상에 강화된 무작위 [gold]희귀[/gold] 카드가 [blue]1[/blue]장 추가됩니다.",
+    "flavor": "주사위가 땅에 떨어지기도 전에 다음 운명이 굴러갑니다.",
+    "icon": "assets/icons/relics/goodLuckRune.png"
+  },
+  {
+    "id": "NO_NONSENSE_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "허튼수작 금지",
+    "description": "내 턴 동안 카드를 뽑을 수 없습니다. 막힌 카드 드로우 만큼 대신 [gold]힘[/gold]을 얻습니다.",
+    "flavor": "추상적인 생각은 다른 사람에게 맡기십시오. 여기선 주먹이 일을 처리합니다.",
+    "icon": "assets/icons/relics/noNonsenseRune.png"
+  },
+  {
+    "id": "HEAVY_HITTER_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "헤비 히터",
+    "description": "최대 체력 [blue]6[/blue]당 주는 피해가 [blue]1%[/blue] 증가하여 최대 [blue]30%[/blue]까지 증가합니다.",
+    "flavor": "무게는 숫자에 불과합니다. 임팩트가 정답입니다.",
+    "icon": "assets/icons/relics/heavyHitterRune.png"
+  },
+  {
+    "id": "MANIPULATE_REALITY_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "현실 조작",
+    "description": "전투 중 임시로 추가되는 모든 카드가 강화된 상태로 추가됩니다.",
+    "flavor": "현실은 아직 확정되지 않은 초안일 뿐입니다.",
+    "icon": "assets/icons/relics/manipulateRealityRune.png"
+  },
+  {
+    "id": "PLATELET_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "혈소판",
+    "description": "플레이어 턴 동안 체력을 [blue]1[/blue] 잃을 때마다 방어도를 [blue]3[/blue] 얻습니다.",
+    "flavor": "상처가 열리면 방어는 굳어지기 시작합니다.",
+    "icon": "assets/icons/relics/plateletRune.png"
+  },
+  {
+    "id": "GLAM_FORGE",
+    "category": "relic",
+    "subcategory": "forge",
+    "title": "호화 모루",
+    "description": "획득 시, 덱에서 카드 [blue]1[/blue]장을 선택하여 [gold]호화[/gold]를 인챈트합니다.",
+    "flavor": "한 겹의 광채가 평범한 카드마저 눈부시게 만듭니다.",
+    "icon": "assets/icons/relics/silverForge.png"
+  },
+  {
+    "id": "STOKE_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "화력 증폭",
+    "description": "휴식 장소에서 카드를 제거할 수 있습니다.",
+    "flavor": "모닥불은 낡은 카드를 삼키고 더 깨끗한 길을 남깁니다.",
+    "icon": "assets/icons/relics/stokeRune.png"
+  },
+  {
+    "id": "INFERNAL_DRAGON_SOUL_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "화염 드래곤의 영혼",
+    "description": "획득 시, 덱에 [gold]화염 드래곤의 영혼[/gold]을 [blue]1[/blue]장 추가합니다.",
+    "flavor": "첫 번째 불꽃이 내려앉을 때, 결말은 이미 뜨겁게 달아올랐습니다.",
+    "icon": "assets/icons/relics/infernalDragonSoulRune.png"
+  },
+  {
+    "id": "WHITE_HOLE_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "화이트홀",
+    "description": "획득 시, 덱에 [gold]화이트홀[/gold]을 [blue]1[/blue]장 추가합니다.",
+    "flavor": "에너지가 쏟아져 나오지 말아야 할 방향에서 쏟아집니다.",
+    "icon": "assets/icons/relics/whiteHoleRune.png"
+  },
+  {
+    "id": "ILLUSORY_WEAPON_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "환영 무기",
+    "description": "스킬 카드를 사용할 때마다 무작위 적에게 [blue]2[/blue]의 피해를 줍니다. 스킬 카드도 공격 카드로 취급되어 공격 효과를 발동시킵니다.",
+    "flavor": "빈 손, 날카로운 칼날.",
+    "icon": "assets/icons/relics/illusoryWeaponRune.png"
+  },
+  {
+    "id": "VIGOR_FORGE",
+    "category": "relic",
+    "subcategory": "forge",
+    "title": "활력 모루",
+    "description": "매 전투 시작 시, [gold]활력[/gold]을 [blue]4[/blue] 얻습니다.",
+    "flavor": "용광로가 첫 일격을 더 뜨겁게 달굽니다.",
+    "icon": "assets/icons/relics/silverForge.png"
+  },
+  {
+    "id": "GOLDEN_SPATULA_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "황금 뒤집개",
+    "description": "전투 승리 후 [blue]1[/blue] 중첩을 얻습니다. 각 중첩은 당신에게 [blue]1%[/blue]의 추가 최대 체력, 피해량, 방어도, 회복량을 제공합니다. 중첩이 [blue]10[/blue] 이상일 때 이 보너스는 세 배가 됩니다.",
+    "flavor": "뭔가 하긴 할 텐데... 아니, 모든 걸 할 수 있어!",
+    "icon": "assets/icons/relics/goldenSpatulaRune.png"
+  },
+  {
+    "id": "TWILIGHT_VEIL_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "황혼의 베일",
+    "description": "전투 중 적이 버프를 얻을 때, 당신도 같은 버프를 얻습니다.",
+    "flavor": "황혼은 누구의 것도 아니다. 걸친 자만 빼고.",
+    "icon": "assets/icons/relics/twilightVeilRune.png"
+  },
+  {
+    "id": "RECOVERY_FORGE",
+    "category": "relic",
+    "subcategory": "forge",
+    "title": "회복 모루",
+    "description": "턴 시작 시, HP를 [blue]1[/blue] 회복합니다.",
+    "flavor": "용광로는 뜨겁지 않아도 상처가 아물 만큼은 따뜻합니다.",
+    "icon": "assets/icons/relics/silverForge.png"
+  },
+  {
+    "id": "ADVANCE_TO_RETREAT_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "후퇴를 위한 전진",
+    "description": "[gold]취약[/gold] 상태인 적을 공격할 때 방어도를 [blue]3[/blue] 얻습니다.",
+    "flavor": "앞으로 내디딘 한 걸음이 여전히 방어를 찾아낼 수 있습니다.",
+    "icon": "assets/icons/relics/advanceToRetreatRune.png"
+  },
+  {
+    "id": "HASTY_SCRIBBLE_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "휘갈겨 쓴 글씨",
+    "description": "매 턴 카드를 [blue]5[/blue]장 추가로 뽑습니다.",
+    "flavor": "아이디어가 너무 빨리 떠올라 글씨를 깔끔하게 쓸 수 없습니다.",
+    "icon": "assets/icons/relics/hastyScribbleRune.png"
+  },
+  {
+    "id": "SWEEPING_BLADE_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "휩쓰는 칼날",
+    "description": "이름에 [gold]타격[/gold]이 포함된 공격 카드가 모든 적에게 피해를 줍니다.",
+    "flavor": "칼날이 가로로 움직일 때, 선의 경계는 의미를 잃습니다.",
+    "icon": "assets/icons/relics/sweepingBladeRune.png"
+  },
+  {
+    "id": "PORTABLE_SLEEPING_BAG_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "휴대용 침낭",
+    "description": "[gold]호화로운 베개[/gold], [gold]작은 우편함[/gold], [gold]드림캐쳐[/gold], [gold]석재 가습기[/gold]를 얻습니다.",
+    "flavor": "주머니 속에 잠을 접어 넣고, 깨어나면 무언가 덤으로 챙겨져 있습니다.",
+    "icon": "assets/icons/relics/portableSleepingBagRune.png"
+  },
+  {
+    "id": "RECYCLE_BIN_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "휴지통",
+    "description": "버린 카드 더미의 상태이상 카드는 뽑을 카드 더미로 섞이지 않습니다.",
+    "flavor": "버린 것은 다시 꺼내지 않는 편이 좋습니다.",
+    "icon": "assets/icons/relics/recycleBinRune.png"
+  },
+  {
+    "id": "DRAIN_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "흡수",
+    "description": "소환을 할 때마다 모든 적에게 소환 수치의 [blue]2[/blue]배만큼 [gold]종말[/gold]을 부여합니다.",
+    "flavor": "부름이 울릴 때마다 적의 운명이 조금씩 빨려 나갑니다.",
+    "icon": "assets/icons/relics/drainRune.png"
+  },
+  {
+    "id": "SACRIFICE_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "희생",
+    "description": "회복량과 방어도가 [blue]10%[/blue] 증가합니다. 매 턴 시작 시, 적 하나당 카운트를 [blue]5[/blue] 얻습니다. 전투 승리 후 카운트만큼 추가 골드를 얻습니다.",
+    "flavor": "살아남은 모든 적은 아직 현금화되지 않은 판돈입니다.",
+    "icon": "assets/icons/relics/sacrificeRune.png"
+  },
+  {
+    "id": "STRENGTH_FORGE",
+    "category": "relic",
+    "subcategory": "forge",
+    "title": "힘 모루",
+    "description": "매 전투 시작 시, [gold]힘[/gold]을 [blue]1[/blue] 얻습니다.",
+    "flavor": "모든 펀치에 무게를 고정시키는 못입니다.",
+    "icon": "assets/icons/relics/silverForge.png"
+  },
+  {
+    "id": "STRENGTH_TO_DEXTERITY_RUNE",
+    "category": "relic",
+    "subcategory": "relic",
+    "title": "힘을 민첩으로",
+    "description": "매 전투 시작 시, [gold]민첩[/gold]을 [blue]1[/blue] 얻습니다. 당신의 [gold]힘[/gold] 변화량이 동일한 수치의 [gold]민첩[/gold]으로 변환됩니다.",
+    "flavor": "무식한 힘을 정교하게 비틀면 발놀림이 됩니다.",
+    "icon": "assets/icons/relics/strengthToDexterityRune.png"
+  }
+]

@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>슬더스2 증강모드(HextechRunes) 도감</title>
+<style>
+  :root {
+    --bg: #121016;
+    --panel: #1c1922;
+    --panel-2: #262230;
+    --border: #37324066;
+    --text: #eae6f0;
+    --text-dim: #a89fc0;
+    --gold: #e0b24a;
+    --blue: #6db4f0;
+    --accent: #8a5cf6;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: radial-gradient(1200px 600px at 50% -10%, #241c33 0%, var(--bg) 60%);
+    color: var(--text);
+    font-family: "Pretendard", "Malgun Gothic", "Segoe UI", sans-serif;
+    min-height: 100vh;
+  }
+  header {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    backdrop-filter: blur(10px);
+    background: #12101699;
+    border-bottom: 1px solid var(--border);
+    padding: 14px 20px;
+  }
+  h1 {
+    margin: 0 0 10px 0;
+    font-size: 1.25rem;
+    background: linear-gradient(90deg, var(--gold), var(--accent));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-weight: 700;
+  }
+  .controls {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    align-items: center;
+  }
+  #search {
+    flex: 1 1 260px;
+    background: var(--panel);
+    border: 1px solid var(--border);
+    color: var(--text);
+    padding: 10px 14px;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    outline: none;
+  }
+  #search:focus { border-color: var(--accent); }
+  .chip {
+    padding: 7px 14px;
+    border-radius: 999px;
+    border: 1px solid var(--border);
+    background: var(--panel);
+    color: var(--text-dim);
+    cursor: pointer;
+    font-size: 0.85rem;
+    user-select: none;
+    transition: all .15s;
+    white-space: nowrap;
+  }
+  .chip:hover { color: var(--text); }
+  .chip.active {
+    background: linear-gradient(90deg, var(--accent), #b06cf6);
+    color: #fff;
+    border-color: transparent;
+  }
+  .count {
+    color: var(--text-dim);
+    font-size: 0.8rem;
+    margin-left: auto;
+    white-space: nowrap;
+  }
+  main {
+    padding: 18px 20px 60px;
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 12px;
+  }
+  .card {
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 12px;
+    display: flex;
+    gap: 12px;
+    transition: transform .12s, border-color .12s;
+  }
+  .card:hover {
+    border-color: #5a4d78;
+    transform: translateY(-2px);
+  }
+  .icon-wrap {
+    flex: 0 0 auto;
+    width: 56px;
+    height: 56px;
+    border-radius: 10px;
+    background: var(--panel-2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border: 1px solid var(--border);
+  }
+  .icon-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    image-rendering: -webkit-optimize-contrast;
+  }
+  .icon-wrap.placeholder {
+    color: var(--text-dim);
+    font-size: 1.3rem;
+  }
+  .info { flex: 1; min-width: 0; }
+  .info-top {
+    display: flex;
+    align-items: baseline;
+    gap: 6px;
+    flex-wrap: wrap;
+  }
+  .title { font-weight: 700; font-size: 0.98rem; }
+  .badge {
+    font-size: 0.65rem;
+    padding: 2px 7px;
+    border-radius: 999px;
+    background: var(--panel-2);
+    color: var(--text-dim);
+    border: 1px solid var(--border);
+  }
+  .badge.card { color: #8fd3ff; }
+  .badge.relic { color: var(--gold); }
+  .badge.forge { color: #ff9e6d; }
+  .badge.power { color: #a8f0c6; }
+  .desc {
+    margin-top: 4px;
+    font-size: 0.82rem;
+    color: var(--text-dim);
+    line-height: 1.45;
+  }
+  .desc b, .desc .kw { color: var(--gold); font-weight: 600; }
+  .desc .num { color: var(--blue); font-weight: 600; }
+  .flavor {
+    margin-top: 6px;
+    font-size: 0.75rem;
+    font-style: italic;
+    color: #786d94;
+  }
+  .empty {
+    text-align: center;
+    color: var(--text-dim);
+    padding: 60px 0;
+  }
+  footer {
+    text-align: center;
+    color: #5c5470;
+    font-size: 0.75rem;
+    padding: 10px 0 30px;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>슬레이 더 스파이어 2 — 증강모드(HextechRunes) 도감</h1>
+  <div class="controls">
+    <input id="search" type="text" placeholder="이름, 설명, 플레이버 텍스트로 검색... (예: 힘, 에너지, 점화)">
+    <span class="chip active" data-cat="all">전체</span>
+    <span class="chip" data-cat="relic">룬</span>
+    <span class="chip" data-cat="forge">모루</span>
+    <span class="chip" data-cat="card">카드</span>
+    <span class="chip" data-cat="power">효과</span>
+    <span class="count" id="count"></span>
+  </div>
+</header>
+
+<main>
+  <div class="grid" id="grid"></div>
+  <div class="empty" id="empty" style="display:none">검색 결과가 없습니다.</div>
+</main>
+
+<footer>데이터 출처: Steam Workshop 모드 "海克斯符文(HextechRunes)" — 로컬 파일에서 추출됨. 게임 밸런스 패치에 따라 최신 정보와 다를 수 있습니다.</footer>
+
+<script>
+let DATA = [];
+let activeCat = "all";
+
+const CAT_LABEL = { relic: "룬", forge: "모루", card: "카드", power: "효과" };
+
+function escapeHtml(s) {
+  return s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+}
+
+function formatDesc(s) {
+  if (!s) return "";
+  let out = escapeHtml(s);
+  out = out.replace(/\[gold\](.*?)\[\/gold\]/g, '<span class="kw">$1</span>');
+  out = out.replace(/\[blue\](.*?)\[\/blue\]/g, '<span class="num">$1</span>');
+  out = out.replace(/\n/g, "<br>");
+  return out;
+}
+
+function render() {
+  const q = document.getElementById("search").value.trim().toLowerCase();
+  const grid = document.getElementById("grid");
+  const empty = document.getElementById("empty");
+  grid.innerHTML = "";
+
+  const filtered = DATA.filter(item => {
+    const catOk = activeCat === "all" || item.subcategory === activeCat;
+    if (!catOk) return false;
+    if (!q) return true;
+    const hay = (item.title + " " + item.description + " " + item.flavor + " " + item.id).toLowerCase();
+    return hay.includes(q);
+  });
+
+  document.getElementById("count").textContent = filtered.length + " / " + DATA.length + "개";
+  empty.style.display = filtered.length === 0 ? "block" : "none";
+
+  const frag = document.createDocumentFragment();
+  for (const item of filtered) {
+    const card = document.createElement("div");
+    card.className = "card";
+
+    const iconWrap = document.createElement("div");
+    iconWrap.className = "icon-wrap" + (item.icon ? "" : " placeholder");
+    if (item.icon) {
+      const img = document.createElement("img");
+      img.src = item.icon;
+      img.loading = "lazy";
+      img.alt = item.title;
+      iconWrap.appendChild(img);
+    } else {
+      iconWrap.textContent = "?";
+    }
+
+    const info = document.createElement("div");
+    info.className = "info";
+    info.innerHTML = `
+      <div class="info-top">
+        <span class="title">${escapeHtml(item.title)}</span>
+        <span class="badge ${item.subcategory}">${CAT_LABEL[item.subcategory] || item.subcategory}</span>
+      </div>
+      <div class="desc">${formatDesc(item.description)}</div>
+      ${item.flavor ? `<div class="flavor">${escapeHtml(item.flavor)}</div>` : ""}
+    `;
+
+    card.appendChild(iconWrap);
+    card.appendChild(info);
+    frag.appendChild(card);
+  }
+  grid.appendChild(frag);
+}
+
+document.querySelectorAll(".chip").forEach(chip => {
+  chip.addEventListener("click", () => {
+    document.querySelectorAll(".chip").forEach(c => c.classList.remove("active"));
+    chip.classList.add("active");
+    activeCat = chip.dataset.cat;
+    render();
+  });
+});
+
+document.getElementById("search").addEventListener("input", render);
+
+fetch("data.json")
+  .then(r => r.json())
+  .then(data => {
+    DATA = data;
+    render();
+  })
+  .catch(err => {
+    document.getElementById("grid").innerHTML =
+      '<div class="empty">data.json을 불러오지 못했습니다. 로컬 서버(예: python -m http.server)로 열어주세요.<br>' + err + '</div>';
+  });
+</script>
+
+</body>
+</html>
