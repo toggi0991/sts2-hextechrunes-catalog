@@ -180,6 +180,24 @@
     color: var(--text-dim);
     font-size: 1.3rem;
   }
+  .cat-strip {
+    width: calc(100% + 20px);
+    margin: -12px -10px 0;
+    padding: 3px 0 4px;
+    border-radius: 13px 13px 0 0;
+    text-align: center;
+    font-size: 0.62rem;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    text-indent: 0.2em;
+    background: #ffffff0d;
+    border-bottom: 1px solid var(--border);
+    flex: 0 0 auto;
+  }
+  .cat-strip.cat-card { color: #8fd3ff; }
+  .cat-strip.cat-relic { color: var(--gold); }
+  .cat-strip.cat-forge { color: #ff9e6d; }
+  .cat-strip.cat-power { color: #a8f0c6; }
   .card-title {
     font-weight: 700;
     font-size: 0.88rem;
@@ -189,10 +207,12 @@
   }
   .badge-row {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     gap: 4px;
     justify-content: center;
+    max-width: 100%;
   }
+  .badge-row .badge { white-space: nowrap; }
   .card-body {
     flex: 1 1 auto;
     min-height: 0;
@@ -377,13 +397,16 @@ function render() {
       ? `<div class="icon-wrap"><img src="${item.icon}" loading="lazy" alt="${escapeHtml(item.title)}"></div>`
       : `<div class="icon-wrap placeholder">?</div>`;
 
+    const badgeRow = (item.tier || item.character)
+      ? `<div class="badge-row">
+          ${item.tier ? `<span class="badge tier-${item.tier}">${escapeHtml(item.tier)}</span>` : ""}
+          ${item.character ? `<span class="badge char">${escapeHtml(item.character)}</span>` : ""}
+        </div>`
+      : "";
     card.innerHTML = `
+      <div class="cat-strip cat-${item.subcategory}">${CAT_LABEL[item.subcategory] || item.subcategory}</div>
       <div class="card-title">${escapeHtml(item.title)}</div>
-      <div class="badge-row">
-        <span class="badge ${item.subcategory}">${CAT_LABEL[item.subcategory] || item.subcategory}</span>
-        ${item.tier ? `<span class="badge tier-${item.tier}">${escapeHtml(item.tier)}</span>` : ""}
-        ${item.character ? `<span class="badge char">${escapeHtml(item.character)}</span>` : ""}
-      </div>
+      ${badgeRow}
       ${iconHtml}
       <div class="card-body">
         ${item.kw_top ? `<div class="kw-line">${escapeHtml(item.kw_top.join(" · "))}</div>` : ""}
