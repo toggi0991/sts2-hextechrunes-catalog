@@ -2,7 +2,7 @@
 <html lang="ko">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <title>슬더스2 증강모드(HextechRunes) 도감</title>
 <style>
   :root {
@@ -17,12 +17,16 @@
     --accent: #8a5cf6;
   }
   * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
   body {
     margin: 0;
     background: radial-gradient(1200px 600px at 50% -10%, #241c33 0%, var(--bg) 60%);
     color: var(--text);
     font-family: "Pretendard", "Malgun Gothic", "Segoe UI", sans-serif;
     min-height: 100vh;
+    /* iOS 노치/안드로이드 펀치홀 안전 영역 */
+    padding-left: env(safe-area-inset-left);
+    padding-right: env(safe-area-inset-right);
   }
   header {
     position: sticky;
@@ -48,8 +52,9 @@
     gap: 8px;
     align-items: center;
   }
+  .search-wrap { position: relative; flex: 1 1 260px; }
   #search {
-    flex: 1 1 260px;
+    width: 100%;
     background: var(--panel);
     border: 1px solid var(--border);
     color: var(--text);
@@ -57,8 +62,30 @@
     border-radius: 8px;
     font-size: 0.95rem;
     outline: none;
+    -webkit-appearance: none;
+    appearance: none;
   }
   #search:focus { border-color: var(--accent); }
+  #search::-webkit-search-cancel-button { -webkit-appearance: none; }
+  .suggest {
+    position: absolute;
+    top: calc(100% + 4px);
+    left: 0;
+    right: 0;
+    background: var(--panel-2);
+    border: 1px solid #4a4260;
+    border-radius: 10px;
+    z-index: 30;
+    max-height: 260px;
+    overflow-y: auto;
+    box-shadow: 0 8px 24px #000000aa;
+  }
+  .suggest-item {
+    padding: 9px 14px;
+    cursor: pointer;
+    font-size: 0.88rem;
+  }
+  .suggest-item:hover, .suggest-item.sel { background: var(--accent); color: #fff; }
   .chip {
     padding: 7px 14px;
     border-radius: 999px;
@@ -90,16 +117,20 @@
   }
   .grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-    gap: 12px;
+    grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+    gap: 16px 14px;
   }
   .card {
-    background: var(--panel);
+    background: linear-gradient(180deg, #221e2c, var(--panel) 40%);
     border: 1px solid var(--border);
-    border-radius: 12px;
-    padding: 12px;
+    border-radius: 14px;
+    padding: 12px 10px 10px;
     display: flex;
-    gap: 12px;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    aspect-ratio: 5 / 7;
+    min-height: 0;
     transition: transform .12s, border-color .12s;
     position: relative;
   }
@@ -129,9 +160,9 @@
   }
   .icon-wrap {
     flex: 0 0 auto;
-    width: 56px;
-    height: 56px;
-    border-radius: 10px;
+    width: 64px;
+    height: 64px;
+    border-radius: 12px;
     background: var(--panel-2);
     display: flex;
     align-items: center;
@@ -149,17 +180,36 @@
     color: var(--text-dim);
     font-size: 1.3rem;
   }
-  .info { flex: 1; min-width: 0; }
-  .info-top {
-    display: flex;
-    align-items: baseline;
-    gap: 6px;
-    flex-wrap: wrap;
+  .card-title {
+    font-weight: 700;
+    font-size: 0.88rem;
+    text-align: center;
+    line-height: 1.25;
+    padding: 0 12px;
   }
-  .title { font-weight: 700; font-size: 0.98rem; }
+  .badge-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+    justify-content: center;
+  }
+  .card-body {
+    flex: 1 1 auto;
+    min-height: 0;
+    width: 100%;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    scrollbar-width: thin;
+    scrollbar-color: #4a4260 transparent;
+  }
+  .card-body::-webkit-scrollbar { width: 4px; }
+  .card-body::-webkit-scrollbar-thumb { background: #4a4260; border-radius: 2px; }
   .badge {
-    font-size: 0.65rem;
-    padding: 2px 7px;
+    font-size: 0.62rem;
+    padding: 2px 6px;
     border-radius: 999px;
     background: var(--panel-2);
     color: var(--text-dim);
@@ -180,25 +230,26 @@
   .badge.forge { color: #ff9e6d; }
   .badge.power { color: #a8f0c6; }
   .desc {
-    margin-top: 4px;
-    font-size: 0.82rem;
+    font-size: 0.73rem;
     color: var(--text-dim);
     line-height: 1.45;
+    text-align: center;
   }
   .desc b, .desc .kw { color: var(--gold); font-weight: 600; }
   .kw-line {
-    margin-top: 4px;
-    font-size: 0.82rem;
+    font-size: 0.73rem;
     font-weight: 700;
     text-align: center;
     line-height: 1.45;
   }
   .desc .num { color: var(--blue); font-weight: 600; }
   .flavor {
-    margin-top: 6px;
-    font-size: 0.75rem;
+    margin-top: auto;
+    padding-top: 4px;
+    font-size: 0.65rem;
     font-style: italic;
     color: #786d94;
+    text-align: center;
   }
   .empty {
     text-align: center;
@@ -209,7 +260,25 @@
     text-align: center;
     color: #5c5470;
     font-size: 0.75rem;
-    padding: 10px 0 30px;
+    padding: 10px 12px calc(30px + env(safe-area-inset-bottom));
+  }
+  /* 모바일 (안드로이드/iOS) */
+  @media (max-width: 600px) {
+    .grid { grid-template-columns: repeat(2, 1fr); gap: 14px 10px; }
+    main { padding: 14px 12px 40px; }
+    header { padding: 10px 12px; }
+    h1 { font-size: 1.05rem; }
+    #search { padding: 8px 12px; font-size: 16px; } /* 16px 미만이면 iOS가 포커스 시 자동 확대함 */
+    .chip { padding: 6px 11px; font-size: 0.78rem; }
+    .card-title { font-size: 0.8rem; }
+    .desc, .kw-line { font-size: 0.68rem; }
+    .flavor { font-size: 0.6rem; }
+    .icon-wrap { width: 52px; height: 52px; }
+    .cost-orb { width: 30px; height: 30px; font-size: 0.66rem; }
+  }
+  @media (max-width: 360px) {
+    .card-title { font-size: 0.75rem; }
+    .desc, .kw-line { font-size: 0.64rem; }
   }
 </style>
 </head>
@@ -218,7 +287,12 @@
 <header>
   <h1>슬레이 더 스파이어 2 — 증강모드(HextechRunes) 도감</h1>
   <div class="controls">
-    <input id="search" type="text" placeholder="이름, 설명, 플레이버 텍스트로 검색... (예: 힘, 에너지, 점화)">
+    <div class="search-wrap">
+      <input id="search" type="search" autocomplete="off" autocorrect="off" autocapitalize="none"
+             spellcheck="false" inputmode="search" aria-autocomplete="list"
+             placeholder="이름, 설명, 플레이버 텍스트로 검색... (예: 힘, 에너지, 점화)">
+      <div id="suggest" class="suggest" hidden></div>
+    </div>
     <span class="chip active" data-cat="all">전체</span>
     <span class="chip" data-cat="relic">증강</span>
     <span class="chip" data-cat="forge">모루</span>
@@ -299,31 +373,24 @@ function render() {
     const card = document.createElement("div");
     card.className = "card";
 
-    const iconWrap = document.createElement("div");
-    iconWrap.className = "icon-wrap" + (item.icon ? "" : " placeholder");
-    if (item.icon) {
-      const img = document.createElement("img");
-      img.src = item.icon;
-      img.loading = "lazy";
-      img.alt = item.title;
-      iconWrap.appendChild(img);
-    } else {
-      iconWrap.textContent = "?";
-    }
+    const iconHtml = item.icon
+      ? `<div class="icon-wrap"><img src="${item.icon}" loading="lazy" alt="${escapeHtml(item.title)}"></div>`
+      : `<div class="icon-wrap placeholder">?</div>`;
 
-    const info = document.createElement("div");
-    info.className = "info";
-    info.innerHTML = `
-      <div class="info-top">
-        <span class="title">${escapeHtml(item.title)}</span>
+    card.innerHTML = `
+      <div class="card-title">${escapeHtml(item.title)}</div>
+      <div class="badge-row">
         <span class="badge ${item.subcategory}">${CAT_LABEL[item.subcategory] || item.subcategory}</span>
         ${item.tier ? `<span class="badge tier-${item.tier}">${escapeHtml(item.tier)}</span>` : ""}
         ${item.character ? `<span class="badge char">${escapeHtml(item.character)}</span>` : ""}
       </div>
-      ${item.kw_top ? `<div class="kw-line">${escapeHtml(item.kw_top.join(" · "))}</div>` : ""}
-      <div class="desc">${formatDesc(item.description)}</div>
-      ${item.kw_bottom ? `<div class="kw-line">${escapeHtml(item.kw_bottom.join(" · "))}</div>` : ""}
-      ${item.flavor ? `<div class="flavor">${escapeHtml(item.flavor)}</div>` : ""}
+      ${iconHtml}
+      <div class="card-body">
+        ${item.kw_top ? `<div class="kw-line">${escapeHtml(item.kw_top.join(" · "))}</div>` : ""}
+        <div class="desc">${formatDesc(item.description)}</div>
+        ${item.kw_bottom ? `<div class="kw-line">${escapeHtml(item.kw_bottom.join(" · "))}</div>` : ""}
+        ${item.flavor ? `<div class="flavor">${escapeHtml(item.flavor)}</div>` : ""}
+      </div>
     `;
 
     if (item.cost != null) {
@@ -333,8 +400,6 @@ function render() {
       orb.textContent = item.cost;
       card.appendChild(orb);
     }
-    card.appendChild(iconWrap);
-    card.appendChild(info);
     frag.appendChild(card);
   }
   grid.appendChild(frag);
@@ -367,12 +432,124 @@ document.querySelectorAll(".chip[data-tier]").forEach(chip => {
   });
 });
 
-document.getElementById("search").addEventListener("input", render);
+// ===== 키워드 자동완성 (한글 초성/미완성 글자 지원: "점ㅎ" → 점화, "선ㅊ" → 선천성) =====
+let VOCAB = [];
+const searchEl = document.getElementById("search");
+const suggestEl = document.getElementById("suggest");
+let selIdx = -1;
+
+function buildVocab() {
+  const set = new Set();
+  const fixed = ["소모", "보존", "선천성", "천상", "사용 불가", "교활", "영원",
+                 "실버", "골드", "프리즘", "공용",
+                 "아이언클래드", "사일런트", "리젠트", "디펙트", "네크로바인더"];
+  fixed.forEach(k => set.add(k));
+  for (const d of DATA) {
+    for (const m of d.description.matchAll(/\[gold\](.*?)\[\/gold\]/g)) {
+      const t = m[1].replace(/\[.*?\]/g, "").trim();
+      if (t && !/^\d/.test(t)) set.add(t);
+    }
+    if (d.title) set.add(d.title);
+  }
+  VOCAB = [...set];
+}
+
+const CHO = ["ㄱ","ㄲ","ㄴ","ㄷ","ㄸ","ㄹ","ㅁ","ㅂ","ㅃ","ㅅ","ㅆ","ㅇ","ㅈ","ㅉ","ㅊ","ㅋ","ㅌ","ㅍ","ㅎ"];
+const isSyl = c => c >= 0xAC00 && c <= 0xD7A3;
+
+function charMatch(q, w, isLast) {
+  if (q === w) return true;
+  if (!isLast) return false;
+  const qc = q.charCodeAt(0), wc = w.charCodeAt(0);
+  // 마지막 글자가 자음 하나면 초성 매치 (점ㅎ → 점화)
+  if (qc >= 0x3131 && qc <= 0x314E && isSyl(wc)) return CHO[Math.floor((wc - 0xAC00) / 588)] === q;
+  // 마지막 글자가 받침 없는 글자면 초성+중성 매치 (선천서 → 선천성)
+  if (isSyl(qc) && isSyl(wc) && (qc - 0xAC00) % 28 === 0)
+    return Math.floor((qc - 0xAC00) / 28) === Math.floor((wc - 0xAC00) / 28);
+  return false;
+}
+
+function fuzzyKrIndex(query, word) {
+  // word 안에서 query가 (부분 글자 규칙으로) 시작되는 위치, 없으면 -1
+  const q = query.toLowerCase(), w = word.toLowerCase();
+  for (let s = 0; s + q.length <= w.length; s++) {
+    let ok = true;
+    for (let i = 0; i < q.length; i++) {
+      if (!charMatch(q[i], w[s + i], i === q.length - 1)) { ok = false; break; }
+    }
+    if (ok) return s;
+  }
+  return -1;
+}
+
+function getSuggestions(token) {
+  if (!token) return [];
+  const hits = [];
+  for (const w of VOCAB) {
+    if (w === token) continue;
+    const idx = fuzzyKrIndex(token, w);
+    if (idx >= 0) hits.push([w, idx]);
+  }
+  // 앞에서 매치된 것 → 짧은 것 우선
+  hits.sort((a, b) => (a[1] - b[1]) || (a[0].length - b[0].length));
+  return hits.slice(0, 8).map(h => h[0]);
+}
+
+function lastToken(value) {
+  const parts = value.split(/\s+/);
+  return parts[parts.length - 1];
+}
+
+function showSuggest() {
+  const token = lastToken(searchEl.value.trimStart());
+  const items = getSuggestions(token);
+  selIdx = -1;
+  if (items.length === 0) { suggestEl.hidden = true; return; }
+  suggestEl.innerHTML = items
+    .map(w => `<div class="suggest-item" data-word="${escapeHtml(w)}">${escapeHtml(w)}</div>`)
+    .join("");
+  suggestEl.hidden = false;
+}
+
+function applySuggestion(word) {
+  const parts = searchEl.value.trimStart().split(/\s+/);
+  parts[parts.length - 1] = word;
+  searchEl.value = parts.join(" ");
+  suggestEl.hidden = true;
+  render();
+  searchEl.focus();
+}
+
+suggestEl.addEventListener("mousedown", e => {
+  const item = e.target.closest(".suggest-item");
+  if (item) { e.preventDefault(); applySuggestion(item.dataset.word); }
+});
+
+searchEl.addEventListener("input", () => { showSuggest(); render(); });
+searchEl.addEventListener("blur", () => { setTimeout(() => { suggestEl.hidden = true; }, 150); });
+searchEl.addEventListener("keydown", e => {
+  if (suggestEl.hidden) return;
+  const items = suggestEl.querySelectorAll(".suggest-item");
+  if (e.key === "ArrowDown" || e.key === "ArrowUp") {
+    e.preventDefault();
+    selIdx = e.key === "ArrowDown"
+      ? (selIdx + 1) % items.length
+      : (selIdx - 1 + items.length) % items.length;
+    items.forEach((el, i) => el.classList.toggle("sel", i === selIdx));
+    items[selIdx].scrollIntoView({ block: "nearest" });
+  } else if (e.key === "Enter" && selIdx >= 0) {
+    e.preventDefault();
+    applySuggestion(items[selIdx].dataset.word);
+  } else if (e.key === "Escape") {
+    suggestEl.hidden = true;
+  }
+});
 
 fetch("data.json")
   .then(r => r.json())
   .then(data => {
     DATA = data;
+    buildVocab();
     render();
   })
   .catch(err => {
