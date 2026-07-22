@@ -10,6 +10,54 @@ OUT = Path(__file__).parent
 ICONS = OUT / "assets" / "icons"
 
 
+def fix_text(s: str) -> str:
+    # 커뮤니티에서 쓰는 용어에 맞춰 "룬" 표기를 "증강"으로 통일
+    return s.replace("룬", "증강")
+
+
+# extract_card_vars.py가 생성한 카드 수치 (없으면 플레이스홀더 그대로 둠)
+CARD_VARS_FILE = Path(__file__).parent / "card_vars.json"
+CARD_VARS = json.loads(CARD_VARS_FILE.read_text(encoding="utf-8")) if CARD_VARS_FILE.exists() else {}
+
+PLACEHOLDER_RE = re.compile(r"\{(\w+)(?::[^}]*)?\}")
+
+
+def resolve_card_vars(item_id: str, desc: str) -> str:
+    """설명의 {Damage} 같은 플레이스홀더를 DLL에서 추출한 실제 수치로 치환."""
+    vars_ = CARD_VARS.get(item_id)
+    if not vars_ or not desc:
+        return desc
+
+    def value_of(name: str):
+        v = vars_.get(name)
+        # 로컬라이제이션이 WishBlock처럼 표시용 이름을 쓰는 경우 원본 변수로 폴백
+        if v is None and name.startswith("Wish"):
+            v = vars_.get(name[4:])
+        if v is None:
+            return None
+        if v["base"] == 0:
+            return "X"  # 게임 내 동적 값 (게임도 X로 표시)
+        s = str(v["base"])
+        if v.get("upgrade"):
+            s += f"(+{v['upgrade']})"
+        return s
+
+    def sub(m, wrap: bool):
+        val = value_of(m.group(1))
+        if val is None:
+            return m.group(0)
+        return f"[blue]{val}[/blue]" if wrap else val
+
+    # 이미 [blue]로 감싸진 플레이스홀더는 값만 치환
+    desc = re.sub(
+        r"\[blue\]\{(\w+)(?::[^}]*)?\}",
+        lambda m: "[blue]" + (value_of(m.group(1)) or m.group(0)[6:]),
+        desc,
+    )
+    # 나머지는 [blue]로 감싸서 치환
+    return PLACEHOLDER_RE.sub(lambda m: sub(m, wrap=True), desc)
+
+
 def snake_to_camel(name: str) -> str:
     parts = name.lower().split("_")
     return parts[0] + "".join(p.capitalize() for p in parts[1:])
@@ -74,9 +122,9 @@ def build_category(loc_file: str, image_subdir: str, category: str, icon_out_sub
             "id": item_id,
             "category": category,
             "subcategory": subcategory,
-            "title": fields.get("title", ""),
-            "description": fields.get("description", fields.get("smartDescription", "")),
-            "flavor": fields.get("flavor", ""),
+            "title": fix_text(fields.get("title", "")),
+            "description": resolve_card_vars(item_id, fix_text(fields.get("description", fields.get("smartDescription", "")))),
+            "flavor": fix_text(fields.get("flavor", "")),
             "icon": icon_rel,
         })
     return results

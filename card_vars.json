@@ -1,0 +1,124 @@
+{
+  "OK_BOOMERANG_CARD": {
+    "Hits": {
+      "base": 2
+    },
+    "Damage": {
+      "base": 6,
+      "upgrade": 3
+    }
+  },
+  "BLADE_WALTZ_CARD": {
+    "Hits": {
+      "base": 9
+    },
+    "IntangiblePower": {
+      "base": 1
+    },
+    "Damage": {
+      "base": 3
+    }
+  },
+  "OSTY_WISH_CARD": {
+    "Block": {
+      "base": 0
+    },
+    "Damage": {
+      "base": 0
+    }
+  },
+  "MOUNTAIN_DRAGON_SOUL_CARD": {
+    "PlatingPower": {
+      "base": 2
+    }
+  },
+  "HEXTECH_DRAGON_SOUL_CARD": {
+    "Energy": {
+      "base": 1
+    }
+  },
+  "TRICK_MAGIC_CARD": {
+    "Replays": {
+      "base": 1
+    },
+    "BufferPower": {
+      "base": 1,
+      "upgrade": 1
+    },
+    "Cards": {
+      "base": 2
+    }
+  },
+  "MIKAELS_BLESSING_CARD": {
+    "HealPercent": {
+      "base": 10
+    }
+  },
+  "OCEAN_DRAGON_SOUL_CARD": {
+    "Heal": {
+      "base": 3
+    }
+  },
+  "CLOUD_DRAGON_SOUL_CARD": {
+    "Cards": {
+      "base": 2
+    }
+  },
+  "SEARING_ATTACK_CARD": {
+    "Damage": {
+      "base": 12
+    }
+  },
+  "ALL_IN_CARD": {
+    "Damage": {
+      "base": 12,
+      "upgrade": 4
+    }
+  },
+  "ELICIT_CARD": {},
+  "REPROGRAM_CARD": {
+    "FocusPower": {
+      "base": 1,
+      "upgrade": 1
+    },
+    "StrengthPower": {
+      "base": 1,
+      "upgrade": 1
+    },
+    "DexterityPower": {
+      "base": 1,
+      "upgrade": 1
+    }
+  },
+  "CATALYST_CARD": {
+    "PoisonMultiplier": {
+      "base": 2,
+      "upgrade": 1
+    }
+  },
+  "FEEL_THE_BURN_CARD": {
+    "HextechBurnPower": {
+      "base": 5,
+      "upgrade": 5
+    }
+  },
+  "INFERNAL_DRAGON_SOUL_CARD": {
+    "BurnPower": {
+      "base": 6
+    }
+  },
+  "WHITE_HOLE_CARD": {
+    "Energy": {
+      "base": 2,
+      "upgrade": 1
+    },
+    "Cards": {
+      "base": 2
+    }
+  },
+  "CHEMTECH_DRAGON_SOUL_CARD": {
+    "PotionCount": {
+      "base": 1
+    }
+  }
+}

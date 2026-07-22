@@ -182,7 +182,7 @@
   <div class="controls">
     <input id="search" type="text" placeholder="이름, 설명, 플레이버 텍스트로 검색... (예: 힘, 에너지, 점화)">
     <span class="chip active" data-cat="all">전체</span>
-    <span class="chip" data-cat="relic">룬</span>
+    <span class="chip" data-cat="relic">증강</span>
     <span class="chip" data-cat="forge">모루</span>
     <span class="chip" data-cat="card">카드</span>
     <span class="chip" data-cat="power">효과</span>
@@ -201,7 +201,7 @@
 let DATA = [];
 let activeCat = "all";
 
-const CAT_LABEL = { relic: "룬", forge: "모루", card: "카드", power: "효과" };
+const CAT_LABEL = { relic: "증강", forge: "모루", card: "카드", power: "효과" };
 
 function escapeHtml(s) {
   return s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
