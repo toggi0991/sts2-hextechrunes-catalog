@@ -6,6 +6,9 @@
     "Damage": {
       "base": 6,
       "upgrade": 3
+    },
+    "_cost": {
+      "base": 1
     }
   },
   "BLADE_WALTZ_CARD": {
@@ -17,6 +20,17 @@
     },
     "Damage": {
       "base": 3
+    },
+    "_cost": {
+      "base": 1
+    },
+    "_keywords": {
+      "base": [
+        1
+      ],
+      "removed": [
+        1
+      ]
     }
   },
   "OSTY_WISH_CARD": {
@@ -25,16 +39,33 @@
     },
     "Damage": {
       "base": 0
+    },
+    "_cost": {
+      "base": 0
+    },
+    "_keywords": {
+      "base": [
+        1
+      ],
+      "added": [
+        5
+      ]
     }
   },
   "MOUNTAIN_DRAGON_SOUL_CARD": {
     "PlatingPower": {
       "base": 2
+    },
+    "_cost": {
+      "base": 0
     }
   },
   "HEXTECH_DRAGON_SOUL_CARD": {
     "Energy": {
       "base": 1
+    },
+    "_cost": {
+      "base": 0
     }
   },
   "TRICK_MAGIC_CARD": {
@@ -47,35 +78,77 @@
     },
     "Cards": {
       "base": 2
+    },
+    "_cost": {
+      "base": 0
+    },
+    "_keywords": {
+      "base": [
+        1
+      ]
     }
   },
   "MIKAELS_BLESSING_CARD": {
     "HealPercent": {
       "base": 10
+    },
+    "_cost": {
+      "base": 1,
+      "upgrade": -1
+    },
+    "_keywords": {
+      "base": [
+        5
+      ]
     }
   },
   "OCEAN_DRAGON_SOUL_CARD": {
     "Heal": {
       "base": 3
+    },
+    "_cost": {
+      "base": 0
     }
   },
   "CLOUD_DRAGON_SOUL_CARD": {
     "Cards": {
       "base": 2
+    },
+    "_cost": {
+      "base": 0
     }
   },
   "SEARING_ATTACK_CARD": {
     "Damage": {
       "base": 12
+    },
+    "_cost": {
+      "base": 1
     }
   },
   "ALL_IN_CARD": {
     "Damage": {
       "base": 12,
       "upgrade": 4
+    },
+    "_cost": {
+      "base": 1
     }
   },
-  "ELICIT_CARD": {},
+  "ELICIT_CARD": {
+    "_cost": {
+      "base": 0
+    },
+    "_keywords": {
+      "base": [
+        5,
+        1
+      ],
+      "removed": [
+        1
+      ]
+    }
+  },
   "REPROGRAM_CARD": {
     "FocusPower": {
       "base": 1,
@@ -88,23 +161,45 @@
     "DexterityPower": {
       "base": 1,
       "upgrade": 1
+    },
+    "_cost": {
+      "base": 0
     }
   },
   "CATALYST_CARD": {
     "PoisonMultiplier": {
       "base": 2,
       "upgrade": 1
+    },
+    "_cost": {
+      "base": 0
+    },
+    "_keywords": {
+      "base": [
+        1
+      ]
     }
   },
   "FEEL_THE_BURN_CARD": {
     "HextechBurnPower": {
       "base": 5,
       "upgrade": 5
+    },
+    "_cost": {
+      "base": 0
+    },
+    "_keywords": {
+      "base": [
+        5
+      ]
     }
   },
   "INFERNAL_DRAGON_SOUL_CARD": {
     "BurnPower": {
       "base": 6
+    },
+    "_cost": {
+      "base": 0
     }
   },
   "WHITE_HOLE_CARD": {
@@ -114,10 +209,21 @@
     },
     "Cards": {
       "base": 2
+    },
+    "_cost": {
+      "base": 0
+    },
+    "_keywords": {
+      "base": [
+        1
+      ]
     }
   },
   "CHEMTECH_DRAGON_SOUL_CARD": {
     "PotionCount": {
+      "base": 1
+    },
+    "_cost": {
       "base": 1
     }
   }

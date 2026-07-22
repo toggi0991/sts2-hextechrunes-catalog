@@ -22,6 +22,68 @@ CARD_VARS = json.loads(CARD_VARS_FILE.read_text(encoding="utf-8")) if CARD_VARS_
 PLACEHOLDER_RE = re.compile(r"\{(\w+)(?::[^}]*)?\}")
 
 
+# extract_rune_registry.py가 생성한 증강 등급/직업 정보
+RUNE_REGISTRY_FILE = Path(__file__).parent / "rune_registry.json"
+RUNE_REGISTRY = json.loads(RUNE_REGISTRY_FILE.read_text(encoding="utf-8")) if RUNE_REGISTRY_FILE.exists() else {}
+
+CHARACTER_NAMES = {
+    "Ironclad": "아이언클래드",
+    "Silent": "사일런트",
+    "Regent": "리젠트",
+    "Defect": "디펙트",
+    "Necrobinder": "네크로바인더",
+}
+
+TIER_NAMES = {"Silver": "실버", "Gold": "골드", "Prismatic": "프리즘"}
+
+
+# 게임 본체 CardKeyword 열거형의 한국어 표기
+KEYWORD_NAMES = {
+    1: "소모",       # Exhaust
+    2: "천상",       # Ethereal
+    3: "선천성",     # Innate
+    4: "사용 불가",  # Unplayable
+    5: "보존",       # Retain
+    6: "교활",       # Sly
+    7: "영원",       # Eternal
+}
+
+
+def card_keywords(item_id: str):
+    """카드 키워드 표시 목록.
+
+    - 기본 키워드: "소모"
+    - 강화 시 제거: "소모(소모X)"
+    - 강화 시 추가: "(보존)"
+    """
+    kw = CARD_VARS.get(item_id, {}).get("_keywords")
+    if not kw:
+        return None
+    base = kw.get("base", [])
+    added = kw.get("added", [])
+    removed = kw.get("removed", [])
+    out = []
+    for k in base:
+        name = KEYWORD_NAMES.get(k, f"키워드{k}")
+        out.append(f"{name}({name}X)" if k in removed else name)
+    for k in added:
+        if k not in base:
+            name = KEYWORD_NAMES.get(k, f"키워드{k}")
+            out.append(f"({name})")
+    return out or None
+
+
+def card_cost(item_id: str):
+    """카드 에너지 코스트 표시 문자열: "1" 또는 강화 시 변하면 "1(0)"."""
+    cost = CARD_VARS.get(item_id, {}).get("_cost")
+    if cost is None:
+        return None
+    s = str(cost["base"])
+    if "upgrade" in cost:
+        s += f"({cost['base'] + cost['upgrade']})"
+    return s
+
+
 def resolve_card_vars(item_id: str, desc: str) -> str:
     """설명의 {Damage} 같은 플레이스홀더를 DLL에서 추출한 실제 수치로 치환."""
     vars_ = CARD_VARS.get(item_id)
@@ -39,7 +101,8 @@ def resolve_card_vars(item_id: str, desc: str) -> str:
             return "X"  # 게임 내 동적 값 (게임도 X로 표시)
         s = str(v["base"])
         if v.get("upgrade"):
-            s += f"(+{v['upgrade']})"
+            # 강화 후 수치를 소괄호에 표시: 6(9) = 기본 6, 강화 시 9
+            s = f"{v['base']}({v['base'] + v['upgrade']})"
         return s
 
     def sub(m, wrap: bool):
@@ -81,6 +144,12 @@ FORGE_TIER_ICON = {
     "PRISMATIC_": "prismaticForge.png",
 }
 
+FORGE_TIER_NAMES = {
+    "SILVER_": "실버",
+    "GOLD_": "골드",
+    "PRISMATIC_": "프리즘",
+}
+
 
 def copy_icon(img_dir: Path, filename: str, icon_out_subdir: str):
     src = img_dir / filename
@@ -105,6 +174,9 @@ def build_category(loc_file: str, image_subdir: str, category: str, icon_out_sub
         icon_rel = None
         subcategory = category
 
+        # 등급: 증강은 DLL 레지스트리에서, 모루는 ID 접두사에서
+        tier = TIER_NAMES.get((RUNE_REGISTRY.get(item_id) or {}).get("tier"))
+
         is_forge = category == "relic" and "_FORGE" in item_id
         if is_forge:
             subcategory = "forge"
@@ -112,18 +184,31 @@ def build_category(loc_file: str, image_subdir: str, category: str, icon_out_sub
             for prefix, fname in FORGE_TIER_ICON.items():
                 if item_id.startswith(prefix):
                     tier_file = fname
+                    tier = FORGE_TIER_NAMES[prefix]
                     break
             tier_file = tier_file or "silverForge.png"
             icon_rel = copy_icon(img_dir, tier_file, icon_out_subdir)
         else:
             icon_rel = copy_icon(img_dir, f"{camel}.png", icon_out_subdir)
 
+        desc = resolve_card_vars(item_id, fix_text(fields.get("description", fields.get("smartDescription", ""))))
+
+        # 카드 키워드: 보존/선천성 계열은 설명 맨 앞 줄, 소모 등 나머지는 맨 끝 줄에 표시
+        keywords = card_keywords(item_id) if category == "card" else None
+        kw_top = [k for k in (keywords or []) if any(n in k for n in ("보존", "선천성"))] or None
+        kw_bottom = [k for k in (keywords or []) if k not in (kw_top or [])] or None
+
         results.append({
             "id": item_id,
             "category": category,
             "subcategory": subcategory,
+            "cost": card_cost(item_id) if category == "card" else None,
+            "kw_top": kw_top,
+            "kw_bottom": kw_bottom,
+            "character": CHARACTER_NAMES.get((RUNE_REGISTRY.get(item_id) or {}).get("character")),
+            "tier": tier,
             "title": fix_text(fields.get("title", "")),
-            "description": resolve_card_vars(item_id, fix_text(fields.get("description", fields.get("smartDescription", "")))),
+            "description": desc,
             "flavor": fix_text(fields.get("flavor", "")),
             "icon": icon_rel,
         })

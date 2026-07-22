@@ -1,0 +1,2054 @@
+{
+  "SLAP_RUNE": {
+    "tier": "Silver",
+    "character": null,
+    "tag": "OUTPUT",
+    "flags": "None"
+  },
+  "DEXTERITY_TO_STRENGTH_RUNE": {
+    "tier": "Silver",
+    "character": null,
+    "tag": "OUTPUT",
+    "flags": "AttributeConversionExclusive"
+  },
+  "STRENGTH_TO_DEXTERITY_RUNE": {
+    "tier": "Silver",
+    "character": null,
+    "tag": "SURVIVAL",
+    "flags": "AttributeConversionExclusive"
+  },
+  "DEXTERITY_STRENGTH_TO_FOCUS_RUNE": {
+    "tier": "Silver",
+    "character": "Defect",
+    "tag": "ORB",
+    "flags": "AttributeConversionExclusive"
+  },
+  "WIZARDLY_THINKING_RUNE": {
+    "tier": "Silver",
+    "character": "Defect",
+    "tag": "ORB",
+    "flags": "None"
+  },
+  "NIMBLE_RUNE": {
+    "tier": "Silver",
+    "character": null,
+    "tag": "RESOURCE",
+    "flags": "None"
+  },
+  "ESCAPE_PLAN_RUNE": {
+    "tier": "Silver",
+    "character": null,
+    "tag": "COMPREHENSIVE",
+    "flags": "Disabled"
+  },
+  "BAD_TASTE_RUNE": {
+    "tier": "Silver",
+    "character": null,
+    "tag": "SURVIVAL",
+    "flags": "None"
+  },
+  "FIRST_AID_KIT_RUNE": {
+    "tier": "Silver",
+    "character": null,
+    "tag": "SURVIVAL",
+    "flags": "None"
+  },
+  "REGENERATION_SUPPRESSION_RUNE": {
+    "tier": "Silver",
+    "character": null,
+    "tag": "OUTPUT",
+    "flags": "Disabled"
+  },
+  "GIANT_SERPENTS_FANG_RUNE": {
+    "tier": "Silver",
+    "character": null,
+    "tag": "OUTPUT",
+    "flags": "None"
+  },
+  "ATTACK_DEFENSE_UNITY_RUNE": {
+    "tier": "Silver",
+    "character": null,
+    "tag": "COMPREHENSIVE",
+    "flags": "None"
+  },
+  "BLACK_CANDLE_RUNE": {
+    "tier": "Silver",
+    "character": null,
+    "tag": "COMPREHENSIVE",
+    "flags": "None"
+  },
+  "SEARING_ATTACK_RUNE": {
+    "tier": "Silver",
+    "character": null,
+    "tag": "OUTPUT",
+    "flags": "None"
+  },
+  "OVERLORD_BLOOD_ARMOR_RUNE": {
+    "tier": "Silver",
+    "character": null,
+    "tag": "SURVIVAL",
+    "flags": "None"
+  },
+  "BROKEN_GOLDEN_CROWN_RUNE": {
+    "tier": "Silver",
+    "character": null,
+    "tag": "RESOURCE",
+    "flags": "None"
+  },
+  "BLOOD_IDOL_RUNE": {
+    "tier": "Silver",
+    "character": null,
+    "tag": "SURVIVAL",
+    "flags": "None"
+  },
+  "NONUPEIPE_GENEROSITY_RUNE": {
+    "tier": "Silver",
+    "character": null,
+    "tag": "RANDOM",
+    "flags": "None"
+  },
+  "SPEED_DEMON_RUNE": {
+    "tier": "Silver",
+    "character": null,
+    "tag": "RESOURCE",
+    "flags": "None"
+  },
+  "HEAVY_HITTER_RUNE": {
+    "tier": "Silver",
+    "character": null,
+    "tag": "SURVIVAL",
+    "flags": "None"
+  },
+  "BIG_STRENGTH_RUNE": {
+    "tier": "Silver",
+    "character": null,
+    "tag": "OUTPUT",
+    "flags": "None"
+  },
+  "TORMENTOR_RUNE": {
+    "tier": "Silver",
+    "character": null,
+    "tag": "OUTPUT",
+    "flags": "None"
+  },
+  "ADAMANT_RUNE": {
+    "tier": "Silver",
+    "character": null,
+    "tag": "SURVIVAL",
+    "flags": "None"
+  },
+  "MOUNTAIN_SOUL_RUNE": {
+    "tier": "Silver",
+    "character": null,
+    "tag": "SURVIVAL",
+    "flags": "None"
+  },
+  "FROST_WRAITH_RUNE": {
+    "tier": "Silver",
+    "character": null,
+    "tag": "COMPREHENSIVE",
+    "flags": "None"
+  },
+  "BADGE_BROTHERS_RUNE": {
+    "tier": "Silver",
+    "character": null,
+    "tag": "COMPREHENSIVE",
+    "flags": "None"
+  },
+  "HOMEGUARD_RUNE": {
+    "tier": "Silver",
+    "character": null,
+    "tag": "RESOURCE",
+    "flags": "None"
+  },
+  "SWIFT_AND_SAFE_RUNE": {
+    "tier": "Silver",
+    "character": null,
+    "tag": "SURVIVAL",
+    "flags": "None"
+  },
+  "SACRIFICE_RUNE": {
+    "tier": "Silver",
+    "character": null,
+    "tag": "ECONOMY",
+    "flags": "None"
+  },
+  "PROTECTIVE_VEIL_RUNE": {
+    "tier": "Silver",
+    "character": null,
+    "tag": "SURVIVAL",
+    "flags": "None"
+  },
+  "REPULSOR_RUNE": {
+    "tier": "Silver",
+    "character": null,
+    "tag": "SURVIVAL",
+    "flags": "None"
+  },
+  "LIGHT_EM_UP_RUNE": {
+    "tier": "Silver",
+    "character": null,
+    "tag": "OUTPUT",
+    "flags": "None"
+  },
+  "ULTIMATE_UNSTOPPABLE_RUNE": {
+    "tier": "Silver",
+    "character": null,
+    "tag": "SURVIVAL",
+    "flags": "None"
+  },
+  "THORNMAIL_RUNE": {
+    "tier": "Silver",
+    "character": null,
+    "tag": "SURVIVAL",
+    "flags": "None"
+  },
+  "ZEALOT_RUNE": {
+    "tier": "Silver",
+    "character": null,
+    "tag": "RESOURCE",
+    "flags": "None"
+  },
+  "MIND_TO_MATTER_RUNE": {
+    "tier": "Silver",
+    "character": null,
+    "tag": "SURVIVAL",
+    "flags": "None"
+  },
+  "STATS_RUNE": {
+    "tier": "Silver",
+    "character": null,
+    "tag": "RANDOM",
+    "flags": "None"
+  },
+  "STARTUP_ROUTINE_RUNE": {
+    "tier": "Silver",
+    "character": null,
+    "tag": "SURVIVAL",
+    "flags": "None"
+  },
+  "COLLECTOR_RUNE": {
+    "tier": "Silver",
+    "character": null,
+    "tag": "ECONOMY",
+    "flags": "None"
+  },
+  "NIGHT_PARADE_RUNE": {
+    "tier": "Silver",
+    "character": null,
+    "tag": "COMPREHENSIVE",
+    "flags": "Disabled"
+  },
+  "BLOOD_PACT_RUNE": {
+    "tier": "Silver",
+    "character": "Ironclad",
+    "tag": "BLOODLETTING",
+    "flags": "None"
+  },
+  "PLATELET_RUNE": {
+    "tier": "Silver",
+    "character": "Ironclad",
+    "tag": "BLOODLETTING",
+    "flags": "None"
+  },
+  "SNAKEBITE_RUNE": {
+    "tier": "Silver",
+    "character": "Silent",
+    "tag": "POISON",
+    "flags": "None"
+  },
+  "CATALYST_RUNE": {
+    "tier": "Silver",
+    "character": "Silent",
+    "tag": "POISON",
+    "flags": "None"
+  },
+  "SWORD_INTENT_RUNE": {
+    "tier": "Silver",
+    "character": "Regent",
+    "tag": "SWORDCRAFT",
+    "flags": "None"
+  },
+  "FLAWLESS_RUNE": {
+    "tier": "Silver",
+    "character": "Regent",
+    "tag": "COLORLESS",
+    "flags": "None"
+  },
+  "CONDENSED_RADIANCE_RUNE": {
+    "tier": "Silver",
+    "character": "Regent",
+    "tag": "STARLIGHT",
+    "flags": "None"
+  },
+  "ROYAL_COMMAND_RUNE": {
+    "tier": "Silver",
+    "character": "Regent",
+    "tag": "SWORDCRAFT",
+    "flags": "None"
+  },
+  "BYPRODUCT_RUNE": {
+    "tier": "Silver",
+    "character": "Defect",
+    "tag": "STATUS",
+    "flags": "None"
+  },
+  "ELECTRIC_SURGE_RUNE": {
+    "tier": "Silver",
+    "character": "Defect",
+    "tag": "ORB",
+    "flags": "None"
+  },
+  "SOUL_CALLING_RUNE": {
+    "tier": "Silver",
+    "character": null,
+    "tag": "RESOURCE",
+    "flags": "None"
+  },
+  "TAUNT_RUNE": {
+    "tier": "Silver",
+    "character": "Necrobinder",
+    "tag": "DOOM",
+    "flags": "None"
+  },
+  "SWORDSMANSHIP_RUNE": {
+    "tier": "Silver",
+    "character": "Regent",
+    "tag": "SWORDCRAFT",
+    "flags": "None"
+  },
+  "ADVANCE_TO_RETREAT_RUNE": {
+    "tier": "Silver",
+    "character": "Ironclad",
+    "tag": "COMPREHENSIVE",
+    "flags": "Disabled"
+  },
+  "BONE_GUARD_RUNE": {
+    "tier": "Silver",
+    "character": "Necrobinder",
+    "tag": "SUMMON",
+    "flags": "None"
+  },
+  "PLASTER_RUNE": {
+    "tier": "Silver",
+    "character": "Necrobinder",
+    "tag": "SUMMON",
+    "flags": "None"
+  },
+  "EASY_DOES_IT_RUNE": {
+    "tier": "Silver",
+    "character": null,
+    "tag": "COMPREHENSIVE",
+    "flags": "None"
+  },
+  "SWEEPING_BLADE_RUNE": {
+    "tier": "Silver",
+    "character": "Ironclad",
+    "tag": "OUTPUT",
+    "flags": "None"
+  },
+  "BLOODLETTING_UPGRADE_RUNE": {
+    "tier": "Silver",
+    "character": "Ironclad",
+    "tag": "BLOODLETTING",
+    "flags": "None"
+  },
+  "BATTLE_TRANCE_UPGRADE_RUNE": {
+    "tier": "Silver",
+    "character": "Ironclad",
+    "tag": "RESOURCE",
+    "flags": "None"
+  },
+  "JUGGERNAUT_UPGRADE_RUNE": {
+    "tier": "Silver",
+    "character": "Ironclad",
+    "tag": "OUTPUT",
+    "flags": "None"
+  },
+  "EXPOSE_UPGRADE_RUNE": {
+    "tier": "Silver",
+    "character": "Silent",
+    "tag": "COMPREHENSIVE",
+    "flags": "None"
+  },
+  "DECAY_RUNE": {
+    "tier": "Silver",
+    "character": "Silent",
+    "tag": "OUTPUT",
+    "flags": "None"
+  },
+  "HIDDEN_GEM_UPGRADE_RUNE": {
+    "tier": "Silver",
+    "character": null,
+    "tag": "COMPREHENSIVE",
+    "flags": "None"
+  },
+  "OCEAN_DRAGON_SOUL_RUNE": {
+    "tier": "Silver",
+    "character": null,
+    "tag": "SURVIVAL",
+    "flags": "None"
+  },
+  "INFERNAL_DRAGON_SOUL_RUNE": {
+    "tier": "Silver",
+    "character": null,
+    "tag": "OUTPUT",
+    "flags": "None"
+  },
+  "HEXTECH_DRAGON_SOUL_RUNE": {
+    "tier": "Silver",
+    "character": null,
+    "tag": "RESOURCE",
+    "flags": "None"
+  },
+  "CAREFUL_SELECTION_RUNE": {
+    "tier": "Silver",
+    "character": null,
+    "tag": "COMPREHENSIVE",
+    "flags": "None"
+  },
+  "POWER_SHIELD_RUNE": {
+    "tier": "Silver",
+    "character": null,
+    "tag": "OUTPUT",
+    "flags": "None"
+  },
+  "CORROSION_RUNE": {
+    "tier": "Silver",
+    "character": null,
+    "tag": "COMPREHENSIVE",
+    "flags": "None"
+  },
+  "DIZZY_SPINNING_RUNE": {
+    "tier": "Silver",
+    "character": null,
+    "tag": "RESOURCE",
+    "flags": "None"
+  },
+  "WARMUP_EXERCISE_RUNE": {
+    "tier": "Silver",
+    "character": null,
+    "tag": "COMPREHENSIVE",
+    "flags": "Disabled"
+  },
+  "BERSERK_RUNE": {
+    "tier": "Silver",
+    "character": "Ironclad",
+    "tag": "RESOURCE",
+    "flags": "None"
+  },
+  "BRUTALITY_RUNE": {
+    "tier": "Silver",
+    "character": "Ironclad",
+    "tag": "BLOODLETTING",
+    "flags": "None"
+  },
+  "CURTAIN_CALL_RUNE": {
+    "tier": "Silver",
+    "character": "Silent",
+    "tag": "OUTPUT",
+    "flags": "None"
+  },
+  "ALL_IN_RUNE": {
+    "tier": "Silver",
+    "character": "Silent",
+    "tag": "TRICK",
+    "flags": "Disabled"
+  },
+  "INSTANT_DEATH_RUNE": {
+    "tier": "Silver",
+    "character": "Necrobinder",
+    "tag": "DOOM",
+    "flags": "None"
+  },
+  "DIRGE_UPGRADE_RUNE": {
+    "tier": "Silver",
+    "character": "Necrobinder",
+    "tag": "SUMMON",
+    "flags": "None"
+  },
+  "REANIMATE_UPGRADE_RUNE": {
+    "tier": "Silver",
+    "character": "Necrobinder",
+    "tag": "SUMMON",
+    "flags": "None"
+  },
+  "GLOOMY_CLOUDS_RUNE": {
+    "tier": "Silver",
+    "character": "Defect",
+    "tag": "ORB",
+    "flags": "None"
+  },
+  "ZAP_UPGRADE_RUNE": {
+    "tier": "Silver",
+    "character": "Defect",
+    "tag": "ORB",
+    "flags": "None"
+  },
+  "AUTOMATION_UPGRADE_RUNE": {
+    "tier": "Silver",
+    "character": null,
+    "tag": "RESOURCE",
+    "flags": "None"
+  },
+  "ETERNAL_ARMOR_UPGRADE_RUNE": {
+    "tier": "Silver",
+    "character": null,
+    "tag": "SURVIVAL",
+    "flags": "None"
+  },
+  "RECYCLE_BIN_RUNE": {
+    "tier": "Silver",
+    "character": "Defect",
+    "tag": "STATUS",
+    "flags": "None"
+  },
+  "KNOW_THY_PLACE_UPGRADE_RUNE": {
+    "tier": "Silver",
+    "character": "Regent",
+    "tag": "COMPREHENSIVE",
+    "flags": "None"
+  },
+  "MENTAL_SHIELD_RUNE": {
+    "tier": "Silver",
+    "character": null,
+    "tag": "SURVIVAL",
+    "flags": "None"
+  },
+  "PACIFIST_RUNE": {
+    "tier": "Silver",
+    "character": null,
+    "tag": "SURVIVAL",
+    "flags": "Disabled"
+  },
+  "CRACK_THE_EGG_RUNE": {
+    "tier": "Silver",
+    "character": null,
+    "tag": "SURVIVAL",
+    "flags": "Disabled"
+  },
+  "KAKA_RUNE": {
+    "tier": "Silver",
+    "character": null,
+    "tag": "OUTPUT",
+    "flags": "Disabled"
+  },
+  "BRUTAL_FORCE_RUNE": {
+    "tier": "Silver",
+    "character": null,
+    "tag": "OUTPUT",
+    "flags": "None"
+  },
+  "TRANSMUTE_GOLD_RUNE": {
+    "tier": "Silver",
+    "character": null,
+    "tag": "RANDOM",
+    "flags": "None"
+  },
+  "UNIVERSAL_SCOPE_RUNE": {
+    "tier": "Silver",
+    "character": null,
+    "tag": "RESOURCE",
+    "flags": "None"
+  },
+  "STOKE_RUNE": {
+    "tier": "Silver",
+    "character": null,
+    "tag": "COMPREHENSIVE",
+    "flags": "None"
+  },
+  "DULL_BLADE_RUNE": {
+    "tier": "Silver",
+    "character": "Ironclad",
+    "tag": "BLOODLETTING",
+    "flags": "Disabled"
+  },
+  "BODY_SLAM_UPGRADE_RUNE": {
+    "tier": "Silver",
+    "character": "Ironclad",
+    "tag": "OUTPUT",
+    "flags": "None"
+  },
+  "SHRIEK_UPGRADE_RUNE": {
+    "tier": "Silver",
+    "character": "Silent",
+    "tag": "COMPREHENSIVE",
+    "flags": "None"
+  },
+  "NOW_YOU_SEE_ME_RUNE": {
+    "tier": "Silver",
+    "character": "Silent",
+    "tag": "STATUS",
+    "flags": "None"
+  },
+  "DEADWOOD_RUNE": {
+    "tier": "Silver",
+    "character": "Necrobinder",
+    "tag": "VOID",
+    "flags": "Disabled"
+  },
+  "BONE_BREAK_UPGRADE_RUNE": {
+    "tier": "Silver",
+    "character": "Necrobinder",
+    "tag": "SUMMON",
+    "flags": "None"
+  },
+  "UNDYING_UPGRADE_RUNE": {
+    "tier": "Silver",
+    "character": "Necrobinder",
+    "tag": "VOID",
+    "flags": "None"
+  },
+  "SOW_UPGRADE_RUNE": {
+    "tier": "Silver",
+    "character": "Necrobinder",
+    "tag": "OUTPUT",
+    "flags": "None"
+  },
+  "REAP_UPGRADE_RUNE": {
+    "tier": "Silver",
+    "character": "Necrobinder",
+    "tag": "OUTPUT",
+    "flags": "None"
+  },
+  "REPROGRAM_RUNE": {
+    "tier": "Silver",
+    "character": "Defect",
+    "tag": "COMPREHENSIVE",
+    "flags": "None"
+  },
+  "NEUROSURGE_UPGRADE_RUNE": {
+    "tier": "Silver",
+    "character": "Necrobinder",
+    "tag": "DOOM",
+    "flags": "None"
+  },
+  "JUDICATOR_RUNE": {
+    "tier": "Gold",
+    "character": null,
+    "tag": "OUTPUT",
+    "flags": "None"
+  },
+  "TRANSCENDENT_EVIL_RUNE": {
+    "tier": "Gold",
+    "character": "Defect",
+    "tag": "STACKING",
+    "flags": "ThirdActExcluded"
+  },
+  "TANK_ENGINE_RUNE": {
+    "tier": "Gold",
+    "character": null,
+    "tag": "STACKING",
+    "flags": "ThirdActExcluded"
+  },
+  "ASTRAL_BODY_RUNE": {
+    "tier": "Gold",
+    "character": null,
+    "tag": "SURVIVAL",
+    "flags": "None"
+  },
+  "ANCIENT_WINE_RUNE": {
+    "tier": "Gold",
+    "character": null,
+    "tag": "SURVIVAL",
+    "flags": "None"
+  },
+  "PIGGY_BANK_RUNE": {
+    "tier": "Gold",
+    "character": null,
+    "tag": "ECONOMY",
+    "flags": "Disabled"
+  },
+  "OROBAS_BLESSING_RUNE": {
+    "tier": "Gold",
+    "character": null,
+    "tag": "COMPREHENSIVE",
+    "flags": "None"
+  },
+  "CROSS_ORB_RUNE": {
+    "tier": "Gold",
+    "character": null,
+    "tag": "COMPREHENSIVE",
+    "flags": "None"
+  },
+  "ILLUSORY_WEAPON_RUNE": {
+    "tier": "Gold",
+    "character": null,
+    "tag": "OUTPUT",
+    "flags": "None"
+  },
+  "NEOWS_GRUDGE_RUNE": {
+    "tier": "Gold",
+    "character": null,
+    "tag": "OUTPUT",
+    "flags": "Disabled"
+  },
+  "HOLY_FIRE_RUNE": {
+    "tier": "Gold",
+    "character": null,
+    "tag": "COMPREHENSIVE",
+    "flags": "Disabled"
+  },
+  "NO_NONSENSE_RUNE": {
+    "tier": "Gold",
+    "character": null,
+    "tag": "COMPREHENSIVE",
+    "flags": "Disabled"
+  },
+  "SUPER_BRAIN_RUNE": {
+    "tier": "Gold",
+    "character": null,
+    "tag": "COMPREHENSIVE",
+    "flags": "Disabled"
+  },
+  "OVERFLOW_RUNE": {
+    "tier": "Gold",
+    "character": null,
+    "tag": "COMPREHENSIVE",
+    "flags": "None"
+  },
+  "STURDY_RUNE": {
+    "tier": "Gold",
+    "character": null,
+    "tag": "SURVIVAL",
+    "flags": "None"
+  },
+  "LOOP_RUNE": {
+    "tier": "Gold",
+    "character": null,
+    "tag": "RESOURCE",
+    "flags": "None"
+  },
+  "VITALITY_SURGE_RUNE": {
+    "tier": "Gold",
+    "character": null,
+    "tag": "RESOURCE",
+    "flags": "None"
+  },
+  "OK_BOOMERANG_RUNE": {
+    "tier": "Gold",
+    "character": null,
+    "tag": "OUTPUT",
+    "flags": "None"
+  },
+  "DIVINE_INTERVENTION_RUNE": {
+    "tier": "Gold",
+    "character": null,
+    "tag": "SURVIVAL",
+    "flags": "None"
+  },
+  "SONATA_RUNE": {
+    "tier": "Gold",
+    "character": null,
+    "tag": "COMPREHENSIVE",
+    "flags": "None"
+  },
+  "OUR_HEALING_RUNE": {
+    "tier": "Gold",
+    "character": null,
+    "tag": "SURVIVAL",
+    "flags": "None"
+  },
+  "ARCHMAGE_RUNE": {
+    "tier": "Gold",
+    "character": null,
+    "tag": "RESOURCE",
+    "flags": "None"
+  },
+  "NATURE_IS_HEALING_RUNE": {
+    "tier": "Gold",
+    "character": null,
+    "tag": "SURVIVAL",
+    "flags": "None"
+  },
+  "PORCUPINE_RUNE": {
+    "tier": "Gold",
+    "character": null,
+    "tag": "SURVIVAL",
+    "flags": "Disabled"
+  },
+  "SNAIL_FORM_RUNE": {
+    "tier": "Gold",
+    "character": null,
+    "tag": "SURVIVAL",
+    "flags": "Disabled"
+  },
+  "COLOR_DISCOVERY_RUNE": {
+    "tier": "Gold",
+    "character": null,
+    "tag": "COMPREHENSIVE",
+    "flags": "None"
+  },
+  "HATTRICK_RUNE": {
+    "tier": "Gold",
+    "character": null,
+    "tag": "COMPREHENSIVE",
+    "flags": "None"
+  },
+  "ANTHONY_BIAS_RUNE": {
+    "tier": "Gold",
+    "character": null,
+    "tag": "COMPREHENSIVE",
+    "flags": "None"
+  },
+  "OMEGA_RUNE": {
+    "tier": "Gold",
+    "character": null,
+    "tag": "OUTPUT",
+    "flags": "None"
+  },
+  "VIOLENCE_RUNE": {
+    "tier": "Gold",
+    "character": null,
+    "tag": "RESOURCE",
+    "flags": "None"
+  },
+  "CUTTING_EDGE_ALCHEMIST_RUNE": {
+    "tier": "Gold",
+    "character": null,
+    "tag": "COMPREHENSIVE",
+    "flags": "Disabled"
+  },
+  "DEVILS_DANCE_RUNE": {
+    "tier": "Gold",
+    "character": null,
+    "tag": "SURVIVAL",
+    "flags": "None"
+  },
+  "BEGINNING_AND_END_RUNE": {
+    "tier": "Gold",
+    "character": "Necrobinder",
+    "tag": "OUTPUT",
+    "flags": "None"
+  },
+  "KEYSTONE_HUNTER_RUNE": {
+    "tier": "Gold",
+    "character": "Silent",
+    "tag": "TRICK",
+    "flags": "None"
+  },
+  "WARMOGS_SPIRIT_RUNE": {
+    "tier": "Gold",
+    "character": null,
+    "tag": "COMPREHENSIVE",
+    "flags": "Disabled"
+  },
+  "RED_ENVELOPE_RUNE": {
+    "tier": "Gold",
+    "character": null,
+    "tag": "ECONOMY",
+    "flags": "None"
+  },
+  "MIND_PURIFICATION_RUNE": {
+    "tier": "Gold",
+    "character": null,
+    "tag": "COMPREHENSIVE",
+    "flags": "Disabled"
+  },
+  "ENDLESS_RECOVERY_RUNE": {
+    "tier": "Gold",
+    "character": null,
+    "tag": "COMPREHENSIVE",
+    "flags": "Disabled"
+  },
+  "SPEEDSTER_RUNE": {
+    "tier": "Gold",
+    "character": null,
+    "tag": "RESOURCE",
+    "flags": "None"
+  },
+  "SERVANT_MASTER_RUNE": {
+    "tier": "Gold",
+    "character": "Necrobinder",
+    "tag": "SUMMON",
+    "flags": "None"
+  },
+  "SOUL_EATER_RUNE": {
+    "tier": "Gold",
+    "character": null,
+    "tag": "SURVIVAL",
+    "flags": "None"
+  },
+  "DONATION_RUNE": {
+    "tier": "Gold",
+    "character": null,
+    "tag": "ECONOMY",
+    "flags": "None"
+  },
+  "TWICE_THRICE_RUNE": {
+    "tier": "Gold",
+    "character": null,
+    "tag": "OUTPUT",
+    "flags": "None"
+  },
+  "BREAD_AND_BUTTER_RUNE": {
+    "tier": "Gold",
+    "character": null,
+    "tag": "OUTPUT",
+    "flags": "None"
+  },
+  "BREAD_AND_CHEESE_RUNE": {
+    "tier": "Gold",
+    "character": null,
+    "tag": "COMPREHENSIVE",
+    "flags": "None"
+  },
+  "BREAD_AND_JAM_RUNE": {
+    "tier": "Gold",
+    "character": null,
+    "tag": "SURVIVAL",
+    "flags": "None"
+  },
+  "FIREBRAND_RUNE": {
+    "tier": "Gold",
+    "character": null,
+    "tag": "OUTPUT",
+    "flags": "None"
+  },
+  "BURNING_INTEREST_RUNE": {
+    "tier": "Gold",
+    "character": null,
+    "tag": "ECONOMY",
+    "flags": "None"
+  },
+  "NIGHTSTALKING_RUNE": {
+    "tier": "Gold",
+    "character": null,
+    "tag": "SURVIVAL",
+    "flags": "None"
+  },
+  "GET_EXCITED_RUNE": {
+    "tier": "Gold",
+    "character": null,
+    "tag": "RESOURCE",
+    "flags": "Disabled"
+  },
+  "JACKPOT_UPGRADE_RUNE": {
+    "tier": "Gold",
+    "character": null,
+    "tag": "RANDOM",
+    "flags": "None"
+  },
+  "SHRINK_ENGINE_RUNE": {
+    "tier": "Gold",
+    "character": null,
+    "tag": "STACKING",
+    "flags": "ThirdActExcluded"
+  },
+  "STATS_ON_STATS_RUNE": {
+    "tier": "Gold",
+    "character": null,
+    "tag": "RANDOM",
+    "flags": "None"
+  },
+  "LIFE_FLOW_RUNE": {
+    "tier": "Gold",
+    "character": "Ironclad",
+    "tag": "EXHAUST",
+    "flags": "None"
+  },
+  "REKINDLE_RUNE": {
+    "tier": "Gold",
+    "character": "Ironclad",
+    "tag": "EXHAUST",
+    "flags": "None"
+  },
+  "TRICK_LICENSE_RUNE": {
+    "tier": "Gold",
+    "character": "Silent",
+    "tag": "TRICK",
+    "flags": "None"
+  },
+  "GALACTIC_GIFT_RUNE": {
+    "tier": "Gold",
+    "character": "Regent",
+    "tag": "STARLIGHT",
+    "flags": "None"
+  },
+  "SOMETHING_FROM_NOTHING_RUNE": {
+    "tier": "Gold",
+    "character": "Necrobinder",
+    "tag": "VOID",
+    "flags": "None"
+  },
+  "LUBRICANT_RUNE": {
+    "tier": "Gold",
+    "character": "Defect",
+    "tag": "COMPREHENSIVE",
+    "flags": "None"
+  },
+  "HUBRIS_RUNE": {
+    "tier": "Gold",
+    "character": null,
+    "tag": "OUTPUT",
+    "flags": "ThirdActExcluded"
+  },
+  "DRAIN_RUNE": {
+    "tier": "Gold",
+    "character": "Necrobinder",
+    "tag": "DOOM",
+    "flags": "None"
+  },
+  "LETHAL_TEMPO_RUNE": {
+    "tier": "Gold",
+    "character": "Silent",
+    "tag": "SHIV",
+    "flags": "None"
+  },
+  "EMERGENCE_RUNE": {
+    "tier": "Gold",
+    "character": "Defect",
+    "tag": "ORB",
+    "flags": "None"
+  },
+  "MIRAGE_RUNE": {
+    "tier": "Gold",
+    "character": "Silent",
+    "tag": "POISON",
+    "flags": "None"
+  },
+  "ADAPTIVE_CAPACITOR_RUNE": {
+    "tier": "Gold",
+    "character": "Defect",
+    "tag": "ORB",
+    "flags": "Disabled"
+  },
+  "BARBARIAN_WAY_RUNE": {
+    "tier": "Gold",
+    "character": "Defect",
+    "tag": "OUTPUT",
+    "flags": "None"
+  },
+  "RENEWAL_RUNE": {
+    "tier": "Gold",
+    "character": "Silent",
+    "tag": "TRICK",
+    "flags": "None"
+  },
+  "WRAITH_RUNE": {
+    "tier": "Gold",
+    "character": "Necrobinder",
+    "tag": "OUTPUT",
+    "flags": "None"
+  },
+  "SUMMON_FORTH_RUNE": {
+    "tier": "Gold",
+    "character": "Regent",
+    "tag": "SWORDCRAFT",
+    "flags": "None"
+  },
+  "IMMORTAL_BONE_RUNE": {
+    "tier": "Gold",
+    "character": "Necrobinder",
+    "tag": "SUMMON",
+    "flags": "None"
+  },
+  "MAKE_IT_MINE_RUNE": {
+    "tier": "Gold",
+    "character": "Necrobinder",
+    "tag": "STACKING",
+    "flags": "ThirdActExcluded"
+  },
+  "DOOMSDAY_RUNE": {
+    "tier": "Gold",
+    "character": "Necrobinder",
+    "tag": "DOOM",
+    "flags": "None"
+  },
+  "OLD_IDOL_RUNE": {
+    "tier": "Gold",
+    "character": null,
+    "tag": "COMPREHENSIVE",
+    "flags": "Disabled"
+  },
+  "MONARCHS_GAZE_RUNE": {
+    "tier": "Gold",
+    "character": null,
+    "tag": "SURVIVAL",
+    "flags": "None"
+  },
+  "HARD_BONES_RUNE": {
+    "tier": "Gold",
+    "character": "Necrobinder",
+    "tag": "SUMMON",
+    "flags": "Disabled"
+  },
+  "SEND_THEM_IN_RUNE": {
+    "tier": "Gold",
+    "character": "Regent",
+    "tag": "COMPREHENSIVE",
+    "flags": "None"
+  },
+  "CHAIN_IN_SLEEVE_RUNE": {
+    "tier": "Gold",
+    "character": "Silent",
+    "tag": "SHIV",
+    "flags": "None"
+  },
+  "ROYAL_TRIAL_RUNE": {
+    "tier": "Gold",
+    "character": "Regent",
+    "tag": "SWORDCRAFT",
+    "flags": "None"
+  },
+  "GOOD_LUCK_RUNE": {
+    "tier": "Gold",
+    "character": null,
+    "tag": "COMPREHENSIVE",
+    "flags": "None"
+  },
+  "RADIANCE_RUNE": {
+    "tier": "Gold",
+    "character": null,
+    "tag": "OUTPUT",
+    "flags": "None"
+  },
+  "MANIPULATE_REALITY_RUNE": {
+    "tier": "Gold",
+    "character": null,
+    "tag": "COMPREHENSIVE",
+    "flags": "None"
+  },
+  "BLUE_CANDLE_MEDKIT_RUNE": {
+    "tier": "Gold",
+    "character": null,
+    "tag": "COMPREHENSIVE",
+    "flags": "None"
+  },
+  "BIG_HANDS_RUNE": {
+    "tier": "Gold",
+    "character": "Necrobinder",
+    "tag": "SUMMON",
+    "flags": "None"
+  },
+  "JINLIAN_BOX_RUNE": {
+    "tier": "Gold",
+    "character": null,
+    "tag": "RANDOM",
+    "flags": "ThirdActExcluded"
+  },
+  "FLESH_AND_BONE_RUNE": {
+    "tier": "Gold",
+    "character": "Necrobinder",
+    "tag": "SUMMON",
+    "flags": "None"
+  },
+  "PORTABLE_SLEEPING_BAG_RUNE": {
+    "tier": "Gold",
+    "character": null,
+    "tag": "COMPREHENSIVE",
+    "flags": "None"
+  },
+  "MORE_THE_MERRIER_RUNE": {
+    "tier": "Gold",
+    "character": null,
+    "tag": "COMPREHENSIVE",
+    "flags": "None"
+  },
+  "MIRROR_REFLECTION_RUNE": {
+    "tier": "Gold",
+    "character": null,
+    "tag": "COMPREHENSIVE",
+    "flags": "FirstActExcluded"
+  },
+  "BLOOD_ARMOR_RUNE": {
+    "tier": "Gold",
+    "character": "Ironclad",
+    "tag": "BLOODLETTING",
+    "flags": "None"
+  },
+  "SCARED_STIFF_RUNE": {
+    "tier": "Gold",
+    "character": "Ironclad",
+    "tag": "EXHAUST",
+    "flags": "None"
+  },
+  "DEVIANT_COGNITION_RUNE": {
+    "tier": "Gold",
+    "character": "Ironclad",
+    "tag": "OUTPUT",
+    "flags": "None"
+  },
+  "BASH_UPGRADE_RUNE": {
+    "tier": "Gold",
+    "character": "Ironclad",
+    "tag": "OUTPUT",
+    "flags": "None"
+  },
+  "IRON_WAVE_UPGRADE_RUNE": {
+    "tier": "Gold",
+    "character": "Ironclad",
+    "tag": "OUTPUT",
+    "flags": "None"
+  },
+  "CORPSE_EXPLOSION_RUNE": {
+    "tier": "Gold",
+    "character": "Silent",
+    "tag": "POISON",
+    "flags": "None"
+  },
+  "SURVIVOR_UPGRADE_RUNE": {
+    "tier": "Gold",
+    "character": "Silent",
+    "tag": "SURVIVAL",
+    "flags": "None"
+  },
+  "NEUTRALIZE_UPGRADE_RUNE": {
+    "tier": "Gold",
+    "character": "Silent",
+    "tag": "OUTPUT",
+    "flags": "None"
+  },
+  "VOID_FORM_UPGRADE_RUNE": {
+    "tier": "Gold",
+    "character": "Regent",
+    "tag": "COMPREHENSIVE",
+    "flags": "None"
+  },
+  "ECHO_FORM_UPGRADE_RUNE": {
+    "tier": "Gold",
+    "character": "Defect",
+    "tag": "COMPREHENSIVE",
+    "flags": "None"
+  },
+  "SERPENT_FORM_UPGRADE_RUNE": {
+    "tier": "Gold",
+    "character": "Silent",
+    "tag": "COMPREHENSIVE",
+    "flags": "None"
+  },
+  "DEMON_FORM_UPGRADE_RUNE": {
+    "tier": "Gold",
+    "character": "Ironclad",
+    "tag": "COMPREHENSIVE",
+    "flags": "None"
+  },
+  "REAPER_FORM_UPGRADE_RUNE": {
+    "tier": "Gold",
+    "character": "Necrobinder",
+    "tag": "COMPREHENSIVE",
+    "flags": "None"
+  },
+  "SWORD_FLIGHT_RUNE": {
+    "tier": "Gold",
+    "character": "Regent",
+    "tag": "COMPREHENSIVE",
+    "flags": "Disabled"
+  },
+  "ELECTRODYNAMICS_RUNE": {
+    "tier": "Gold",
+    "character": "Defect",
+    "tag": "ORB",
+    "flags": "None"
+  },
+  "MARKOV_BABBLE_RUNE": {
+    "tier": "Gold",
+    "character": "Defect",
+    "tag": "ORB",
+    "flags": "None"
+  },
+  "COMPACT_UPGRADE_RUNE": {
+    "tier": "Gold",
+    "character": "Defect",
+    "tag": "STATUS",
+    "flags": "None"
+  },
+  "HOTFIX_UPGRADE_RUNE": {
+    "tier": "Gold",
+    "character": "Defect",
+    "tag": "ORB",
+    "flags": "None"
+  },
+  "VOLTAIC_UPGRADE_RUNE": {
+    "tier": "Gold",
+    "character": "Defect",
+    "tag": "ORB",
+    "flags": "None"
+  },
+  "WHIRLWIND_UPGRADE_RUNE": {
+    "tier": "Gold",
+    "character": "Ironclad",
+    "tag": "OUTPUT",
+    "flags": "None"
+  },
+  "STARDUST_UPGRADE_RUNE": {
+    "tier": "Gold",
+    "character": "Regent",
+    "tag": "STARLIGHT",
+    "flags": "None"
+  },
+  "FALLING_STAR_UPGRADE_RUNE": {
+    "tier": "Gold",
+    "character": "Regent",
+    "tag": "STARLIGHT",
+    "flags": "None"
+  },
+  "BODYGUARD_UPGRADE_RUNE": {
+    "tier": "Gold",
+    "character": "Necrobinder",
+    "tag": "SUMMON",
+    "flags": "None"
+  },
+  "BORROWED_TIME_UPGRADE_RUNE": {
+    "tier": "Gold",
+    "character": "Necrobinder",
+    "tag": "RESOURCE",
+    "flags": "None"
+  },
+  "UNLEASH_UPGRADE_RUNE": {
+    "tier": "Gold",
+    "character": "Necrobinder",
+    "tag": "SUMMON",
+    "flags": "None"
+  },
+  "MISERY_UPGRADE_RUNE": {
+    "tier": "Gold",
+    "character": "Necrobinder",
+    "tag": "DOOM",
+    "flags": "None"
+  },
+  "GOLD_CARD_CUSTOMER_RUNE": {
+    "tier": "Gold",
+    "character": null,
+    "tag": "ECONOMY",
+    "flags": "None"
+  },
+  "VAMPIRE_CRAWLER_RUNE": {
+    "tier": "Gold",
+    "character": null,
+    "tag": "COMPREHENSIVE",
+    "flags": "None"
+  },
+  "ENLIGHTENMENT_RUNE": {
+    "tier": "Gold",
+    "character": null,
+    "tag": "RESOURCE",
+    "flags": "None"
+  },
+  "WHITE_HOLE_RUNE": {
+    "tier": "Gold",
+    "character": null,
+    "tag": "RESOURCE",
+    "flags": "None"
+  },
+  "TANKS_SHIELD_RUNE": {
+    "tier": "Gold",
+    "character": null,
+    "tag": "SURVIVAL",
+    "flags": "None"
+  },
+  "DAWNBRINGERS_RESOLVE_RUNE": {
+    "tier": "Gold",
+    "character": null,
+    "tag": "COMPREHENSIVE",
+    "flags": "Disabled"
+  },
+  "SHRINK_RAY_RUNE": {
+    "tier": "Gold",
+    "character": null,
+    "tag": "SURVIVAL",
+    "flags": "None"
+  },
+  "TRANSMUTE_PRISMATIC_RUNE": {
+    "tier": "Gold",
+    "character": null,
+    "tag": "RANDOM",
+    "flags": "None"
+  },
+  "MORE_UNIVERSAL_SCOPE_RUNE": {
+    "tier": "Gold",
+    "character": null,
+    "tag": "RESOURCE",
+    "flags": "None"
+  },
+  "SNAKEBITE_UPGRADE_RUNE": {
+    "tier": "Gold",
+    "character": "Silent",
+    "tag": "POISON",
+    "flags": "None"
+  },
+  "INKSHADOW_RUNE": {
+    "tier": "Gold",
+    "character": "Silent",
+    "tag": "SHIV",
+    "flags": "None"
+  },
+  "SKY_DRILL_UPGRADE_RUNE": {
+    "tier": "Gold",
+    "character": "Regent",
+    "tag": "OUTPUT",
+    "flags": "None"
+  },
+  "TRINITY_RUNE": {
+    "tier": "Gold",
+    "character": "Regent",
+    "tag": "STARLIGHT",
+    "flags": "None"
+  },
+  "CRASH_LANDING_UPGRADE_RUNE": {
+    "tier": "Gold",
+    "character": "Regent",
+    "tag": "OUTPUT",
+    "flags": "None"
+  },
+  "CHARGE_UP_RUNE": {
+    "tier": "Gold",
+    "character": "Regent",
+    "tag": "RESOURCE",
+    "flags": "None"
+  },
+  "AUTO_PATROL_RUNE": {
+    "tier": "Gold",
+    "character": "Necrobinder",
+    "tag": "SUMMON",
+    "flags": "None"
+  },
+  "DEATH_HARVEST_RUNE": {
+    "tier": "Gold",
+    "character": null,
+    "tag": "SURVIVAL",
+    "flags": "Disabled"
+  },
+  "TWILIGHT_VEIL_RUNE": {
+    "tier": "Gold",
+    "character": null,
+    "tag": "COMPREHENSIVE",
+    "flags": "None"
+  },
+  "LINGERING_MIGHT_RUNE": {
+    "tier": "Gold",
+    "character": null,
+    "tag": "COMPREHENSIVE",
+    "flags": "None"
+  },
+  "HUNDRED_REFINEMENTS_RUNE": {
+    "tier": "Gold",
+    "character": null,
+    "tag": "RANDOM",
+    "flags": "None"
+  },
+  "MOLTEN_FIST_UPGRADE_RUNE": {
+    "tier": "Gold",
+    "character": "Ironclad",
+    "tag": "OUTPUT",
+    "flags": "None"
+  },
+  "WELL_LAID_PLANS_UPGRADE_RUNE": {
+    "tier": "Gold",
+    "character": "Silent",
+    "tag": "COMPREHENSIVE",
+    "flags": "Retired"
+  },
+  "SUBROUTINE_UPGRADE_RUNE": {
+    "tier": "Gold",
+    "character": "Defect",
+    "tag": "ORB",
+    "flags": "None"
+  },
+  "STRIKE_UPGRADE_RUNE": {
+    "tier": "Prismatic",
+    "character": null,
+    "tag": "OUTPUT",
+    "flags": "None"
+  },
+  "DEFEND_UPGRADE_RUNE": {
+    "tier": "Prismatic",
+    "character": null,
+    "tag": "SURVIVAL",
+    "flags": "None"
+  },
+  "EUREKA_RUNE": {
+    "tier": "Prismatic",
+    "character": null,
+    "tag": "RESOURCE",
+    "flags": "None"
+  },
+  "INFINITE_LOOP_RUNE": {
+    "tier": "Prismatic",
+    "character": null,
+    "tag": "STACKING",
+    "flags": "ThirdActExcluded"
+  },
+  "SLOW_COOK_RUNE": {
+    "tier": "Prismatic",
+    "character": null,
+    "tag": "SURVIVAL",
+    "flags": "None"
+  },
+  "GIANT_SLAYER_RUNE": {
+    "tier": "Prismatic",
+    "character": null,
+    "tag": "OUTPUT",
+    "flags": "None"
+  },
+  "COURAGE_OF_COLOSSUS_RUNE": {
+    "tier": "Prismatic",
+    "character": null,
+    "tag": "SURVIVAL",
+    "flags": "Disabled"
+  },
+  "GLASS_CANNON_RUNE": {
+    "tier": "Prismatic",
+    "character": null,
+    "tag": "OUTPUT",
+    "flags": "None"
+  },
+  "FINAL_FORM_RUNE": {
+    "tier": "Prismatic",
+    "character": null,
+    "tag": "SURVIVAL",
+    "flags": "Disabled"
+  },
+  "BACK_TO_BASICS_RUNE": {
+    "tier": "Prismatic",
+    "character": null,
+    "tag": "COMPREHENSIVE",
+    "flags": "None"
+  },
+  "DRAW_YOUR_SWORD_RUNE": {
+    "tier": "Prismatic",
+    "character": "Defect",
+    "tag": "ORB",
+    "flags": "AttributeConversionExclusive"
+  },
+  "FEEL_THE_BURN_RUNE": {
+    "tier": "Prismatic",
+    "character": null,
+    "tag": "OUTPUT",
+    "flags": "None"
+  },
+  "MIKAELS_BLESSING_RUNE": {
+    "tier": "Prismatic",
+    "character": null,
+    "tag": "COMPREHENSIVE",
+    "flags": "None"
+  },
+  "EARTH_AWAKENS_RUNE": {
+    "tier": "Prismatic",
+    "character": null,
+    "tag": "OUTPUT",
+    "flags": "Disabled"
+  },
+  "CORRUPTED_BRANCH_RUNE": {
+    "tier": "Prismatic",
+    "character": null,
+    "tag": "EXHAUST",
+    "flags": "None"
+  },
+  "SYMPHONY_OF_WAR_RUNE": {
+    "tier": "Prismatic",
+    "character": null,
+    "tag": "OUTPUT",
+    "flags": "None"
+  },
+  "UNMOVABLE_MOUNTAIN_RUNE": {
+    "tier": "Prismatic",
+    "character": null,
+    "tag": "SURVIVAL",
+    "flags": "None"
+  },
+  "MYSTERY_RUNE": {
+    "tier": "Prismatic",
+    "character": null,
+    "tag": "COMPREHENSIVE",
+    "flags": "None"
+  },
+  "MAD_SCIENTIST_RUNE": {
+    "tier": "Prismatic",
+    "character": "Defect",
+    "tag": "ORB",
+    "flags": "None"
+  },
+  "JEWELED_GAUNTLET_RUNE": {
+    "tier": "Prismatic",
+    "character": null,
+    "tag": "COMPREHENSIVE",
+    "flags": "None"
+  },
+  "HAIL_TO_THE_KING_RUNE": {
+    "tier": "Prismatic",
+    "character": null,
+    "tag": "COMPREHENSIVE",
+    "flags": "ThirdActExcluded"
+  },
+  "DICE_MANIAC_RUNE": {
+    "tier": "Prismatic",
+    "character": null,
+    "tag": "RANDOM",
+    "flags": "None"
+  },
+  "ARCANE_PUNCH_RUNE": {
+    "tier": "Prismatic",
+    "character": null,
+    "tag": "RESOURCE",
+    "flags": "None"
+  },
+  "PANDORAS_BOX_RUNE": {
+    "tier": "Prismatic",
+    "character": null,
+    "tag": "RANDOM",
+    "flags": "FirstActExcluded"
+  },
+  "TAP_DANCE_RUNE": {
+    "tier": "Prismatic",
+    "character": null,
+    "tag": "RESOURCE",
+    "flags": "None"
+  },
+  "INFERNAL_CONDUIT_RUNE": {
+    "tier": "Prismatic",
+    "character": null,
+    "tag": "OUTPUT",
+    "flags": "None"
+  },
+  "DUAL_WIELD_RUNE": {
+    "tier": "Prismatic",
+    "character": null,
+    "tag": "OUTPUT",
+    "flags": "None"
+  },
+  "GOLIATH_RUNE": {
+    "tier": "Prismatic",
+    "character": null,
+    "tag": "COMPREHENSIVE",
+    "flags": "None"
+  },
+  "MASTER_OF_DUALITY_RUNE": {
+    "tier": "Prismatic",
+    "character": null,
+    "tag": "COMPREHENSIVE",
+    "flags": "Disabled"
+  },
+  "HAND_OF_BARON_RUNE": {
+    "tier": "Prismatic",
+    "character": null,
+    "tag": "SURVIVAL",
+    "flags": "None"
+  },
+  "CANT_TOUCH_THIS_RUNE": {
+    "tier": "Prismatic",
+    "character": null,
+    "tag": "SURVIVAL",
+    "flags": "None"
+  },
+  "QUEEN_RUNE": {
+    "tier": "Prismatic",
+    "character": null,
+    "tag": "COMPREHENSIVE",
+    "flags": "None"
+  },
+  "ULTIMATE_REFRESH_RUNE": {
+    "tier": "Prismatic",
+    "character": null,
+    "tag": "COMPREHENSIVE",
+    "flags": "None"
+  },
+  "GOLDREND_RUNE": {
+    "tier": "Prismatic",
+    "character": null,
+    "tag": "ECONOMY",
+    "flags": "None"
+  },
+  "CERBERUS_RUNE": {
+    "tier": "Prismatic",
+    "character": null,
+    "tag": "OUTPUT",
+    "flags": "None"
+  },
+  "CIRCLE_OF_DEATH_RUNE": {
+    "tier": "Prismatic",
+    "character": null,
+    "tag": "SURVIVAL",
+    "flags": "None"
+  },
+  "FAN_THE_HAMMER_RUNE": {
+    "tier": "Prismatic",
+    "character": null,
+    "tag": "OUTPUT",
+    "flags": "None"
+  },
+  "FEY_MAGIC_RUNE": {
+    "tier": "Prismatic",
+    "character": null,
+    "tag": "COMPREHENSIVE",
+    "flags": "None"
+  },
+  "WATCH_OUT_GRAPEFRUIT_RUNE": {
+    "tier": "Prismatic",
+    "character": null,
+    "tag": "COMPREHENSIVE",
+    "flags": "None"
+  },
+  "PROTEIN_SHAKE_RUNE": {
+    "tier": "Prismatic",
+    "character": null,
+    "tag": "SURVIVAL",
+    "flags": "None"
+  },
+  "STATS_ON_STATS_ON_STATS_RUNE": {
+    "tier": "Prismatic",
+    "character": null,
+    "tag": "RANDOM",
+    "flags": "None"
+  },
+  "GOLDEN_SPATULA_RUNE": {
+    "tier": "Prismatic",
+    "character": null,
+    "tag": "STACKING",
+    "flags": "ThirdActExcluded"
+  },
+  "PRECISION_COGNITION_RUNE": {
+    "tier": "Prismatic",
+    "character": "Defect",
+    "tag": "ORB",
+    "flags": "None"
+  },
+  "HASTY_SCRIBBLE_RUNE": {
+    "tier": "Prismatic",
+    "character": null,
+    "tag": "RESOURCE",
+    "flags": "None"
+  },
+  "CLOWN_COLLEGE_RUNE": {
+    "tier": "Prismatic",
+    "character": null,
+    "tag": "COMPREHENSIVE",
+    "flags": "None"
+  },
+  "BLADE_WALTZ_RUNE": {
+    "tier": "Prismatic",
+    "character": null,
+    "tag": "OUTPUT",
+    "flags": "None"
+  },
+  "SINGULARITY_AI_RUNE": {
+    "tier": "Prismatic",
+    "character": null,
+    "tag": "COMPREHENSIVE",
+    "flags": "None"
+  },
+  "EIGHT_PENNY_GATE_RUNE": {
+    "tier": "Prismatic",
+    "character": null,
+    "tag": "COMPREHENSIVE",
+    "flags": "None"
+  },
+  "BREAD_SANDWICH_RUNE": {
+    "tier": "Prismatic",
+    "character": null,
+    "tag": "COMPREHENSIVE",
+    "flags": "SelectionExcluded"
+  },
+  "MOBILE_HOME_RUNE": {
+    "tier": "Prismatic",
+    "character": null,
+    "tag": "COMPREHENSIVE",
+    "flags": "None"
+  },
+  "GROWING_STRONGER_RUNE": {
+    "tier": "Prismatic",
+    "character": "Ironclad",
+    "tag": "OUTPUT",
+    "flags": "None"
+  },
+  "GROUNDED_RUNE": {
+    "tier": "Prismatic",
+    "character": "Ironclad",
+    "tag": "SURVIVAL",
+    "flags": "None"
+  },
+  "FURIOUS_GLARE_RUNE": {
+    "tier": "Prismatic",
+    "character": "Ironclad",
+    "tag": "OUTPUT",
+    "flags": "None"
+  },
+  "KILLER_HUNTER_RUNE": {
+    "tier": "Prismatic",
+    "character": "Silent",
+    "tag": "COMPREHENSIVE",
+    "flags": "None"
+  },
+  "SERPENTS_FANG_RUNE": {
+    "tier": "Prismatic",
+    "character": "Silent",
+    "tag": "POISON",
+    "flags": "None"
+  },
+  "EXPLOSION_ART_RUNE": {
+    "tier": "Prismatic",
+    "character": "Regent",
+    "tag": "SWORDCRAFT",
+    "flags": "None"
+  },
+  "STARLIGHT_SPLENDOR_RUNE": {
+    "tier": "Prismatic",
+    "character": "Regent",
+    "tag": "STARLIGHT",
+    "flags": "None"
+  },
+  "MISERABLE_FATE_RUNE": {
+    "tier": "Prismatic",
+    "character": "Necrobinder",
+    "tag": "DOOM",
+    "flags": "None"
+  },
+  "DIE_FOR_YOU_RUNE": {
+    "tier": "Prismatic",
+    "character": "Necrobinder",
+    "tag": "SUMMON",
+    "flags": "None"
+  },
+  "COMPENSATION_RUNE": {
+    "tier": "Prismatic",
+    "character": "Necrobinder",
+    "tag": "DOOM",
+    "flags": "None"
+  },
+  "OMINOUS_PACT_RUNE": {
+    "tier": "Prismatic",
+    "character": "Necrobinder",
+    "tag": "DOOM",
+    "flags": "None"
+  },
+  "HAPPY_ACCIDENT_RUNE": {
+    "tier": "Prismatic",
+    "character": "Defect",
+    "tag": "STATUS",
+    "flags": "Disabled"
+  },
+  "MISERY_RUNE": {
+    "tier": "Prismatic",
+    "character": null,
+    "tag": "COMPREHENSIVE",
+    "flags": "None"
+  },
+  "GHOST_FORM_RUNE": {
+    "tier": "Prismatic",
+    "character": null,
+    "tag": "SURVIVAL",
+    "flags": "None"
+  },
+  "FORBIDDEN_GRIMOIRE_RUNE": {
+    "tier": "Prismatic",
+    "character": null,
+    "tag": "COMPREHENSIVE",
+    "flags": "None"
+  },
+  "ORB_SYMBIOSIS_RUNE": {
+    "tier": "Prismatic",
+    "character": "Defect",
+    "tag": "ORB",
+    "flags": "None"
+  },
+  "NEAR_DEATH_FEAST_RUNE": {
+    "tier": "Prismatic",
+    "character": "Ironclad",
+    "tag": "OUTPUT",
+    "flags": "None"
+  },
+  "UNSEALED_THRONE_RUNE": {
+    "tier": "Prismatic",
+    "character": "Regent",
+    "tag": "RESOURCE",
+    "flags": "None"
+  },
+  "CORE_OVERLOAD_RUNE": {
+    "tier": "Prismatic",
+    "character": "Defect",
+    "tag": "ORB",
+    "flags": "None"
+  },
+  "FORGOTTEN_SOUL_RUNE": {
+    "tier": "Prismatic",
+    "character": null,
+    "tag": "COMPREHENSIVE",
+    "flags": "None"
+  },
+  "UPGRADE_RUNE": {
+    "tier": "Prismatic",
+    "character": null,
+    "tag": "COMPREHENSIVE",
+    "flags": "None"
+  },
+  "OMNI_DRAGON_SOUL_RUNE": {
+    "tier": "Prismatic",
+    "character": null,
+    "tag": "COMPREHENSIVE",
+    "flags": "None"
+  },
+  "SHOULDER_VAKU_RUNE": {
+    "tier": "Prismatic",
+    "character": null,
+    "tag": "COMPREHENSIVE",
+    "flags": "Disabled"
+  },
+  "CARD_INSPECTION_RUNE": {
+    "tier": "Prismatic",
+    "character": null,
+    "tag": "DRAW",
+    "flags": "Disabled"
+  },
+  "PRIMITIVE_MADNESS_RUNE": {
+    "tier": "Prismatic",
+    "character": null,
+    "tag": "COMPREHENSIVE",
+    "flags": "Disabled"
+  },
+  "THOUGHT_OVERWRITE_RUNE": {
+    "tier": "Prismatic",
+    "character": "Necrobinder",
+    "tag": "VOID",
+    "flags": "None"
+  },
+  "DOUBLE_EXISTENCE_RUNE": {
+    "tier": "Prismatic",
+    "character": "Silent",
+    "tag": "RESOURCE",
+    "flags": "None"
+  },
+  "TRI_PRISM_RUNE": {
+    "tier": "Prismatic",
+    "character": "Regent",
+    "tag": "COLORLESS",
+    "flags": "None"
+  },
+  "QUANTUM_COMPUTING_RUNE": {
+    "tier": "Prismatic",
+    "character": null,
+    "tag": "COMPREHENSIVE",
+    "flags": "None"
+  },
+  "MIND_OVER_MATTER_RUNE": {
+    "tier": "Prismatic",
+    "character": null,
+    "tag": "COMPREHENSIVE",
+    "flags": "None"
+  },
+  "DUFFS_VINTAGE_RUNE": {
+    "tier": "Prismatic",
+    "character": null,
+    "tag": "RESOURCE",
+    "flags": "None"
+  },
+  "NINE_DRAGON_POWER_RUNE": {
+    "tier": "Prismatic",
+    "character": null,
+    "tag": "STACKING",
+    "flags": "None"
+  },
+  "TEZCATARAS_MERCY_RUNE": {
+    "tier": "Prismatic",
+    "character": null,
+    "tag": "COMPREHENSIVE",
+    "flags": "None"
+  },
+  "FLYING_KICK_RUNE": {
+    "tier": "Prismatic",
+    "character": null,
+    "tag": "SURVIVAL",
+    "flags": "None"
+  },
+  "SELL_OFF_RUNE": {
+    "tier": "Prismatic",
+    "character": "Silent",
+    "tag": "TRICK",
+    "flags": "None"
+  },
+  "GRAND_FINALE_UPGRADE_RUNE": {
+    "tier": "Prismatic",
+    "character": "Silent",
+    "tag": "OUTPUT",
+    "flags": "None"
+  },
+  "BIG_KNIFE_RUNE": {
+    "tier": "Prismatic",
+    "character": "Silent",
+    "tag": "SHIV",
+    "flags": "None"
+  },
+  "VENERATE_UPGRADE_RUNE": {
+    "tier": "Prismatic",
+    "character": "Regent",
+    "tag": "STARLIGHT",
+    "flags": "None"
+  },
+  "ECHO_RUNE": {
+    "tier": "Prismatic",
+    "character": "Regent",
+    "tag": "RESOURCE",
+    "flags": "None"
+  },
+  "BLANK_CHECK_RUNE": {
+    "tier": "Prismatic",
+    "character": "Regent",
+    "tag": "COLORLESS",
+    "flags": "None"
+  },
+  "MYRIAD_SWORDS_RUNE": {
+    "tier": "Prismatic",
+    "character": "Regent",
+    "tag": "SWORDCRAFT",
+    "flags": "None"
+  },
+  "SOLID_TIME_RUNE": {
+    "tier": "Prismatic",
+    "character": null,
+    "tag": "COMPREHENSIVE",
+    "flags": "None"
+  },
+  "REFORGED_HELMET_RUNE": {
+    "tier": "Prismatic",
+    "character": "Ironclad",
+    "tag": "OUTPUT",
+    "flags": "None"
+  },
+  "MOST_UNIVERSAL_SCOPE_RUNE": {
+    "tier": "Prismatic",
+    "character": null,
+    "tag": "RESOURCE",
+    "flags": "None"
+  },
+  "TRANSMUTE_CHAOS_RUNE": {
+    "tier": "Prismatic",
+    "character": null,
+    "tag": "RANDOM",
+    "flags": "None"
+  },
+  "DOUBLE_VISION_RUNE": {
+    "tier": "Prismatic",
+    "character": null,
+    "tag": "COMPREHENSIVE",
+    "flags": "None"
+  },
+  "FEED_UPGRADE_RUNE": {
+    "tier": "Prismatic",
+    "character": "Ironclad",
+    "tag": "SURVIVAL",
+    "flags": "None"
+  },
+  "NIGHTMARE_RUNE": {
+    "tier": "Prismatic",
+    "character": "Defect",
+    "tag": "ORB",
+    "flags": "None"
+  },
+  "EXTREME_SPEED_RUNE": {
+    "tier": "Prismatic",
+    "character": "Silent",
+    "tag": "RESOURCE",
+    "flags": "None"
+  },
+  "SOUL_UPGRADE_RUNE": {
+    "tier": "Prismatic",
+    "character": "Necrobinder",
+    "tag": "SUMMON",
+    "flags": "None"
+  },
+  "PRISMATIC_EGG_RUNE": {
+    "tier": "Prismatic",
+    "character": null,
+    "tag": "RANDOM",
+    "flags": "None"
+  }
+}

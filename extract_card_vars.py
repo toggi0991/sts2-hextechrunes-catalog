@@ -63,6 +63,38 @@ def parse_canonical_vars(src: str) -> dict:
     return vars_
 
 
+def parse_cost(src: str, vars_: dict):
+    """생성자 첫 인자(에너지 코스트)와 강화 시 코스트 변화를 파싱."""
+    m = re.search(r":\s*base\((\d+)[,)]", src)
+    if not m:
+        return
+    cost = {"base": int(m.group(1))}
+    m = re.search(r"EnergyCost\.UpgradeBy\((-?\d+)\)", src)
+    if m:
+        cost["upgrade"] = int(m.group(1))
+    vars_["_cost"] = cost
+
+
+def parse_keywords(src: str, vars_: dict):
+    """CanonicalKeywords(기본 키워드)와 강화 시 키워드 추가/제거를 파싱."""
+    kw = {}
+    m = re.search(r"CanonicalKeywords\s*=>(.*?);\n", src, re.S)
+    if m:
+        base = [int(v) for v in re.findall(r"\(CardKeyword\)(\d+)", m.group(1))]
+        if base:
+            kw["base"] = base
+    up = re.search(r"protected override void OnUpgrade\(\)\s*\{(.*?)\n\t\}", src, re.S)
+    if up:
+        added = [int(v) for v in re.findall(r"AddKeyword\(\(CardKeyword\)(\d+)\)", up.group(1))]
+        removed = [int(v) for v in re.findall(r"RemoveKeyword\(\(CardKeyword\)(\d+)\)", up.group(1))]
+        if added:
+            kw["added"] = added
+        if removed:
+            kw["removed"] = removed
+    if kw:
+        vars_["_keywords"] = kw
+
+
 def parse_upgrades(src: str, vars_: dict):
     """OnUpgrade 안의 UpgradeValueBy 상수를 변수에 매핑."""
     m = re.search(r"protected override void OnUpgrade\(\)\s*\{(.*?)\n\t\}", src, re.S)
@@ -92,6 +124,8 @@ def main():
         src = cs.read_text(encoding="utf-8", errors="replace")
         vars_ = parse_canonical_vars(src)
         parse_upgrades(src, vars_)
+        parse_cost(src, vars_)
+        parse_keywords(src, vars_)
         result[card_id] = vars_
         print(card_id, vars_)
 

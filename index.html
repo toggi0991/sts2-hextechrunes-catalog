@@ -101,6 +101,27 @@
     display: flex;
     gap: 12px;
     transition: transform .12s, border-color .12s;
+    position: relative;
+  }
+  .cost-orb {
+    position: absolute;
+    top: -9px;
+    left: -9px;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background: radial-gradient(circle at 35% 30%, #ffe9a8, #e0b24a 55%, #8a6420);
+    border: 2px solid #5a4a1e;
+    color: #2a2008;
+    font-weight: 800;
+    font-size: 0.72rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 6px #00000088;
+    z-index: 2;
+    line-height: 1;
+    text-align: center;
   }
   .card:hover {
     border-color: #5a4d78;
@@ -145,6 +166,16 @@
     border: 1px solid var(--border);
   }
   .badge.card { color: #8fd3ff; }
+  .badge.char { color: #b8a3f5; }
+  .badge.tier-실버 { color: #c8cdd8; }
+  .badge.tier-골드 { color: var(--gold); }
+  .badge.tier-프리즘 {
+    background: linear-gradient(90deg, #7de0ff, #c493ff, #ffb3d9);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  .char-chips { font-size: 0.78rem; color: var(--text-dim); display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin-top: 8px; }
   .badge.relic { color: var(--gold); }
   .badge.forge { color: #ff9e6d; }
   .badge.power { color: #a8f0c6; }
@@ -155,6 +186,13 @@
     line-height: 1.45;
   }
   .desc b, .desc .kw { color: var(--gold); font-weight: 600; }
+  .kw-line {
+    margin-top: 4px;
+    font-size: 0.82rem;
+    font-weight: 700;
+    text-align: center;
+    line-height: 1.45;
+  }
   .desc .num { color: var(--blue); font-weight: 600; }
   .flavor {
     margin-top: 6px;
@@ -188,6 +226,21 @@
     <span class="chip" data-cat="power">효과</span>
     <span class="count" id="count"></span>
   </div>
+  <div class="char-chips">
+    <span>직업:</span>
+    <span class="chip char-chip active" data-char="all">전체</span>
+    <span class="chip char-chip" data-char="공용">공용</span>
+    <span class="chip char-chip" data-char="아이언클래드">아이언클래드</span>
+    <span class="chip char-chip" data-char="사일런트">사일런트</span>
+    <span class="chip char-chip" data-char="리젠트">리젠트</span>
+    <span class="chip char-chip" data-char="디펙트">디펙트</span>
+    <span class="chip char-chip" data-char="네크로바인더">네크로바인더</span>
+    <span style="margin-left:12px">등급:</span>
+    <span class="chip tier-chip active" data-tier="all">전체</span>
+    <span class="chip tier-chip" data-tier="실버">실버</span>
+    <span class="chip tier-chip" data-tier="골드">골드</span>
+    <span class="chip tier-chip" data-tier="프리즘">프리즘</span>
+  </div>
 </header>
 
 <main>
@@ -200,6 +253,8 @@
 <script>
 let DATA = [];
 let activeCat = "all";
+let activeChar = "all";
+let activeTier = "all";
 
 const CAT_LABEL = { relic: "증강", forge: "모루", card: "카드", power: "효과" };
 
@@ -212,6 +267,7 @@ function formatDesc(s) {
   let out = escapeHtml(s);
   out = out.replace(/\[gold\](.*?)\[\/gold\]/g, '<span class="kw">$1</span>');
   out = out.replace(/\[blue\](.*?)\[\/blue\]/g, '<span class="num">$1</span>');
+  out = out.replace(/\[b\](.*?)\[\/b\]/g, '<b>$1</b>');
   out = out.replace(/\n/g, "<br>");
   return out;
 }
@@ -225,8 +281,13 @@ function render() {
   const filtered = DATA.filter(item => {
     const catOk = activeCat === "all" || item.subcategory === activeCat;
     if (!catOk) return false;
+    const charOk = activeChar === "all"
+      || (activeChar === "공용" ? item.character == null : item.character === activeChar);
+    if (!charOk) return false;
+    if (activeTier !== "all" && item.tier !== activeTier) return false;
     if (!q) return true;
-    const hay = (item.title + " " + item.description + " " + item.flavor + " " + item.id).toLowerCase();
+    const hay = (item.title + " " + item.description + " " + item.flavor + " " + item.id
+      + " " + (item.tier || "") + " " + (item.character || "")).toLowerCase();
     return hay.includes(q);
   });
 
@@ -256,11 +317,22 @@ function render() {
       <div class="info-top">
         <span class="title">${escapeHtml(item.title)}</span>
         <span class="badge ${item.subcategory}">${CAT_LABEL[item.subcategory] || item.subcategory}</span>
+        ${item.tier ? `<span class="badge tier-${item.tier}">${escapeHtml(item.tier)}</span>` : ""}
+        ${item.character ? `<span class="badge char">${escapeHtml(item.character)}</span>` : ""}
       </div>
+      ${item.kw_top ? `<div class="kw-line">${escapeHtml(item.kw_top.join(" · "))}</div>` : ""}
       <div class="desc">${formatDesc(item.description)}</div>
+      ${item.kw_bottom ? `<div class="kw-line">${escapeHtml(item.kw_bottom.join(" · "))}</div>` : ""}
       ${item.flavor ? `<div class="flavor">${escapeHtml(item.flavor)}</div>` : ""}
     `;
 
+    if (item.cost != null) {
+      const orb = document.createElement("div");
+      orb.className = "cost-orb";
+      orb.title = "에너지 코스트" + (item.cost.includes("(") ? " (괄호는 강화 시)" : "");
+      orb.textContent = item.cost;
+      card.appendChild(orb);
+    }
     card.appendChild(iconWrap);
     card.appendChild(info);
     frag.appendChild(card);
@@ -268,11 +340,29 @@ function render() {
   grid.appendChild(frag);
 }
 
-document.querySelectorAll(".chip").forEach(chip => {
+document.querySelectorAll(".chip[data-cat]").forEach(chip => {
   chip.addEventListener("click", () => {
-    document.querySelectorAll(".chip").forEach(c => c.classList.remove("active"));
+    document.querySelectorAll(".chip[data-cat]").forEach(c => c.classList.remove("active"));
     chip.classList.add("active");
     activeCat = chip.dataset.cat;
+    render();
+  });
+});
+
+document.querySelectorAll(".chip[data-char]").forEach(chip => {
+  chip.addEventListener("click", () => {
+    document.querySelectorAll(".chip[data-char]").forEach(c => c.classList.remove("active"));
+    chip.classList.add("active");
+    activeChar = chip.dataset.char;
+    render();
+  });
+});
+
+document.querySelectorAll(".chip[data-tier]").forEach(chip => {
+  chip.addEventListener("click", () => {
+    document.querySelectorAll(".chip[data-tier]").forEach(c => c.classList.remove("active"));
+    chip.classList.add("active");
+    activeTier = chip.dataset.tier;
     render();
   });
 });
