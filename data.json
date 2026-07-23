@@ -26,7 +26,7 @@
     "title": "감염",
     "description": "내 턴 종료 시\n이 카드가 [gold]손[/gold]에 있다면,\n피해를 X 받습니다.",
     "flavor": "",
-    "icon": null
+    "icon": "assets/icons/vanilla/VANILLA_INFECTION.png"
   },
   {
     "id": "VANILLA_NECRO_MASTERY",
@@ -41,7 +41,7 @@
     "title": "강령의 극의",
     "description": "[gold]소환[/gold] X.\n[gold]골골이[/gold]가 체력을\n잃을 때마다, 모든 적이\n동일한 만큼의 체력을\n잃습니다.",
     "flavor": "",
-    "icon": null
+    "icon": "assets/icons/vanilla/VANILLA_NECRO_MASTERY.png"
   },
   {
     "id": "VANILLA_BASH",
@@ -56,7 +56,7 @@
     "title": "강타",
     "description": "피해를 X 줍니다.\n[gold]취약[/gold]을 X 부여합니다.",
     "flavor": "",
-    "icon": null
+    "icon": "assets/icons/vanilla/VANILLA_BASH.png"
   },
   {
     "id": "VANILLA_GIANT_ROCK",
@@ -71,7 +71,7 @@
     "title": "거대한 바위",
     "description": "피해를 X 줍니다.",
     "flavor": "",
-    "icon": null
+    "icon": "assets/icons/vanilla/VANILLA_GIANT_ROCK.png"
   },
   {
     "id": "BLADE_WALTZ_CARD",
@@ -102,7 +102,7 @@
     "title": "격노",
     "description": "이번 턴에 공격 카드를\n사용할 때마다,\n[gold]방어도[/gold]를 X 얻습니다.",
     "flavor": "",
-    "icon": null
+    "icon": "assets/icons/vanilla/VANILLA_RAGE.png"
   },
   {
     "id": "OSTY_WISH_CARD",
@@ -135,7 +135,7 @@
     "title": "공허의 형상",
     "description": "내 턴을 종료합니다.\n매 턴마다 처음으로\n사용하는 {VoidFormPower:choose(1):카드를|카드 X장을}\n비용 없이 사용합니다.",
     "flavor": "",
-    "icon": null
+    "icon": "assets/icons/vanilla/VANILLA_VOID_FORM.png"
   },
   {
     "id": "VANILLA_WELL_LAID_PLANS",
@@ -150,7 +150,7 @@
     "title": "괜찮은 전략",
     "description": "내 턴 종료 시, 더 이상 [gold]손[/gold]에 있는 카드를 버리지 않습니다.",
     "flavor": "",
-    "icon": null
+    "icon": "assets/icons/vanilla/VANILLA_WELL_LAID_PLANS.png"
   },
   {
     "id": "VANILLA_SERPENT_FORM",
@@ -165,7 +165,7 @@
     "title": "구렁이의 형상",
     "description": "카드를 사용할 때마다,\n무작위 적에게\n피해를 X 줍니다.",
     "flavor": "",
-    "icon": null
+    "icon": "assets/icons/vanilla/VANILLA_SERPENT_FORM.png"
   },
   {
     "id": "VANILLA_SOVEREIGN_BLADE",
@@ -180,7 +180,7 @@
     "title": "군주의 칼날",
     "description": "피해를 X{Repeat:choose(1):|만큼 X번} 줍니다.{GainsBlock:cond:\n[gold]방어도[/gold]를 X 얻습니다.|}",
     "flavor": "",
-    "icon": null
+    "icon": "assets/icons/vanilla/VANILLA_SOVEREIGN_BLADE.png"
   },
   {
     "id": "VANILLA_ROLLING_BOULDER",
@@ -195,7 +195,7 @@
     "title": "굴러가는 바위",
     "description": "내 턴 시작 시, 모든\n적에게 피해를 X 주고\n이 효과의 피해량이\nX 증가합니다.",
     "flavor": "",
-    "icon": null
+    "icon": "assets/icons/vanilla/VANILLA_ROLLING_BOULDER.png"
   },
   {
     "id": "VANILLA_PIERCING_WAIL",
@@ -210,7 +210,7 @@
     "title": "귀를 찢는 비명",
     "description": "이번 턴 동안 모든 적이\n[gold]힘[/gold]을 X 잃습니다.",
     "flavor": "",
-    "icon": null
+    "icon": "assets/icons/vanilla/VANILLA_PIERCING_WAIL.png"
   },
   {
     "id": "VANILLA_KNOW_THY_PLACE",
@@ -225,7 +225,7 @@
     "title": "네 주제를 알라",
     "description": "[gold]약화[/gold]를 X 부여합니다.\n[gold]취약[/gold]을 X 부여합니다.",
     "flavor": "",
-    "icon": null
+    "icon": "assets/icons/vanilla/VANILLA_KNOW_THY_PLACE.png"
   },
   {
     "id": "VANILLA_MOLTEN_FIST",
@@ -240,7 +240,7 @@
     "title": "녹아내리는 주먹",
     "description": "피해를 X 줍니다.\n적이 보유한 [gold]취약[/gold]이\n2배로 증가합니다.",
     "flavor": "",
-    "icon": null
+    "icon": "assets/icons/vanilla/VANILLA_MOLTEN_FIST.png"
   },
   {
     "id": "VANILLA_NEOWS_FURY",
@@ -255,7 +255,7 @@
     "title": "니오우의 격분",
     "description": "피해를 X 줍니다.\n[gold]버린 카드 더미[/gold]에서\n카드를 최대 X장까지\n[gold]손[/gold]으로 가져옵니다.",
     "flavor": "",
-    "icon": null
+    "icon": "assets/icons/vanilla/VANILLA_NEOWS_FURY.png"
   },
   {
     "id": "VANILLA_SHIV",
@@ -270,7 +270,7 @@
     "title": "단도",
     "description": "피해를 X 줍니다.",
     "flavor": "",
-    "icon": null
+    "icon": "assets/icons/vanilla/VANILLA_SHIV.png"
   },
   {
     "id": "VANILLA_GRAND_FINALE",
@@ -285,7 +285,7 @@
     "title": "대단원의 막",
     "description": "[gold]뽑을 카드 더미[/gold]에\n카드가 없을 때만\n사용할 수 있습니다.\n모든 적에게\n피해를 X 줍니다.",
     "flavor": "",
-    "icon": null
+    "icon": "assets/icons/vanilla/VANILLA_GRAND_FINALE.png"
   },
   {
     "id": "MOUNTAIN_DRAGON_SOUL_CARD",
@@ -316,7 +316,7 @@
     "title": "대혼란",
     "description": "내 턴 시작 시,\n[gold]뽑을 카드 더미[/gold] 맨 위의\n카드를 사용합니다.",
     "flavor": "",
-    "icon": null
+    "icon": "assets/icons/vanilla/VANILLA_MAYHEM.png"
   },
   {
     "id": "VANILLA_ENVENOM",
@@ -331,7 +331,7 @@
     "title": "독 바르기",
     "description": "공격 카드가 막히지 않은\n피해를 줄 때마다,\n[gold]중독[/gold]을 X 부여합니다.",
     "flavor": "",
-    "icon": null
+    "icon": "assets/icons/vanilla/VANILLA_ENVENOM.png"
   },
   {
     "id": "VANILLA_VOLTAIC",
@@ -346,7 +346,7 @@
     "title": "동전기",
     "description": "이번 전투 동안 [gold]영창[/gold]한\n[gold]전기[/gold]의 수만큼 [gold]전기[/gold]를\n[gold]영창[/gold]합니다.{InCombat:\n([gold]전기[/gold]를 X번 [gold]영창[/gold]합니다)|}",
     "flavor": "",
-    "icon": null
+    "icon": "assets/icons/vanilla/VANILLA_VOLTAIC.png"
   },
   {
     "id": "VANILLA_EXPOSE",
@@ -361,7 +361,7 @@
     "title": "들춰내기",
     "description": "대상 적의 모든 [gold]인공물[/gold]과\n[gold]방어도[/gold]를 제거합니다.\n[gold]취약[/gold]을 X 부여합니다.",
     "flavor": "",
-    "icon": null
+    "icon": "assets/icons/vanilla/VANILLA_EXPOSE.png"
   },
   {
     "id": "HEXTECH_DRAGON_SOUL_CARD",
@@ -408,7 +408,7 @@
     "title": "메아리의 형상",
     "description": "매 턴마다 처음으로\n사용하는 카드가\n1번 추가로 사용됩니다.",
     "flavor": "",
-    "icon": null
+    "icon": "assets/icons/vanilla/VANILLA_ECHO_FORM.png"
   },
   {
     "id": "VANILLA_BODY_SLAM",
@@ -423,7 +423,7 @@
     "title": "몸통 박치기",
     "description": "[gold]방어도[/gold]만큼의\n피해를 줍니다.{InCombat:\n(피해를 X 줍니다)|}",
     "flavor": "",
-    "icon": null
+    "icon": "assets/icons/vanilla/VANILLA_BODY_SLAM.png"
   },
   {
     "id": "VANILLA_NEUTRALIZE",
@@ -438,7 +438,7 @@
     "title": "무력화",
     "description": "피해를 X 줍니다.\n[gold]약화[/gold]를 X 부여합니다.",
     "flavor": "",
-    "icon": null
+    "icon": "assets/icons/vanilla/VANILLA_NEUTRALIZE.png"
   },
   {
     "id": "MIKAELS_BLESSING_CARD",
@@ -501,7 +501,7 @@
     "title": "바리케이드",
     "description": "내 턴 시작 시 [gold]방어도[/gold]가\n사라지지 않습니다.",
     "flavor": "",
-    "icon": null
+    "icon": "assets/icons/vanilla/VANILLA_BARRICADE.png"
   },
   {
     "id": "VANILLA_BREAK",
@@ -516,7 +516,7 @@
     "title": "박살",
     "description": "피해를 X 줍니다.\n[gold]취약[/gold]을 X 부여합니다.",
     "flavor": "",
-    "icon": null
+    "icon": "assets/icons/vanilla/VANILLA_BREAK.png"
   },
   {
     "id": "VANILLA_SNAKEBITE",
@@ -531,7 +531,7 @@
     "title": "뱀 물기",
     "description": "[gold]중독[/gold]을 X 부여합니다.",
     "flavor": "",
-    "icon": null
+    "icon": "assets/icons/vanilla/VANILLA_SNAKEBITE.png"
   },
   {
     "id": "VANILLA_BUFFER",
@@ -546,7 +546,7 @@
     "title": "버퍼",
     "description": "다음에 체력을 잃는 것을\n{BufferPower:choose(1):|X번 }막아줍니다.",
     "flavor": "",
-    "icon": null
+    "icon": "assets/icons/vanilla/VANILLA_BUFFER.png"
   },
   {
     "id": "VANILLA_BALL_LIGHTNING",
@@ -561,7 +561,7 @@
     "title": "번개 구체",
     "description": "피해를 X 줍니다.\n[gold]전기[/gold]를 1번 [gold]영창[/gold]합니다.",
     "flavor": "",
-    "icon": null
+    "icon": "assets/icons/vanilla/VANILLA_BALL_LIGHTNING.png"
   },
   {
     "id": "VANILLA_FALLING_STAR",
@@ -576,7 +576,7 @@
     "title": "별똥별",
     "description": "피해를 X 줍니다.\n[gold]약화[/gold]를 X 부여합니다.\n[gold]취약[/gold]을 X 부여합니다.",
     "flavor": "",
-    "icon": null
+    "icon": "assets/icons/vanilla/VANILLA_FALLING_STAR.png"
   },
   {
     "id": "VANILLA_COLLISION_COURSE",
@@ -591,7 +591,7 @@
     "title": "불가피한 충돌",
     "description": "피해를 X 줍니다.\n[gold]잔해[/gold]를 1장\n[gold]손[/gold]으로 가져옵니다.",
     "flavor": "",
-    "icon": null
+    "icon": "assets/icons/vanilla/VANILLA_COLLISION_COURSE.png"
   },
   {
     "id": "VANILLA_UNDEATH",
@@ -606,7 +606,7 @@
     "title": "불사",
     "description": "[gold]방어도[/gold]를 X 얻습니다.\n이 카드의 복사본을 1장\n[gold]버린 카드 더미[/gold]에\n추가합니다.",
     "flavor": "",
-    "icon": null
+    "icon": "assets/icons/vanilla/VANILLA_UNDEATH.png"
   },
   {
     "id": "VANILLA_CRASH_LANDING",
@@ -621,7 +621,7 @@
     "title": "불시착",
     "description": "모든 적에게\n피해를 X 줍니다.\n[gold]손[/gold]을 [gold]잔해[/gold]로 가득 채웁니다.",
     "flavor": "",
-    "icon": null
+    "icon": "assets/icons/vanilla/VANILLA_CRASH_LANDING.png"
   },
   {
     "id": "SEARING_ATTACK_CARD",
@@ -650,7 +650,7 @@
     "title": "비참함",
     "description": "피해를 X 줍니다.\n대상 적에게 부여된 모든\n해로운 효과를 다른\n모든 적에게 부여합니다.",
     "flavor": "",
-    "icon": null
+    "icon": "assets/icons/vanilla/VANILLA_MISERY.png"
   },
   {
     "id": "VANILLA_BIG_BANG",
@@ -665,7 +665,7 @@
     "title": "빅뱅",
     "description": "카드를 X장 뽑습니다.\nX를 얻습니다.\nX을 얻습니다.\n[gold]단조[/gold] X.",
     "flavor": "",
-    "icon": null
+    "icon": "assets/icons/vanilla/VANILLA_BIG_BANG.png"
   },
   {
     "id": "VANILLA_BONE_SHARDS",
@@ -680,7 +680,7 @@
     "title": "뼛조각",
     "description": "[gold]골골이[/gold]가 살아있다면,\n[gold]골골이[/gold]가 모든 적에게\n피해를 X 주고\n내가 방어도를 X 얻습니다.\n[gold]골골이[/gold]가 죽습니다.",
     "flavor": "",
-    "icon": null
+    "icon": "assets/icons/vanilla/VANILLA_BONE_SHARDS.png"
   },
   {
     "id": "VANILLA_REAPER_FORM",
@@ -695,7 +695,7 @@
     "title": "사신의 형상",
     "description": "공격 카드로\n피해를 줄 때마다,\n그와 동일한 만큼의\n[gold]종말[/gold]을 부여합니다.",
     "flavor": "",
-    "icon": null
+    "icon": "assets/icons/vanilla/VANILLA_REAPER_FORM.png"
   },
   {
     "id": "VANILLA_BLOODLETTING",
@@ -710,7 +710,7 @@
     "title": "사혈",
     "description": "체력을 X 잃습니다.\nX를 얻습니다.",
     "flavor": "",
-    "icon": null
+    "icon": "assets/icons/vanilla/VANILLA_BLOODLETTING.png"
   },
   {
     "id": "VANILLA_SLEIGHT_OF_FLESH",
@@ -725,7 +725,7 @@
     "title": "살점 재주",
     "description": "적에게 해로운 효과를\n부여할 때마다, 대상 적이\n피해를 X 받습니다.",
     "flavor": "",
-    "icon": null
+    "icon": "assets/icons/vanilla/VANILLA_SLEIGHT_OF_FLESH.png"
   },
   {
     "id": "VANILLA_SURVIVOR",
@@ -740,7 +740,7 @@
     "title": "생존자",
     "description": "[gold]방어도[/gold]를 X 얻습니다.\n카드를 1장 버립니다.",
     "flavor": "",
-    "icon": null
+    "icon": "assets/icons/vanilla/VANILLA_SURVIVOR.png"
   },
   {
     "id": "VANILLA_SUBROUTINE",
@@ -755,7 +755,7 @@
     "title": "서브루틴",
     "description": "파워 카드를 사용할\n때마다, X를 얻습니다.",
     "flavor": "",
-    "icon": null
+    "icon": "assets/icons/vanilla/VANILLA_SUBROUTINE.png"
   },
   {
     "id": "VANILLA_MASTER_PLANNER",
@@ -770,7 +770,7 @@
     "title": "설계의 대가",
     "description": "스킬 카드를 사용 시,\n그 카드가 [gold]교활[/gold]을 얻습니다.",
     "flavor": "",
-    "icon": null
+    "icon": "assets/icons/vanilla/VANILLA_MASTER_PLANNER.png"
   },
   {
     "id": "VANILLA_REANIMATE",
@@ -785,7 +785,7 @@
     "title": "소생",
     "description": "[gold]소환[/gold] X.",
     "flavor": "",
-    "icon": null
+    "icon": "assets/icons/vanilla/VANILLA_REANIMATE.png"
   },
   {
     "id": "VANILLA_WHIRLWIND",
@@ -800,7 +800,7 @@
     "title": "소용돌이",
     "description": "모든 적에게 피해를\nX만큼 X번 줍니다.",
     "flavor": "",
-    "icon": null
+    "icon": "assets/icons/vanilla/VANILLA_WHIRLWIND.png"
   },
   {
     "id": "VANILLA_DEFEND_DEFECT",
@@ -815,7 +815,7 @@
     "title": "수비",
     "description": "[gold]방어도[/gold]를 X 얻습니다.",
     "flavor": "",
-    "icon": null
+    "icon": "assets/icons/vanilla/VANILLA_DEFEND_DEFECT.png"
   },
   {
     "id": "VANILLA_REAP",
@@ -830,7 +830,7 @@
     "title": "수확",
     "description": "피해를 X 줍니다.",
     "flavor": "",
-    "icon": null
+    "icon": "assets/icons/vanilla/VANILLA_REAP.png"
   },
   {
     "id": "VANILLA_HIDDEN_GEM",
@@ -845,7 +845,7 @@
     "title": "숨겨진 보석",
     "description": "[gold]뽑을 카드 더미[/gold]에 있는\n[gold]재사용[/gold]이 없는\n무작위 카드 1장이\n[gold]재사용[/gold]을 X 얻습니다.",
     "flavor": "",
-    "icon": null
+    "icon": "assets/icons/vanilla/VANILLA_HIDDEN_GEM.png"
   },
   {
     "id": "VANILLA_ADRENALINE",
@@ -860,7 +860,7 @@
     "title": "아드레날린",
     "description": "X를 얻습니다.\n카드를 2장 뽑습니다.",
     "flavor": "",
-    "icon": null
+    "icon": "assets/icons/vanilla/VANILLA_ADRENALINE.png"
   },
   {
     "id": "VANILLA_DEMON_FORM",
@@ -875,7 +875,7 @@
     "title": "악마의 형상",
     "description": "내 턴 시작 시,\n[gold]힘[/gold]을 X 얻습니다.",
     "flavor": "",
-    "icon": null
+    "icon": "assets/icons/vanilla/VANILLA_DEMON_FORM.png"
   },
   {
     "id": "VANILLA_COMPACT",
@@ -890,7 +890,7 @@
     "title": "압축",
     "description": "[gold]방어도[/gold]를 X 얻습니다.\n[gold]손[/gold]에 있는\n모든 상태이상 카드를\n[gold]X[/gold]로 [gold]변화[/gold]시킵니다.",
     "flavor": "",
-    "icon": null
+    "icon": "assets/icons/vanilla/VANILLA_COMPACT.png"
   },
   {
     "id": "VANILLA_ENTROPY",
@@ -905,7 +905,7 @@
     "title": "엔트로피",
     "description": "내 턴 시작 시, [gold]손[/gold]에 있는\n카드를 X장 [gold]변화[/gold]시킵니다.",
     "flavor": "",
-    "icon": null
+    "icon": "assets/icons/vanilla/VANILLA_ENTROPY.png"
   },
   {
     "id": "VANILLA_FUEL",
@@ -920,7 +920,7 @@
     "title": "연료",
     "description": "X를 얻습니다.",
     "flavor": "",
-    "icon": null
+    "icon": "assets/icons/vanilla/VANILLA_FUEL.png"
   },
   {
     "id": "VANILLA_BORROWED_TIME",
@@ -935,7 +935,7 @@
     "title": "연명",
     "description": "X를 얻습니다.\n이번 턴 동안 카드의 비용이\nX 증가합니다.",
     "flavor": "",
-    "icon": null
+    "icon": "assets/icons/vanilla/VANILLA_BORROWED_TIME.png"
   },
   {
     "id": "VANILLA_SOUL",
@@ -950,7 +950,7 @@
     "title": "영혼",
     "description": "카드를 X장 뽑습니다.",
     "flavor": "",
-    "icon": null
+    "icon": "assets/icons/vanilla/VANILLA_SOUL.png"
   },
   {
     "id": "ALL_IN_CARD",
@@ -979,7 +979,7 @@
     "title": "우주 먼지",
     "description": "무작위 적에게\n피해를 X만큼 X번 줍니다.",
     "flavor": "",
-    "icon": null
+    "icon": "assets/icons/vanilla/VANILLA_STARDUST.png"
   },
   {
     "id": "VANILLA_TOXIC",
@@ -994,7 +994,7 @@
     "title": "유독성",
     "description": "내 턴 종료 시\n이 카드가 [gold]손[/gold]에 있다면,\n피해를 X 받습니다.",
     "flavor": "",
-    "icon": null
+    "icon": "assets/icons/vanilla/VANILLA_TOXIC.png"
   },
   {
     "id": "VANILLA_METEOR_SHOWER",
@@ -1009,7 +1009,7 @@
     "title": "유성우",
     "description": "모든 적에게\n피해를 X 줍니다.\n모든 적에게 [gold]약화[/gold]와 [gold]취약[/gold]을\nX 부여합니다.",
     "flavor": "",
-    "icon": null
+    "icon": "assets/icons/vanilla/VANILLA_METEOR_SHOWER.png"
   },
   {
     "id": "ELICIT_CARD",
@@ -1042,7 +1042,7 @@
     "title": "자동화",
     "description": "카드를 10장 뽑을 때마다, X를 얻습니다.",
     "flavor": "",
-    "icon": null
+    "icon": "assets/icons/vanilla/VANILLA_AUTOMATION.png"
   },
   {
     "id": "VANILLA_TOOLS_OF_THE_TRADE",
@@ -1057,7 +1057,7 @@
     "title": "작업 도구",
     "description": "내 턴 시작 시,\n카드를 1장 뽑고\n카드를 1장 버립니다.",
     "flavor": "",
-    "icon": null
+    "icon": "assets/icons/vanilla/VANILLA_TOOLS_OF_THE_TRADE.png"
   },
   {
     "id": "VANILLA_AFTERIMAGE",
@@ -1072,7 +1072,7 @@
     "title": "잔상",
     "description": "카드를 사용할 때마다,\n[gold]방어도[/gold]를 X 얻습니다.",
     "flavor": "",
-    "icon": null
+    "icon": "assets/icons/vanilla/VANILLA_AFTERIMAGE.png"
   },
   {
     "id": "VANILLA_DIRGE",
@@ -1087,7 +1087,7 @@
     "title": "장송가",
     "description": "X번 [gold]소환[/gold] X.\n[gold]뽑을 카드 더미[/gold]에 [gold]X[/gold]을\nX장 추가합니다.",
     "flavor": "",
-    "icon": null
+    "icon": "assets/icons/vanilla/VANILLA_DIRGE.png"
   },
   {
     "id": "REPROGRAM_CARD",
@@ -1116,7 +1116,7 @@
     "title": "전투 최면",
     "description": "카드를 X장 뽑습니다.\n이번 턴 동안 더 이상\n카드를 뽑을 수 없습니다.",
     "flavor": "",
-    "icon": null
+    "icon": "assets/icons/vanilla/VANILLA_BATTLE_TRANCE.png"
   },
   {
     "id": "VANILLA_JUGGERNAUT",
@@ -1131,7 +1131,7 @@
     "title": "절대적인 힘",
     "description": "[gold]방어도[/gold]를 얻을 때마다,\n무작위 적에게\n피해를 X 줍니다.",
     "flavor": "",
-    "icon": null
+    "icon": "assets/icons/vanilla/VANILLA_JUGGERNAUT.png"
   },
   {
     "id": "VANILLA_SLIMED",
@@ -1146,7 +1146,7 @@
     "title": "점액투성이",
     "description": "카드를 1장 뽑습니다.",
     "flavor": "",
-    "icon": null
+    "icon": "assets/icons/vanilla/VANILLA_SLIMED.png"
   },
   {
     "id": "VANILLA_NEUROSURGE",
@@ -1161,7 +1161,7 @@
     "title": "정신 폭주",
     "description": "X를 얻습니다.\n카드를 X장 뽑습니다.\n내 턴 시작 시, 자신에게\n[gold]종말[/gold]을 X 부여합니다.",
     "flavor": "",
-    "icon": null
+    "icon": "assets/icons/vanilla/VANILLA_NEUROSURGE.png"
   },
   {
     "id": "VANILLA_DOMINATE",
@@ -1176,7 +1176,7 @@
     "title": "제압",
     "description": "[gold]취약[/gold]을 X 부여합니다.\n대상 적이 보유한 [gold]취약[/gold]마다\n[gold]힘[/gold]을 X 얻습니다.",
     "flavor": "",
-    "icon": null
+    "icon": "assets/icons/vanilla/VANILLA_DOMINATE.png"
   },
   {
     "id": "VANILLA_SUPPRESS",
@@ -1191,7 +1191,7 @@
     "title": "진압",
     "description": "피해를 X 줍니다.\n[gold]약화[/gold]를 X 부여합니다.",
     "flavor": "",
-    "icon": null
+    "icon": "assets/icons/vanilla/VANILLA_SUPPRESS.png"
   },
   {
     "id": "VANILLA_HEAVENLY_DRILL",
@@ -1206,7 +1206,7 @@
     "title": "천원돌파",
     "description": "피해를 X만큼 X번 줍니다.\nX가 X 이상이라면\nX가 2배가 됩니다.",
     "flavor": "",
-    "icon": null
+    "icon": "assets/icons/vanilla/VANILLA_HEAVENLY_DRILL.png"
   },
   {
     "id": "VANILLA_IRON_WAVE",
@@ -1221,7 +1221,7 @@
     "title": "철의 파동",
     "description": "[gold]방어도[/gold]를 X 얻습니다.\n피해를 X 줍니다.",
     "flavor": "",
-    "icon": null
+    "icon": "assets/icons/vanilla/VANILLA_IRON_WAVE.png"
   },
   {
     "id": "CATALYST_CARD",
@@ -1252,7 +1252,7 @@
     "title": "추앙",
     "description": "X을 얻습니다.",
     "flavor": "",
-    "icon": null
+    "icon": "assets/icons/vanilla/VANILLA_VENERATE.png"
   },
   {
     "id": "VANILLA_LETHALITY",
@@ -1267,7 +1267,7 @@
     "title": "치사성",
     "description": "매 턴마다 처음으로\n사용하는 공격 카드의\n피해량이 X% 증가합니다.",
     "flavor": "",
-    "icon": null
+    "icon": "assets/icons/vanilla/VANILLA_LETHALITY.png"
   },
   {
     "id": "VANILLA_COUNTDOWN",
@@ -1282,7 +1282,7 @@
     "title": "카운트다운",
     "description": "내 턴 시작 시,\n무작위 적에게\n[gold]종말[/gold]을 X 부여합니다.",
     "flavor": "",
-    "icon": null
+    "icon": "assets/icons/vanilla/VANILLA_COUNTDOWN.png"
   },
   {
     "id": "VANILLA_STRIKE_DEFECT",
@@ -1297,7 +1297,7 @@
     "title": "타격",
     "description": "피해를 X 줍니다.",
     "flavor": "",
-    "icon": null
+    "icon": "assets/icons/vanilla/VANILLA_STRIKE_DEFECT.png"
   },
   {
     "id": "VANILLA_CORRUPTION",
@@ -1312,7 +1312,7 @@
     "title": "타락",
     "description": "스킬 카드의 비용이\n0 X이 됩니다.\n스킬 카드를 사용할 때마다 그 카드를 [gold]소멸[/gold]시킵니다.",
     "flavor": "",
-    "icon": null
+    "icon": "assets/icons/vanilla/VANILLA_CORRUPTION.png"
   },
   {
     "id": "FEEL_THE_BURN_CARD",
@@ -1343,7 +1343,7 @@
     "title": "파수꾼",
     "description": "[gold]골골이[/gold]가 피해를 X 줍니다.\n[gold]골골이[/gold]의 [gold]최대 체력[/gold]만큼\n피해량이 증가합니다.",
     "flavor": "",
-    "icon": null
+    "icon": "assets/icons/vanilla/VANILLA_PROTECTOR.png"
   },
   {
     "id": "VANILLA_SOW",
@@ -1358,7 +1358,7 @@
     "title": "파종",
     "description": "모든 적에게\n피해를 X 줍니다.",
     "flavor": "",
-    "icon": null
+    "icon": "assets/icons/vanilla/VANILLA_SOW.png"
   },
   {
     "id": "VANILLA_ZAP",
@@ -1373,7 +1373,7 @@
     "title": "파지직",
     "description": "[gold]전기[/gold]를 1번 [gold]영창[/gold]합니다.",
     "flavor": "",
-    "icon": null
+    "icon": "assets/icons/vanilla/VANILLA_ZAP.png"
   },
   {
     "id": "VANILLA_FEED",
@@ -1388,7 +1388,7 @@
     "title": "포식",
     "description": "피해를 X 줍니다.\n[gold]치명타[/gold]라면, 최대 체력이\nX 증가합니다.",
     "flavor": "",
-    "icon": null
+    "icon": "assets/icons/vanilla/VANILLA_FEED.png"
   },
   {
     "id": "VANILLA_UNLEASH",
@@ -1403,7 +1403,7 @@
     "title": "풀어놓기",
     "description": "[gold]골골이[/gold]가 피해를 X 줍니다.\n[gold]골골이[/gold]의 현재 체력만큼\n피해량이 증가합니다.",
     "flavor": "",
-    "icon": null
+    "icon": "assets/icons/vanilla/VANILLA_UNLEASH.png"
   },
   {
     "id": "VANILLA_MINION_STRIKE",
@@ -1418,7 +1418,7 @@
     "title": "하수인 타격",
     "description": "피해를 X 줍니다.\n카드를 X장 뽑습니다.",
     "flavor": "",
-    "icon": null
+    "icon": "assets/icons/vanilla/VANILLA_MINION_STRIKE.png"
   },
   {
     "id": "VANILLA_MINION_DIVE_BOMB",
@@ -1433,7 +1433,7 @@
     "title": "하수인 투하",
     "description": "피해를 X 줍니다.",
     "flavor": "",
-    "icon": null
+    "icon": "assets/icons/vanilla/VANILLA_MINION_DIVE_BOMB.png"
   },
   {
     "id": "VANILLA_MINION_SACRIFICE",
@@ -1448,7 +1448,7 @@
     "title": "하수인 희생",
     "description": "[gold]방어도[/gold]를 X 얻습니다.",
     "flavor": "",
-    "icon": null
+    "icon": "assets/icons/vanilla/VANILLA_MINION_SACRIFICE.png"
   },
   {
     "id": "VANILLA_HOTFIX",
@@ -1463,7 +1463,7 @@
     "title": "핫픽스",
     "description": "이번 턴에\n[gold]밀집[/gold]을 X 얻습니다.",
     "flavor": "",
-    "icon": null
+    "icon": "assets/icons/vanilla/VANILLA_HOTFIX.png"
   },
   {
     "id": "VANILLA_BODYGUARD",
@@ -1478,7 +1478,7 @@
     "title": "호위",
     "description": "[gold]소환[/gold] X.",
     "flavor": "",
-    "icon": null
+    "icon": "assets/icons/vanilla/VANILLA_BODYGUARD.png"
   },
   {
     "id": "VANILLA_BURN",
@@ -1493,7 +1493,7 @@
     "title": "화상",
     "description": "내 턴 종료 시\n이 카드가 [gold]손[/gold]에 있다면,\n피해를 X 받습니다.",
     "flavor": "",
-    "icon": null
+    "icon": "assets/icons/vanilla/VANILLA_BURN.png"
   },
   {
     "id": "INFERNAL_DRAGON_SOUL_CARD",
@@ -1556,7 +1556,7 @@
     "title": "후벼 파기",
     "description": "피해를 X 줍니다.\n이번 전투 동안 모든\n후벼 파기 카드의\n피해량이 X 증가합니다.",
     "flavor": "",
-    "icon": null
+    "icon": "assets/icons/vanilla/VANILLA_CLAW.png"
   },
   {
     "id": "VANILLA_SWEEPING_GAZE",
@@ -1571,7 +1571,7 @@
     "title": "훑어보기",
     "description": "[gold]골골이[/gold]가 무작위 적에게\n피해를 X 줍니다.",
     "flavor": "",
-    "icon": null
+    "icon": "assets/icons/vanilla/VANILLA_SWEEPING_GAZE.png"
   },
   {
     "id": "VANILLA_THORNS_POWER",
@@ -1586,7 +1586,7 @@
     "title": "가시",
     "description": "공격에 적중 시, 공격자에게 피해를 줍니다.",
     "flavor": "",
-    "icon": null
+    "icon": "assets/icons/vanilla/VANILLA_THORNS_POWER.png"
   },
   {
     "id": "VANILLA_NECRO_MASTERY_POWER",
@@ -1601,7 +1601,7 @@
     "title": "강령의 극의",
     "description": "[gold]골골이[/gold]가 체력을 잃을 때마다, 모든 적이 동일한 만큼의 체력을 잃습니다.",
     "flavor": "",
-    "icon": null
+    "icon": "assets/icons/vanilla/VANILLA_NECRO_MASTERY_POWER.png"
   },
   {
     "id": "VANILLA_SKITTISH_POWER",
@@ -1616,7 +1616,7 @@
     "title": "겁쟁이",
     "description": "매 턴마다 이 생물이 처음으로 공격을 받을 때, 대상이 [gold]방어도[/gold]를 [blue]1[/blue] 얻습니다.",
     "flavor": "",
-    "icon": null
+    "icon": "assets/icons/vanilla/VANILLA_SKITTISH_POWER.png"
   },
   {
     "id": "VANILLA_RAGE_POWER",
@@ -1631,7 +1631,7 @@
     "title": "격노",
     "description": "이번 턴에 공격 카드를 사용할 때마다, [gold]방어도[/gold]를 [blue]3[/blue] 얻습니다.",
     "flavor": "",
-    "icon": null
+    "icon": "assets/icons/vanilla/VANILLA_RAGE_POWER.png"
   },
   {
     "id": "VANILLA_PAINFUL_STABS_POWER",
@@ -1646,7 +1646,7 @@
     "title": "고통스러운 찌르기",
     "description": "내가 막히지 않은 공격 피해를 받을 때마다, [gold]버린 카드 더미[/gold]에 [gold]부상[/gold]을 [blue]1[/blue]장 섞어 넣습니다.",
     "flavor": "",
-    "icon": null
+    "icon": "assets/icons/vanilla/VANILLA_PAINFUL_STABS_POWER.png"
   },
   {
     "id": "VANILLA_VOID_FORM_POWER",
@@ -1661,7 +1661,7 @@
     "title": "공허의 형상",
     "description": "매 턴마다 처음으로 사용하는 카드 [blue]2[/blue]장이 비용 없이 사용됩니다.",
     "flavor": "",
-    "icon": null
+    "icon": "assets/icons/vanilla/VANILLA_VOID_FORM_POWER.png"
   },
   {
     "id": "VANILLA_WELL_LAID_PLANS_POWER",
@@ -1676,7 +1676,7 @@
     "title": "괜찮은 전략",
     "description": "내 턴 종료 시, 더 이상 [gold]손[/gold]에 있는 카드를 버리지 않습니다.",
     "flavor": "",
-    "icon": null
+    "icon": "assets/icons/vanilla/VANILLA_WELL_LAID_PLANS_POWER.png"
   },
   {
     "id": "VANILLA_SERPENT_FORM_POWER",
@@ -1691,7 +1691,7 @@
     "title": "구렁이의 형상",
     "description": "카드를 사용할 때마다, 무작위 적에게 피해를 [blue]4[/blue] 줍니다.",
     "flavor": "",
-    "icon": null
+    "icon": "assets/icons/vanilla/VANILLA_SERPENT_FORM_POWER.png"
   },
   {
     "id": "VANILLA_ROLLING_BOULDER_POWER",
@@ -1706,7 +1706,7 @@
     "title": "굴러가는 바위",
     "description": "내 턴 시작 시, 모든 적에게 피해를 [blue]5[/blue] 주고 이 효과의 피해량이 [blue]5[/blue] 증가합니다.",
     "flavor": "",
-    "icon": null
+    "icon": "assets/icons/vanilla/VANILLA_ROLLING_BOULDER_POWER.png"
   },
   {
     "id": "VANILLA_HARDENED_SHELL_POWER",
@@ -1721,7 +1721,7 @@
     "title": "단단한 껍질",
     "description": "이 생물은 한 턴에 체력을 [blue]20[/blue] 이상 잃을 수 없습니다.",
     "flavor": "",
-    "icon": null
+    "icon": "assets/icons/vanilla/VANILLA_HARDENED_SHELL_POWER.png"
   },
   {
     "id": "HEXTECH_MOUNTAIN_DRAGON_SOUL_POWER",
@@ -1750,7 +1750,7 @@
     "title": "대혼란",
     "description": "내 턴 시작 시, [gold]뽑을 카드 더미[/gold] 맨 위의 카드를 사용합니다.",
     "flavor": "",
-    "icon": null
+    "icon": "assets/icons/vanilla/VANILLA_MAYHEM_POWER.png"
   },
   {
     "id": "VANILLA_ENVENOM_POWER",
@@ -1765,7 +1765,7 @@
     "title": "독 바르기",
     "description": "막히지 않은 공격 피해를 줄 때마다, [gold]중독[/gold]을 [blue]1[/blue] 부여합니다.",
     "flavor": "",
-    "icon": null
+    "icon": "assets/icons/vanilla/VANILLA_ENVENOM_POWER.png"
   },
   {
     "id": "HEXTECH_PLAYER_SLOW_POWER",
@@ -1822,7 +1822,7 @@
     "title": "메아리의 형상",
     "description": "매 턴마다 처음으로 사용하는 카드가 1번 추가로 사용됩니다.",
     "flavor": "",
-    "icon": null
+    "icon": "assets/icons/vanilla/VANILLA_ECHO_FORM_POWER.png"
   },
   {
     "id": "VANILLA_SLIPPERY_POWER",
@@ -1837,7 +1837,7 @@
     "title": "미끈거림",
     "description": "이 생물이 다음에 체력을 잃을 시, [blue]1[/blue]만 잃습니다.",
     "flavor": "",
-    "icon": null
+    "icon": "assets/icons/vanilla/VANILLA_SLIPPERY_POWER.png"
   },
   {
     "id": "VANILLA_DEXTERITY_POWER",
@@ -1852,7 +1852,7 @@
     "title": "민첩",
     "description": "민첩은 카드를 통해 얻는 [gold]방어도[/gold]를 증가시킵니다.",
     "flavor": "",
-    "icon": null
+    "icon": "assets/icons/vanilla/VANILLA_DEXTERITY_POWER.png"
   },
   {
     "id": "VANILLA_FOCUS_POWER",
@@ -1867,7 +1867,7 @@
     "title": "밀집",
     "description": "구체들의 효율이 증가합니다.",
     "flavor": "",
-    "icon": null
+    "icon": "assets/icons/vanilla/VANILLA_FOCUS_POWER.png"
   },
   {
     "id": "HEXTECH_OCEAN_DRAGON_SOUL_POWER",
@@ -1910,7 +1910,7 @@
     "title": "바리케이드",
     "description": "이 생물의 턴 시작 시 [gold]방어도[/gold]가 사라지지 않습니다.",
     "flavor": "",
-    "icon": null
+    "icon": "assets/icons/vanilla/VANILLA_BARRICADE_POWER.png"
   },
   {
     "id": "VANILLA_NO_BLOCK_POWER",
@@ -1925,7 +1925,7 @@
     "title": "방어 불가",
     "description": "카드를 통해 [gold]방어도[/gold]를 얻을 수 없습니다.",
     "flavor": "",
-    "icon": null
+    "icon": "assets/icons/vanilla/VANILLA_NO_BLOCK_POWER.png"
   },
   {
     "id": "VANILLA_BUFFER_POWER",
@@ -1940,7 +1940,7 @@
     "title": "버퍼",
     "description": "다음에 체력을 잃는 것을 막아줍니다.",
     "flavor": "",
-    "icon": null
+    "icon": "assets/icons/vanilla/VANILLA_BUFFER_POWER.png"
   },
   {
     "id": "VANILLA_INTANGIBLE_POWER",
@@ -1955,7 +1955,7 @@
     "title": "불가침",
     "description": "이번 턴 동안 받는 모든 피해와 체력 손실이 [blue]1[/blue]로 감소합니다.",
     "flavor": "",
-    "icon": null
+    "icon": "assets/icons/vanilla/VANILLA_INTANGIBLE_POWER.png"
   },
   {
     "id": "VANILLA_REAPER_FORM_POWER",
@@ -1970,7 +1970,7 @@
     "title": "사신의 형상",
     "description": "공격 카드로 피해를 줄 때마다, 그와 동일한 만큼의 [gold]종말[/gold]을 부여합니다.",
     "flavor": "",
-    "icon": null
+    "icon": "assets/icons/vanilla/VANILLA_REAPER_FORM_POWER.png"
   },
   {
     "id": "VANILLA_SLEIGHT_OF_FLESH_POWER",
@@ -1985,7 +1985,7 @@
     "title": "살점 재주",
     "description": "적에게 해로운 효과를 부여할 때마다, 대상 적이 피해를 [blue]13[/blue] 받습니다.",
     "flavor": "",
-    "icon": null
+    "icon": "assets/icons/vanilla/VANILLA_SLEIGHT_OF_FLESH_POWER.png"
   },
   {
     "id": "VANILLA_SUBROUTINE_POWER",
@@ -2000,7 +2000,7 @@
     "title": "서브루틴",
     "description": "파워 카드를 사용할 때마다, X를 얻습니다.",
     "flavor": "",
-    "icon": null
+    "icon": "assets/icons/vanilla/VANILLA_SUBROUTINE_POWER.png"
   },
   {
     "id": "VANILLA_MASTER_PLANNER_POWER",
@@ -2015,7 +2015,7 @@
     "title": "설계의 대가",
     "description": "스킬 카드를 사용 시, 그 카드가 [gold]교활[/gold]을 얻습니다.",
     "flavor": "",
-    "icon": null
+    "icon": "assets/icons/vanilla/VANILLA_MASTER_PLANNER_POWER.png"
   },
   {
     "id": "VANILLA_CHAINS_OF_BINDING_POWER",
@@ -2030,7 +2030,7 @@
     "title": "속박의 사슬",
     "description": "매 턴마다 처음으로 뽑는 카드 [blue]3[/blue]장에 [gold]구속[/gold]의 고난이 부여됩니다.",
     "flavor": "",
-    "icon": null
+    "icon": "assets/icons/vanilla/VANILLA_CHAINS_OF_BINDING_POWER.png"
   },
   {
     "id": "VANILLA_FRAIL_POWER",
@@ -2045,7 +2045,7 @@
     "title": "손상",
     "description": "손상 상태인 동안, 카드를 통해 얻는 [gold]방어도[/gold]가 [blue]25%[/blue] 감소합니다.",
     "flavor": "",
-    "icon": null
+    "icon": "assets/icons/vanilla/VANILLA_FRAIL_POWER.png"
   },
   {
     "id": "VANILLA_DEMON_FORM_POWER",
@@ -2060,7 +2060,7 @@
     "title": "악마의 형상",
     "description": "내 턴 시작 시, [gold]힘[/gold]을 [blue]3[/blue] 얻습니다.",
     "flavor": "",
-    "icon": null
+    "icon": "assets/icons/vanilla/VANILLA_DEMON_FORM_POWER.png"
   },
   {
     "id": "VANILLA_SHRINK_POWER",
@@ -2075,7 +2075,7 @@
     "title": "압축",
     "description": "다음 3턴 동안 이 생물이 가하는 공격의 피해량이 [blue]30%[/blue] 감소합니다.",
     "flavor": "",
-    "icon": null
+    "icon": "assets/icons/vanilla/VANILLA_SHRINK_POWER.png"
   },
   {
     "id": "VANILLA_WEAK_POWER",
@@ -2090,7 +2090,7 @@
     "title": "약화",
     "description": "약화 상태인 생물의 공격은 가하는 피해량이 [blue]25%[/blue] 감소합니다.",
     "flavor": "",
-    "icon": null
+    "icon": "assets/icons/vanilla/VANILLA_WEAK_POWER.png"
   },
   {
     "id": "VANILLA_ENTROPY_POWER",
@@ -2105,7 +2105,7 @@
     "title": "엔트로피",
     "description": "내 턴 시작 시, [gold]손[/gold]에 있는 카드를 [blue]1[/blue]장 [gold]변화[/gold]시킵니다.",
     "flavor": "",
-    "icon": null
+    "icon": "assets/icons/vanilla/VANILLA_ENTROPY_POWER.png"
   },
   {
     "id": "VANILLA_BORROWED_TIME_POWER",
@@ -2120,7 +2120,7 @@
     "title": "연명",
     "description": "이번 턴 동안 카드의 비용이 1 증가합니다.",
     "flavor": "",
-    "icon": null
+    "icon": "assets/icons/vanilla/VANILLA_BORROWED_TIME_POWER.png"
   },
   {
     "id": "VANILLA_TERRITORIAL_POWER",
@@ -2135,7 +2135,7 @@
     "title": "영역 동물",
     "description": "이 생물의 턴 종료 시, 대상이 [gold]힘[/gold]을 [blue]1[/blue] 얻습니다.",
     "flavor": "",
-    "icon": null
+    "icon": "assets/icons/vanilla/VANILLA_TERRITORIAL_POWER.png"
   },
   {
     "id": "VANILLA_RITUAL_POWER",
@@ -2150,7 +2150,7 @@
     "title": "의식",
     "description": "내 턴 종료 시, [gold]힘[/gold]을 얻습니다.",
     "flavor": "",
-    "icon": null
+    "icon": "assets/icons/vanilla/VANILLA_RITUAL_POWER.png"
   },
   {
     "id": "VANILLA_ARTIFACT_POWER",
@@ -2165,7 +2165,7 @@
     "title": "인공물",
     "description": "해로운 효과를 [gold]무효화[/gold]합니다.",
     "flavor": "",
-    "icon": null
+    "icon": "assets/icons/vanilla/VANILLA_ARTIFACT_POWER.png"
   },
   {
     "id": "VANILLA_INKED",
@@ -2195,7 +2195,7 @@
     "title": "자동화",
     "description": "카드를 [blue]10[/blue]장 뽑을 때마다, [gold]에너지[/gold]를 얻습니다.",
     "flavor": "",
-    "icon": null
+    "icon": "assets/icons/vanilla/VANILLA_AUTOMATION_POWER.png"
   },
   {
     "id": "VANILLA_TOOLS_OF_THE_TRADE_POWER",
@@ -2210,7 +2210,7 @@
     "title": "작업 도구",
     "description": "내 턴 시작 시, 카드를 [blue]1[/blue]장 뽑고 카드를 [blue]1[/blue]장 버립니다.",
     "flavor": "",
-    "icon": null
+    "icon": "assets/icons/vanilla/VANILLA_TOOLS_OF_THE_TRADE_POWER.png"
   },
   {
     "id": "VANILLA_AFTERIMAGE_POWER",
@@ -2225,7 +2225,7 @@
     "title": "잔상",
     "description": "카드를 사용할 때마다, [gold]방어도[/gold]를 [blue]1[/blue] 얻습니다.",
     "flavor": "",
-    "icon": null
+    "icon": "assets/icons/vanilla/VANILLA_AFTERIMAGE_POWER.png"
   },
   {
     "id": "VANILLA_REGEN_POWER",
@@ -2240,7 +2240,7 @@
     "title": "재생",
     "description": "[gold]재생[/gold]은 내 턴 종료 시 체력을 회복시킵니다. 매 턴마다 [gold]재생[/gold]이 [blue]1[/blue] 감소합니다.",
     "flavor": "",
-    "icon": null
+    "icon": "assets/icons/vanilla/VANILLA_REGEN_POWER.png"
   },
   {
     "id": "HEXTECH_GALVANIC_POWER",
@@ -2269,7 +2269,7 @@
     "title": "절대적인 힘",
     "description": "[gold]방어도[/gold]를 얻을 때마다, 무작위 적에게 피해를 [blue]6[/blue] 줍니다.",
     "flavor": "",
-    "icon": null
+    "icon": "assets/icons/vanilla/VANILLA_JUGGERNAUT_POWER.png"
   },
   {
     "id": "HEXTECH_BURN_POWER",
@@ -2298,7 +2298,7 @@
     "title": "정신 폭주",
     "description": "내 턴 시작 시, 자신에게 [gold]종말[/gold]을 [blue]3[/blue] 부여합니다.",
     "flavor": "",
-    "icon": null
+    "icon": "assets/icons/vanilla/VANILLA_NEUROSURGE_POWER.png"
   },
   {
     "id": "VANILLA_DOOM_POWER",
@@ -2313,7 +2313,7 @@
     "title": "종말",
     "description": "적의 턴 종료 시 적의 체력이 종말 이하라면, 사망합니다.",
     "flavor": "",
-    "icon": null
+    "icon": "assets/icons/vanilla/VANILLA_DOOM_POWER.png"
   },
   {
     "id": "VANILLA_POISON_POWER",
@@ -2328,7 +2328,7 @@
     "title": "중독",
     "description": "중독된 생물은 자신의 턴 시작 시 체력을 잃습니다. 매 턴마다 중독이 [blue]1[/blue] 감소합니다.",
     "flavor": "",
-    "icon": null
+    "icon": "assets/icons/vanilla/VANILLA_POISON_POWER.png"
   },
   {
     "id": "VANILLA_HARD_TO_KILL_POWER",
@@ -2343,7 +2343,7 @@
     "title": "질긴 생존력",
     "description": "[gold]갑각충[/gold]이 받는 모든 피해와 체력 손실이 [blue]9[/blue]로 감소합니다.",
     "flavor": "",
-    "icon": null
+    "icon": "assets/icons/vanilla/VANILLA_HARD_TO_KILL_POWER.png"
   },
   {
     "id": "VANILLA_VULNERABLE_POWER",
@@ -2358,7 +2358,7 @@
     "title": "취약",
     "description": "취약 상태인 생물은 공격 카드를 통해 받는 피해량이 [blue]50%[/blue] 증가합니다.",
     "flavor": "",
-    "icon": null
+    "icon": "assets/icons/vanilla/VANILLA_VULNERABLE_POWER.png"
   },
   {
     "id": "VANILLA_LETHALITY_POWER",
@@ -2373,7 +2373,7 @@
     "title": "치사성",
     "description": "매 턴마다 처음으로 사용하는 공격 카드의 피해량이 50% 증가합니다.",
     "flavor": "",
-    "icon": null
+    "icon": "assets/icons/vanilla/VANILLA_LETHALITY_POWER.png"
   },
   {
     "id": "VANILLA_COUNTDOWN_POWER",
@@ -2388,7 +2388,7 @@
     "title": "카운트다운",
     "description": "내 턴 시작 시, 무작위 적에게 [gold]종말[/gold]을 [blue]6[/blue] 부여합니다.",
     "flavor": "",
-    "icon": null
+    "icon": "assets/icons/vanilla/VANILLA_COUNTDOWN_POWER.png"
   },
   {
     "id": "VANILLA_CORRUPTION_POWER",
@@ -2403,7 +2403,7 @@
     "title": "타락",
     "description": "스킬 카드의 비용이 [blue]0[/blue]이 됩니다.\n스킬 카드를 사용할 때마다 그 카드를 [gold]소멸[/gold]시킵니다.",
     "flavor": "",
-    "icon": null
+    "icon": "assets/icons/vanilla/VANILLA_CORRUPTION_POWER.png"
   },
   {
     "id": "VANILLA_PLATING_POWER",
@@ -2418,7 +2418,7 @@
     "title": "판금",
     "description": "내 턴 종료 시, [gold]방어도[/gold]를 획득합니다. [gold]판금[/gold]은 내 턴 시작 시 [blue]1[/blue] 감소합니다.",
     "flavor": "",
-    "icon": null
+    "icon": "assets/icons/vanilla/VANILLA_PLATING_POWER.png"
   },
   {
     "id": "HEXTECH_INFERNAL_DRAGON_SOUL_POWER",
@@ -2461,7 +2461,7 @@
     "title": "활력",
     "description": "다음 공격의 피해량이 증가합니다.",
     "flavor": "",
-    "icon": null
+    "icon": "assets/icons/vanilla/VANILLA_VIGOR_POWER.png"
   },
   {
     "id": "VANILLA_STRENGTH_POWER",
@@ -2476,7 +2476,7 @@
     "title": "힘",
     "description": "힘은 공격 카드의 피해량을 증가시킵니다.",
     "flavor": "",
-    "icon": null
+    "icon": "assets/icons/vanilla/VANILLA_STRENGTH_POWER.png"
   },
   {
     "id": "SNAKEBITE_RUNE",

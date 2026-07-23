@@ -334,6 +334,13 @@ def main():
     all_items += build_category("powers.json", "powers", "power", "powers")
 
     vanilla = build_vanilla_items(all_items)
+    # extract_vanilla_icons.py가 만든 아이콘 매핑을 재빌드 시에도 적용
+    vi_file = Path(__file__).parent / "vanilla_icons.json"
+    if vi_file.exists():
+        icon_map = json.loads(vi_file.read_text(encoding="utf-8"))
+        for it in vanilla:
+            if it["id"] in icon_map:
+                it["icon"] = icon_map[it["id"]]
     all_items += vanilla
     print("Vanilla items:", len(vanilla))
 
