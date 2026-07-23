@@ -110,6 +110,29 @@ def parse_upgrades(src: str, vars_: dict):
             vars_[name]["upgrade"] = num(val)
 
 
+# 정규식으로 파싱 불가한 특수 케이스 수동 지정
+MANUAL_OVERRIDES = {
+    # 불태우는 일격: 강화 공식 n(n+7)/2+12 (무제한 강화). 1강 기준 12→16이므로 +4로 표기
+    "SEARING_ATTACK_CARD": {"Damage": {"upgrade": 4}},
+}
+
+
+def parse_class_sources(cs_path: Path) -> str:
+    """카드 클래스 소스에 부모 클래스(CardModel 제외) 소스를 이어붙여 반환.
+
+    예: DragonSoulCardBase.OnUpgrade의 AddKeyword(선천성)를 자식 카드들이 상속.
+    자식이 같은 멤버를 오버라이드하면 자식 정의가 먼저 매치되도록 자식 소스를 앞에 둠.
+    """
+    src = cs_path.read_text(encoding="utf-8", errors="replace")
+    m = re.search(r"class \w+ : (\w+)", src)
+    base = m.group(1) if m else None
+    if base and base != "CardModel":
+        base_file = DECOMP / f"{base}.cs"
+        if base_file.exists():
+            src += "\n" + base_file.read_text(encoding="utf-8", errors="replace")
+    return src
+
+
 def main():
     # data.json의 카드 ID 목록 기준으로 디컴파일 소스 매칭
     data = json.loads((Path(__file__).parent / "data.json").read_text(encoding="utf-8"))
@@ -121,11 +144,13 @@ def main():
         if not cs.exists():
             print(f"[skip] {card_id}: {cs.name} 없음")
             continue
-        src = cs.read_text(encoding="utf-8", errors="replace")
+        src = parse_class_sources(cs)
         vars_ = parse_canonical_vars(src)
         parse_upgrades(src, vars_)
         parse_cost(src, vars_)
         parse_keywords(src, vars_)
+        for name, patch in MANUAL_OVERRIDES.get(card_id, {}).items():
+            vars_.setdefault(name, {}).update(patch)
         result[card_id] = vars_
         print(card_id, vars_)
 

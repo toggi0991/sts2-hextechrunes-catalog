@@ -52,7 +52,9 @@
     "category": "card",
     "subcategory": "card",
     "cost": "0",
-    "kw_top": null,
+    "kw_top": [
+      "(선천성)"
+    ],
     "kw_bottom": null,
     "character": null,
     "tier": null,
@@ -66,7 +68,9 @@
     "category": "card",
     "subcategory": "card",
     "cost": "0",
-    "kw_top": null,
+    "kw_top": [
+      "(선천성)"
+    ],
     "kw_bottom": null,
     "character": null,
     "tier": null,
@@ -112,7 +116,9 @@
     "category": "card",
     "subcategory": "card",
     "cost": "0",
-    "kw_top": null,
+    "kw_top": [
+      "(선천성)"
+    ],
     "kw_bottom": null,
     "character": null,
     "tier": null,
@@ -126,7 +132,9 @@
     "category": "card",
     "subcategory": "card",
     "cost": "0",
-    "kw_top": null,
+    "kw_top": [
+      "(선천성)"
+    ],
     "kw_bottom": null,
     "character": null,
     "tier": null,
@@ -145,7 +153,7 @@
     "character": null,
     "tier": null,
     "title": "불태우는 일격",
-    "description": "피해를 [blue]12[/blue] 줍니다.\n강화 횟수에 제한이 없습니다.",
+    "description": "피해를 [blue]12(16)[/blue] 줍니다.\n강화 횟수에 제한이 없습니다.",
     "flavor": "날을 세울수록 뜨거워집니다.",
     "icon": "assets/icons/cards/searingAttackCard.png"
   },
@@ -232,7 +240,9 @@
     "category": "card",
     "subcategory": "card",
     "cost": "0",
-    "kw_top": null,
+    "kw_top": [
+      "(선천성)"
+    ],
     "kw_bottom": null,
     "character": null,
     "tier": null,
@@ -262,7 +272,9 @@
     "category": "card",
     "subcategory": "card",
     "cost": "1",
-    "kw_top": null,
+    "kw_top": [
+      "(선천성)"
+    ],
     "kw_bottom": null,
     "character": null,
     "tier": null,
