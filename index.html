@@ -264,7 +264,29 @@
     text-decoration: underline dotted;
     text-decoration-thickness: 1px;
     text-underline-offset: 3px;
-    cursor: help;
+    cursor: pointer;
+  }
+  .card.flash {
+    border-color: var(--accent);
+    box-shadow: 0 0 0 2px var(--accent), 0 0 18px #8a5cf688;
+  }
+  #tooltip .tt-go {
+    display: none;
+    margin-top: 8px;
+    width: 100%;
+    padding: 7px 0;
+    border: none;
+    border-radius: 8px;
+    background: linear-gradient(90deg, var(--accent), #b06cf6);
+    color: #fff;
+    font-size: 0.8rem;
+    font-weight: 700;
+    font-family: inherit;
+    cursor: pointer;
+  }
+  @media (hover: none) {
+    #tooltip { pointer-events: auto; }
+    #tooltip .tt-go { display: block; }
   }
   #tooltip {
     position: fixed;
@@ -649,11 +671,36 @@ tipEl.hidden = true;
 document.body.appendChild(tipEl);
 let tipTarget = null;
 
+function goToKeyword(term) {
+  // 필터 초기화 후 키워드로 검색 이동
+  activeCat = "all"; activeChar = "all"; activeTier = "all";
+  document.querySelectorAll(".chip[data-cat]").forEach(c => c.classList.toggle("active", c.dataset.cat === "all"));
+  document.querySelectorAll(".chip[data-char]").forEach(c => c.classList.toggle("active", c.dataset.char === "all"));
+  document.querySelectorAll(".chip[data-tier]").forEach(c => c.classList.toggle("active", c.dataset.tier === "all"));
+  searchEl.value = term;
+  suggestEl.hidden = true;
+  hideTip();
+  render();
+  // 이름이 정확히 일치하는 항목이 있으면 그 카드로 스크롤 + 강조
+  requestAnimationFrame(() => {
+    const titleEl = [...document.querySelectorAll("#grid .card-title")].find(el => el.textContent === term);
+    const cardEl = titleEl && titleEl.closest(".card");
+    if (cardEl) {
+      cardEl.scrollIntoView({ behavior: "smooth", block: "center" });
+      cardEl.classList.add("flash");
+      setTimeout(() => cardEl.classList.remove("flash"), 1600);
+    } else {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+  });
+}
+
 function showTip(target) {
   const term = target.dataset.kw;
   const desc = KW_INFO[term];
   if (!desc) return;
-  tipEl.innerHTML = `<div class="tt-title">${escapeHtml(term)}</div><div>${formatDesc(desc)}</div>`;
+  tipEl.innerHTML = `<div class="tt-title">${escapeHtml(term)}</div><div>${formatDesc(desc)}</div>`
+    + `<button class="tt-go" type="button" data-go="${escapeHtml(term)}">바로 이동 →</button>`;
   tipEl.hidden = false;
   // 위치: 대상 오른쪽 옆 → 공간 없으면 왼쪽 → 그래도 없으면 아래
   const r = target.getBoundingClientRect();
@@ -677,7 +724,8 @@ function hideTip() {
 }
 
 const gridEl = document.getElementById("grid");
-if (window.matchMedia("(hover: hover)").matches) {
+const canHover = window.matchMedia("(hover: hover)").matches;
+if (canHover) {
   // 데스크톱: 마우스 오버로 표시
   gridEl.addEventListener("mouseover", e => {
     const t = e.target.closest(".has-tip");
@@ -687,13 +735,21 @@ if (window.matchMedia("(hover: hover)").matches) {
     if (e.target.closest(".has-tip")) hideTip();
   });
 }
-// 모바일: 터치(탭)로 열고 닫기 — 데스크톱에서도 클릭 토글은 무해
 document.addEventListener("click", e => {
+  // 툴팁 안의 [바로 이동] 버튼 (모바일)
+  const go = e.target.closest(".tt-go");
+  if (go) { goToKeyword(go.dataset.go); return; }
   const t = e.target.closest(".has-tip");
   if (t && gridEl.contains(t)) {
-    if (tipTarget === t && !tipEl.hidden) hideTip();
-    else showTip(t);
-  } else {
+    if (canHover) {
+      // 데스크톱: 좌클릭으로 해당 키워드 정보로 이동
+      goToKeyword(t.dataset.kw);
+    } else {
+      // 모바일: 탭으로 툴팁 토글
+      if (tipTarget === t && !tipEl.hidden) hideTip();
+      else showTip(t);
+    }
+  } else if (!tipEl.contains(e.target)) {
     hideTip();
   }
 });
