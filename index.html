@@ -535,8 +535,14 @@ function showSuggest() {
 }
 
 function applySuggestion(word) {
-  const parts = searchEl.value.trimStart().split(/\s+/);
-  parts[parts.length - 1] = word;
+  const parts = searchEl.value.trimStart().split(/\s+/).filter(Boolean);
+  // 입력 끝부분이 선택한 단어의 일부와 겹치면(예: "전기 자극" ← "전기 자")
+  // 겹치는 만큼 전부 치환해서 "전기 전기 자극" 같은 중복을 방지
+  let span = 1;
+  for (let n = parts.length; n >= 1; n--) {
+    if (fuzzyKrIndex(parts.slice(-n).join(" "), word) >= 0) { span = n; break; }
+  }
+  parts.splice(parts.length - span, span, word);
   searchEl.value = parts.join(" ");
   suggestEl.hidden = true;
   render();
