@@ -237,6 +237,7 @@
   }
   .badge.card { color: #8fd3ff; }
   .badge.char { color: #b8a3f5; }
+  .badge.vanilla { color: #9aa8b8; }
   .badge.tier-실버 { color: #c8cdd8; }
   .badge.tier-골드 { color: var(--gold); }
   .badge.tier-프리즘 {
@@ -400,6 +401,7 @@
 <script>
 let DATA = [];
 let KW_INFO = {};
+let ALIASES = {};
 let activeCat = "all";
 let activeChar = "all";
 let activeTier = "all";
@@ -469,10 +471,11 @@ function render() {
       ? `<div class="icon-wrap"><img src="${item.icon}" loading="lazy" alt="${escapeHtml(item.title)}"></div>`
       : `<div class="icon-wrap placeholder">?</div>`;
 
-    const badgeRow = (item.tier || item.character)
+    const badgeRow = (item.tier || item.character || item.vanilla)
       ? `<div class="badge-row">
           ${item.tier ? `<span class="badge tier-${item.tier}">${escapeHtml(item.tier)}</span>` : ""}
           ${item.character ? `<span class="badge char">${escapeHtml(item.character)}</span>` : ""}
+          ${item.vanilla ? `<span class="badge vanilla">바닐라</span>` : ""}
         </div>`
       : "";
     card.innerHTML = `
@@ -667,19 +670,42 @@ tipEl.hidden = true;
 document.body.appendChild(tipEl);
 let tipTarget = null;
 
-function goToKeyword(term) {
-  // 필터 초기화 후 키워드로 검색 이동
-  activeCat = "all"; activeChar = "all"; activeTier = "all";
-  document.querySelectorAll(".chip[data-cat]").forEach(c => c.classList.toggle("active", c.dataset.cat === "all"));
-  document.querySelectorAll(".chip[data-char]").forEach(c => c.classList.toggle("active", c.dataset.char === "all"));
-  document.querySelectorAll(".chip[data-tier]").forEach(c => c.classList.toggle("active", c.dataset.tier === "all"));
-  searchEl.value = term;
+// ===== 화면 상태 저장/복원 (뒤로 가기 지원) =====
+function captureState() {
+  return { q: searchEl.value, cat: activeCat, ch: activeChar, tier: activeTier, scroll: window.scrollY };
+}
+
+function syncChips() {
+  document.querySelectorAll(".chip[data-cat]").forEach(c => c.classList.toggle("active", c.dataset.cat === activeCat));
+  document.querySelectorAll(".chip[data-char]").forEach(c => c.classList.toggle("active", c.dataset.char === activeChar));
+  document.querySelectorAll(".chip[data-tier]").forEach(c => c.classList.toggle("active", c.dataset.tier === activeTier));
+}
+
+function applyState(s) {
+  searchEl.value = s.q || "";
+  activeCat = s.cat || "all";
+  activeChar = s.ch || "all";
+  activeTier = s.tier || "all";
+  syncChips();
   suggestEl.hidden = true;
-  hideTip();
   render();
-  // 이름이 정확히 일치하는 항목이 있으면 그 카드로 스크롤 + 강조
+  requestAnimationFrame(() => window.scrollTo(0, s.scroll || 0));
+}
+
+window.addEventListener("popstate", e => {
+  hideTip();
+  if (e.state) applyState(e.state);
+});
+
+function goToKeyword(term) {
+  const target = ALIASES[term] || term; // 모드 번역 별칭 → 공식 명칭
+  history.replaceState(captureState(), ""); // 지금 보던 화면을 저장해서 뒤로 가기로 복원
+  hideTip();
+  applyState({ q: target, cat: "all", ch: "all", tier: "all", scroll: 0 });
+  history.pushState(captureState(), "");
+  // 이름이 정확히 일치하는 항목이 있으면 그 카드로 스크롤 + 1.6초 강조
   requestAnimationFrame(() => {
-    const titleEl = [...document.querySelectorAll("#grid .card-title")].find(el => el.textContent === term);
+    const titleEl = [...document.querySelectorAll("#grid .card-title")].find(el => el.textContent === target);
     const cardEl = titleEl && titleEl.closest(".card");
     if (cardEl) {
       cardEl.scrollIntoView({ behavior: "smooth", block: "center" });
@@ -767,9 +793,12 @@ Promise.all([
 ])
   .then(([data, kw]) => {
     DATA = data;
+    ALIASES = kw.__aliases__ || {};
+    delete kw.__aliases__;
     KW_INFO = kw;
     buildVocab();
     render();
+    history.replaceState(captureState(), ""); // 초기 화면도 뒤로 가기 복원 대상
   })
   .catch(err => {
     document.getElementById("grid").innerHTML =

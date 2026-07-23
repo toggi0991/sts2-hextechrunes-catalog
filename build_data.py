@@ -36,6 +36,24 @@ CHARACTER_NAMES = {
 
 TIER_NAMES = {"Silver": "실버", "Gold": "골드", "Prismatic": "프리즘"}
 
+# 모드 번역이 게임 공식 명칭과 다른 용어 별칭
+TERM_ALIASES = {
+    "영체화": "불가침",          # Intangible
+    "집중": "밀집",              # Focus
+    "단검": "단도",              # Shiv
+    "교활함": "교활",            # Sly
+    "드림캐쳐": "드림캐처",
+    "미니어쳐 텐트": "미니어처 텐트",
+    "전기 구체": "번개 구체",    # Ball Lightning
+    "회오리바람": "소용돌이",    # Whirlwind
+}
+
+
+def clean_placeholders(desc: str) -> str:
+    """게임 내 동적 값 플레이스홀더 정리: {X:choose(...)}는 제거, 나머지는 X로 표시."""
+    desc = re.sub(r"\{[^{}]*:choose\([^{}]*\}", "", desc)
+    return re.sub(r"\{[^{}]*\}", "X", desc)
+
 
 # 게임 본체 CardKeyword 열거형의 공식 한국어 표기 (game_localization/kor/card_keywords.json 기준)
 KEYWORD_NAMES = {
@@ -254,27 +272,59 @@ def build_keyword_info(all_items) -> dict:
                 if desc:
                     info[title] = desc
 
-    # 모드 번역이 게임 공식 명칭과 다른 용어 별칭
-    aliases = {
-        "영체화": "불가침",          # Intangible
-        "집중": "밀집",              # Focus
-        "단검": "단도",              # Shiv
-        "교활함": "교활",            # Sly
-        "드림캐쳐": "드림캐처",
-        "미니어쳐 텐트": "미니어처 텐트",
-        "전기 구체": "번개 구체",    # Ball Lightning
-        "회오리바람": "소용돌이",    # Whirlwind
-    }
-    for alias, target in aliases.items():
+    for alias, target in TERM_ALIASES.items():
         if target in info:
             info[alias] = info[target]
 
-    # 게임 내 동적 값 플레이스홀더 정리: {X:choose(...)}는 제거, 나머지는 X로 표시
-    def clean(desc: str) -> str:
-        desc = re.sub(r"\{[^{}]*:choose\([^{}]*\}", "", desc)
-        return re.sub(r"\{[^{}]*\}", "X", desc)
+    result = {k: clean_placeholders(v) for k, v in info.items()}
+    # 클라이언트의 바로 이동에서 별칭을 공식 명칭으로 풀 수 있게 함께 내보냄
+    result["__aliases__"] = dict(TERM_ALIASES)
+    return result
 
-    return {k: clean(v) for k, v in info.items()}
+
+def build_vanilla_items(all_items):
+    """모드 설명에서 참조되는 바닐라(게임 본체) 카드/효과를 도감 항목으로 추가."""
+    game_loc = Path(__file__).parent / "game_localization" / "kor"
+
+    # 모드 항목 설명 속 [gold] 참조 용어 수집 (별칭은 공식 명칭으로 변환)
+    refs = set()
+    for it in all_items:
+        for m in re.findall(r"\[gold\](.*?)\[/gold\]", it["description"]):
+            t = re.sub(r"\[.*?\]", "", m).strip()
+            if t and not t[0].isdigit():
+                refs.add(TERM_ALIASES.get(t, t))
+
+    existing = {it["title"] for it in all_items}
+    out = []
+    for fname, category in (("cards.json", "card"), ("powers.json", "power")):
+        data = json.loads((game_loc / fname).read_text(encoding="utf-8"))
+        seen = set()
+        for key, title in data.items():
+            if not key.endswith(".title"):
+                continue
+            if title not in refs or title in existing or title in seen:
+                continue
+            base = key[: -len(".title")]
+            desc = data.get(f"{base}.description") or data.get(f"{base}.smartDescription")
+            if not desc:
+                continue
+            seen.add(title)
+            out.append({
+                "id": f"VANILLA_{base}",
+                "category": category,
+                "subcategory": category,
+                "cost": None,
+                "kw_top": None,
+                "kw_bottom": None,
+                "character": None,
+                "tier": None,
+                "vanilla": True,
+                "title": title,
+                "description": clean_placeholders(desc),
+                "flavor": data.get(f"{base}.flavor", ""),
+                "icon": None,
+            })
+    return out
 
 
 def main():
@@ -282,6 +332,10 @@ def main():
     all_items += build_category("relics.json", "relics", "relic", "relics")
     all_items += build_category("cards.json", "cards", "card", "cards")
     all_items += build_category("powers.json", "powers", "power", "powers")
+
+    vanilla = build_vanilla_items(all_items)
+    all_items += vanilla
+    print("Vanilla items:", len(vanilla))
 
     all_items.sort(key=lambda x: (x["category"], x["title"]))
 
