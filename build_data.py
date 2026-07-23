@@ -37,15 +37,15 @@ CHARACTER_NAMES = {
 TIER_NAMES = {"Silver": "실버", "Gold": "골드", "Prismatic": "프리즘"}
 
 
-# 게임 본체 CardKeyword 열거형의 한국어 표기
+# 게임 본체 CardKeyword 열거형의 공식 한국어 표기 (game_localization/kor/card_keywords.json 기준)
 KEYWORD_NAMES = {
-    1: "소모",       # Exhaust
-    2: "천상",       # Ethereal
-    3: "선천성",     # Innate
-    4: "사용 불가",  # Unplayable
-    5: "보존",       # Retain
-    6: "교활",       # Sly
-    7: "영원",       # Eternal
+    1: "소멸",     # Exhaust
+    2: "휘발성",   # Ethereal
+    3: "선천성",   # Innate
+    4: "사용불가", # Unplayable
+    5: "보존",     # Retain
+    6: "교활",     # Sly
+    7: "영구",     # Eternal
 }
 
 
@@ -215,6 +215,68 @@ def build_category(loc_file: str, image_subdir: str, category: str, icon_out_sub
     return results
 
 
+def build_keyword_info(all_items) -> dict:
+    """키워드/효과 툴팁 사전 생성: { 용어: 설명 }.
+
+    출처: 게임 본체 card_keywords.json + powers.json (공식 한국어) + 모드 효과 항목.
+    """
+    info = {}
+    game_loc = Path(__file__).parent / "game_localization" / "kor"
+
+    # 게임 본체: 카드/유물/구체/기본 개념/고난/파워 — 모두 <ID>.title/.description 구조.
+    # 같은 이름이 겹치면 뒤 파일이 우선이므로, 툴팁으로 자주 쓰이는 파워를 마지막에 둠
+    # (예: "영체화"는 카드가 아니라 파워 의미로 연결)
+    for fname in ("cards.json", "relics.json", "orbs.json", "static_hover_tips.json", "afflictions.json", "powers.json"):
+        f = game_loc / fname
+        if not f.exists():
+            continue
+        data = json.loads(f.read_text(encoding="utf-8"))
+        for key, title in data.items():
+            if not key.endswith(".title"):
+                continue
+            base = key[: -len(".title")]
+            desc = data.get(f"{base}.description") or data.get(f"{base}.smartDescription")
+            if title and desc:
+                info[title] = desc
+
+    # 모드 항목(효과/카드/증강)이 게임 본체와 이름이 겹치면 모드 설명을 우선
+    for it in all_items:
+        if it["title"] and it["description"]:
+            info[it["title"]] = it["description"]
+
+    # 카드 키워드는 마지막에 덮어써서 항상 공식 정의 유지
+    ck = game_loc / "card_keywords.json"
+    if ck.exists():
+        data = json.loads(ck.read_text(encoding="utf-8"))
+        for key, title in data.items():
+            if key.endswith(".title"):
+                desc = data.get(key[: -len(".title")] + ".description")
+                if desc:
+                    info[title] = desc
+
+    # 모드 번역이 게임 공식 명칭과 다른 용어 별칭
+    aliases = {
+        "영체화": "불가침",          # Intangible
+        "집중": "밀집",              # Focus
+        "단검": "단도",              # Shiv
+        "교활함": "교활",            # Sly
+        "드림캐쳐": "드림캐처",
+        "미니어쳐 텐트": "미니어처 텐트",
+        "전기 구체": "번개 구체",    # Ball Lightning
+        "회오리바람": "소용돌이",    # Whirlwind
+    }
+    for alias, target in aliases.items():
+        if target in info:
+            info[alias] = info[target]
+
+    # 게임 내 동적 값 플레이스홀더 정리: {X:choose(...)}는 제거, 나머지는 X로 표시
+    def clean(desc: str) -> str:
+        desc = re.sub(r"\{[^{}]*:choose\([^{}]*\}", "", desc)
+        return re.sub(r"\{[^{}]*\}", "X", desc)
+
+    return {k: clean(v) for k, v in info.items()}
+
+
 def main():
     all_items = []
     all_items += build_category("relics.json", "relics", "relic", "relics")
@@ -226,6 +288,12 @@ def main():
     (OUT / "data.json").write_text(
         json.dumps(all_items, ensure_ascii=False, indent=2), encoding="utf-8"
     )
+
+    keyword_info = build_keyword_info(all_items)
+    (OUT / "keywords.json").write_text(
+        json.dumps(keyword_info, ensure_ascii=False, indent=2), encoding="utf-8"
+    )
+    print("Keyword info:", len(keyword_info))
 
     counts = {}
     for it in all_items:

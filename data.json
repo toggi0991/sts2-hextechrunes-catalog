@@ -20,7 +20,7 @@
     "cost": "1",
     "kw_top": null,
     "kw_bottom": [
-      "소모(소모X)"
+      "소멸(소멸X)"
     ],
     "character": null,
     "tier": null,
@@ -38,7 +38,7 @@
       "(보존)"
     ],
     "kw_bottom": [
-      "소모"
+      "소멸"
     ],
     "character": null,
     "tier": null,
@@ -86,7 +86,7 @@
     "cost": "0",
     "kw_top": null,
     "kw_bottom": [
-      "소모"
+      "소멸"
     ],
     "character": null,
     "tier": null,
@@ -180,7 +180,7 @@
       "보존"
     ],
     "kw_bottom": [
-      "소모(소모X)"
+      "소멸(소멸X)"
     ],
     "character": null,
     "tier": null,
@@ -210,7 +210,7 @@
     "cost": "0",
     "kw_top": null,
     "kw_bottom": [
-      "소모"
+      "소멸"
     ],
     "character": null,
     "tier": null,
@@ -258,7 +258,7 @@
     "cost": "0",
     "kw_top": null,
     "kw_bottom": [
-      "소모"
+      "소멸"
     ],
     "character": null,
     "tier": null,

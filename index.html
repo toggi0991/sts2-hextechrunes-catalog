@@ -258,6 +258,31 @@
     text-align: center;
   }
   .desc b, .desc .kw { color: var(--gold); font-weight: 600; }
+  .has-tip {
+    font-style: italic;
+    font-weight: 700;
+    text-decoration: underline dotted;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 3px;
+    cursor: help;
+  }
+  #tooltip {
+    position: fixed;
+    z-index: 100;
+    max-width: 280px;
+    background: #241f31;
+    border: 1px solid #5a4d78;
+    border-radius: 10px;
+    padding: 10px 12px;
+    font-size: 0.78rem;
+    line-height: 1.5;
+    color: var(--text-dim);
+    box-shadow: 0 10px 30px #000000cc;
+    pointer-events: none;
+  }
+  #tooltip .tt-title { font-weight: 700; color: var(--gold); margin-bottom: 4px; font-size: 0.82rem; font-style: normal; }
+  #tooltip .kw { color: var(--gold); font-weight: 600; }
+  #tooltip .num { color: var(--blue); font-weight: 600; }
   .kw-line {
     font-size: 0.73rem;
     font-weight: 700;
@@ -356,6 +381,7 @@
 
 <script>
 let DATA = [];
+let KW_INFO = {};
 let activeCat = "all";
 let activeChar = "all";
 let activeTier = "all";
@@ -369,11 +395,28 @@ function escapeHtml(s) {
 function formatDesc(s) {
   if (!s) return "";
   let out = escapeHtml(s);
-  out = out.replace(/\[gold\](.*?)\[\/gold\]/g, '<span class="kw">$1</span>');
+  out = out.replace(/\[gold\](.*?)\[\/gold\]/g, (m, t) => {
+    const plain = t.replace(/\[.*?\]/g, "");
+    const tip = KW_INFO[plain] ? " has-tip" : "";
+    return `<span class="kw${tip}" data-kw="${plain.replace(/"/g, "&quot;")}">${t}</span>`;
+  });
   out = out.replace(/\[blue\](.*?)\[\/blue\]/g, '<span class="num">$1</span>');
   out = out.replace(/\[b\](.*?)\[\/b\]/g, '<b>$1</b>');
   out = out.replace(/\n/g, "<br>");
   return out;
+}
+
+function kwLineHtml(list) {
+  // "소멸(소멸X)" / "(보존)" 같은 토큰에서 기본 용어를 뽑아 툴팁 대상으로 감쌈
+  const parts = list.map(k => {
+    const m = k.match(/[가-힣]+/);
+    const base = m ? m[0] : k;
+    if (KW_INFO[base]) {
+      return `<span class="has-tip" data-kw="${base}">${escapeHtml(k)}</span>`;
+    }
+    return escapeHtml(k);
+  });
+  return `<div class="kw-line">${parts.join(" · ")}</div>`;
 }
 
 function render() {
@@ -420,9 +463,9 @@ function render() {
       ${badgeRow}
       ${iconHtml}
       <div class="card-body">
-        ${item.kw_top ? `<div class="kw-line">${escapeHtml(item.kw_top.join(" · "))}</div>` : ""}
+        ${item.kw_top ? kwLineHtml(item.kw_top) : ""}
         <div class="desc">${formatDesc(item.description)}</div>
-        ${item.kw_bottom ? `<div class="kw-line">${escapeHtml(item.kw_bottom.join(" · "))}</div>` : ""}
+        ${item.kw_bottom ? kwLineHtml(item.kw_bottom) : ""}
         ${item.flavor ? `<div class="flavor">${escapeHtml(item.flavor)}</div>` : ""}
       </div>
     `;
@@ -488,7 +531,7 @@ let selIdx = -1;
 
 function buildVocab() {
   const set = new Set();
-  const fixed = ["소모", "보존", "선천성", "천상", "사용 불가", "교활", "영원",
+  const fixed = ["소멸", "보존", "선천성", "휘발성", "사용불가", "교활", "영구",
                  "실버", "골드", "프리즘", "공용",
                  "아이언클래드", "사일런트", "리젠트", "디펙트", "네크로바인더"];
   fixed.forEach(k => set.add(k));
@@ -599,10 +642,70 @@ searchEl.addEventListener("keydown", e => {
   }
 });
 
-fetch("data.json", { cache: "no-cache" }) /* 배포 후에도 항상 최신 데이터 재검증(ETag 304) */
-  .then(r => r.json())
-  .then(data => {
+// ===== 키워드 툴팁 =====
+const tipEl = document.createElement("div");
+tipEl.id = "tooltip";
+tipEl.hidden = true;
+document.body.appendChild(tipEl);
+let tipTarget = null;
+
+function showTip(target) {
+  const term = target.dataset.kw;
+  const desc = KW_INFO[term];
+  if (!desc) return;
+  tipEl.innerHTML = `<div class="tt-title">${escapeHtml(term)}</div><div>${formatDesc(desc)}</div>`;
+  tipEl.hidden = false;
+  // 위치: 대상 오른쪽 옆 → 공간 없으면 왼쪽 → 그래도 없으면 아래
+  const r = target.getBoundingClientRect();
+  const tw = tipEl.offsetWidth, th = tipEl.offsetHeight;
+  let x = r.right + 8;
+  let y = r.top + r.height / 2 - th / 2;
+  if (x + tw > window.innerWidth - 8) x = r.left - tw - 8;
+  if (x < 8) {
+    x = Math.min(Math.max(8, r.left), window.innerWidth - tw - 8);
+    y = r.bottom + 8;
+  }
+  y = Math.min(Math.max(8, y), window.innerHeight - th - 8);
+  tipEl.style.left = x + "px";
+  tipEl.style.top = y + "px";
+  tipTarget = target;
+}
+
+function hideTip() {
+  tipEl.hidden = true;
+  tipTarget = null;
+}
+
+const gridEl = document.getElementById("grid");
+if (window.matchMedia("(hover: hover)").matches) {
+  // 데스크톱: 마우스 오버로 표시
+  gridEl.addEventListener("mouseover", e => {
+    const t = e.target.closest(".has-tip");
+    if (t) showTip(t);
+  });
+  gridEl.addEventListener("mouseout", e => {
+    if (e.target.closest(".has-tip")) hideTip();
+  });
+}
+// 모바일: 터치(탭)로 열고 닫기 — 데스크톱에서도 클릭 토글은 무해
+document.addEventListener("click", e => {
+  const t = e.target.closest(".has-tip");
+  if (t && gridEl.contains(t)) {
+    if (tipTarget === t && !tipEl.hidden) hideTip();
+    else showTip(t);
+  } else {
+    hideTip();
+  }
+});
+window.addEventListener("scroll", hideTip, { passive: true });
+
+Promise.all([
+  fetch("data.json", { cache: "no-cache" }).then(r => r.json()), /* 배포 후에도 항상 최신 데이터 재검증(ETag 304) */
+  fetch("keywords.json", { cache: "no-cache" }).then(r => r.json()).catch(() => ({})),
+])
+  .then(([data, kw]) => {
     DATA = data;
+    KW_INFO = kw;
     buildVocab();
     render();
   })
