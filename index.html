@@ -271,7 +271,7 @@
     box-shadow: 0 0 0 2px var(--accent), 0 0 18px #8a5cf688;
   }
   #tooltip .tt-go {
-    display: none;
+    display: none; /* 터치 입력으로 열렸을 때만 JS가 표시 */
     margin-top: 8px;
     width: 100%;
     padding: 7px 0;
@@ -283,10 +283,6 @@
     font-weight: 700;
     font-family: inherit;
     cursor: pointer;
-  }
-  @media (hover: none) {
-    #tooltip { pointer-events: auto; }
-    #tooltip .tt-go { display: block; }
   }
   #tooltip {
     position: fixed;
@@ -695,12 +691,15 @@ function goToKeyword(term) {
   });
 }
 
-function showTip(target) {
+function showTip(target, withButton) {
   const term = target.dataset.kw;
   const desc = KW_INFO[term];
   if (!desc) return;
   tipEl.innerHTML = `<div class="tt-title">${escapeHtml(term)}</div><div>${formatDesc(desc)}</div>`
     + `<button class="tt-go" type="button" data-go="${escapeHtml(term)}">바로 이동 →</button>`;
+  // 터치로 열린 툴팁만 버튼 표시 + 버튼을 누를 수 있게 함
+  tipEl.querySelector(".tt-go").style.display = withButton ? "block" : "none";
+  tipEl.style.pointerEvents = withButton ? "auto" : "none";
   tipEl.hidden = false;
   // 위치: 대상 오른쪽 옆 → 공간 없으면 왼쪽 → 그래도 없으면 아래
   const r = target.getBoundingClientRect();
@@ -724,30 +723,37 @@ function hideTip() {
 }
 
 const gridEl = document.getElementById("grid");
-const canHover = window.matchMedia("(hover: hover)").matches;
-if (canHover) {
-  // 데스크톱: 마우스 오버로 표시
-  gridEl.addEventListener("mouseover", e => {
-    const t = e.target.closest(".has-tip");
-    if (t) showTip(t);
-  });
-  gridEl.addEventListener("mouseout", e => {
-    if (e.target.closest(".has-tip")) hideTip();
-  });
-}
+
+// 기기 단위(media query)가 아니라 "실제 입력 종류"로 판별:
+// 같은 기기라도 마우스 클릭은 이동, 터치 탭은 툴팁만 열림
+let lastPointerType = "mouse";
+document.addEventListener("pointerdown", e => {
+  lastPointerType = e.pointerType || "mouse";
+}, true);
+
+// 마우스 호버로만 미리보기 툴팁 표시 (터치의 에뮬레이트 이벤트는 무시됨)
+gridEl.addEventListener("pointerover", e => {
+  if (e.pointerType !== "mouse") return;
+  const t = e.target.closest(".has-tip");
+  if (t) showTip(t, false);
+});
+gridEl.addEventListener("pointerout", e => {
+  if (e.pointerType === "mouse" && e.target.closest(".has-tip")) hideTip();
+});
+
 document.addEventListener("click", e => {
-  // 툴팁 안의 [바로 이동] 버튼 (모바일)
+  // 툴팁 안의 [바로 이동] 버튼 (터치 전용)
   const go = e.target.closest(".tt-go");
   if (go) { goToKeyword(go.dataset.go); return; }
   const t = e.target.closest(".has-tip");
   if (t && gridEl.contains(t)) {
-    if (canHover) {
-      // 데스크톱: 좌클릭으로 해당 키워드 정보로 이동
+    if (lastPointerType === "mouse") {
+      // 마우스 좌클릭: 해당 키워드 정보로 이동
       goToKeyword(t.dataset.kw);
     } else {
-      // 모바일: 탭으로 툴팁 토글
+      // 터치 탭: 이동하지 않고 툴팁만 토글 (이동은 툴팁의 버튼으로)
       if (tipTarget === t && !tipEl.hidden) hideTip();
-      else showTip(t);
+      else showTip(t, true);
     }
   } else if (!tipEl.contains(e.target)) {
     hideTip();
