@@ -257,5 +257,1592 @@
         3
       ]
     }
+  },
+  "SNAKEBITE_RUNE": {
+    "Cards": {
+      "base": 1
+    }
+  },
+  "EIGHT_PENNY_GATE_RUNE": {
+    "Replays": {
+      "base": 1
+    }
+  },
+  "MYSTERY_RUNE": {
+    "MayhemPower": {
+      "base": 2
+    },
+    "EntropyPower": {
+      "base": 2
+    }
+  },
+  "THORNS_FORGE": {
+    "ThornsPower": {
+      "base": 4
+    }
+  },
+  "UPGRADE_FORGE": {
+    "Cards": {
+      "base": 2
+    }
+  },
+  "GOLD_UPGRADE_FORGE": {
+    "Cards": {
+      "base": 4
+    }
+  },
+  "BASH_UPGRADE_RUNE": {
+    "BreakStrength": {
+      "base": 3
+    },
+    "StrengthPower": {
+      "base": 2
+    }
+  },
+  "SHRIEK_UPGRADE_RUNE": {
+    "StrengthPower": {
+      "base": 2
+    }
+  },
+  "BODY_SLAM_UPGRADE_RUNE": {
+    "DamageMultiplier": {
+      "base": 2
+    }
+  },
+  "NEUTRALIZE_UPGRADE_RUNE": {
+    "Repeats": {
+      "base": 2
+    }
+  },
+  "SNAKEBITE_UPGRADE_RUNE": {
+    "Replays": {
+      "base": 1
+    }
+  },
+  "FALLING_STAR_UPGRADE_RUNE": {
+    "StunTurns": {
+      "base": 1
+    }
+  },
+  "SOUL_UPGRADE_RUNE": {
+    "Energy": {
+      "base": 1
+    }
+  },
+  "AUTOMATION_UPGRADE_RUNE": {
+    "Cards": {
+      "base": 2
+    }
+  },
+  "SKY_DRILL_UPGRADE_RUNE": {
+    "XThreshold": {
+      "base": 6
+    },
+    "XMultiplier": {
+      "base": 3
+    }
+  },
+  "GIANT_SERPENTS_FANG_RUNE": {
+    "BlockReductionPercent": {
+      "base": 50
+    }
+  },
+  "COURAGE_OF_COLOSSUS_RUNE": {
+    "Plating": {
+      "base": 3
+    }
+  },
+  "GIANT_SLAYER_RUNE": {
+    "HpGap": {
+      "base": 6
+    },
+    "DamagePerStepPercent": {
+      "base": 0.01
+    },
+    "MaxBonusPercent": {
+      "base": 0.5
+    },
+    "Scale": {
+      "base": 0.65
+    },
+    "Cards": {
+      "base": 2
+    }
+  },
+  "CONSTITUTION_FORGE": {
+    "StrengthPower": {
+      "base": 1
+    },
+    "DexterityPower": {
+      "base": 1
+    }
+  },
+  "CANT_TOUCH_THIS_RUNE": {
+    "MinCost": {
+      "base": 2
+    },
+    "BufferPower": {
+      "base": 1
+    }
+  },
+  "BLADE_WALTZ_RUNE": {
+    "Cards": {
+      "base": 1
+    }
+  },
+  "SWORDSMANSHIP_RUNE": {
+    "ParryPower": {
+      "base": 12
+    }
+  },
+  "DRAW_YOUR_SWORD_RUNE": {
+    "FocusPower": {
+      "base": 1
+    }
+  },
+  "ANCIENT_WINE_RUNE": {
+    "Heal": {
+      "base": 1
+    }
+  },
+  "DEADWOOD_RUNE": {
+    "Cards": {
+      "base": 1
+    }
+  },
+  "PORCUPINE_RUNE": {
+    "BlockPerThorn": {
+      "base": 5
+    }
+  },
+  "MISERY_RUNE": {
+    "StrengthPower": {
+      "base": -1
+    },
+    "DexterityPower": {
+      "base": -1
+    }
+  },
+  "GOLDREND_RUNE": {
+    "CountPerHit": {
+      "base": 10
+    }
+  },
+  "GOLIATH_RUNE": {
+    "HpGainPercent": {
+      "base": 0.35
+    },
+    "DamageMultiplier": {
+      "base": 1.2
+    },
+    "SustainMultiplier": {
+      "base": 1.2
+    },
+    "Scale": {
+      "base": 1.35
+    }
+  },
+  "ATTACK_FORGE": {
+    "DamageMultiplier": {
+      "base": 1.2
+    }
+  },
+  "SILVER_ATTACK_FORGE": {
+    "DamageMultiplier": {
+      "base": 1.05
+    }
+  },
+  "GOLD_ATTACK_FORGE": {
+    "DamageMultiplier": {
+      "base": 1.1
+    }
+  },
+  "ATTACK_DEFENSE_UNITY_RUNE": {
+    "Cards": {
+      "base": 1
+    }
+  },
+  "VOID_FORGE": {
+    "VoidFormPower": {
+      "base": 1
+    }
+  },
+  "CLOWN_COLLEGE_RUNE": {
+    "Cards": {
+      "base": 3
+    }
+  },
+  "ZEALOT_RUNE": {
+    "RelicsNeeded": {
+      "base": 5
+    },
+    "Cards": {
+      "base": 1
+    }
+  },
+  "BERSERK_RUNE": {
+    "VulnerablePower": {
+      "base": 3
+    },
+    "Energy": {
+      "base": 1
+    }
+  },
+  "RADIANCE_RUNE": {
+    "MaxHpDamagePercent": {
+      "base": 0.05
+    },
+    "Heal": {
+      "base": 2
+    }
+  },
+  "NINE_DRAGON_POWER_RUNE": {
+    "StackBonusPercent": {
+      "base": 3
+    },
+    "RegenPower": {
+      "base": 1
+    }
+  },
+  "ORB_SYMBIOSIS_RUNE": {
+    "OrbCount": {
+      "base": 1
+    }
+  },
+  "SILVER_ORB_FORGE": {
+    "OrbCount": {
+      "base": 2
+    }
+  },
+  "ORB_SLOT_FORGE": {
+    "OrbSlots": {
+      "base": 2
+    }
+  },
+  "MONARCHS_GAZE_RUNE": {
+    "MonarchsGazePower": {
+      "base": 1
+    }
+  },
+  "ULTIMATE_UNSTOPPABLE_RUNE": {
+    "MinCost": {
+      "base": 2
+    },
+    "ArtifactPower": {
+      "base": 2
+    }
+  },
+  "EXTREME_SPEED_RUNE": {
+    "MaxHpLoss": {
+      "base": 5
+    }
+  },
+  "ADAMANT_RUNE": {
+    "Block": {
+      "base": 3
+    }
+  },
+  "FORBIDDEN_GRIMOIRE_RUNE": {
+    "ForbiddenGrimoirePower": {
+      "base": 1
+    }
+  },
+  "DONATION_RUNE": {
+    "Gold": {
+      "base": 1000
+    }
+  },
+  "ENDLESS_RECOVERY_RUNE": {
+    "HealPercent": {
+      "base": 10
+    }
+  },
+  "BAD_TASTE_RUNE": {
+    "Heal": {
+      "base": 1
+    }
+  },
+  "FAN_THE_HAMMER_RUNE": {
+    "Replays": {
+      "base": 3
+    },
+    "DamageMultiplier": {
+      "base": 0.35
+    }
+  },
+  "NIMBLE_RUNE": {
+    "Cards": {
+      "base": 1
+    }
+  },
+  "MAKE_IT_MINE_RUNE": {
+    "Summon": {
+      "base": 4
+    }
+  },
+  "DIE_FOR_YOU_RUNE": {
+    "Summon": {
+      "base": 5
+    },
+    "Cards": {
+      "base": 1
+    }
+  },
+  "NECROBINDER_FORGE": {
+    "Summon": {
+      "base": 6
+    }
+  },
+  "STATS_ON_STATS_ON_STATS_RUNE": {
+    "ForgeCount": {
+      "base": 6
+    }
+  },
+  "STATS_ON_STATS_RUNE": {
+    "ForgeCount": {
+      "base": 4
+    }
+  },
+  "STATS_RUNE": {
+    "ForgeCount": {
+      "base": 2
+    }
+  },
+  "NEOWS_GRUDGE_RUNE": {
+    "Cards": {
+      "base": 1
+    }
+  },
+  "MORE_THE_MERRIER_RUNE": {
+    "PercentPerRelic": {
+      "base": 1.5
+    }
+  },
+  "HARD_BONES_RUNE": {
+    "CalcifyPower": {
+      "base": 8
+    }
+  },
+  "PROTEIN_SHAKE_RUNE": {
+    "MaxHpPerStep": {
+      "base": 2
+    },
+    "SustainPercentPerStep": {
+      "base": 1
+    }
+  },
+  "CRACK_THE_EGG_RUNE": {
+    "Damage": {
+      "base": 9
+    }
+  },
+  "ARCHMAGE_RUNE": {
+    "ChancePercent": {
+      "base": 33
+    }
+  },
+  "EARTH_AWAKENS_RUNE": {
+    "RollingBoulderPower": {
+      "base": 5
+    }
+  },
+  "DUFFS_VINTAGE_RUNE": {
+    "CostReduction": {
+      "base": 1
+    }
+  },
+  "TAUNT_RUNE": {
+    "Cards": {
+      "base": 1
+    }
+  },
+  "SERPENTS_FANG_RUNE": {
+    "PoisonPerHit": {
+      "base": 4
+    }
+  },
+  "VENOM_FORGE": {
+    "EnvenomPower": {
+      "base": 1
+    }
+  },
+  "PIGGY_BANK_RUNE": {
+    "CounterGain": {
+      "base": 20
+    },
+    "Gold": {
+      "base": 200
+    }
+  },
+  "DRAW_FORGE": {
+    "Cards": {
+      "base": 1
+    }
+  },
+  "SEND_THEM_IN_RUNE": {
+    "Cards": {
+      "base": 1
+    }
+  },
+  "LOOP_RUNE": {
+    "Energy": {
+      "base": 1
+    }
+  },
+  "REPULSOR_RUNE": {
+    "SlipperyPower": {
+      "base": 2
+    }
+  },
+  "MARKOV_BABBLE_RUNE": {
+    "OrbCount": {
+      "base": 1
+    }
+  },
+  "HEXTECH_DRAGON_SOUL_RUNE": {
+    "Cards": {
+      "base": 1
+    }
+  },
+  "WRAITH_RUNE": {
+    "DamagePercentPerSoul": {
+      "base": 3
+    },
+    "Cards": {
+      "base": 1
+    }
+  },
+  "MAD_SCIENTIST_RUNE": {
+    "OrbSlots": {
+      "base": 1
+    }
+  },
+  "OMNI_DRAGON_SOUL_RUNE": {
+    "Cards": {
+      "base": 3
+    }
+  },
+  "HOURGLASS_FORGE": {
+    "Damage": {
+      "base": 5
+    }
+  },
+  "FLAWLESS_RUNE": {
+    "Block": {
+      "base": 3
+    }
+  },
+  "DULL_BLADE_RUNE": {
+    "HpLoss": {
+      "base": 1
+    }
+  },
+  "BIG_STRENGTH_RUNE": {
+    "DamageMultiplier": {
+      "base": 1.2
+    }
+  },
+  "SOMETHING_FROM_NOTHING_RUNE": {
+    "Cards": {
+      "base": 1
+    }
+  },
+  "RANDOM_FORGE_SHOP_RELIC": {
+    "Price": {
+      "base": 250
+    }
+  },
+  "INFINITE_LOOP_RUNE": {
+    "StacksPerEnergy": {
+      "base": 4
+    },
+    "Energy": {
+      "base": 1
+    }
+  },
+  "SLIPPERY_FORGE": {
+    "SlipperyPower": {
+      "base": 2
+    }
+  },
+  "MIKAELS_BLESSING_RUNE": {
+    "Cards": {
+      "base": 1
+    }
+  },
+  "DEXTERITY_FORGE": {
+    "DexterityPower": {
+      "base": 1
+    }
+  },
+  "DEXTERITY_STRENGTH_TO_FOCUS_RUNE": {
+    "FocusPower": {
+      "base": 1
+    }
+  },
+  "DEXTERITY_TO_STRENGTH_RUNE": {
+    "StrengthPower": {
+      "base": 1
+    }
+  },
+  "FOCUS_FORGE": {
+    "FocusPower": {
+      "base": 2
+    }
+  },
+  "GOLD_FOCUS_FORGE": {
+    "FocusPower": {
+      "base": 1
+    }
+  },
+  "OCEAN_DRAGON_SOUL_RUNE": {
+    "Cards": {
+      "base": 1
+    }
+  },
+  "HAND_OF_BARON_RUNE": {
+    "DamageMultiplier": {
+      "base": 1.2
+    },
+    "Shrink": {
+      "base": 2
+    }
+  },
+  "EMERGENCE_RUNE": {
+    "OrbCount": {
+      "base": 2
+    }
+  },
+  "NIGHTSTALKING_RUNE": {
+    "CardsNeeded": {
+      "base": 15
+    },
+    "IntangiblePower": {
+      "base": 1
+    }
+  },
+  "BLOCK_FORGE": {
+    "Block": {
+      "base": 3
+    }
+  },
+  "BADGE_BROTHERS_RUNE": {
+    "FreeAttackPower": {
+      "base": 1
+    },
+    "FreeSkillPower": {
+      "base": 1
+    }
+  },
+  "NIGHT_PARADE_RUNE": {
+    "Cards": {
+      "base": 3
+    }
+  },
+  "HUNDRED_REFINEMENTS_RUNE": {
+    "BodyForges": {
+      "base": 3
+    },
+    "ForgeCount": {
+      "base": 1
+    }
+  },
+  "BUFFER_FORGE": {
+    "BufferPower": {
+      "base": 1
+    }
+  },
+  "OVERFLOW_RUNE": {
+    "Energy": {
+      "base": 1
+    }
+  },
+  "SILVER_STARS_FORGE": {
+    "Stars": {
+      "base": 2
+    }
+  },
+  "STARS_FORGE": {
+    "Stars": {
+      "base": 1
+    }
+  },
+  "STARLIGHT_SPLENDOR_RUNE": {
+    "Stars": {
+      "base": 2
+    }
+  },
+  "PROTECTION_FORGE": {
+    "SustainMultiplier": {
+      "base": 1.2
+    }
+  },
+  "SILVER_PROTECTION_FORGE": {
+    "SustainMultiplier": {
+      "base": 1.05
+    }
+  },
+  "GOLD_PROTECTION_FORGE": {
+    "SustainMultiplier": {
+      "base": 1.1
+    }
+  },
+  "PROTECTIVE_VEIL_RUNE": {
+    "ArtifactPower": {
+      "base": 1
+    }
+  },
+  "UNSEALED_THRONE_RUNE": {
+    "Energy": {
+      "base": 1
+    }
+  },
+  "BYPRODUCT_RUNE": {
+    "Cards": {
+      "base": 1
+    }
+  },
+  "BROKEN_GOLDEN_CROWN_RUNE": {
+    "RewardOptionsLost": {
+      "base": 2
+    },
+    "Energy": {
+      "base": 1
+    }
+  },
+  "CORROSION_RUNE": {
+    "StrengthPower": {
+      "base": 1
+    },
+    "DexterityPower": {
+      "base": 1
+    }
+  },
+  "IMMORTAL_BONE_RUNE": {
+    "HealPercent": {
+      "base": 50
+    }
+  },
+  "REKINDLE_RUNE": {
+    "Cards": {
+      "base": 2
+    },
+    "Energy": {
+      "base": 1
+    }
+  },
+  "FEEL_THE_BURN_RUNE": {
+    "Cards": {
+      "base": 1
+    }
+  },
+  "SEARING_ATTACK_RUNE": {
+    "Cards": {
+      "base": 1
+    }
+  },
+  "MISERABLE_FATE_RUNE": {
+    "Block": {
+      "base": 1
+    }
+  },
+  "DAWNBRINGERS_RESOLVE_RUNE": {
+    "ThresholdPercent": {
+      "base": 50
+    }
+  },
+  "SWIFT_AND_SAFE_RUNE": {
+    "CardsNeeded": {
+      "base": 10
+    },
+    "ArtifactPower": {
+      "base": 1
+    }
+  },
+  "BREAD_SANDWICH_RUNE": {
+    "Replays": {
+      "base": 1
+    }
+  },
+  "BREAD_AND_BUTTER_RUNE": {
+    "Replays": {
+      "base": 1
+    }
+  },
+  "BREAD_AND_JAM_RUNE": {
+    "Replays": {
+      "base": 1
+    }
+  },
+  "BREAD_AND_CHEESE_RUNE": {
+    "Replays": {
+      "base": 1
+    }
+  },
+  "BONE_GUARD_RUNE": {
+    "BlockMultiplier": {
+      "base": 0.5
+    }
+  },
+  "THOUGHT_OVERWRITE_RUNE": {
+    "Replays": {
+      "base": 1
+    }
+  },
+  "FLESH_AND_BONE_RUNE": {
+    "HpLoss": {
+      "base": 3
+    },
+    "OstyMaxHpPerHeal": {
+      "base": 10
+    },
+    "OstyHeal": {
+      "base": 1
+    },
+    "Summon": {
+      "base": 15
+    }
+  },
+  "FLESH_FORGE": {
+    "SleightOfFleshPower": {
+      "base": 4
+    }
+  },
+  "TRINITY_RUNE": {
+    "Energy": {
+      "base": 1
+    },
+    "Stars": {
+      "base": 1
+    }
+  },
+  "COLOR_DISCOVERY_RUNE": {
+    "Selection": {
+      "base": 1
+    },
+    "Cards": {
+      "base": 3
+    }
+  },
+  "VITALITY_SURGE_RUNE": {
+    "HpPerCard": {
+      "base": 50
+    },
+    "HpPerEnergy": {
+      "base": 100
+    }
+  },
+  "LIFE_FORGE": {
+    "MaxHp": {
+      "base": 8
+    }
+  },
+  "GOLD_LIFE_FORGE": {
+    "MaxHp": {
+      "base": 20
+    }
+  },
+  "PRISMATIC_LIFE_FORGE": {
+    "MaxHpPercent": {
+      "base": 30
+    }
+  },
+  "LIFE_FLOW_RUNE": {
+    "HealPercent": {
+      "base": 0.05
+    },
+    "MaxProcsPerTurn": {
+      "base": 3
+    }
+  },
+  "FROST_WRAITH_RUNE": {
+    "TurnsNeeded": {
+      "base": 3
+    },
+    "SlowPower": {
+      "base": 1
+    }
+  },
+  "PLASTER_RUNE": {
+    "Summon": {
+      "base": 1
+    }
+  },
+  "FURIOUS_GLARE_RUNE": {
+    "VulnerablePower": {
+      "base": 1
+    },
+    "StrengthPower": {
+      "base": 1
+    }
+  },
+  "SONATA_RUNE": {
+    "Cards": {
+      "base": 2
+    },
+    "Heal": {
+      "base": 1
+    },
+    "Block": {
+      "base": 2
+    }
+  },
+  "CHAIN_IN_SLEEVE_RUNE": {
+    "ShivsNeeded": {
+      "base": 3
+    },
+    "Cards": {
+      "base": 1
+    }
+  },
+  "SUMMON_FORGE": {
+    "Summon": {
+      "base": 2
+    }
+  },
+  "DECAY_RUNE": {
+    "WeakPower": {
+      "base": 1
+    },
+    "StrengthPower": {
+      "base": 1
+    }
+  },
+  "STARTUP_ROUTINE_RUNE": {
+    "Block": {
+      "base": 15
+    }
+  },
+  "BEGINNING_AND_END_RUNE": {
+    "LethalityPower": {
+      "base": 100
+    },
+    "CountdownPower": {
+      "base": 6
+    }
+  },
+  "MIRAGE_RUNE": {
+    "Block": {
+      "base": 1
+    }
+  },
+  "ARCANE_PUNCH_RUNE": {
+    "AttacksPerEnergy": {
+      "base": 2
+    },
+    "Energy": {
+      "base": 1
+    }
+  },
+  "DIVINE_INTERVENTION_RUNE": {
+    "TurnsNeeded": {
+      "base": 3
+    },
+    "IntangiblePower": {
+      "base": 1
+    }
+  },
+  "CAREFUL_SELECTION_RUNE": {
+    "Cards": {
+      "base": 4
+    }
+  },
+  "DOOMSDAY_RUNE": {
+    "DoomPercent": {
+      "base": 5
+    },
+    "MinimumDoom": {
+      "base": 5
+    }
+  },
+  "JUDICATOR_RUNE": {
+    "DamageMultiplier": {
+      "base": 1.25
+    },
+    "Energy": {
+      "base": 1
+    }
+  },
+  "CROSS_ORB_RUNE": {
+    "CommonReductionPercent": {
+      "base": 50
+    }
+  },
+  "DEVILS_DANCE_RUNE": {
+    "Heal": {
+      "base": 1
+    }
+  },
+  "SHRINK_FORGE": {
+    "ShrinkPower": {
+      "base": 2
+    }
+  },
+  "ANTHONY_BIAS_RUNE": {
+    "PercentPerCard": {
+      "base": 1
+    }
+  },
+  "QUANTUM_COMPUTING_RUNE": {
+    "DamagePercent": {
+      "base": 10
+    },
+    "HealPercent": {
+      "base": 10
+    },
+    "Damage": {
+      "base": 10
+    }
+  },
+  "SHOULDER_VAKU_RUNE": {
+    "HealPercent": {
+      "base": 5
+    },
+    "Energy": {
+      "base": 2
+    },
+    "Cards": {
+      "base": 2
+    }
+  },
+  "DIZZY_SPINNING_RUNE": {
+    "Cards": {
+      "base": 2
+    }
+  },
+  "ENERGY_FORGE": {
+    "Energy": {
+      "base": 1
+    }
+  },
+  "QUEEN_RUNE": {
+    "FrailPower": {
+      "base": 2
+    },
+    "WeakPower": {
+      "base": 2
+    },
+    "VulnerablePower": {
+      "base": 2
+    }
+  },
+  "SOUL_CALLING_RUNE": {
+    "Cards": {
+      "base": 1
+    }
+  },
+  "SOUL_EATER_RUNE": {
+    "MaxHpGainPercent": {
+      "base": 0.05
+    }
+  },
+  "OLD_IDOL_RUNE": {
+    "StrengthPower": {
+      "base": 10
+    }
+  },
+  "HUBRIS_RUNE": {
+    "StacksPerBonus": {
+      "base": 3
+    },
+    "StrengthPower": {
+      "base": 1
+    },
+    "Cards": {
+      "base": 1
+    }
+  },
+  "OMEGA_RUNE": {
+    "StartTurn": {
+      "base": 4
+    },
+    "Damage": {
+      "base": 50
+    }
+  },
+  "OK_BOOMERANG_RUNE": {
+    "Cards": {
+      "base": 1
+    }
+  },
+  "ALL_IN_RUNE": {
+    "Cards": {
+      "base": 1
+    }
+  },
+  "HAIL_TO_THE_KING_RUNE": {
+    "InitialForgeCount": {
+      "base": 2
+    },
+    "EliteForgeCount": {
+      "base": 1
+    },
+    "BossForgeCount": {
+      "base": 1
+    }
+  },
+  "ROYAL_TRIAL_RUNE": {
+    "Cards": {
+      "base": 2
+    }
+  },
+  "FEY_MAGIC_RUNE": {
+    "MinCost": {
+      "base": 2
+    }
+  },
+  "UNMOVABLE_MOUNTAIN_RUNE": {
+    "BarricadePower": {
+      "base": 1
+    },
+    "AfterimagePower": {
+      "base": 1
+    }
+  },
+  "WARMOGS_SPIRIT_RUNE": {
+    "CardsNeeded": {
+      "base": 8
+    },
+    "PlatingPower": {
+      "base": 1
+    }
+  },
+  "EUREKA_RUNE": {
+    "RelicsNeeded": {
+      "base": 6
+    },
+    "Energy": {
+      "base": 1
+    }
+  },
+  "GHOST_FORM_RUNE": {
+    "IntangiblePower": {
+      "base": 3
+    },
+    "NoBlockPower": {
+      "base": 3
+    }
+  },
+  "GLASS_CANNON_RUNE": {
+    "DamageMultiplier": {
+      "base": 1.5
+    },
+    "HealCapPercent": {
+      "base": 0.7
+    }
+  },
+  "GALACTIC_GIFT_RUNE": {
+    "Stars": {
+      "base": 1
+    }
+  },
+  "CONDENSED_RADIANCE_RUNE": {
+    "Cards": {
+      "base": 1
+    },
+    "Stars": {
+      "base": 1
+    }
+  },
+  "RITUAL_FORGE": {
+    "RitualPower": {
+      "base": 1
+    }
+  },
+  "ARTIFACT_FORGE": {
+    "ArtifactPower": {
+      "base": 1
+    }
+  },
+  "PRISMATIC_ARTIFACT_FORGE": {
+    "ArtifactPower": {
+      "base": 2
+    }
+  },
+  "NEAR_DEATH_FEAST_RUNE": {
+    "DeathNegativeMaxHpPercent": {
+      "base": 50
+    },
+    "StrengthPerNegativeHp": {
+      "base": 1
+    }
+  },
+  "AUTO_PATROL_RUNE": {
+    "OstyHpPerCard": {
+      "base": 10
+    },
+    "Cards": {
+      "base": 1
+    }
+  },
+  "NATURE_IS_HEALING_RUNE": {
+    "IntervalSeconds": {
+      "base": 10
+    },
+    "Heal": {
+      "base": 1
+    }
+  },
+  "BRUTALITY_RUNE": {
+    "HpLoss": {
+      "base": 2
+    },
+    "Cards": {
+      "base": 2
+    }
+  },
+  "BRUTAL_FORCE_RUNE": {
+    "StrengthPower": {
+      "base": 1
+    },
+    "Cards": {
+      "base": 2
+    }
+  },
+  "REGEN_FORGE": {
+    "RegenPower": {
+      "base": 4
+    }
+  },
+  "RENEWAL_RUNE": {
+    "Cards": {
+      "base": 1
+    }
+  },
+  "DISASTER_FORGE": {
+    "WeakPower": {
+      "base": 1
+    },
+    "VulnerablePower": {
+      "base": 1
+    }
+  },
+  "ADAPTIVE_CAPACITOR_RUNE": {
+    "OrbSlots": {
+      "base": 1
+    }
+  },
+  "ELECTRODYNAMICS_RUNE": {
+    "OrbCount": {
+      "base": 1
+    }
+  },
+  "ELECTRIC_SURGE_RUNE": {
+    "OrbCount": {
+      "base": 1
+    }
+  },
+  "SYMPHONY_OF_WAR_RUNE": {
+    "SerpentFormPower": {
+      "base": 4
+    },
+    "DemonFormPower": {
+      "base": 1
+    }
+  },
+  "PRECISION_COGNITION_RUNE": {
+    "FocusPower": {
+      "base": 2
+    }
+  },
+  "MENTAL_SHIELD_RUNE": {
+    "Block": {
+      "base": 2
+    }
+  },
+  "MIND_PURIFICATION_RUNE": {
+    "DamagePercent": {
+      "base": 30
+    }
+  },
+  "MIND_TO_MATTER_RUNE": {
+    "MaxHp": {
+      "base": 1
+    }
+  },
+  "MIND_OVER_MATTER_RUNE": {
+    "Cards": {
+      "base": 1
+    }
+  },
+  "POCKET_FORGE": {
+    "PotionSlots": {
+      "base": 2
+    }
+  },
+  "DICE_MANIAC_RUNE": {
+    "DropChance": {
+      "base": 50
+    },
+    "ForgeMultiplier": {
+      "base": 2
+    }
+  },
+  "DEATH_HARVEST_RUNE": {
+    "HealPercent": {
+      "base": 50
+    }
+  },
+  "PREPARED_FORGE": {
+    "Cards": {
+      "base": 2
+    }
+  },
+  "WARMUP_EXERCISE_RUNE": {
+    "StrengthPower": {
+      "base": 2
+    },
+    "DexterityPower": {
+      "base": 2
+    }
+  },
+  "COLLECTOR_RUNE": {
+    "CountPerDeath": {
+      "base": 10
+    },
+    "DamageMultiplier": {
+      "base": 1.1
+    }
+  },
+  "SLOW_COOK_RUNE": {
+    "BurnPercent": {
+      "base": 5
+    }
+  },
+  "SLAP_RUNE": {
+    "StrengthPower": {
+      "base": 1
+    }
+  },
+  "ASTRAL_BODY_RUNE": {
+    "MaxHpPercent": {
+      "base": 50
+    },
+    "DamageMultiplier": {
+      "base": 0.9
+    }
+  },
+  "EASY_DOES_IT_RUNE": {
+    "MayhemPower": {
+      "base": 1
+    }
+  },
+  "SILVER_HP_FORGE": {
+    "MaxHpPercent": {
+      "base": 7.5
+    }
+  },
+  "GOLD_HP_FORGE": {
+    "MaxHpPercent": {
+      "base": 15
+    }
+  },
+  "TRANSCENDENT_EVIL_RUNE": {
+    "StacksPerBonus": {
+      "base": 4
+    },
+    "OrbSlots": {
+      "base": 1
+    },
+    "FocusPower": {
+      "base": 1
+    }
+  },
+  "CATALYST_RUNE": {
+    "Cards": {
+      "base": 1
+    }
+  },
+  "FINAL_FORM_RUNE": {
+    "MinCost": {
+      "base": 2
+    },
+    "PlatingPercent": {
+      "base": 0.1
+    },
+    "Cards": {
+      "base": 2
+    }
+  },
+  "CUTTING_EDGE_ALCHEMIST_RUNE": {
+    "RarePotionCount": {
+      "base": 1
+    },
+    "UncommonPotionCount": {
+      "base": 1
+    }
+  },
+  "SHRINK_RAY_RUNE": {
+    "ShrinkPower": {
+      "base": 1
+    }
+  },
+  "FIREWORKS_FORGE": {
+    "Damage": {
+      "base": 6
+    }
+  },
+  "LETHAL_TEMPO_RUNE": {
+    "StrengthPower": {
+      "base": 1
+    }
+  },
+  "KAKA_RUNE": {
+    "RitualPower": {
+      "base": 1
+    }
+  },
+  "CURTAIN_CALL_RUNE": {
+    "Cards": {
+      "base": 1
+    }
+  },
+  "CERBERUS_RUNE": {
+    "FreeAttacks": {
+      "base": 3
+    }
+  },
+  "CORE_OVERLOAD_RUNE": {
+    "FocusPower": {
+      "base": 1
+    }
+  },
+  "BIG_HANDS_RUNE": {
+    "Multiplier": {
+      "base": 2
+    }
+  },
+  "KILLER_HUNTER_RUNE": {
+    "TemporaryStatLoss": {
+      "base": 1
+    }
+  },
+  "CORRUPTED_BRANCH_RUNE": {
+    "Cards": {
+      "base": 1
+    }
+  },
+  "BURNING_INTEREST_RUNE": {
+    "CountPerDamage": {
+      "base": 2
+    },
+    "HextechBurnPower": {
+      "base": 1
+    }
+  },
+  "ESCAPE_PLAN_RUNE": {
+    "ThresholdPercent": {
+      "base": 50
+    },
+    "BlockPercent": {
+      "base": 60
+    }
+  },
+  "TANK_ENGINE_RUNE": {
+    "HpGainPercent": {
+      "base": 0.06
+    },
+    "ScalePercent": {
+      "base": 6
+    }
+  },
+  "TANKS_SHIELD_RUNE": {
+    "Block": {
+      "base": 3
+    }
+  },
+  "TEZCATARAS_MERCY_RUNE": {
+    "Relics": {
+      "base": 1
+    },
+    "CombatInterval": {
+      "base": 3
+    }
+  },
+  "SINGULARITY_AI_RUNE": {
+    "Cards": {
+      "base": 1
+    }
+  },
+  "SILVER_PLATING_FORGE": {
+    "PlatingPower": {
+      "base": 4
+    }
+  },
+  "PLATING_FORGE": {
+    "PlatingPower": {
+      "base": 6
+    }
+  },
+  "OVERLORD_BLOOD_ARMOR_RUNE": {
+    "MaxHpPerStrength": {
+      "base": 40
+    },
+    "StrengthPower": {
+      "base": 1
+    }
+  },
+  "SNAIL_FORM_RUNE": {
+    "InitialSlow": {
+      "base": -90
+    },
+    "TurnStartSlow": {
+      "base": -90
+    },
+    "CardSlowGain": {
+      "base": 9
+    }
+  },
+  "PACIFIST_RUNE": {
+    "SustainMultiplier": {
+      "base": 1.5
+    },
+    "DoomPower": {
+      "base": 1
+    }
+  },
+  "VIOLENCE_RUNE": {
+    "Cards": {
+      "base": 1
+    }
+  },
+  "EXPLOSION_ART_RUNE": {
+    "TurnStartCards": {
+      "base": 1
+    }
+  },
+  "FLYING_KICK_RUNE": {
+    "BaseExecutePercent": {
+      "base": 10
+    },
+    "OwnerMaxHpToExecutePercent": {
+      "base": 8
+    },
+    "ExecutePercent": {
+      "base": 10
+    },
+    "Heal": {
+      "base": 10
+    }
+  },
+  "BLOOD_ARMOR_RUNE": {
+    "PlatingPower": {
+      "base": 1
+    }
+  },
+  "BLOOD_PACT_RUNE": {
+    "StrengthPower": {
+      "base": 1
+    }
+  },
+  "BLOOD_IDOL_RUNE": {
+    "Heal": {
+      "base": 5
+    }
+  },
+  "SERVANT_MASTER_RUNE": {
+    "NecroMasteryPower": {
+      "base": 1
+    },
+    "Summon": {
+      "base": 3
+    }
+  },
+  "KEYSTONE_HUNTER_RUNE": {
+    "ToolsOfTheTradePower": {
+      "base": 1
+    },
+    "MasterPlannerPower": {
+      "base": 1
+    }
+  },
+  "HAPPY_ACCIDENT_RUNE": {
+    "OrbCount": {
+      "base": 1
+    },
+    "FocusPower": {
+      "base": 1
+    }
+  },
+  "FORTUNE_FORGE": {
+    "Gold": {
+      "base": 100
+    }
+  },
+  "NO_NONSENSE_RUNE": {
+    "StrengthPower": {
+      "base": 1
+    }
+  },
+  "PLATELET_RUNE": {
+    "Block": {
+      "base": 3
+    }
+  },
+  "INFERNAL_DRAGON_SOUL_RUNE": {
+    "Cards": {
+      "base": 1
+    }
+  },
+  "WHITE_HOLE_RUNE": {
+    "Cards": {
+      "base": 1
+    }
+  },
+  "ILLUSORY_WEAPON_RUNE": {
+    "Damage": {
+      "base": 2
+    }
+  },
+  "VIGOR_FORGE": {
+    "VigorPower": {
+      "base": 2
+    }
+  },
+  "GOLDEN_SPATULA_RUNE": {
+    "StackBonusPercent": {
+      "base": 1
+    },
+    "StackOverloadThreshold": {
+      "base": 10
+    }
+  },
+  "RECOVERY_FORGE": {
+    "Heal": {
+      "base": 1
+    }
+  },
+  "ADVANCE_TO_RETREAT_RUNE": {
+    "Block": {
+      "base": 3
+    }
+  },
+  "HASTY_SCRIBBLE_RUNE": {
+    "Cards": {
+      "base": 5
+    }
+  },
+  "DRAIN_RUNE": {
+    "DoomMultiplier": {
+      "base": 2
+    }
+  },
+  "SACRIFICE_RUNE": {
+    "CountPerEnemy": {
+      "base": 5
+    },
+    "SustainMultiplier": {
+      "base": 1.1
+    }
+  },
+  "STRENGTH_FORGE": {
+    "StrengthPower": {
+      "base": 1
+    }
+  },
+  "STRENGTH_TO_DEXTERITY_RUNE": {
+    "DexterityPower": {
+      "base": 1
+    }
   }
 }

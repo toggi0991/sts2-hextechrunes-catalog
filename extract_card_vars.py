@@ -49,14 +49,15 @@ def parse_canonical_vars(src: str) -> dict:
         return {}
     body = m.group(1)
     vars_ = {}
+    N = r"(-?\d+(?:\.\d+)?)"  # 음수 포함 숫자
     # new DynamicVar("Name", 9m)
-    for name, val in re.findall(r'new DynamicVar\("(\w+)",\s*(\d+(?:\.\d+)?)m\)', body):
+    for name, val in re.findall(r'new DynamicVar\("(\w+)",\s*' + N + r"m\)", body):
         vars_[name] = {"base": num(val)}
     # new PowerVar<IntangiblePower>(1m)
-    for name, val in re.findall(r"new PowerVar<(\w+)>\((\d+(?:\.\d+)?)m?\)", body):
+    for name, val in re.findall(r"new PowerVar<(\w+)>\(" + N + r"m?\)", body):
         vars_[name] = {"base": num(val)}
     # new DamageVar(12m, ...) / new EnergyVar(2) / new CardsVar(2)
-    for cls, val in re.findall(r"new (\w+Var)\((\d+(?:\.\d+)?)m?[,)]", body):
+    for cls, val in re.findall(r"new (\w+Var)\(" + N + r"m?[,)]", body):
         name = BUILTIN_VAR_NAMES.get(cls)
         if name:
             vars_[name] = {"base": num(val)}
@@ -114,6 +115,8 @@ def parse_upgrades(src: str, vars_: dict):
 MANUAL_OVERRIDES = {
     # 불태우는 일격: 강화 공식 n(n+7)/2+12 (무제한 강화). 1강 기준 12→16이므로 +4로 표기
     "SEARING_ATTACK_CARD": {"Damage": {"upgrade": 4}},
+    # 무작위 모루 상점 가격: 값이 함수 호출(GetDefaultRandomForgeShopPrice)이라 기본값 250 지정
+    "RANDOM_FORGE_SHOP_RELIC": {"Price": {"base": 250}},
 }
 
 
@@ -134,28 +137,29 @@ def parse_class_sources(cs_path: Path) -> str:
 
 
 def main():
-    # data.json의 카드 ID 목록 기준으로 디컴파일 소스 매칭
+    # data.json의 모드 항목(카드/증강/모루/효과) 기준으로 디컴파일 소스 매칭.
+    # 룬·모루도 카드와 동일한 CanonicalVars 구조라 같은 파서를 재사용한다.
     data = json.loads((Path(__file__).parent / "data.json").read_text(encoding="utf-8"))
-    card_ids = [d["id"] for d in data if d["category"] == "card"]
+    mod_ids = [d["id"] for d in data if not d.get("vanilla")]
 
-    result = {}
-    for card_id in card_ids:
-        cs = DECOMP / f"{camel(card_id)}.cs"
+    result, skipped = {}, 0
+    for item_id in mod_ids:
+        cs = DECOMP / f"{camel(item_id)}.cs"
         if not cs.exists():
-            print(f"[skip] {card_id}: {cs.name} 없음")
+            skipped += 1
             continue
         src = parse_class_sources(cs)
         vars_ = parse_canonical_vars(src)
         parse_upgrades(src, vars_)
         parse_cost(src, vars_)
         parse_keywords(src, vars_)
-        for name, patch in MANUAL_OVERRIDES.get(card_id, {}).items():
+        for name, patch in MANUAL_OVERRIDES.get(item_id, {}).items():
             vars_.setdefault(name, {}).update(patch)
-        result[card_id] = vars_
-        print(card_id, vars_)
+        if vars_:  # 수치가 있는 항목만 저장
+            result[item_id] = vars_
 
     OUT.write_text(json.dumps(result, ensure_ascii=False, indent=2), encoding="utf-8")
-    print(f"\n{len(result)}개 카드 → {OUT}")
+    print(f"{len(result)}개 항목 수치 추출 → {OUT} (소스 없음 {skipped}개)")
 
 
 if __name__ == "__main__":

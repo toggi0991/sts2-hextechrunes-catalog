@@ -49,10 +49,44 @@ TERM_ALIASES = {
 }
 
 
+def _resolve_token(tok: str) -> str:
+    """게임 스마트 템플릿 토큰 하나를 해석 (이 시점에 내부 중괄호는 이미 X로 치환됨).
+
+    형식 예:
+      Var:diff() / Var:abs() / Var → 동적 수치라 X
+      Var:choose(1):단수|복수 → 복수 분기(수치 포함) 사용
+      Var:choose(Enum):A|B → 명명된 경우 A 사용
+      Var:cond:참분기|거짓분기 → 참 분기 사용
+      InCombat:전투프리뷰|  → 전투 중 프리뷰(본문과 중복)라 제거
+    """
+    if ":" not in tok:
+        return "X"
+    name, rest = tok.split(":", 1)
+    if name == "InCombat":  # 전투 중 미리보기(본문 설명과 중복) → 제거
+        return ""
+    if rest.startswith("choose("):
+        end = rest.index(")")
+        arg = rest[len("choose("):end]
+        branches = rest[end + 2:].split("|", 1)  # "):"이후를 분기로
+        if len(branches) == 2:
+            a, b = branches
+            return b if arg.strip() == "1" else a  # 1(단수)이면 복수 분기 b
+        return branches[0]
+    if rest.startswith("cond:"):
+        branches = rest[len("cond:"):].split("|", 1)
+        return branches[0]  # 조건 참 분기
+    # diff()/abs() 등 수치 포매터 또는 단순 변수 → 동적 수치
+    return "X"
+
+
 def clean_placeholders(desc: str) -> str:
-    """게임 내 동적 값 플레이스홀더 정리: {X:choose(...)}는 제거, 나머지는 X로 표시."""
-    desc = re.sub(r"\{[^{}]*:choose\([^{}]*\}", "", desc)
-    return re.sub(r"\{[^{}]*\}", "X", desc)
+    """게임 스마트 템플릿을 안쪽 중괄호부터 반복 해석. 동적 수치는 X로 표시."""
+    inner = re.compile(r"\{([^{}]*)\}")
+    for _ in range(20):  # 중첩 깊이 한계
+        if not inner.search(desc):
+            break
+        desc = inner.sub(lambda m: _resolve_token(m.group(1)), desc)
+    return desc
 
 
 # 게임 본체 CardKeyword 열거형의 공식 한국어 표기 (game_localization/kor/card_keywords.json 기준)
@@ -215,6 +249,8 @@ def build_category(loc_file: str, image_subdir: str, category: str, icon_out_sub
             icon_rel = copy_icon(img_dir, f"{camel}.png", icon_out_subdir)
 
         desc = resolve_card_vars(item_id, fix_text(fields.get("description", fields.get("smartDescription", ""))))
+        # 수치가 확정되지 않아 남은 스마트 템플릿 잔여물은 X 등으로 정리
+        desc = clean_placeholders(desc)
 
         # 카드 키워드: 보존/선천성 계열은 설명 맨 앞 줄, 소모 등 나머지는 맨 끝 줄에 표시
         keywords = card_keywords(item_id) if category == "card" else None
