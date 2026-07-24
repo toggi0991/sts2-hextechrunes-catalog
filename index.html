@@ -722,7 +722,7 @@ function showTip(target, withButton) {
   const desc = KW_INFO[term];
   if (!desc) return;
   tipEl.innerHTML = `<div class="tt-title">${escapeHtml(term)}</div><div>${formatDesc(desc)}</div>`
-    + `<button class="tt-go" type="button" data-go="${escapeHtml(term)}">바로 이동 →</button>`;
+    + `<button class="tt-go" type="button" data-go="${escapeHtml(term)}">검색하기 →</button>`;
   // 터치로 열린 툴팁만 버튼 표시 + 버튼을 누를 수 있게 함
   tipEl.querySelector(".tt-go").style.display = withButton ? "block" : "none";
   tipEl.style.pointerEvents = withButton ? "auto" : "none";
