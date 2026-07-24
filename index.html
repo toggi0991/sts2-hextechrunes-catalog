@@ -491,7 +491,7 @@ function render() {
       </div>
     `;
 
-    if (item.cost != null) {
+    if (item.cost != null && item.cost !== "-") {
       const orb = document.createElement("div");
       orb.className = "cost-orb";
       orb.title = "에너지 코스트" + (item.cost.includes("(") ? " (괄호는 강화 시)" : "");
