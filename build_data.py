@@ -196,7 +196,12 @@ def build_category(loc_file: str, image_subdir: str, category: str, icon_out_sub
         tier = TIER_NAMES.get((RUNE_REGISTRY.get(item_id) or {}).get("tier"))
 
         is_forge = category == "relic" and "_FORGE" in item_id
-        if is_forge:
+        is_enemyhex = category == "relic" and item_id.endswith("_HEX")
+        if is_enemyhex:
+            # 적 증강(몬스터 강화 헥스): 팀 증강과 구분
+            subcategory = "enemyhex"
+            icon_rel = copy_icon(img_dir, f"{camel}.png", icon_out_subdir)
+        elif is_forge:
             subcategory = "forge"
             tier_file = None
             for prefix, fname in FORGE_TIER_ICON.items():

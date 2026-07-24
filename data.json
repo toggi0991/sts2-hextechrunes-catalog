@@ -2593,7 +2593,7 @@
   {
     "id": "EXOSKELETON_HEX",
     "category": "relic",
-    "subcategory": "relic",
+    "subcategory": "enemyhex",
     "cost": null,
     "kw_top": null,
     "kw_bottom": null,
@@ -2621,7 +2621,7 @@
   {
     "id": "PHROG_PARASITE_HEX",
     "category": "relic",
-    "subcategory": "relic",
+    "subcategory": "enemyhex",
     "cost": null,
     "kw_top": null,
     "kw_bottom": null,
@@ -2677,7 +2677,7 @@
   {
     "id": "GLOBE_HEAD_HEX",
     "category": "relic",
-    "subcategory": "relic",
+    "subcategory": "enemyhex",
     "cost": null,
     "kw_top": null,
     "kw_bottom": null,
@@ -2705,7 +2705,7 @@
   {
     "id": "LEAF_SLIME_HEX",
     "category": "relic",
-    "subcategory": "relic",
+    "subcategory": "enemyhex",
     "cost": null,
     "kw_top": null,
     "kw_bottom": null,
@@ -2789,7 +2789,7 @@
   {
     "id": "LAGAVULIN_MATRIARCH_HEX",
     "category": "relic",
-    "subcategory": "relic",
+    "subcategory": "enemyhex",
     "cost": null,
     "kw_top": null,
     "kw_bottom": null,
@@ -2845,7 +2845,7 @@
   {
     "id": "VANTOM_HEX",
     "category": "relic",
-    "subcategory": "relic",
+    "subcategory": "enemyhex",
     "cost": null,
     "kw_top": null,
     "kw_bottom": null,
@@ -2943,7 +2943,7 @@
   {
     "id": "THE_LOST_HEX",
     "category": "relic",
-    "subcategory": "relic",
+    "subcategory": "enemyhex",
     "cost": null,
     "kw_top": null,
     "kw_bottom": null,
@@ -2999,7 +2999,7 @@
   {
     "id": "BYRDONIS_HEX",
     "category": "relic",
-    "subcategory": "relic",
+    "subcategory": "enemyhex",
     "cost": null,
     "kw_top": null,
     "kw_bottom": null,
@@ -3097,7 +3097,7 @@
   {
     "id": "SLIMED_BERSERKER_HEX",
     "category": "relic",
-    "subcategory": "relic",
+    "subcategory": "enemyhex",
     "cost": null,
     "kw_top": null,
     "kw_bottom": null,
@@ -3111,7 +3111,7 @@
   {
     "id": "TEST_SUBJECT_HEX",
     "category": "relic",
-    "subcategory": "relic",
+    "subcategory": "enemyhex",
     "cost": null,
     "kw_top": null,
     "kw_bottom": null,
@@ -3153,7 +3153,7 @@
   {
     "id": "SHRINKER_BEETLE_HEX",
     "category": "relic",
-    "subcategory": "relic",
+    "subcategory": "enemyhex",
     "cost": null,
     "kw_top": null,
     "kw_bottom": null,
@@ -3167,7 +3167,7 @@
   {
     "id": "QUEEN_HEX",
     "category": "relic",
-    "subcategory": "relic",
+    "subcategory": "enemyhex",
     "cost": null,
     "kw_top": null,
     "kw_bottom": null,
@@ -3195,7 +3195,7 @@
   {
     "id": "AEONGLASS_HEX",
     "category": "relic",
-    "subcategory": "relic",
+    "subcategory": "enemyhex",
     "cost": null,
     "kw_top": null,
     "kw_bottom": null,
@@ -3251,7 +3251,7 @@
   {
     "id": "INKLET_HEX",
     "category": "relic",
-    "subcategory": "relic",
+    "subcategory": "enemyhex",
     "cost": null,
     "kw_top": null,
     "kw_bottom": null,
@@ -3265,7 +3265,7 @@
   {
     "id": "THE_FORGOTTEN_HEX",
     "category": "relic",
-    "subcategory": "relic",
+    "subcategory": "enemyhex",
     "cost": null,
     "kw_top": null,
     "kw_bottom": null,
@@ -3293,7 +3293,7 @@
   {
     "id": "SKULKING_COLONY_HEX",
     "category": "relic",
-    "subcategory": "relic",
+    "subcategory": "enemyhex",
     "cost": null,
     "kw_top": null,
     "kw_bottom": null,
@@ -3377,7 +3377,7 @@
   {
     "id": "MYTE_HEX",
     "category": "relic",
-    "subcategory": "relic",
+    "subcategory": "enemyhex",
     "cost": null,
     "kw_top": null,
     "kw_bottom": null,
@@ -3517,7 +3517,7 @@
   {
     "id": "PHANTASMAL_GARDENER_HEX",
     "category": "relic",
-    "subcategory": "relic",
+    "subcategory": "enemyhex",
     "cost": null,
     "kw_top": null,
     "kw_bottom": null,

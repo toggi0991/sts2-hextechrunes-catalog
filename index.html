@@ -198,6 +198,7 @@
   .cat-strip.cat-relic { color: var(--gold); }
   .cat-strip.cat-forge { color: #ff9e6d; }
   .cat-strip.cat-power { color: #a8f0c6; }
+  .cat-strip.cat-enemyhex { color: #f0788a; }
   .card-title {
     font-weight: 700;
     font-size: 0.88rem;
@@ -252,6 +253,7 @@
   .badge.relic { color: var(--gold); }
   .badge.forge { color: #ff9e6d; }
   .badge.power { color: #a8f0c6; }
+  .badge.enemyhex { color: #f0788a; }
   .desc {
     font-size: 0.73rem;
     color: var(--text-dim);
@@ -368,7 +370,8 @@
   <div id="filterPanel">
   <div class="cat-chips">
     <span class="chip active" data-cat="all">전체</span>
-    <span class="chip" data-cat="relic">증강</span>
+    <span class="chip" data-cat="relic">팀 증강</span>
+    <span class="chip" data-cat="enemyhex">적 증강</span>
     <span class="chip" data-cat="forge">모루</span>
     <span class="chip" data-cat="card">카드</span>
     <span class="chip" data-cat="power">효과</span>
@@ -406,7 +409,7 @@ let activeCat = "all";
 let activeChar = "all";
 let activeTier = "all";
 
-const CAT_LABEL = { relic: "증강", forge: "모루", card: "카드", power: "효과" };
+const CAT_LABEL = { relic: "팀 증강", enemyhex: "적 증강", forge: "모루", card: "카드", power: "효과" };
 
 function escapeHtml(s) {
   return s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
