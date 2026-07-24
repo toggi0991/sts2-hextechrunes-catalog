@@ -341,6 +341,13 @@ def main():
         for it in vanilla:
             if it["id"] in icon_map:
                 it["icon"] = icon_map[it["id"]]
+    # extract_vanilla_cost.py가 만든 바닐라 카드 에너지 코스트 적용
+    vc_file = Path(__file__).parent / "vanilla_cost.json"
+    if vc_file.exists():
+        cost_map = json.loads(vc_file.read_text(encoding="utf-8"))
+        for it in vanilla:
+            if it["id"] in cost_map:
+                it["cost"] = cost_map[it["id"]]
     all_items += vanilla
     print("Vanilla items:", len(vanilla))
 
